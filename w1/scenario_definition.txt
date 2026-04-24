@@ -1,0 +1,5 @@
+Scenario 3 — Retail Returns Disposition
+ A mid-sized apparel retailer (60 stores, online channel, ~$280M annual revenue) processes ~4,500 returns per week through a central returns facility. Each item is classified by reason code
+ (defective, didn't fit, changed mind, wrong item shipped, suspected fraud), inspected for condition,
+ and routed to a disposition lane: restock as new, discount to outlet, refurbish, donate, or destroy. Twelve returns processors currently do all of this visually and by memory.
+ 
