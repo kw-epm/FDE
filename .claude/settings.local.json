@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest test_classifier.py -v)",
+      "Bash(python3 -m pytest test_classifier.py -v)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c \"import sys; print\\(sys.path\\)\")",
+      "Bash(python3 -c \"import pytest\")",
+      "Bash(python3 -m ensurepip --upgrade)",
+      "Bash(apt-get install *)",
+      "Bash(sudo apt-get *)",
+      "Bash(python3 -m unittest discover -p \"test_*.py\")",
+      "Bash(python3 *)",
+      "Bash(curl -sS https://bootstrap.pypa.io/get-pip.py)",
+      "Bash(git -C /mnt/c/xyh/fde status --short)",
+      "Bash(gh api *)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
