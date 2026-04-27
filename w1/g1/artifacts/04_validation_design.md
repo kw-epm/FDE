@@ -48,6 +48,7 @@ This document defines how to verify that the FNOL Processing Agent (FPA) is work
 - bodily_injury_flag = false (no injury language detected)
 - coverage_status = CONFIRMED
 - severity_score: estimated_loss null (+2) = 2 → severity_level = LOW
+- **Verify:** prior claims count (1) < SERIAL_CLAIMANT_THRESHOLD (5) → SERIAL_CLAIMANT signal does NOT fire; severity_score remains 2 (not 3)
 - No SV-002 escalation (LOW, not high-value, no bodily injury)
 - Adjuster assigned: AUTO_COLLISION specialist, Georgia coverage, not at queue limit
 - CRM claim record created (crm_claim_id populated)
@@ -147,7 +148,7 @@ This document defines how to verify that the FNOL Processing Agent (FPA) is work
 **Then:**
 - policy_number: not extracted
 - claimant contact: not extracted
-- claim_type: ambiguous (PROPERTY_DAMAGE or OTHER; low confidence)
+- claim_type: ambiguous (for example PROPERTY_DAMAGE vs LIABILITY; low confidence)
 - incident_date: not extracted
 - parse_confidence = 0.00 (no required fields)
 - FIELD_COMPLETION WorkItem created with all 4 required fields in missing_or_low_confidence_fields list
@@ -307,7 +308,8 @@ Both: AUTO_COLLISION, no bodily injury, coverage CONFIRMED
 **Then:**
 - Claim A: is_high_value = false; if severity otherwise LOW/MEDIUM → no SEVERITY_REVIEW → autonomous routing
 - Claim B: is_high_value = true → SEVERITY_REVIEW WorkItem created regardless of severity_level
-- **Verify:** threshold is inclusive at exactly $50,000.00
+- **Verify:** threshold is inclusive at exactly $50,000.00; the ≥ comparison uses decimal(12,2) arithmetic — no floating-point ambiguity
+- **Verify:** estimated_loss_amount is stored and compared as decimal(12,2) per the schema; test rejects any implementation using floating-point types (float/double) for this field
 
 ---
 
@@ -355,6 +357,22 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 ---
 
+### V4-07 — Semantic Classification Error Produces Auditable Signal
+**Given:** Email describes an AUTO_THEFT incident ("my car was stolen from the parking lot"), but NLP classifies claim_type = AUTO_COLLISION at confidence 0.91 (above threshold — extraction proceeds autonomously)
+
+**When:** Claim is routed and completed
+
+**Then:**
+- Claim routes to an AUTO_COLLISION adjuster (wrong specialty — the routing algorithm uses the extracted claim_type)
+- The routing is wrong, but no WorkItem is created (confidence was above threshold)
+- **Verify:** AuditEvent PARSING_COMPLETED event contains to_value = `{"claim_type": "AUTO_COLLISION", "confidence": 0.91, "parse_confidence": 0.91}` per the required schema (Artifact 3 Audit & Logging section) — this is the record that makes the monthly accuracy audit possible
+- **Verify:** the monthly labeled-test accuracy measurement (Artifact 1: ≥ 93% claim type classification accuracy) would catch this failure in sample review
+- **Verify:** when the adjuster identifies the error and the WorkItem is updated with corrected claim_type = AUTO_THEFT, AuditEvent records FIELD_OVERRIDDEN_BY_HUMAN with from_value = AUTO_COLLISION, to_value = AUTO_THEFT
+
+**Purpose:** This test verifies that high-confidence misclassifications are auditable (not silently wrong). The system cannot prevent all semantic errors at runtime, but it must produce the signals that allow humans to detect them in audit.
+
+---
+
 ## V5 — SLA Monitoring
 
 ### V5-01 — SLA Clock Starts at Receipt, Not at Parsing Start
@@ -396,15 +414,16 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 ---
 
-### V5-04 — SLA Already Breached When Agent Starts Processing (Edge Case)
-**Given:** Email was sent at 08:00 UTC but not ingested until 10:05 UTC (email server delay); received_at = 10:05 UTC; sla_deadline = 12:05 UTC; this is fine — the SLA clock uses the system's received_at, not the email's sent timestamp
+### V5-04 — SLA Boundary: Email Ingestion Delay
+**Given:** Email was sent at 08:00 UTC but not ingested until 10:05 UTC (email server delay); received_at = 10:05 UTC; sla_deadline = 12:05 UTC
 
 **When:** Claim is processed and acknowledged at 10:08 UTC
 
 **Then:**
 - sla_status = ON_TRACK (acknowledged_at 10:08 < sla_deadline 12:05)
-- **Clarification:** The SLA is measured from system receipt, not from claimant's send time. This is by design and must be documented in operational procedures.
-- **Verify:** sla_deadline is always received_at + 2h; sent timestamps from email metadata are NOT used
+- **Verify:** sla_deadline = received_at + 2h; sent timestamps from email metadata are NOT used as the SLA start
+
+**Design rationale and known limitation:** The FPA measures SLA from system receipt (received_at), not from claimant send time. This is necessary because email infrastructure delays are outside the insurer's control. However, a claimant who sent at 08:00 and was not acknowledged until 10:08 experienced a 2h8min wait — technically "on-track" by system measure but potentially unsatisfactory. **V1 mitigation (partial):** If the email Date header is present, not in the future, and within 15 minutes before system ingestion time, use the Date header as received_at. Date header must be rejected (fall back to ingestion time) if: (a) header is absent; (b) header timestamp is in the future (sender clock misconfiguration or timezone error); (c) header predates ingestion by more than 15 minutes (infrastructure or relay delay). This guards against backdated headers — either malicious or from misconfigured sender mail servers — being used to artificially advance the SLA clock. Document the system-receipt convention in claimant-facing operational procedures.
 
 ---
 
@@ -443,10 +462,10 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 **When:** AC-001 attempts to send acknowledgment
 
 **Then:**
-- Fallback: attempt direct SMTP send to extracted claimant email address (from IN-002 ParsedField)
-- If SMTP available and email extracted: send acknowledgment; log ACKNOWLEDGMENT_SENT with note "Sent via SMTP fallback (contact not in CRM)"
-- If email not extracted AND SMTP unavailable: create SYSTEM_ERROR WorkItem; log acknowledgment as FAILED; supervisor must manually contact claimant
-- **Verify:** acknowledgment failure does NOT silently pass — WorkItem created so a human knows a claimant was not reached
+- No SMTP fallback (SMTP is out of scope for V1 — no SMTP integration contract exists)
+- SYSTEM_ERROR WorkItem created; log acknowledgment as FAILED; specialist must manually contact claimant
+- **Verify:** acknowledgment failure does NOT silently pass — SYSTEM_ERROR WorkItem is created so a human knows a claimant was not reached
+- **Verify:** agent does NOT attempt any out-of-spec channel (no SMTP, no direct API) — failure is surfaced via WorkItem only
 
 ---
 
@@ -456,7 +475,7 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 **When:** IN-001 attempts to store raw_input
 
 **Then:**
-- IN-001 proceeds (DMS is non-blocking); raw_input_document_id = null; AuditEvent log: DMS_STORE_FAILED
+- IN-001 proceeds (DMS is non-blocking); raw_input_document_id = null; raw_input cached in-memory for current processing session; AuditEvent log: DMS_STORE_FAILED
 - Parsing continues in-memory; WorkItem NOT created for DMS failure alone
 - Background retry: every 60 seconds for 30 minutes
 - After 30 minutes still failing: SYSTEM_ERROR WorkItem created for IT_ONCALL; supervisor dashboard flag
@@ -493,6 +512,34 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 ---
 
+## V8 — Post-Launch Monitoring (Drift Detection)
+
+These checks run continuously in production; they are not one-time tests.
+
+### V8-01 — NLP Extraction Accuracy Drift
+**Signal:** Monthly labeled-set accuracy for claim_type classification drops ≥ 3 percentage points below the baseline established in Phase 0 shadow mode; OR falls below 90% absolute (floor regardless of baseline).
+**Trigger threshold:** Any single month triggering either condition above.
+**Baseline establishment:** Baseline is set at the end of Phase 0 shadow mode (first 4 weeks). If baseline comes in below 93% (the year-1 target), the Phase 1 go/no-go decision must be reviewed — do not proceed to autonomous processing if shadow-mode accuracy is already below target.
+**Response:** Retrain or fine-tune NLP model on recent claims data. Lower PARSE_CONFIDENCE_THRESHOLD temporarily to route more claims to FIELD_COMPLETION while retraining completes.
+**Why this matters:** If the company expands into new lines of business (commercial trucking, marine) or new terminology enters claim descriptions, the pre-trained model's vocabulary distribution shifts. Drift is invisible until accuracy metrics drop.
+
+### V8-02 — Routing Error Rate Monitoring
+**Signal:** Monthly routing accuracy audit (n=200 sample) shows adjuster confirmed wrong > 2% (the ≤ 2% year-1 target).
+**Trigger threshold:** Any month above 2%; two consecutive months above 1.5% (early warning).
+**Response:** Review recent WorkItem FIELD_OVERRIDDEN_BY_HUMAN events for systematic claim_type misclassification patterns; recalibrate scoring weights if needed.
+
+### V8-03 — Coverage False-Clear Rate
+**Signal:** Quarterly reconciliation: claims autonomously cleared (coverage_status = CONFIRMED by agent, no human review) that subsequently raised a coverage dispute.
+**Trigger threshold:** Rate exceeds 1% in any quarterly reconciliation.
+**Response:** Immediate reduction of EXCLUSION_SIMILARITY_THRESHOLD (lower it to flag more claims for COVERAGE_REVIEW) while root cause is identified.
+
+### V8-04 — SLA Breach Pattern
+**Signal:** Weekly SLA compliance rate drops below 92% (below the 95% target, with 3-point buffer for early warning).
+**Trigger threshold:** Two consecutive weeks below 92%.
+**Response:** Review AWAITING_* queue depths and WorkItem resolution times; check if specialist team has been reduced or redeployed.
+
+---
+
 ## Production Readiness Thresholds
 
 All of the following must be true before go-live:
@@ -507,6 +554,8 @@ All of the following must be true before go-live:
 | SOAP failure handled gracefully (no unhandled exceptions) | 100% | V6-01 |
 | Duplicate claim detection (no duplicate Claim records) | 100% | V7-01 |
 | INTERIM ack fires on AWAITING state entry | 100% | V5-03 |
-| Coverage false-clear rate (claims cleared by agent, later disputed) | ≤ 1% | V3 suite + 30-day pilot reconciliation |
+All thresholds above must be met in a pre-production pilot of minimum 200 live claims with human shadow review before autonomous processing begins (Phase 0 → Phase 1 gate).
 
-All thresholds must be met in a pre-production pilot of minimum 200 live claims with human shadow review before autonomous processing begins.
+**Phase 1 → Phase 2 exit criterion (coverage false-clear rate):** Coverage false-clear rate cannot be statistically measured at n=200. Instead: after Phase 1 processes ≥ 1,000 autonomous claims, perform a reconciliation check (claims agent-cleared that subsequently raised a coverage dispute). If false-clear rate ≤ 1% at that point, proceed to Phase 2 full rollout. If > 1%: hold Phase 2; investigate root cause; lower EXCLUSION_SIMILARITY_THRESHOLD and re-run Phase 1.
+
+**Statistical power note for coverage false-clear rate:** At n=200, a 1% false-clear rate corresponds to 2 expected events. The probability of observing 0 events from a true 1% rate is ~13% (Poisson approximation) — meaning the pilot could pass this threshold by chance even if the true rate is 1%. For a statistically valid measurement of a ≤ 1% rate, n ≥ 1,000 claims is required (95% confidence interval width ≈ ±0.6%). The coverage false-clear threshold must therefore be validated on a 30-day production sample of ≥ 1,000 autonomously processed claims, not solely on the initial pilot. Pilot evaluation uses the test suite (V3); production evaluation uses reconciliation data.

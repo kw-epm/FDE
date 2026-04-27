@@ -7,7 +7,9 @@ A mid-size insurance company's 12-person claims team processes 300 First Notice 
 The process is failing on all three operational dimensions:
 
 **1. Speed failure — 31% SLA breach rate**
-93 claims per day (~23,250/year) miss the 2-hour acknowledgment window. The root cause is capacity: the team's theoretical throughput at 22 min/claim across 8-hour shifts is ~262 claims/day. At 300 claims/day, the team runs at 114.5% of capacity, with no buffer for volume spikes. Any surge — a weather event, a product recall — causes immediate queue collapse. The 31% SLA breach rate is not a quality problem; it is a structural capacity problem wearing a quality mask.
+93 claims per day (~23,250/year) miss the 2-hour acknowledgment window. The root cause is capacity: the team's theoretical throughput at 22 min/claim across 8-hour shifts is ~262 claims/day (12 × 480 ÷ 22 = 261.8). At 300 claims/day, the team runs at 114.5% of capacity, with no buffer for volume spikes. Any surge — a weather event, a product recall — causes immediate queue collapse.
+
+**Why the breach rate (31% = 93/day) is higher than the capacity overflow (300 − 262 = 38/day):** The 38-claim overflow represents the absolute floor — claims that cannot be processed within the shift regardless of effort. The additional 55 daily breaches arise from three compounding factors: (a) *arrival bunching* — claims do not arrive uniformly distributed; when 20 arrive in the first 45 minutes, the queue backs up even though the daily total would be manageable; (b) *handling time variance* — the 22-minute average likely masks a bimodal distribution [Inferred — not measured in this engagement; consistent with typical mixed-complexity claims work patterns]: routine claims may take 12–15 min, complex claims (bodily injury, coverage dispute) 35–45 min; a single complex claim in a full queue can delay the next 2–3 routine claims past their SLA windows; (c) *channel-switching overhead* — specialists manually monitor three separate inbound channels, adding 3–5 min of context-switching per transition that is not captured in per-claim time estimates. The 31% breach rate is not a quality problem; it is a structural capacity problem wearing a quality mask.
 
 **2. Accuracy failure — 18% routing error rate**
 54 claims per day (~13,500/year) arrive at the wrong adjuster. Each mis-route generates rework: the receiving adjuster identifies the error, returns the claim to the pool, a correct adjuster is reassigned, and the claimant must be re-contacted. Estimated rework cost: 25 min of specialist time per mis-routed claim plus one claimant re-contact. Root cause: routing is a manual workload-balancing step that specialists shortcut under queue pressure, and there is no system enforcement of specialization or geography rules.
@@ -16,7 +18,7 @@ The process is failing on all three operational dimensions:
 At 300 claims/day and 22 min average handling, the team already works beyond 8-hour shift capacity. Any channel growth, line-of-business expansion, or seasonal claim spike (catastrophic weather) cannot be absorbed without either SLA degradation or headcount addition. Processing cost per claim (~$10.50 fully loaded) is unsustainable for the commodity cases that represent the majority of volume.
 
 **Combined annual impact (estimated):**
-- Labor cost: $720K–$840K/year (12 specialists, $60K–$70K fully loaded) [Inferred]
+- Current fully-loaded labor cost: $720K–$840K/year (12 specialists, $60K–$70K fully loaded) [Inferred] — this is the cost being inefficiently allocated, not a cost that disappears; specialists are retained and redeployed
 - Rework from routing errors: ~$115K–$135K/year [Calculated: 13,500 × 25 min × specialist cost/min]
 - Regulatory exposure from sustained SLA non-compliance: heightened DOI scrutiny, corrective action overhead, and remediation program cost; direct per-breach fines are jurisdiction-dependent and must be validated with legal [Assumption B4]
 
@@ -46,7 +48,7 @@ The 2-hour SLA is not primarily an internal efficiency target. It is the claiman
 **Three value levers:**
 
 **Lever 1 — Labor redeployment (~$350K–$420K value, year one)**
-If the agent handles 65–70% of volume autonomously (the routine, clear-coverage, low-severity claims), 12 specialists shift from commodity processing to complex-claim-only handling. At current headcount, that means each specialist's day changes from 25 mixed claims to 7–8 complex claims handled well — no net reduction in headcount, but material improvement in quality for the hard cases, and significant buffer for volume growth. 7–8 redeployed FTE-equivalents at $50K–$60K redeployment value = $350K–$420K/year.
+If the agent handles 65–70% of volume autonomously (the routine, clear-coverage, low-severity claims), 12 specialists shift from commodity processing to complex-claim-only handling. At current headcount, that means each specialist's day changes from 25 mixed claims to 7–8 complex claims handled well — no net reduction in headcount, but material improvement in quality for the hard cases, and significant buffer for volume growth. 65–70% of 12 specialists = 7.8–8.4 FTE-equivalents freed from commodity processing; rounded conservatively to 7–8. At $50K–$60K redeployment value per FTE = $350K–$420K/year.
 
 **Lever 2 — Rework elimination (~$115K–$135K/year)**
 Routing accuracy improvement from 82% to ≥ 98% eliminates ~50 mis-routed claims/day. Each eliminated rework event saves ~25 min of specialist time plus claimant re-contact.
@@ -54,7 +56,7 @@ Routing accuracy improvement from 82% to ≥ 98% eliminates ~50 mis-routed claim
 **Lever 3 — Regulatory compliance risk reduction (material but jurisdiction-dependent)**
 Achieving ≥ 95% SLA compliance removes the company from the regulatory watchlist, eliminates corrective action plan overhead, and reduces audit exposure. Financial value is jurisdiction-dependent [Assumption B4] but the directional case is unambiguous.
 
-**Combined year-one estimate: $465K–$555K** — above any realistic implementation cost for a well-scoped V1.
+**Combined year-one value estimate: $465K–$555K** (labor redeployment + rework elimination) — above any realistic implementation cost for a well-scoped V1. Note: this is redeployment value, not labor cost elimination; headcount stays at 12, but each specialist hour shifts from commodity processing to complex-claim work worth more per hour.
 
 **Why an AI agent is the right solution:**
 The distribution of the work tells you the answer. 65–70% of FNOL claims follow predictable patterns: the text is clear, the policy is active and matched, the severity is evident, the adjuster assignment is deterministic. These claims do not require 22 minutes of specialist judgment. They require consistent rule application — which an agent does faster and more consistently than a specialist under queue pressure.
@@ -89,7 +91,7 @@ The remaining 30–35% — bodily injury, coverage disputes, high-value claims, 
 ### Claimant Experience Metrics
 | Metric | Baseline | Year-1 Target | Measurement |
 |---|---|---|---|
-| Post-FNOL CSAT score (survey, 1–5) | [Baseline to be established pre-launch] | ≥ 4.2 / 5 | Post-FNOL survey, 30-day window |
+| Post-FNOL CSAT score (survey, 1–5) | [Baseline to be established pre-launch] | ≥ baseline + 0.5 points (e.g., if baseline is 3.4, target is ≥ 3.9) | Post-FNOL survey, 30-day window |
 | Claimant inbound calls to check claim status (per 100 FNOL) | [Baseline to be established] | ≤ 5 calls per 100 FNOL | CRM inbound call log |
 # Artifact 2 — Delegation Analysis
 
@@ -183,6 +185,10 @@ These three constraints define the floor. Every other boundary is a design choic
 **Delegation:** **[Agent — Flag & Hold]** → **[Human — Decide]**
 **Justification:** Same constraint as C1. A lapsed policy does not automatically mean denial — there may be grace periods or reinstatement paths. A specialist must review.
 
+**Sub-decision E — SOAP response returns policy with empty or malformed coverage_types_list:**
+**Delegation:** **[Agent — Flag & Hold]**
+**Justification:** An empty coverage list could mean: the policy genuinely has no covered perils (unusual — likely a data error), the SOAP response was truncated, or the coverage type mapping [Assumption A2] failed to resolve any codes. The agent cannot distinguish these cases. Treating an empty list as "no coverage" (EXCLUDED) risks wrongly denying a valid claimant; treating it as "coverage unknown" (DISPUTED) is the safer default. Agent sets coverage_status = DISPUTED, creates COVERAGE_REVIEW WorkItem with note "Policy returned empty coverage_types_list — possible SOAP data error or unmapped coverage codes", and holds for specialist review.
+
 **Why not require human review of all coverage validations?** Because the clear-coverage path (active policy, matching coverage type, no exclusion trigger) is the majority of claims, and the rule is fully encodable. The risk is a false clear — which is caught in the daily audit. The risk of requiring human review of all coverage validations is that the team bottleneck shifts from commodity processing to commodity review, with no SLA improvement.
 
 ---
@@ -254,13 +260,15 @@ These three constraints define the floor. Every other boundary is a design choic
 
 **Net autonomous rate: ~63–77%** — consistent with the scenario's implied 65–70% routine case estimate.
 
+**Note on category overlap:** The rows above are not mutually exclusive. A bodily injury claim is also counted in HIGH/CRITICAL severity; a coverage dispute claim may also have had a low-confidence parse. The percentages are component estimates, not additive slices — summing them exceeds 100% because a single claim can fall into multiple categories. The net autonomous rate (~63–77%) is the fraction of claims that exit all modules without a human WorkItem, accounting for overlap. The categories are useful for estimating specialist workload by type, not for computing a coverage-exhaustive percentage breakdown.
+
 ---
 
 ## Why These Boundaries Are Drawn Here
 
 **The coverage denial boundary** sits at human-always because of explicit regulatory basis — this is not a "feels like a human decision" call. Any spec that allows the agent to deny coverage will fail legal review.
 
-**The bodily injury boundary** sits at human-always (pre-routing) because the litigation exposure of routing a bodily injury claim to the wrong adjuster — or to a general adjuster who mishandles the initial contact — outweighs the throughput cost of a supervisor confirmation. This is a conservative design constraint and should be validated with operations/legal owners.
+**The bodily injury boundary** sits at human-always (pre-routing) because the litigation exposure of routing a bodily injury claim to the wrong adjuster — or to a general adjuster who mishandles the initial contact — outweighs the throughput cost of a supervisor confirmation. This is a conservative design constraint and should be validated with operations/legal owners. **It may be relaxed in V2:** if operations validates that self-reported minor injuries (no hospitalisation, no third party) can be auto-routed to a bodily-injury-qualified adjuster, the C2 constraint becomes a severity sub-threshold rather than a binary flag. The current spec treats it as binary pending that validation [Assumption B2].
 
 **The $50,000 boundary** sits at flag-and-hold because at this financial level, a routing error has a material margin consequence and the cost of a 3–5 minute supervisor confirmation is negligible by comparison. This is a working assumption pending formal policy documentation.
 
@@ -318,11 +326,13 @@ Claim:
     — SLA clock starts here; set at the moment the raw input enters the system,
       NOT at the start of parsing
   source_channel: enum [EMAIL, PHONE_TRANSCRIPT, WEB_FORM], required
-  raw_input_document_id: string, FK to DMS document (stored in IN-001), required
+  raw_input_document_id: string, FK to DMS document (stored in IN-001), nullable; required when DMS store succeeds, null only when DMS store fails and raw_input is held in ephemeral memory for retry
+  source_message_id: string, max 500 chars, nullable; inbound deduplication key: EMAIL = MIME Message-ID, PHONE_TRANSCRIPT = upload session ID, WEB_FORM = form submission token; null for channels that provide no deduplication key
   processing_status: enum [
     RECEIVED,
     PARSING,
     AWAITING_FIELD_COMPLETION,
+    AWAITING_DUPLICATE_REVIEW,
     POLICY_LOOKUP,
     COVERAGE_VALIDATION,
     AWAITING_COVERAGE_REVIEW,
@@ -339,8 +349,11 @@ Claim:
     RECEIVED → PARSING                       (immediately on receipt)
     PARSING → AWAITING_FIELD_COMPLETION      (parse_confidence < PARSE_CONFIDENCE_THRESHOLD
                                               or required field missing; IN-002)
-    PARSING → POLICY_LOOKUP                  (all required fields, confidence ≥ threshold; IN-002)
+    PARSING → AWAITING_DUPLICATE_REVIEW      (duplicate candidate detected by IN-003)
+    PARSING → POLICY_LOOKUP                  (all required fields, confidence ≥ threshold, no duplicate; IN-002/IN-003)
     AWAITING_FIELD_COMPLETION → POLICY_LOOKUP (human resolves FIELD_COMPLETION WorkItem)
+    AWAITING_DUPLICATE_REVIEW → POLICY_LOOKUP (specialist resolves DUPLICATE_REVIEW as DISTINCT or REPLACE)
+    AWAITING_DUPLICATE_REVIEW → HALTED       (specialist resolves DUPLICATE_REVIEW as MERGE; this claim discarded)
     POLICY_LOOKUP → COVERAGE_VALIDATION      (policy found, PL-001 success)
     POLICY_LOOKUP → AWAITING_FIELD_COMPLETION (policy not found — human re-verifies policy number)
     COVERAGE_VALIDATION → AWAITING_COVERAGE_REVIEW (CV-001 or CV-002 triggers hold)
@@ -354,16 +367,18 @@ Claim:
     ROUTING → ACKNOWLEDGED                   (adjuster assigned; RT-002 complete)
     AWAITING_ROUTING_OVERRIDE → ACKNOWLEDGED (supervisor manually assigns adjuster)
     ACKNOWLEDGED → COMPLETED                 (AC-001 send confirmed)
-    Any → HALTED                             (SOAP failure after all retries; unrecoverable error)
+    Any → HALTED                             (PL-001 SOAP failure after all retries — the only SOAP failure that halts;
+                                              CV-002 CheckExclusions SOAP failure does NOT halt — see CV-002 for its fail-safe path)
+    HALTED → POLICY_LOOKUP                   (supervisor manually re-queues after IT resolves SOAP_FAILURE; only valid when halt_reason contains "SOAP_FAILURE/PL-001")
 
-  claimant_id: string, FK to CRM Contact, nullable until IN-002 enrichment
-  policy_number: string, max 50 chars, extracted by IN-002, required after AWAITING_FIELD_COMPLETION resolves
+  claimant_id: string, FK to CRM Contact (on CRM contact deletion: set null), nullable until IN-002 enrichment
+  policy_number: string, max 20 chars (the regex [A-Z]{2,3}-\d{6,10} yields max 14 chars; 20 allows for namespace variations), extracted by IN-002, required after AWAITING_FIELD_COMPLETION resolves
   policy_id: string, FK to PolicyAdmin (returned by PL-001), nullable until PL-001
   policy_status: enum [ACTIVE, LAPSED, CANCELLED, SUSPENDED], nullable until PL-001
   policy_effective_date: ISO 8601 date, nullable until PL-001
   policy_expiration_date: ISO 8601 date, nullable until PL-001
   claim_type: enum [AUTO_COLLISION, AUTO_THEFT, PROPERTY_DAMAGE, PROPERTY_THEFT,
-    BODILY_INJURY, LIABILITY, OTHER], nullable until IN-002 or human confirmation
+    BODILY_INJURY, LIABILITY], nullable until IN-002 or human confirmation
   incident_date: ISO 8601 date, nullable until IN-002 or human confirmation
   incident_location: string, max 500 chars, nullable
   incident_state: string, 2-char ISO 3166-2 state code, nullable (derived from incident_location or extracted)
@@ -373,21 +388,22 @@ Claim:
     or claim_type = BODILY_INJURY
   multiple_parties_flag: boolean, default false; set by IN-002
   parse_confidence: decimal(4,3), range 0.000–1.000, nullable; minimum confidence across required extracted fields
-  coverage_status: enum [CONFIRMED, EXCLUDED, LAPSED, DISPUTED, DENIED, PENDING_REVIEW],
+  coverage_status: enum [CONFIRMED, EXCLUDED, LAPSED, DISPUTED, DENIED],
     nullable until CV-001
+    — DENIED may only be written by human WorkItem resolution; the agent MUST NOT set this value
   coverage_denial_reason: string, max 1000 chars, nullable; populated only when specialist sets
     coverage_status = DENIED
-  severity_score: integer, range 1–10, nullable until SV-001
+  severity_score: integer, range ≥ 1 (maximum achievable: 13), nullable until SV-001
   severity_level: enum [LOW, MEDIUM, HIGH, CRITICAL], computed from severity_score; read-only
-    (LOW: 1–3, MEDIUM: 4–5, HIGH: 6–7, CRITICAL: 8–10)
-  assigned_adjuster_id: string, FK to CRM User, nullable until RT-001 or human override
+    (LOW: 1–3, MEDIUM: 4–5, HIGH: 6–7, CRITICAL: ≥ 8; maximum achievable score is 13)
+  assigned_adjuster_id: string, FK to CRM User (on CRM user deactivation: set null), nullable until RT-001 or human override
   crm_claim_id: string, FK to CRM Claim record (returned by RT-002), nullable until RT-002
-  acknowledged_at: ISO 8601 timestamp, UTC, nullable until AC-001
-  acknowledgment_type: enum [FULL, INTERIM], nullable until AC-001
-    FULL: adjuster assigned before acknowledgment sent
-    INTERIM: adjuster not yet assigned (claim in review); acknowledgment sent with generic adjuster promise
+  interim_acknowledged_at: ISO 8601 timestamp, UTC, nullable; set when INTERIM acknowledgment is sent; remains null if FULL was sent as the first (and only) acknowledgment
+  full_acknowledged_at: ISO 8601 timestamp, UTC, nullable; set when FULL acknowledgment is sent, regardless of whether INTERIM preceded it; null until FULL ack is sent
+  acknowledged_at: ISO 8601 timestamp, UTC, nullable; computed = COALESCE(interim_acknowledged_at, full_acknowledged_at); set once the first acknowledgment fires (FULL or INTERIM); SLA computation uses this field; immutable once set
   sla_deadline: ISO 8601 timestamp, UTC, computed: received_at + 2 hours, immutable
   sla_status: enum [ON_TRACK, AT_RISK, BREACHED], computed; updated by AC-002 on schedule
+  halt_reason: string, max 500 chars, nullable; set when processing_status = HALTED; describes failure type (e.g., "SOAP_FAILURE: policy admin system unresponsive after 3 retries")
   created_at: ISO 8601 timestamp, UTC, immutable
   updated_at: ISO 8601 timestamp, UTC
 ```
@@ -396,7 +412,7 @@ Claim:
 ```
 ParsedField:
   id: UUID, primary key, immutable
-  claim_id: UUID, foreign key to Claim, required
+  claim_id: UUID, foreign key to Claim (cascade delete), required
   field_name: string, max 100 chars, required
     (one of: policy_number, claimant_name, claimant_email, claimant_phone,
      claim_type, incident_date, incident_location, estimated_loss_amount,
@@ -416,9 +432,9 @@ ParsedField:
 ```
 WorkItem:
   id: UUID, primary key, immutable
-  type: enum [FIELD_COMPLETION, COVERAGE_REVIEW, SEVERITY_REVIEW,
+  type: enum [FIELD_COMPLETION, DUPLICATE_REVIEW, COVERAGE_REVIEW, SEVERITY_REVIEW,
     ROUTING_OVERRIDE, SOAP_FAILURE, SYSTEM_ERROR], required
-  claim_id: UUID, foreign key to Claim, required
+  claim_id: UUID, foreign key to Claim (restrict delete — a Claim with open WorkItems cannot be deleted), required
   status: enum [OPEN, IN_PROGRESS, RESOLVED, ESCALATED], required, default OPEN
   assigned_role: enum [SPECIALIST, SUPERVISOR, CLAIMS_MANAGER, IT_ONCALL], required
   assigned_to: UUID, foreign key to User, nullable
@@ -437,6 +453,17 @@ WorkItem:
     OPEN or IN_PROGRESS → ESCALATED  (sla_deadline passes; re-assigned to next role)
     ESCALATED → RESOLVED  (escalation target resolves)
 ```
+
+### Specialist WorkItem UI (Scope Note)
+
+The WorkItem JSON schemas above define what data is carried. The actual UI that specialists and supervisors see when resolving WorkItems is out of scope for this spec but is a hard delivery dependency — without a usable UI, the WorkItem SLA times (20 min FIELD_COMPLETION, 30 min SEVERITY_REVIEW) are not achievable. The UI must support at minimum:
+- Raw input text + extracted fields displayed side-by-side for FIELD_COMPLETION
+- Inline edit of any extracted field (including claim_type and estimated_loss_amount, regardless of agent confidence)
+- Explicit enforcement of the coverage_status = DENIED restriction: the DENIED value must not be available as a direct field edit; it is only settable via COVERAGE_REVIEW WorkItem resolution
+- One-click WorkItem resolution with required resolution note field
+- Queue view showing all OPEN WorkItems for the logged-in role, sorted by sla_deadline ascending
+
+UI wireframes, resolution-time targets, and accessibility requirements must be specified jointly with the build team before UI development begins [Assumption B6].
 
 ### WorkItem Assignment Algorithm
 When a WorkItem is created, assigned_to is set as follows:
@@ -463,8 +490,8 @@ User:
 ```
 AuditEvent:
   id: UUID, primary key, immutable
-  claim_id: UUID, foreign key to Claim, required
-  event_type: enum — controlled vocabulary (extendable with versioned governance):
+  claim_id: UUID, foreign key to Claim (restrict delete — audit records must not be deleted with claim), required
+  event_type: enum [
     CLAIM_RECEIVED,
     PARSING_STARTED, PARSING_COMPLETED, PARSING_LOW_CONFIDENCE,
     FIELD_COMPLETED_BY_HUMAN, FIELD_OVERRIDDEN_BY_HUMAN,
@@ -476,8 +503,9 @@ AuditEvent:
     ACKNOWLEDGMENT_SENT,
     WORKITEM_CREATED, WORKITEM_ASSIGNED, WORKITEM_RESOLVED, WORKITEM_ESCALATED,
     SLA_AT_RISK_ALERT, SLA_BREACHED,
-    DMS_STORE_FAILED, DUPLICATE_DETECTED, CALLBACK_TASK_CREATED,
-    CLAIM_COMPLETED, CLAIM_HALTED
+    DMS_STORE_FAILED, DUPLICATE_DETECTED, DUPLICATE_REVIEW_RESOLVED, CALLBACK_TASK_CREATED,
+    CLAIM_COMPLETED, CLAIM_HALTED, CLAIM_RESUMED
+  ], required
   actor_type: enum [AGENT, HUMAN], required
   actor_id: string, required (agent version string or User.id)
   from_value: string, nullable
@@ -485,7 +513,7 @@ AuditEvent:
   timestamp: ISO 8601 timestamp, UTC, immutable
 ```
 
-Logs are immutable. Retention: 7 years (regulatory compliance). Claimant PII in audit log is stored in hashed form (name → hash, email → hash, phone → hash). Full PII is accessible only through WorkItem and CRM UIs for authorised users.
+Logs are immutable. Retention: 7 years (regulatory compliance). Claimant PII in audit log is stored as salted SHA-256 hashed values: SHA-256(value + claim_id) for name, email, and phone. This is **pseudonymization for audit correlation** — not anonymization. An auditor with access to the claim record can still reverse-correlate via the claim_id salt. Do not cite audit log hashes as evidence of anonymization in compliance filings. Full PII is accessible only through WorkItem and CRM UIs for authorised users.
 
 ---
 
@@ -495,8 +523,8 @@ Logs are immutable. Retention: 7 years (regulatory compliance). Claimant PII in 
 
 Run modules in this order so that inputs exist before they are consumed:
 
-1. **IN-001** (receipt + DMS store) → **IN-002** (parse + enrich)
-2. **IN-002** complete → **PL-001** (policy lookup) — only if parse passes threshold; otherwise FIELD_COMPLETION WorkItem
+1. **IN-001** (receipt + DMS store) → **IN-002** (parse + enrich) → **IN-003** (duplicate detection)
+2. **IN-003** complete (no duplicate or duplicate resolved as DISTINCT/REPLACE) → **PL-001** (policy lookup) — only if parse passes threshold; otherwise FIELD_COMPLETION or DUPLICATE_REVIEW WorkItem holds the claim
 3. **PL-001** success → **CV-001** (coverage type check) → **CV-002** (exclusion check)
 4. **CV-002** complete with CONFIRMED → **SV-001** (severity scoring) → **SV-002** (escalation check)
 5. **SV-002** complete → **RT-001** (adjuster assignment) → **RT-002** (CRM update)
@@ -511,31 +539,19 @@ Run modules in this order so that inputs exist before they are consumed:
 
 **IN-001 — Claim Receipt**
 - Trigger: inbound claim event from any channel (email webhook, transcript upload, web form submit)
+- **Idempotency check (before creating a Claim record):** check for an existing Claim with the same source_message_id received within the last `DUPLICATE_WINDOW_MINUTES`. If found: discard the incoming event (webhook retry or double-submit); do not create a second Claim; return the existing Claim.id to the caller. Idempotency keys by channel: EMAIL = MIME Message-ID header; PHONE_TRANSCRIPT = upload session ID provided by the transcript system; WEB_FORM = form submission token. Store source_message_id on the Claim record (max 500 chars, nullable for channels that provide no deduplication key).
 - Action:
   1. Set Claim.received_at = current UTC timestamp (immutable; SLA clock starts)
   2. Set Claim.processing_status = PARSING
   3. Store raw_input in DMS: POST /documents with document_type = FNOL_RAW (see Integration 3)
-  4. Set Claim.raw_input_document_id from DMS response
+  4. Set Claim.raw_input_document_id from DMS response (or null when DMS store fails)
   5. Set Claim.source_channel from inbound channel identifier
   6. Log CLAIM_RECEIVED to AuditEvent
 - This step must complete within 30 seconds of receipt; if DMS store fails, log warning and continue (DMS store is non-blocking — see Integration 3 fallback)
 
-**IN-003 — Potential Duplicate Detection**
-- Trigger: after IN-002 parses sufficient fields (policy_number, incident_date, and claimant identifier when available)
-- Action: search claims received within `DUPLICATE_WINDOW_MINUTES` where:
-  - policy_number matches, and
-  - incident_date matches, and
-  - claimant_id matches when available, else claimant email/phone hash matches
-- If match found:
-  - Log `DUPLICATE_DETECTED`
-  - Create FIELD_COMPLETION WorkItem with note "Potential duplicate FNOL detected; verify merge vs. distinct claim"
-  - Set processing_status = AWAITING_FIELD_COMPLETION
-  - Do not auto-create a second active claim workflow until human resolution
-- If no match: continue normal flow
-
 **IN-002 — Field Extraction and Enrichment**
 - Trigger: immediately after IN-001
-- Inputs: raw_input retrieved from DMS by raw_input_document_id; source_channel
+- Inputs: raw_input retrieved from DMS by raw_input_document_id when not null; otherwise from in-memory fallback buffer initialized in IN-001; source_channel
 
 **Channel pre-processing before NLP extraction:**
 - EMAIL: extract body text only; strip headers and footers; if attachments present (PDF or text), append attachment text after body; images in attachments are noted in a ParsedField with field_name = "attachment_images_present" and extracted_value = "true" (for adjuster review later — not processed by V1)
@@ -551,7 +567,7 @@ Run modules in this order so that inputs exist before they are consumed:
 | incident_date | NLP date extraction; relative dates ("yesterday", "last Tuesday") resolved to absolute date using received_at | Yes |
 | incident_location | NLP location extraction; derive incident_state from location string | No (nullable) |
 | estimated_loss_amount | NLP numeric extraction; currency normalised to USD | No (nullable) |
-| bodily_injury_mentioned | Binary NLP classification: true if any of: injury, hurt, injured, hospital, ambulance, pain, medical treatment, broken, fracture found in text | No (but flags bodily_injury_flag) |
+| bodily_injury_mentioned | Binary NLP classification: true if any of: injury, hurt, injured, hospital, ambulance, pain, medical treatment, fracture, broken bone, broken arm, broken leg, broken rib found in text. "broken" alone is NOT a trigger — must be followed by a body-part term. | No (but flags bodily_injury_flag) |
 | multiple_parties_mentioned | Binary NLP: true if: other driver, third party, another vehicle, other person involved | No (but flags multiple_parties_flag) |
 
 **Confidence and thresholds:**
@@ -580,6 +596,38 @@ Run modules in this order so that inputs exist before they are consumed:
 ```
 SLA: WorkItem must be resolved within 20 minutes during operating hours; unresolved after 20 minutes → escalate to SUPERVISOR.
 
+**IN-003 — Duplicate Detection**
+- Trigger: immediately after IN-002 (only if IN-002 exits with processing_status = POLICY_LOOKUP; not triggered for claims already in AWAITING_FIELD_COMPLETION)
+- Inputs: Claim.policy_number, Claim.incident_date, Claim.claimant_id (or claimant email/phone SHA-256 hash if claimant_id is null)
+- Action: query the FPA claim store for claims received in the past `DUPLICATE_WINDOW_MINUTES` where ALL of the following match:
+  - policy_number = this claim's policy_number, AND
+  - incident_date = this claim's incident_date, AND
+  - claimant_id = this claim's claimant_id (if both non-null), OR SHA-256(email) or SHA-256(phone) matches if claimant_id is null
+- If no match: continue to PL-001 (no action)
+- If match found:
+  - Log DUPLICATE_DETECTED
+  - Create DUPLICATE_REVIEW WorkItem (see content schema below); set assigned_role = SPECIALIST
+  - Set processing_status = AWAITING_DUPLICATE_REVIEW
+  - Do NOT proceed to PL-001 until WorkItem is resolved
+  - INTERIM acknowledgment: if not already sent, trigger AC-001 (INTERIM) with note that the claim is under review
+
+**DUPLICATE_REVIEW WorkItem content:**
+```json
+{
+  "claim_id": "<uuid of this claim>",
+  "duplicate_candidate_id": "<uuid of matching claim>",
+  "duplicate_candidate_received_at": "<ISO 8601>",
+  "match_basis": "<policy_number+incident_date+claimant_id | policy_number+incident_date+email_hash | ...>",
+  "agent_note": "Potential duplicate FNOL. Review both claims and choose a resolution."
+}
+```
+**Resolution options (specialist selects one):**
+- `MERGE`: this claim is a true duplicate; discard this claim, continue processing the earlier duplicate_candidate_id; set this claim's processing_status = HALTED with halt_reason = "DUPLICATE: merged into {duplicate_candidate_id}"
+- `DISTINCT`: claims are distinct (different incidents or different parties); resume this claim from POLICY_LOOKUP; log DUPLICATE_REVIEW_RESOLVED
+- `REPLACE`: this claim supersedes the earlier one (claimant resubmitted with corrections); halt duplicate_candidate_id, resume this claim from POLICY_LOOKUP; log DUPLICATE_REVIEW_RESOLVED on both claims
+
+WorkItem SLA: 20 minutes during operating hours; escalate to SUPERVISOR after 20 minutes.
+
 ---
 
 ### Module PL — Policy Lookup
@@ -589,7 +637,7 @@ SLA: WorkItem must be resolved within 20 minutes during operating hours; unresol
 - Input: Claim.policy_number
 - Action: call GetPolicyByNumber SOAP operation (see Integration 2)
 - On success (policy found):
-  - Populate: policy_id, policy_status, policy_effective_date, policy_expiration_date, coverage_types, deductible_amount, coverage_limits, exclusions_list
+  - Populate: policy_id, policy_status, policy_effective_date, policy_expiration_date, coverage_types_list, exclusions_list; also store deductible_amount and coverage_limits (reserved for V2 adjuster-facing use — not consumed by any V1 processing module)
   - Evaluate policy_status:
     - ACTIVE: proceed to CV-001
     - LAPSED or CANCELLED or SUSPENDED: set coverage_status = LAPSED; create COVERAGE_REVIEW WorkItem; set processing_status = AWAITING_COVERAGE_REVIEW; trigger AC-001 (INTERIM)
@@ -607,6 +655,7 @@ SLA: WorkItem must be resolved within 20 minutes during operating hours; unresol
 
 **CV-001 — Coverage Type Check**
 - Trigger: processing_status = COVERAGE_VALIDATION, policy_status = ACTIVE
+- Hard constraint: the agent MUST NOT set coverage_status = DENIED. Only a human via WorkItem resolution may set DENIED. The agent sets EXCLUDED, DISPUTED, or LAPSED only.
 - Action:
   1. Check: claim_type ∈ policy coverage_types_list
   2. Check: incident_date ∈ [policy_effective_date, policy_expiration_date] (inclusive)
@@ -663,13 +712,15 @@ Assigned to SUPERVISOR. SLA: 45 minutes during operating hours; escalate to CLAI
 | bodily_injury_flag = true | +3 |
 | claim_type = LIABILITY | +2 |
 | multiple_parties_flag = true | +1 |
-| Prior FNOL claims by this claimant_id in past SERIAL_CLAIMANT_WINDOW_DAYS ≥ SERIAL_CLAIMANT_THRESHOLD | +1 (flag for adjuster note; does not change severity level alone) |
+| Prior FNOL claims by this claimant_id in past SERIAL_CLAIMANT_WINDOW_DAYS ≥ SERIAL_CLAIMANT_THRESHOLD | +1 (flag for adjuster note; does not change severity level alone). **Data source:** use `prior_claims_count` from CRM Endpoint 1 (returned during IN-002 enrichment) as the authoritative value — it covers claims predating FPA deployment. The FPA's own claim store supplements this after 12 months of operation. If CRM contact not found (claimant_id = null): score 0 for this component and log absence in SEVERITY_SCORED AuditEvent. |
 
 **Severity level derivation:**
 - Score 1–3: LOW
 - Score 4–5: MEDIUM
 - Score 6–7: HIGH
 - Score ≥ 8: CRITICAL
+
+**Threshold rationale:** CRITICAL (≥ 8) requires at least two compounding risk factors, or one extreme factor combined with a secondary signal. For example: high financial loss ($150K+, +6 points) alone reaches HIGH (6); it requires bodily injury (+3) to reach CRITICAL (9). LIABILITY + bodily injury + loss ≥ $50K (+2+3+4 = 9) also reaches CRITICAL. A claim with only financial risk ($150K+, no injury, no liability) scores HIGH — which still receives human review via is_high_value = true. The boundary reflects the design assumption that compound risk is categorically more dangerous than any single factor in isolation. Pending calibration against historical outcome data [Assumption D3].
 
 Set Claim.severity_score and Claim.severity_level. Log SEVERITY_SCORED.
 
@@ -776,31 +827,33 @@ Assigned to SUPERVISOR. SLA: 15 minutes; escalate to CLAIMS_MANAGER after 15 min
   - PHONE_TRANSCRIPT source: if claimant email available in CRM, send via CRM Endpoint 4; also create an adjuster callback task in CRM and log `CALLBACK_TASK_CREATED`
     If no email available: create callback task only; log warning that email acknowledgment was not possible
 
-- Set Claim.acknowledged_at = current UTC timestamp
-- Set Claim.acknowledgment_type = FULL or INTERIM
-- Log ACKNOWLEDGMENT_SENT
+- If sending INTERIM: set Claim.interim_acknowledged_at = current UTC timestamp
+- If sending FULL: set Claim.full_acknowledged_at = current UTC timestamp
+- (Claim.acknowledged_at = computed COALESCE; set automatically)
+- Log ACKNOWLEDGMENT_SENT (to_value = "FULL" or "INTERIM")
 
 **If INTERIM was sent and routing completes later:**
-- When processing_status transitions to COMPLETED: send a follow-up FULL acknowledgment (with adjuster name) to claimant via same channel. Set a second acknowledged_at_full timestamp (additional field, not in the base Claim entity — stored in AuditEvent ACKNOWLEDGMENT_SENT with to_value = "FULL").
+- When processing_status transitions to COMPLETED: send a follow-up FULL acknowledgment (with adjuster name) to claimant via same channel. Set Claim.full_acknowledged_at = current UTC timestamp. Log ACKNOWLEDGMENT_SENT with to_value = "FULL".
 
 **AC-002 — SLA Monitoring**
+- **Operating hours note:** Claim SLA (received_at + 2 hours) counts on calendar time, 24/7. WorkItem SLAs count only during operating hours [Assumption C1: assumed M–F 08:00–18:00 local time]. Claims received outside operating hours that enter an AWAITING_* state will breach the Claim SLA if an INTERIM acknowledgment has not already been sent. The autonomous INTERIM acknowledgment path has no operating-hours dependency — it fires at any time.
 - Runs on two triggers:
   1. On every processing_status change for any Claim
   2. On a background timer: every 5 minutes, evaluate all Claims with processing_status ≠ COMPLETED and processing_status ≠ HALTED
 - SLA computation:
   - time_remaining = Claim.sla_deadline - now
   - If acknowledged_at is not null: sla_status remains as set at acknowledgment time (do not retroactively change)
-  - Else if time_remaining > SLA_AT_RISK_BUFFER_MINUTES: sla_status = ON_TRACK
+  - Else if now > Claim.sla_deadline:
+    - Set sla_status = BREACHED
+    - Log SLA_BREACHED
+    - Notify CLAIMS_MANAGER
   - Else if time_remaining ≤ SLA_AT_RISK_BUFFER_MINUTES:
     - Set sla_status = AT_RISK
     - Log SLA_AT_RISK_ALERT
     - Notify assigned SUPERVISOR via CRM notification (push to supervisor dashboard)
     - If any OPEN WorkItem exists for this claim: escalate WorkItem immediately (do not wait for WorkItem SLA timer)
-  - Else if now > sla_deadline:
-    - Set sla_status = BREACHED
-    - Log SLA_BREACHED
-    - Notify CLAIMS_MANAGER
-  - Else: sla_status = ON_TRACK
+  - Else:
+    - sla_status = ON_TRACK
 
 ---
 
@@ -813,6 +866,11 @@ Assigned to SUPERVISOR. SLA: 15 minutes; escalate to CLAIMS_MANAGER after 15 min
 **Base URL:** `[CRM_BASE_URL]` — to be provided by client IT team [Assumption A3]
 **Timeout:** 5 seconds per request
 **Retry:** HTTP 5xx → 3 retries, exponential backoff (2s, 4s, 8s). HTTP 4xx → no retry; log error.
+**Rate limits (V1 build contract):** 60 requests/min sustained, 120 requests/min burst per FPA integration user.
+If CRM enforces stricter limits in production, update config before go-live (do not change code):
+`CRM_RATE_LIMIT_SUSTAINED_RPM`, `CRM_RATE_LIMIT_BURST_RPM`.
+429 handling: honor `Retry-After` header if present; otherwise wait 10s; retry up to 3 times; on final failure create SYSTEM_ERROR WorkItem.
+**OAuth token failure:** If token refresh fails: retry up to 2 times with 5s interval. If still failing: create SYSTEM_ERROR WorkItem; set sla_status = AT_RISK for all claims currently in processing; alert IT_ONCALL. Do not proceed with any CRM calls during token failure.
 
 **Endpoint 1 — Claimant lookup:**
 ```
@@ -879,7 +937,7 @@ Request:
   }
 }
 Response 200: { "communication_id": string, "sent_at": ISO 8601 timestamp }
-Response 404: contact_id not found → log error; fallback: if claimant email was directly extracted, attempt direct SMTP send [Assumption A5]
+Response 404: contact_id not found → log error; create SYSTEM_ERROR WorkItem; a specialist must manually send the acknowledgment. Direct SMTP is out of scope for V1 — no SMTP integration contract exists in this spec.
 ```
 
 ---
@@ -893,6 +951,10 @@ Response 404: contact_id not found → log error; fallback: if claimant email wa
 
 **Timeout:** 10 seconds (legacy system; allow generous timeout)
 **Retry:** SOAP fault → 3 retries, 5-second intervals. Connection timeout → 3 retries, exponential backoff (5s, 10s, 20s). HTTP 4xx (proxy errors) → no retry; create SOAP_FAILURE WorkItem immediately.
+**Rate limits (V1 build contract):** 30 SOAP calls/min sustained, 60/min burst.
+If policy admin enforces stricter limits, update config before go-live:
+`SOAP_RATE_LIMIT_SUSTAINED_RPM`, `SOAP_RATE_LIMIT_BURST_RPM`.
+**Concurrency enforcement:** Limit concurrent SOAP calls via a connection pool or counting semaphore with `max_pool_size` = 5 (deployment config: `MAX_SOAP_CONCURRENT_CALLS`, default 5). If all connections occupied, incoming requests queue (do not fail fast). Connection pool size must be confirmed with IT before load testing.
 
 **Operation 1 — GetPolicyByNumber:**
 ```xml
@@ -941,14 +1003,19 @@ Request:
   <pol:claimType>{claim_type}</pol:claimType>
 </pol:CheckExclusions>
 
-Response:
+Response (success):
 <CheckExclusionsResponse>
   <excluded>true|false</excluded>
   <matchedExclusions>
     <exclusion code="string" text="string" similarity="decimal 0.00–1.00"/>
   </matchedExclusions>
 </CheckExclusionsResponse>
+
+Response (fault):
+<PolicyFault><code>INVALID_POLICY_ID|SERVICE_UNAVAILABLE</code><message>string</message></PolicyFault>
 ```
+On INVALID_POLICY_ID fault: log error; treat as excluded = false with supervisor dashboard alert (policy record inconsistency — CV check skipped).
+On SERVICE_UNAVAILABLE fault: retry per Integration 2 retry spec; if retries fail: create SOAP_FAILURE WorkItem.
 
 **Fallback if SOAP unavailable:** Do NOT proceed with unverified coverage. Create SOAP_FAILURE WorkItem; halt claim processing; alert IT_ONCALL. This is the hardest failure mode — no workaround in V1.
 
@@ -961,6 +1028,9 @@ Response:
 **Base URL:** `[DMS_BASE_URL]` — to be provided by client IT [Assumption A3]
 **Timeout:** 5 seconds
 **Retry:** HTTP 5xx → 2 retries, 2s backoff
+**Rate limits (V1 build contract):** 120 requests/min sustained, 240/min burst.
+If DMS enforces stricter limits, update config before go-live:
+`DMS_RATE_LIMIT_SUSTAINED_RPM`, `DMS_RATE_LIMIT_BURST_RPM`.
 
 **Endpoint 1 — Store document:**
 ```
@@ -986,6 +1056,7 @@ Response 413: content too large (>10MB) → log warning; proceed without storing
 | WorkItem Type | Trigger | Assigned Role | SLA | Timeout Action |
 |---|---|---|---|---|
 | FIELD_COMPLETION | Parse confidence < 0.90 or required field missing | SPECIALIST | 20 min | Escalate to SUPERVISOR |
+| DUPLICATE_REVIEW | Duplicate candidate found in DUPLICATE_WINDOW_MINUTES; sets AWAITING_DUPLICATE_REVIEW | SPECIALIST | 20 min | Escalate to SUPERVISOR |
 | COVERAGE_REVIEW | Exclusion match, lapsed policy, or claim type mismatch | SUPERVISOR | 45 min | Escalate to CLAIMS_MANAGER |
 | SEVERITY_REVIEW | HIGH/CRITICAL severity, is_high_value, or bodily_injury_flag | SUPERVISOR | 30 min | Escalate to CLAIMS_MANAGER |
 | ROUTING_OVERRIDE | No eligible adjuster available | SUPERVISOR | 15 min | Escalate to CLAIMS_MANAGER |
@@ -994,9 +1065,31 @@ Response 413: content too large (>10MB) → log warning; proceed without storing
 
 ---
 
+## Deployment Strategy
+
+**Phase 0 — Shadow mode (weeks 1–4 of pilot):** The FPA runs against live inbound claims but makes no autonomous decisions. All outputs (extracted fields, coverage recommendations, severity scores, routing proposals) are logged and compared against specialist decisions. Shadow metrics establish baseline accuracy before any autonomous action is taken.
+
+**Phase 1 — Partial rollout (weeks 5–8):** EMAIL channel claims only; low-complexity filter (claim_type ≠ BODILY_INJURY, estimated_loss_amount < $10,000). Autonomous processing enabled for this subset. All other claims follow shadow-mode path. Pilot accuracy metrics reviewed weekly. Note: the fraction of total volume this represents depends on channel distribution and loss-amount distribution — both unknown at spec time. Builder must estimate from historical intake data before Phase 1 rollout begins.
+
+**Phase 2 — Full autonomous path (week 9+):** All claim types enabled once Phase 1 accuracy thresholds are met (per Artifact 4 production readiness table). Human shadow review shifts from full-sample to 10% random audit.
+
+**Kill switch:** A deployment configuration flag (`AUTONOMOUS_PROCESSING_ENABLED`, default false) must be present before go-live. Setting it to false reverts all claims to AWAITING_FIELD_COMPLETION WorkItems (full human review) without code changes. Operations team must have documented procedure for activating the kill switch in under 5 minutes.
+
+**Operating cost note:** Agent operates 24/7 per the SLA requirements. Cost estimate: ~5–8% of 300 claims/day × 365 calendar days = ~5,500–8,800 complex reasoning calls/year × $1–$2/call = ~$5,500–$17,600/year. Materially below the $465K–$555K value estimate. Builder must validate against chosen model provider's actual per-call pricing before go/no-go.
+
+---
+
 ## Audit & Logging
 
 Every Claim state transition and every human action must produce an AuditEvent (see entity definition above). Logs are immutable, append-only. 7-year retention.
+
+**Required to_value content for key events (to_value is mandatory for these; nullable only for events listed below):**
+- `PARSING_COMPLETED`: to_value = `{"claim_type": "<value>", "confidence": 0.00, "parse_confidence": 0.00}` — required; this is the record that enables retrospective classification accuracy audits
+- `PARSING_LOW_CONFIDENCE`: to_value = `{"missing_fields": ["<field>"], "low_confidence_fields": [{"field": "<name>", "confidence": 0.00}]}`
+- `SEVERITY_SCORED`: to_value = `{"severity_score": 0, "severity_level": "<level>", "components": [{"condition": "<text>", "points": 0}]}`
+- All `*_BY_HUMAN` events: from_value = old value, to_value = new value (both required; nullable only if no prior value existed)
+
+**Applicable regulatory context:** NAIC Unfair Claims Settlement Practices Act (model law; confirm which operating states have adopted it); state DOI acknowledgment timing requirements (see Assumption B4); NAIC Insurance Data Security Model Law (for PII handling and audit log controls). Builder must confirm applicable state-level adoptions with legal before deployment. The 7-year retention period is a conservative default pending legal confirmation of the shortest applicable state requirement.
 
 The supervisor dashboard aggregates:
 - Claims in each processing_status, by hour
@@ -1058,6 +1151,7 @@ This document defines how to verify that the FNOL Processing Agent (FPA) is work
 - bodily_injury_flag = false (no injury language detected)
 - coverage_status = CONFIRMED
 - severity_score: estimated_loss null (+2) = 2 → severity_level = LOW
+- **Verify:** prior claims count (1) < SERIAL_CLAIMANT_THRESHOLD (5) → SERIAL_CLAIMANT signal does NOT fire; severity_score remains 2 (not 3)
 - No SV-002 escalation (LOW, not high-value, no bodily injury)
 - Adjuster assigned: AUTO_COLLISION specialist, Georgia coverage, not at queue limit
 - CRM claim record created (crm_claim_id populated)
@@ -1157,7 +1251,7 @@ This document defines how to verify that the FNOL Processing Agent (FPA) is work
 **Then:**
 - policy_number: not extracted
 - claimant contact: not extracted
-- claim_type: ambiguous (PROPERTY_DAMAGE or OTHER; low confidence)
+- claim_type: ambiguous (for example PROPERTY_DAMAGE vs LIABILITY; low confidence)
 - incident_date: not extracted
 - parse_confidence = 0.00 (no required fields)
 - FIELD_COMPLETION WorkItem created with all 4 required fields in missing_or_low_confidence_fields list
@@ -1317,7 +1411,8 @@ Both: AUTO_COLLISION, no bodily injury, coverage CONFIRMED
 **Then:**
 - Claim A: is_high_value = false; if severity otherwise LOW/MEDIUM → no SEVERITY_REVIEW → autonomous routing
 - Claim B: is_high_value = true → SEVERITY_REVIEW WorkItem created regardless of severity_level
-- **Verify:** threshold is inclusive at exactly $50,000.00
+- **Verify:** threshold is inclusive at exactly $50,000.00; the ≥ comparison uses decimal(12,2) arithmetic — no floating-point ambiguity
+- **Verify:** estimated_loss_amount is stored and compared as decimal(12,2) per the schema; test rejects any implementation using floating-point types (float/double) for this field
 
 ---
 
@@ -1365,6 +1460,22 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 ---
 
+### V4-07 — Semantic Classification Error Produces Auditable Signal
+**Given:** Email describes an AUTO_THEFT incident ("my car was stolen from the parking lot"), but NLP classifies claim_type = AUTO_COLLISION at confidence 0.91 (above threshold — extraction proceeds autonomously)
+
+**When:** Claim is routed and completed
+
+**Then:**
+- Claim routes to an AUTO_COLLISION adjuster (wrong specialty — the routing algorithm uses the extracted claim_type)
+- The routing is wrong, but no WorkItem is created (confidence was above threshold)
+- **Verify:** AuditEvent PARSING_COMPLETED event contains to_value = `{"claim_type": "AUTO_COLLISION", "confidence": 0.91, "parse_confidence": 0.91}` per the required schema (Artifact 3 Audit & Logging section) — this is the record that makes the monthly accuracy audit possible
+- **Verify:** the monthly labeled-test accuracy measurement (Artifact 1: ≥ 93% claim type classification accuracy) would catch this failure in sample review
+- **Verify:** when the adjuster identifies the error and the WorkItem is updated with corrected claim_type = AUTO_THEFT, AuditEvent records FIELD_OVERRIDDEN_BY_HUMAN with from_value = AUTO_COLLISION, to_value = AUTO_THEFT
+
+**Purpose:** This test verifies that high-confidence misclassifications are auditable (not silently wrong). The system cannot prevent all semantic errors at runtime, but it must produce the signals that allow humans to detect them in audit.
+
+---
+
 ## V5 — SLA Monitoring
 
 ### V5-01 — SLA Clock Starts at Receipt, Not at Parsing Start
@@ -1406,15 +1517,16 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 ---
 
-### V5-04 — SLA Already Breached When Agent Starts Processing (Edge Case)
-**Given:** Email was sent at 08:00 UTC but not ingested until 10:05 UTC (email server delay); received_at = 10:05 UTC; sla_deadline = 12:05 UTC; this is fine — the SLA clock uses the system's received_at, not the email's sent timestamp
+### V5-04 — SLA Boundary: Email Ingestion Delay
+**Given:** Email was sent at 08:00 UTC but not ingested until 10:05 UTC (email server delay); received_at = 10:05 UTC; sla_deadline = 12:05 UTC
 
 **When:** Claim is processed and acknowledged at 10:08 UTC
 
 **Then:**
 - sla_status = ON_TRACK (acknowledged_at 10:08 < sla_deadline 12:05)
-- **Clarification:** The SLA is measured from system receipt, not from claimant's send time. This is by design and must be documented in operational procedures.
-- **Verify:** sla_deadline is always received_at + 2h; sent timestamps from email metadata are NOT used
+- **Verify:** sla_deadline = received_at + 2h; sent timestamps from email metadata are NOT used as the SLA start
+
+**Design rationale and known limitation:** The FPA measures SLA from system receipt (received_at), not from claimant send time. This is necessary because email infrastructure delays are outside the insurer's control. However, a claimant who sent at 08:00 and was not acknowledged until 10:08 experienced a 2h8min wait — technically "on-track" by system measure but potentially unsatisfactory. **V1 mitigation (partial):** If the email Date header is present, not in the future, and within 15 minutes before system ingestion time, use the Date header as received_at. Date header must be rejected (fall back to ingestion time) if: (a) header is absent; (b) header timestamp is in the future (sender clock misconfiguration or timezone error); (c) header predates ingestion by more than 15 minutes (infrastructure or relay delay). This guards against backdated headers — either malicious or from misconfigured sender mail servers — being used to artificially advance the SLA clock. Document the system-receipt convention in claimant-facing operational procedures.
 
 ---
 
@@ -1453,10 +1565,10 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 **When:** AC-001 attempts to send acknowledgment
 
 **Then:**
-- Fallback: attempt direct SMTP send to extracted claimant email address (from IN-002 ParsedField)
-- If SMTP available and email extracted: send acknowledgment; log ACKNOWLEDGMENT_SENT with note "Sent via SMTP fallback (contact not in CRM)"
-- If email not extracted AND SMTP unavailable: create SYSTEM_ERROR WorkItem; log acknowledgment as FAILED; supervisor must manually contact claimant
-- **Verify:** acknowledgment failure does NOT silently pass — WorkItem created so a human knows a claimant was not reached
+- No SMTP fallback (SMTP is out of scope for V1 — no SMTP integration contract exists)
+- SYSTEM_ERROR WorkItem created; log acknowledgment as FAILED; specialist must manually contact claimant
+- **Verify:** acknowledgment failure does NOT silently pass — SYSTEM_ERROR WorkItem is created so a human knows a claimant was not reached
+- **Verify:** agent does NOT attempt any out-of-spec channel (no SMTP, no direct API) — failure is surfaced via WorkItem only
 
 ---
 
@@ -1466,7 +1578,7 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 **When:** IN-001 attempts to store raw_input
 
 **Then:**
-- IN-001 proceeds (DMS is non-blocking); raw_input_document_id = null; AuditEvent log: DMS_STORE_FAILED
+- IN-001 proceeds (DMS is non-blocking); raw_input_document_id = null; raw_input cached in-memory for current processing session; AuditEvent log: DMS_STORE_FAILED
 - Parsing continues in-memory; WorkItem NOT created for DMS failure alone
 - Background retry: every 60 seconds for 30 minutes
 - After 30 minutes still failing: SYSTEM_ERROR WorkItem created for IT_ONCALL; supervisor dashboard flag
@@ -1503,6 +1615,34 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 ---
 
+## V8 — Post-Launch Monitoring (Drift Detection)
+
+These checks run continuously in production; they are not one-time tests.
+
+### V8-01 — NLP Extraction Accuracy Drift
+**Signal:** Monthly labeled-set accuracy for claim_type classification drops ≥ 3 percentage points below the baseline established in Phase 0 shadow mode; OR falls below 90% absolute (floor regardless of baseline).
+**Trigger threshold:** Any single month triggering either condition above.
+**Baseline establishment:** Baseline is set at the end of Phase 0 shadow mode (first 4 weeks). If baseline comes in below 93% (the year-1 target), the Phase 1 go/no-go decision must be reviewed — do not proceed to autonomous processing if shadow-mode accuracy is already below target.
+**Response:** Retrain or fine-tune NLP model on recent claims data. Lower PARSE_CONFIDENCE_THRESHOLD temporarily to route more claims to FIELD_COMPLETION while retraining completes.
+**Why this matters:** If the company expands into new lines of business (commercial trucking, marine) or new terminology enters claim descriptions, the pre-trained model's vocabulary distribution shifts. Drift is invisible until accuracy metrics drop.
+
+### V8-02 — Routing Error Rate Monitoring
+**Signal:** Monthly routing accuracy audit (n=200 sample) shows adjuster confirmed wrong > 2% (the ≤ 2% year-1 target).
+**Trigger threshold:** Any month above 2%; two consecutive months above 1.5% (early warning).
+**Response:** Review recent WorkItem FIELD_OVERRIDDEN_BY_HUMAN events for systematic claim_type misclassification patterns; recalibrate scoring weights if needed.
+
+### V8-03 — Coverage False-Clear Rate
+**Signal:** Quarterly reconciliation: claims autonomously cleared (coverage_status = CONFIRMED by agent, no human review) that subsequently raised a coverage dispute.
+**Trigger threshold:** Rate exceeds 1% in any quarterly reconciliation.
+**Response:** Immediate reduction of EXCLUSION_SIMILARITY_THRESHOLD (lower it to flag more claims for COVERAGE_REVIEW) while root cause is identified.
+
+### V8-04 — SLA Breach Pattern
+**Signal:** Weekly SLA compliance rate drops below 92% (below the 95% target, with 3-point buffer for early warning).
+**Trigger threshold:** Two consecutive weeks below 92%.
+**Response:** Review AWAITING_* queue depths and WorkItem resolution times; check if specialist team has been reduced or redeployed.
+
+---
+
 ## Production Readiness Thresholds
 
 All of the following must be true before go-live:
@@ -1517,9 +1657,11 @@ All of the following must be true before go-live:
 | SOAP failure handled gracefully (no unhandled exceptions) | 100% | V6-01 |
 | Duplicate claim detection (no duplicate Claim records) | 100% | V7-01 |
 | INTERIM ack fires on AWAITING state entry | 100% | V5-03 |
-| Coverage false-clear rate (claims cleared by agent, later disputed) | ≤ 1% | V3 suite + 30-day pilot reconciliation |
+All thresholds above must be met in a pre-production pilot of minimum 200 live claims with human shadow review before autonomous processing begins (Phase 0 → Phase 1 gate).
 
-All thresholds must be met in a pre-production pilot of minimum 200 live claims with human shadow review before autonomous processing begins.
+**Phase 1 → Phase 2 exit criterion (coverage false-clear rate):** Coverage false-clear rate cannot be statistically measured at n=200. Instead: after Phase 1 processes ≥ 1,000 autonomous claims, perform a reconciliation check (claims agent-cleared that subsequently raised a coverage dispute). If false-clear rate ≤ 1% at that point, proceed to Phase 2 full rollout. If > 1%: hold Phase 2; investigate root cause; lower EXCLUSION_SIMILARITY_THRESHOLD and re-run Phase 1.
+
+**Statistical power note for coverage false-clear rate:** At n=200, a 1% false-clear rate corresponds to 2 expected events. The probability of observing 0 events from a true 1% rate is ~13% (Poisson approximation) — meaning the pilot could pass this threshold by chance even if the true rate is 1%. For a statistically valid measurement of a ≤ 1% rate, n ≥ 1,000 claims is required (95% confidence interval width ≈ ±0.6%). The coverage false-clear threshold must therefore be validated on a 30-day production sample of ≥ 1,000 autonomously processed claims, not solely on the initial pilot. Pilot evaluation uses the test suite (V3); production evaluation uses reconciliation data.
 # Artifact 5 — Assumptions & Unknowns
 
 ## How to Read This Document
@@ -1587,6 +1729,15 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 
 ---
 
+### A7 — Inbound Event Deduplication Keys Are Available per Channel
+**Statement:** Each inbound channel provides a stable, unique identifier that the FPA can use to detect webhook retries and double-submissions: EMAIL channels provide a MIME Message-ID header; the phone transcript upload system provides a session ID with each upload; and the web form system generates a unique submission token per submission.
+**Why it matters:** Without idempotency keys, a webhook retry (common in event-driven architectures under transient failure) creates two Claim records for the same FNOL. IN-003 (duplicate detection) operates on business-logic duplicates (same claimant, same incident), not on technical duplicates (same webhook fired twice). A technical duplicate would pass IN-003's check because the second Claim would be created before IN-003 runs.
+**Impact if wrong (no unique IDs available):** The FPA must implement a client-side deduplication strategy based on hash of raw_input content + received_at window. This is less reliable than server-side idempotency keys and adds implementation complexity.
+**Status:** `[Flagged for Validation]`
+**Validation question:** "Does the email webhook include a Message-ID or equivalent unique event identifier? Does the transcript upload API include a session or upload ID? Does the web form system generate unique submission tokens?"
+
+---
+
 ## B — Business Rule Assumptions
 
 ### B1 — High-Value Threshold is $50,000 Estimated Loss
@@ -1632,6 +1783,15 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 **Impact if wrong (real-time transcription available):** A real-time processing path could be added as a Phase 2 enhancement. V1 is designed for post-call uploads, which is the simpler and more reliable integration pattern.
 **Status:** `[Inferred — standard call centre practice; not stated in scenario]`
 **Validation question:** "Does the call centre use real-time transcription? Is the transcript available immediately on call completion, or is there a processing delay before upload? Who uploads the transcript — the agent, or is it automated?"
+
+---
+
+### B6 — Human Override Authority Boundaries
+**Statement:** When a specialist resolves a FIELD_COMPLETION WorkItem, they may correct any extracted field including claim_type, incident_date, and estimated_loss_amount — even if the agent's confidence was above the parse threshold. When a supervisor resolves a SEVERITY_REVIEW WorkItem, they may override the agent's severity_level and modify the routing recommendation. These overrides are the full extent of human authority within the FPA; no role may change coverage_status to DENIED without going through a COVERAGE_REVIEW WorkItem.
+**Why it matters:** If override authority is ambiguous, specialists may feel uncertain about whether they are allowed to change a high-confidence extraction, and may leave errors uncorrected rather than risk "overriding the system." Alternatively, if override authority is too broad, a supervisor could bypass the coverage denial constraint by changing coverage_status directly.
+**Impact if wrong:** The WorkItem resolution UI must be designed to permit the authorized overrides and block the prohibited ones. This is a UI requirement that must be specified before the human-in-the-loop interface is built.
+**Status:** `[Inferred — pending stakeholder confirmation of override scope]`
+**Validation question:** "Can a specialist change a claim_type that the agent extracted at high confidence? Can a supervisor downgrade a CRITICAL severity to HIGH during SEVERITY_REVIEW? Are there any fields on the Claim record that no human role may edit directly?"
 
 ---
 
@@ -1681,12 +1841,31 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 
 ---
 
+### D3 — Severity Score Calibration Thresholds Have No Historical Basis
+**Statement:** The severity scoring thresholds (LOW: 1–3, MEDIUM: 4–5, HIGH: 6–7, CRITICAL: ≥ 8) and the scoring weights (e.g., bodily_injury = +3, estimated_loss ≥ $150K = +6) were selected for internal consistency and buildability, not calibrated against historical claims data.
+**Why it matters:** A threshold of CRITICAL ≥ 8 means that a $150K property-damage claim with no injury scores exactly HIGH (6 points), while the same claim combined with bodily injury scores CRITICAL (9 points). Whether this boundary is correct depends on historical outcome data — does the HIGH/CRITICAL distinction predict adjuster assignment errors or litigation exposure? If not, the scoring weights should be recalibrated.
+**Impact if wrong:** Miscalibrated thresholds would send too many or too few claims to SEVERITY_REVIEW, affecting both specialist workload and claims quality. A threshold set too low overloads the review queue; too high lets high-risk claims route autonomously.
+**Status:** `[Flagged for Validation — requires calibration against historical claims data before or during pilot]`
+**Validation question:** "Do you have historical FNOL data that includes final outcome (litigation / coverage dispute / adjuster reassignment) that could be used to validate whether HIGH/CRITICAL severity claims actually had worse outcomes? Can the scoring weights be compared against the specialist team's intuitive routing rules?"
+
+---
+
+### D4 — CRM Adjuster Queue Depth Is Maintained in Near-Real-Time
+**Statement:** The `open_claims_count` field returned by CRM Endpoint 2 (adjuster query) reflects the adjuster's current workload accurately enough for the assignment algorithm to rely on. Specifically: a claim assigned to an adjuster in the last 30 seconds is reflected in that adjuster's open_claims_count before the next routing decision is made.
+**Why it matters:** RT-001's filter `open_claims_count < MAX_ADJUSTER_QUEUE_SIZE` is the primary mechanism preventing adjuster overload. If open_claims_count is eventually consistent with a lag of several minutes, the FPA might assign a 16th claim to an adjuster it believes has 14 — exceeding the configured limit. Under high volume (claims arriving faster than CRM cache updates), multiple claims could be simultaneously routed to the same adjuster.
+**Impact if wrong (significant lag):** The FPA must implement optimistic concurrency control: after assigning a claim, increment a local counter and use it for subsequent routing decisions until CRM confirms. Or: accept that queue limits are approximate and set MAX_ADJUSTER_QUEUE_SIZE conservatively (e.g., 12 instead of 15).
+**Status:** `[Flagged for Validation]`
+**Validation question:** "When the FPA creates a CRM claim record (RT-002) and assigns an adjuster, how quickly does the adjuster's open_claims_count update in CRM? Is it real-time, or is there a sync delay? Does Salesforce CRM expose a real-time event for assignment updates?"
+
+---
+
 ## Summary: What Must Be Validated Before Building
 
 **Priority 1 (blocks building):**
 - A1 — SOAP operations exist and are documented (required for PL and CV modules)
 - A3 — Base URLs and credentials available
 - A6 — CRM adjuster attributes (specialization, region, queue depth) are populated
+- A7 — Inbound event deduplication keys available per channel
 - B1 — High-value threshold formally confirmed
 
 **Priority 2 (blocks accurate operations):**
@@ -1694,8 +1873,11 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 - A4 — DMS API confirmed
 - B5 — Phone transcript upload mechanism confirmed
 - C1 — Operating hours and after-hours handling defined
+- D3 — Severity score calibration validated against historical claims data
+- D4 — CRM adjuster queue depth refresh latency confirmed
 
 **Priority 3 (affects go-live readiness but not build):**
 - A5 — CRM outbound email confirmed
+- B6 — Human override authority boundaries confirmed and reflected in UI design
 - C3 — Acknowledgment templates authored; emergency line confirmed
 - B3 — Regulatory basis for coverage denial constraint confirmed with legal
