@@ -65,6 +65,15 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 
 ---
 
+### A7 — Inbound Event Deduplication Keys Are Available per Channel
+**Statement:** Each inbound channel provides a stable, unique identifier that the FPA can use to detect webhook retries and double-submissions: EMAIL channels provide a MIME Message-ID header; the phone transcript upload system provides a session ID with each upload; and the web form system generates a unique submission token per submission.
+**Why it matters:** Without idempotency keys, a webhook retry (common in event-driven architectures under transient failure) creates two Claim records for the same FNOL. IN-003 (duplicate detection) operates on business-logic duplicates (same claimant, same incident), not on technical duplicates (same webhook fired twice). A technical duplicate would pass IN-003's check because the second Claim would be created before IN-003 runs.
+**Impact if wrong (no unique IDs available):** The FPA must implement a client-side deduplication strategy based on hash of raw_input content + received_at window. This is less reliable than server-side idempotency keys and adds implementation complexity.
+**Status:** `[Flagged for Validation]`
+**Validation question:** "Does the email webhook include a Message-ID or equivalent unique event identifier? Does the transcript upload API include a session or upload ID? Does the web form system generate unique submission tokens?"
+
+---
+
 ## B — Business Rule Assumptions
 
 ### B1 — High-Value Threshold is $50,000 Estimated Loss
@@ -110,6 +119,15 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 **Impact if wrong (real-time transcription available):** A real-time processing path could be added as a Phase 2 enhancement. V1 is designed for post-call uploads, which is the simpler and more reliable integration pattern.
 **Status:** `[Inferred — standard call centre practice; not stated in scenario]`
 **Validation question:** "Does the call centre use real-time transcription? Is the transcript available immediately on call completion, or is there a processing delay before upload? Who uploads the transcript — the agent, or is it automated?"
+
+---
+
+### B6 — Human Override Authority Boundaries
+**Statement:** When a specialist resolves a FIELD_COMPLETION WorkItem, they may correct any extracted field including claim_type, incident_date, and estimated_loss_amount — even if the agent's confidence was above the parse threshold. When a supervisor resolves a SEVERITY_REVIEW WorkItem, they may override the agent's severity_level and modify the routing recommendation. These overrides are the full extent of human authority within the FPA; no role may change coverage_status to DENIED without going through a COVERAGE_REVIEW WorkItem.
+**Why it matters:** If override authority is ambiguous, specialists may feel uncertain about whether they are allowed to change a high-confidence extraction, and may leave errors uncorrected rather than risk "overriding the system." Alternatively, if override authority is too broad, a supervisor could bypass the coverage denial constraint by changing coverage_status directly.
+**Impact if wrong:** The WorkItem resolution UI must be designed to permit the authorized overrides and block the prohibited ones. This is a UI requirement that must be specified before the human-in-the-loop interface is built.
+**Status:** `[Inferred — pending stakeholder confirmation of override scope]`
+**Validation question:** "Can a specialist change a claim_type that the agent extracted at high confidence? Can a supervisor downgrade a CRITICAL severity to HIGH during SEVERITY_REVIEW? Are there any fields on the Claim record that no human role may edit directly?"
 
 ---
 
@@ -159,12 +177,31 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 
 ---
 
+### D3 — Severity Score Calibration Thresholds Have No Historical Basis
+**Statement:** The severity scoring thresholds (LOW: 1–3, MEDIUM: 4–5, HIGH: 6–7, CRITICAL: ≥ 8) and the scoring weights (e.g., bodily_injury = +3, estimated_loss ≥ $150K = +6) were selected for internal consistency and buildability, not calibrated against historical claims data.
+**Why it matters:** A threshold of CRITICAL ≥ 8 means that a $150K property-damage claim with no injury scores exactly HIGH (6 points), while the same claim combined with bodily injury scores CRITICAL (9 points). Whether this boundary is correct depends on historical outcome data — does the HIGH/CRITICAL distinction predict adjuster assignment errors or litigation exposure? If not, the scoring weights should be recalibrated.
+**Impact if wrong:** Miscalibrated thresholds would send too many or too few claims to SEVERITY_REVIEW, affecting both specialist workload and claims quality. A threshold set too low overloads the review queue; too high lets high-risk claims route autonomously.
+**Status:** `[Flagged for Validation — requires calibration against historical claims data before or during pilot]`
+**Validation question:** "Do you have historical FNOL data that includes final outcome (litigation / coverage dispute / adjuster reassignment) that could be used to validate whether HIGH/CRITICAL severity claims actually had worse outcomes? Can the scoring weights be compared against the specialist team's intuitive routing rules?"
+
+---
+
+### D4 — CRM Adjuster Queue Depth Is Maintained in Near-Real-Time
+**Statement:** The `open_claims_count` field returned by CRM Endpoint 2 (adjuster query) reflects the adjuster's current workload accurately enough for the assignment algorithm to rely on. Specifically: a claim assigned to an adjuster in the last 30 seconds is reflected in that adjuster's open_claims_count before the next routing decision is made.
+**Why it matters:** RT-001's filter `open_claims_count < MAX_ADJUSTER_QUEUE_SIZE` is the primary mechanism preventing adjuster overload. If open_claims_count is eventually consistent with a lag of several minutes, the FPA might assign a 16th claim to an adjuster it believes has 14 — exceeding the configured limit. Under high volume (claims arriving faster than CRM cache updates), multiple claims could be simultaneously routed to the same adjuster.
+**Impact if wrong (significant lag):** The FPA must implement optimistic concurrency control: after assigning a claim, increment a local counter and use it for subsequent routing decisions until CRM confirms. Or: accept that queue limits are approximate and set MAX_ADJUSTER_QUEUE_SIZE conservatively (e.g., 12 instead of 15).
+**Status:** `[Flagged for Validation]`
+**Validation question:** "When the FPA creates a CRM claim record (RT-002) and assigns an adjuster, how quickly does the adjuster's open_claims_count update in CRM? Is it real-time, or is there a sync delay? Does Salesforce CRM expose a real-time event for assignment updates?"
+
+---
+
 ## Summary: What Must Be Validated Before Building
 
 **Priority 1 (blocks building):**
 - A1 — SOAP operations exist and are documented (required for PL and CV modules)
 - A3 — Base URLs and credentials available
 - A6 — CRM adjuster attributes (specialization, region, queue depth) are populated
+- A7 — Inbound event deduplication keys available per channel
 - B1 — High-value threshold formally confirmed
 
 **Priority 2 (blocks accurate operations):**
@@ -172,8 +209,11 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 - A4 — DMS API confirmed
 - B5 — Phone transcript upload mechanism confirmed
 - C1 — Operating hours and after-hours handling defined
+- D3 — Severity score calibration validated against historical claims data
+- D4 — CRM adjuster queue depth refresh latency confirmed
 
 **Priority 3 (affects go-live readiness but not build):**
 - A5 — CRM outbound email confirmed
+- B6 — Human override authority boundaries confirmed and reflected in UI design
 - C3 — Acknowledgment templates authored; emergency line confirmed
 - B3 — Regulatory basis for coverage denial constraint confirmed with legal

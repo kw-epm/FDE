@@ -90,6 +90,10 @@ These three constraints define the floor. Every other boundary is a design choic
 **Delegation:** **[Agent — Flag & Hold]** → **[Human — Decide]**
 **Justification:** Same constraint as C1. A lapsed policy does not automatically mean denial — there may be grace periods or reinstatement paths. A specialist must review.
 
+**Sub-decision E — SOAP response returns policy with empty or malformed coverage_types_list:**
+**Delegation:** **[Agent — Flag & Hold]**
+**Justification:** An empty coverage list could mean: the policy genuinely has no covered perils (unusual — likely a data error), the SOAP response was truncated, or the coverage type mapping [Assumption A2] failed to resolve any codes. The agent cannot distinguish these cases. Treating an empty list as "no coverage" (EXCLUDED) risks wrongly denying a valid claimant; treating it as "coverage unknown" (DISPUTED) is the safer default. Agent sets coverage_status = DISPUTED, creates COVERAGE_REVIEW WorkItem with note "Policy returned empty coverage_types_list — possible SOAP data error or unmapped coverage codes", and holds for specialist review.
+
 **Why not require human review of all coverage validations?** Because the clear-coverage path (active policy, matching coverage type, no exclusion trigger) is the majority of claims, and the rule is fully encodable. The risk is a false clear — which is caught in the daily audit. The risk of requiring human review of all coverage validations is that the team bottleneck shifts from commodity processing to commodity review, with no SLA improvement.
 
 ---
@@ -161,13 +165,15 @@ These three constraints define the floor. Every other boundary is a design choic
 
 **Net autonomous rate: ~63–77%** — consistent with the scenario's implied 65–70% routine case estimate.
 
+**Note on category overlap:** The rows above are not mutually exclusive. A bodily injury claim is also counted in HIGH/CRITICAL severity; a coverage dispute claim may also have had a low-confidence parse. The percentages are component estimates, not additive slices — summing them exceeds 100% because a single claim can fall into multiple categories. The net autonomous rate (~63–77%) is the fraction of claims that exit all modules without a human WorkItem, accounting for overlap. The categories are useful for estimating specialist workload by type, not for computing a coverage-exhaustive percentage breakdown.
+
 ---
 
 ## Why These Boundaries Are Drawn Here
 
 **The coverage denial boundary** sits at human-always because of explicit regulatory basis — this is not a "feels like a human decision" call. Any spec that allows the agent to deny coverage will fail legal review.
 
-**The bodily injury boundary** sits at human-always (pre-routing) because the litigation exposure of routing a bodily injury claim to the wrong adjuster — or to a general adjuster who mishandles the initial contact — outweighs the throughput cost of a supervisor confirmation. This is a conservative design constraint and should be validated with operations/legal owners.
+**The bodily injury boundary** sits at human-always (pre-routing) because the litigation exposure of routing a bodily injury claim to the wrong adjuster — or to a general adjuster who mishandles the initial contact — outweighs the throughput cost of a supervisor confirmation. This is a conservative design constraint and should be validated with operations/legal owners. **It may be relaxed in V2:** if operations validates that self-reported minor injuries (no hospitalisation, no third party) can be auto-routed to a bodily-injury-qualified adjuster, the C2 constraint becomes a severity sub-threshold rather than a binary flag. The current spec treats it as binary pending that validation [Assumption B2].
 
 **The $50,000 boundary** sits at flag-and-hold because at this financial level, a routing error has a material margin consequence and the cost of a 3–5 minute supervisor confirmation is negligible by comparison. This is a working assumption pending formal policy documentation.
 
