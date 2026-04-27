@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Orchestration - Visit Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .visit-card {
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .visit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .patient-info h2 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .patient-detail {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .visit-state {
+            text-align: right;
+        }
+
+        .state-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .state-NOT_STARTED {
+            background: #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        .state-IN_PROGRESS {
+            background: #3498db;
+            color: white;
+        }
+
+        .state-READY_FOR_REVIEW {
+            background: #f39c12;
+            color: white;
+        }
+
+        .state-ESCALATED {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .state-CLEARED {
+            background: #27ae60;
+            color: white;
+        }
+
+        .review-info {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+
+        .tasks-section h3 {
+            color: #2c3e50;
+            margin-bottom: 16px;
+        }
+
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .task-card {
+            border: 2px solid #ecf0f1;
+            border-radius: 6px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+
+        .task-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .task-card.completed {
+            border-color: #27ae60;
+            background: #f1f9f4;
+        }
+
+        .task-card.escalated {
+            border-color: #e74c3c;
+            background: #fdf2f2;
+        }
+
+        .task-card.blocked {
+            border-color: #f39c12;
+            background: #fef9f2;
+        }
+
+        .task-card.pending {
+            border-color: #bdc3c7;
+            background: #f8f9fa;
+        }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .task-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+
+        .task-status {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .status-completed {
+            background: #27ae60;
+            color: white;
+        }
+
+        .status-escalated {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .status-blocked {
+            background: #f39c12;
+            color: white;
+        }
+
+        .status-pending {
+            background: #bdc3c7;
+            color: white;
+        }
+
+        .task-detail {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-bottom: 4px;
+        }
+
+        .task-detail strong {
+            color: #2c3e50;
+        }
+
+        .escalation-box {
+            background: #fef9f2;
+            border-left: 4px solid #e74c3c;
+            padding: 8px;
+            margin-top: 8px;
+            border-radius: 4px;
+        }
+
+        .escalation-box .label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #e74c3c;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .escalation-box .target {
+            font-size: 12px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .escalation-box .reason {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 4px;
+        }
+
+        .audit-section {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .audit-section h3 {
+            color: #2c3e50;
+            margin-bottom: 16px;
+        }
+
+        .audit-events {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .audit-event {
+            background: white;
+            border-left: 4px solid #3498db;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .audit-event .timestamp {
+            color: #7f8c8d;
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+
+        .audit-event .event-type {
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .audit-event .details {
+            color: #7f8c8d;
+            font-size: 12px;
+        }
+
+        .legend {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .legend h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        .json-viewer {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            background: #ecf0f1;
+            border: none;
+            border-radius: 6px 6px 0 0;
+            cursor: pointer;
+            font-weight: 600;
+            color: #7f8c8d;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            background: white;
+            color: #2c3e50;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Workflow Stepper */
+        .workflow-stepper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 60%;
+            width: 80%;
+            height: 3px;
+            background: #ecf0f1;
+            z-index: 0;
+        }
+
+        .step.completed:not(:last-child)::after {
+            background: #27ae60;
+        }
+
+        .step.active:not(:last-child)::after {
+            background: linear-gradient(to right, #3498db 50%, #ecf0f1 50%);
+        }
+
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            background: #ecf0f1;
+            color: #7f8c8d;
+            z-index: 1;
+            margin-bottom: 8px;
+        }
+
+        .step.completed .step-circle {
+            background: #27ae60;
+            color: white;
+        }
+
+        .step.active .step-circle {
+            background: #3498db;
+            color: white;
+            box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
+        }
+
+        .step-label {
+            font-size: 11px;
+            text-align: center;
+            color: #7f8c8d;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .step.active .step-label {
+            color: #3498db;
+        }
+
+        .step.completed .step-label {
+            color: #27ae60;
+        }
+
+        /* Owner and Next Action */
+        .ownership-info {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        .info-item {
+            flex: 1;
+        }
+
+        .info-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 14px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .owner-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            background: #ecf0f1;
+            color: #2c3e50;
+        }
+
+        .owner-system { background: #e8f4f8; color: #3498db; }
+        .owner-front_desk { background: #fef9f2; color: #f39c12; }
+        .owner-nurse { background: #f1f9f4; color: #27ae60; }
+        .owner-manager { background: #fdf2f2; color: #e74c3c; }
+
+        /* Decision Explanation Box */
+        .decision-box {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .decision-box.blocked {
+            border-left-color: #f39c12;
+            background: #fef9f2;
+        }
+
+        .decision-box.escalated {
+            border-left-color: #e74c3c;
+            background: #fdf2f2;
+        }
+
+        .decision-box.completed {
+            border-left-color: #27ae60;
+            background: #f1f9f4;
+        }
+
+        .decision-header {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .reason-code {
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            padding: 2px 6px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 3px;
+        }
+
+        .decision-detail {
+            color: #7f8c8d;
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+
+        .decision-detail strong {
+            color: #2c3e50;
+        }
+
+        .missing-data {
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .missing-data-label {
+            font-weight: 600;
+            color: #e74c3c;
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .missing-data-list {
+            color: #7f8c8d;
+            font-size: 11px;
+            padding-left: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Intake Orchestration Engine</h1>
+            <p class="subtitle">Visit State Viewer - Pre-Visit Intake Workflow</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('visual')">Visual View</button>
+            <button class="tab" onclick="switchTab('json')">JSON View</button>
+        </div>
+
+        <div id="visual-tab" class="tab-content active">
+            <div id="visit-container"></div>
+        </div>
+
+        <div id="json-tab" class="tab-content">
+            <div class="visit-card">
+                <h3>Complete Visit State (JSON)</h3>
+                <pre id="json-output" class="json-viewer"></pre>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>Visit States & Task Statuses</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ecf0f1;"></div>
+                    <span>NOT_STARTED</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #3498db;"></div>
+                    <span>IN_PROGRESS</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #e74c3c;"></div>
+                    <span>ESCALATED (policy issue)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f39c12;"></div>
+                    <span>BLOCKED (system issue)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f39c12;"></div>
+                    <span>READY_FOR_REVIEW</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #27ae60;"></div>
+                    <span>CLEARED / COMPLETED</span>
+                </div>
+            </div>
+            <h3 style="margin-top: 20px;">Ownership Roles</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #e8f4f8;"></div>
+                    <span>System (automated)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #fef9f2;"></div>
+                    <span>Front Desk (admin)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f1f9f4;"></div>
+                    <span>Nurse (clinical)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #fdf2f2;"></div>
+                    <span>Manager (coordination)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Real visit data structure matching the system output
+        const sampleVisit = {
+            id: 'visit-demo-12345',
+            patientInfo: {
+                patientId: 'P005',
+                name: 'David Williams',
+                dateOfBirth: '1975-08-22'
+            },
+            state: 'ESCALATED',
+            owner: 'front_desk',
+            nextAction: 'Front desk review required: resolve escalated administrative tasks or blocked items',
+            reviewedBy: undefined,
+            reviewedAt: undefined,
+            tasks: [
+                {
+                    id: 'task-1',
+                    type: 'insurance_verification',
+                    status: 'blocked',
+                    owner: 'front_desk',
+                    nextAction: 'Retry insurance verification system or manually verify coverage',
+                    blockedAt: new Date(Date.now() - 300000).toISOString(),
+                    decisionExplanation: {
+                        decision: 'blocked',
+                        reasonCode: 'INS_DATA_UNAVAILABLE',
+                        reasonText: 'Insurance verification data unavailable from external system',
+                        ruleApplied: 'RULE: If insurance data is missing → BLOCK task (external system issue)',
+                        confidence: 'deterministic',
+                        nextAction: 'Retry insurance verification system or manually verify coverage',
+                        owner: 'front_desk',
+                        missingData: ['insurance verification status', 'policy details']
+                    },
+                    metadata: {
+                        blockReason: 'Insurance verification data unavailable from external system'
+                    }
+                },
+                {
+                    id: 'task-2',
+                    type: 'prior_auth_check',
+                    status: 'completed',
+                    owner: 'system',
+                    completedAt: new Date(Date.now() - 240000).toISOString(),
+                    decisionExplanation: {
+                        decision: 'completed',
+                        reasonCode: 'PA_NOT_REQUIRED',
+                        reasonText: 'Prior authorization not required for this visit',
+                        ruleApplied: 'RULE: If priorAuth.required = false → COMPLETE',
+                        confidence: 'deterministic',
+                        nextAction: 'Task completed, no further action needed'
+                    }
+                },
+                {
+                    id: 'task-3',
+                    type: 'questionnaire',
+                    status: 'completed',
+                    owner: 'system',
+                    completedAt: new Date(Date.now() - 180000).toISOString(),
+                    decisionExplanation: {
+                        decision: 'completed',
+                        reasonCode: 'QUEST_COMPLETE',
+                        reasonText: 'Pre-visit questionnaire completed by patient',
+                        ruleApplied: 'RULE: If questionnaire.completed = true → COMPLETE',
+                        confidence: 'deterministic',
+                        nextAction: 'Task completed, no further action needed'
+                    }
+                },
+                {
+                    id: 'task-4',
+                    type: 'visit_reason',
+                    status: 'completed',
+                    owner: 'system',
+                    completedAt: new Date(Date.now() - 120000).toISOString(),
+                    decisionExplanation: {
+                        decision: 'completed',
+                        reasonCode: 'VR_ROUTINE',
+                        reasonText: 'Visit reason provided and appears routine',
+                        ruleApplied: 'RULE: If visitReason provided AND no routing triggers detected → COMPLETE',
+                        confidence: 'deterministic',
+                        nextAction: 'Task completed, no further action needed'
+                    }
+                },
+                {
+                    id: 'task-5',
+                    type: 'medication_review',
+                    status: 'completed',
+                    owner: 'system',
+                    completedAt: new Date(Date.now() - 60000).toISOString(),
+                    decisionExplanation: {
+                        decision: 'completed',
+                        reasonCode: 'MED_NO_CHANGE',
+                        reasonText: 'No medication changes reported',
+                        ruleApplied: 'RULE: If medication.changeReported = false → COMPLETE',
+                        confidence: 'deterministic',
+                        nextAction: 'Task completed, no further action needed'
+                    }
+                },
+                {
+                    id: 'task-6',
+                    type: 'allergy_review',
+                    status: 'completed',
+                    owner: 'system',
+                    completedAt: new Date(Date.now() - 30000).toISOString(),
+                    decisionExplanation: {
+                        decision: 'completed',
+                        reasonCode: 'ALLERGY_NO_CHANGE',
+                        reasonText: 'No allergy changes reported',
+                        ruleApplied: 'RULE: If allergy.changeReported = false → COMPLETE',
+                        confidence: 'deterministic',
+                        nextAction: 'Task completed, no further action needed'
+                    }
+                }
+            ],
+            auditEvents: [
+                {
+                    type: 'task_created',
+                    timestamp: new Date(Date.now() - 360000).toISOString(),
+                    details: { taskId: 'task-1', taskType: 'insurance_verification' }
+                },
+                {
+                    type: 'task_blocked',
+                    timestamp: new Date(Date.now() - 300000).toISOString(),
+                    details: {
+                        taskId: 'task-1',
+                        taskType: 'insurance_verification',
+                        reason: 'Insurance verification data unavailable',
+                        explanation: {
+                            decision: 'blocked',
+                            reasonCode: 'INS_DATA_UNAVAILABLE',
+                            reasonText: 'Insurance verification data unavailable from external system',
+                            ruleApplied: 'RULE: If insurance data is missing → BLOCK task (external system issue)',
+                            confidence: 'deterministic',
+                            nextAction: 'Retry insurance verification system or manually verify coverage',
+                            owner: 'front_desk',
+                            missingData: ['insurance verification status', 'policy details']
+                        }
+                    }
+                },
+                {
+                    type: 'visit_state_changed',
+                    timestamp: new Date(Date.now() - 290000).toISOString(),
+                    details: { previousState: 'IN_PROGRESS', newState: 'ESCALATED' }
+                },
+                {
+                    type: 'task_completed',
+                    timestamp: new Date(Date.now() - 240000).toISOString(),
+                    details: {
+                        taskId: 'task-2',
+                        taskType: 'prior_auth_check',
+                        explanation: {
+                            decision: 'completed',
+                            reasonCode: 'PA_NOT_REQUIRED',
+                            reasonText: 'Prior authorization not required for this visit',
+                            ruleApplied: 'RULE: If priorAuth.required = false → COMPLETE',
+                            confidence: 'deterministic',
+                            nextAction: 'Task completed, no further action needed'
+                        }
+                    }
+                }
+            ],
+            createdAt: new Date(Date.now() - 400000).toISOString(),
+            updatedAt: new Date().toISOString()
+        };
+
+        function formatTaskName(type) {
+            return type.split('_').map(word =>
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
+        }
+
+        function formatDate(isoString) {
+            if (!isoString) return 'N/A';
+            const date = new Date(isoString);
+            return date.toLocaleString();
+        }
+
+        function renderVisit(visit) {
+            const container = document.getElementById('visit-container');
+
+            // Workflow states in order
+            const workflowStates = ['NOT_STARTED', 'IN_PROGRESS', 'ESCALATED', 'READY_FOR_REVIEW', 'CLEARED'];
+            const currentStateIndex = workflowStates.indexOf(visit.state);
+
+            const html = `
+                <!-- Workflow Stepper -->
+                <div class="workflow-stepper">
+                    ${workflowStates.map((state, index) => {
+                        let stepClass = 'step';
+                        if (index < currentStateIndex) stepClass += ' completed';
+                        if (index === currentStateIndex) stepClass += ' active';
+
+                        return `
+                            <div class="${stepClass}">
+                                <div class="step-circle">${index + 1}</div>
+                                <div class="step-label">${state.replace(/_/g, ' ')}</div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+
+                <div class="visit-card">
+                    <div class="visit-header">
+                        <div class="patient-info">
+                            <h2>${visit.patientInfo.name}</h2>
+                            <div class="patient-detail">ID: ${visit.patientInfo.patientId}</div>
+                            <div class="patient-detail">DOB: ${visit.patientInfo.dateOfBirth}</div>
+                            <div class="patient-detail">Visit ID: ${visit.id}</div>
+                        </div>
+                        <div class="visit-state">
+                            <div class="state-badge state-${visit.state}">${visit.state}</div>
+                            ${visit.reviewedBy ? `
+                                <div class="review-info">
+                                    Reviewed by ${visit.reviewedBy}<br>
+                                    ${formatDate(visit.reviewedAt)}
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+
+                    <!-- Visit Owner and Next Action -->
+                    <div class="ownership-info">
+                        <div class="info-item">
+                            <div class="info-label">Current Owner</div>
+                            <div class="info-value">
+                                <span class="owner-badge owner-${visit.owner}">${formatOwner(visit.owner)}</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Next Action</div>
+                            <div class="info-value">${visit.nextAction}</div>
+                        </div>
+                    </div>
+
+                    <div class="tasks-section">
+                        <h3>Intake Tasks</h3>
+                        <div class="task-grid">
+                            ${visit.tasks.map(task => `
+                                <div class="task-card ${task.status}">
+                                    <div class="task-header">
+                                        <div class="task-name">${formatTaskName(task.type)}</div>
+                                        <div class="task-status status-${task.status}">${task.status}</div>
+                                    </div>
+
+                                    <!-- Task Owner and Next Action -->
+                                    <div class="task-detail">
+                                        <strong>Owner:</strong>
+                                        <span class="owner-badge owner-${task.owner}">${formatOwner(task.owner)}</span>
+                                    </div>
+                                    ${task.nextAction ? `
+                                        <div class="task-detail"><strong>Next:</strong> ${task.nextAction}</div>
+                                    ` : ''}
+
+                                    <!-- Timestamps -->
+                                    ${task.completedAt ? `
+                                        <div class="task-detail"><strong>Completed:</strong> ${formatDate(task.completedAt)}</div>
+                                    ` : ''}
+                                    ${task.escalatedAt ? `
+                                        <div class="task-detail"><strong>Escalated:</strong> ${formatDate(task.escalatedAt)}</div>
+                                    ` : ''}
+                                    ${task.blockedAt ? `
+                                        <div class="task-detail"><strong>Blocked:</strong> ${formatDate(task.blockedAt)}</div>
+                                    ` : ''}
+
+                                    <!-- Decision Explanation -->
+                                    ${task.decisionExplanation ? `
+                                        <div class="decision-box ${task.decisionExplanation.decision}">
+                                            <div class="decision-header">
+                                                <span>Decision: ${task.decisionExplanation.decision.toUpperCase()}</span>
+                                                <span class="reason-code">${task.decisionExplanation.reasonCode}</span>
+                                            </div>
+                                            <div class="decision-detail">
+                                                <strong>Reason:</strong> ${task.decisionExplanation.reasonText}
+                                            </div>
+                                            <div class="decision-detail">
+                                                <strong>Rule:</strong> ${task.decisionExplanation.ruleApplied}
+                                            </div>
+                                            <div class="decision-detail">
+                                                <strong>Confidence:</strong> ${task.decisionExplanation.confidence}
+                                            </div>
+                                            ${task.decisionExplanation.missingData && task.decisionExplanation.missingData.length > 0 ? `
+                                                <div class="missing-data">
+                                                    <div class="missing-data-label">⚠ Missing Data</div>
+                                                    <ul class="missing-data-list">
+                                                        ${task.decisionExplanation.missingData.map(d => `<li>${d}</li>`).join('')}
+                                                    </ul>
+                                                </div>
+                                            ` : ''}
+                                        </div>
+                                    ` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+
+                ${visit.auditEvents && visit.auditEvents.length > 0 ? `
+                    <div class="visit-card audit-section">
+                        <h3>Audit Trail</h3>
+                        <div class="audit-events">
+                            ${visit.auditEvents.map(event => renderAuditEvent(event)).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+            `;
+
+            container.innerHTML = html;
+        }
+
+        function renderAuditEvent(event) {
+            const details = event.details || {};
+
+            return `
+                <div class="audit-event">
+                    <div class="timestamp">${formatDate(event.timestamp)}</div>
+                    <div class="event-type">${event.type.replace(/_/g, ' ').toUpperCase()}</div>
+                    ${details.taskType ? `<div class="details"><strong>Task:</strong> ${formatTaskName(details.taskType)}</div>` : ''}
+                    ${details.explanation ? `
+                        <div class="details">
+                            <strong>Decision:</strong> ${details.explanation.decision.toUpperCase()}
+                            (${details.explanation.reasonCode})
+                        </div>
+                        <div class="details"><strong>Reason:</strong> ${details.explanation.reasonText}</div>
+                    ` : ''}
+                    ${details.previousState && details.newState ? `
+                        <div class="details">
+                            <strong>State Change:</strong> ${details.previousState} → ${details.newState}
+                        </div>
+                    ` : ''}
+                    ${details.reviewedBy && !details.explanation ? `
+                        <div class="details"><strong>Reviewed By:</strong> ${details.reviewedBy}</div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function formatOwner(owner) {
+            if (!owner) return 'N/A';
+            return owner.split('_').map(word =>
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
+        }
+
+        function renderJSON(visit) {
+            const jsonOutput = document.getElementById('json-output');
+            jsonOutput.textContent = JSON.stringify(visit, null, 2);
+        }
+
+        function switchTab(tab) {
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById(tab + '-tab').classList.add('active');
+        }
+
+        // Initialize
+        renderVisit(sampleVisit);
+        renderJSON(sampleVisit);
+    </script>
+</body>
+</html>

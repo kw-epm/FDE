@@ -1,0 +1,371 @@
+{
+  "id": "visit-1776875599764-dpc78twm7",
+  "patientInfo": {
+    "patientId": "P001",
+    "name": "John Smith",
+    "dateOfBirth": "1980-05-15"
+  },
+  "state": "CLEARED",
+  "owner": "system",
+  "nextAction": "Visit cleared and ready for appointment",
+  "tasks": [
+    {
+      "id": "task-1",
+      "type": "insurance_verification",
+      "status": "completed",
+      "owner": "system",
+      "completedAt": "2026-04-22T16:33:19.765Z",
+      "decisionExplanation": {
+        "decision": "completed",
+        "reasonCode": "INS_VERIFIED",
+        "reasonText": "Insurance successfully verified and policy is active",
+        "ruleApplied": "RULE: If insurance.verified = true AND insurance.active = true → COMPLETE",
+        "confidence": "deterministic",
+        "nextAction": "Task completed, no further action needed"
+      },
+      "metadata": {
+        "insurance": {
+          "verified": true,
+          "active": true,
+          "policyNumber": "INS-12345",
+          "verificationDate": "2026-04-22T16:33:19.764Z"
+        }
+      }
+    },
+    {
+      "id": "task-2",
+      "type": "prior_auth_check",
+      "status": "completed",
+      "owner": "system",
+      "completedAt": "2026-04-22T16:33:19.765Z",
+      "decisionExplanation": {
+        "decision": "completed",
+        "reasonCode": "PA_NOT_REQUIRED",
+        "reasonText": "Prior authorization not required for this visit",
+        "ruleApplied": "RULE: If priorAuth.required = false → COMPLETE",
+        "confidence": "deterministic",
+        "nextAction": "Task completed, no further action needed"
+      },
+      "metadata": {
+        "priorAuth": {
+          "required": false
+        }
+      }
+    },
+    {
+      "id": "task-3",
+      "type": "questionnaire",
+      "status": "completed",
+      "owner": "system",
+      "completedAt": "2026-04-22T16:33:19.765Z",
+      "decisionExplanation": {
+        "decision": "completed",
+        "reasonCode": "QUEST_COMPLETE",
+        "reasonText": "Pre-visit questionnaire completed by patient",
+        "ruleApplied": "RULE: If questionnaire.completed = true → COMPLETE",
+        "confidence": "deterministic",
+        "nextAction": "Task completed, no further action needed"
+      },
+      "metadata": {
+        "questionnaire": {
+          "completed": true,
+          "responses": {
+            "currentMedications": [
+              "Lisinopril 10mg"
+            ],
+            "allergies": [
+              "Penicillin"
+            ],
+            "recentChanges": "none"
+          }
+        }
+      }
+    },
+    {
+      "id": "task-4",
+      "type": "visit_reason",
+      "status": "completed",
+      "owner": "system",
+      "completedAt": "2026-04-22T16:33:19.765Z",
+      "decisionExplanation": {
+        "decision": "completed",
+        "reasonCode": "VR_ROUTINE",
+        "reasonText": "Visit reason provided and appears routine",
+        "ruleApplied": "RULE: If visitReason provided AND no routing triggers detected → COMPLETE",
+        "confidence": "deterministic",
+        "nextAction": "Task completed, no further action needed"
+      },
+      "metadata": {
+        "visitReason": {
+          "reason": "Annual physical examination",
+          "urgency": "routine"
+        }
+      }
+    },
+    {
+      "id": "task-5",
+      "type": "medication_review",
+      "status": "completed",
+      "owner": "system",
+      "completedAt": "2026-04-22T16:33:19.765Z",
+      "decisionExplanation": {
+        "decision": "completed",
+        "reasonCode": "MED_NO_CHANGE",
+        "reasonText": "No medication changes reported",
+        "ruleApplied": "RULE: If medication.changeReported = false → COMPLETE",
+        "confidence": "deterministic",
+        "nextAction": "Task completed, no further action needed"
+      },
+      "metadata": {
+        "medication": {
+          "changeReported": false,
+          "medications": [
+            "Lisinopril 10mg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "task-6",
+      "type": "allergy_review",
+      "status": "completed",
+      "owner": "system",
+      "completedAt": "2026-04-22T16:33:19.765Z",
+      "decisionExplanation": {
+        "decision": "completed",
+        "reasonCode": "ALLERGY_NO_CHANGE",
+        "reasonText": "No allergy changes reported",
+        "ruleApplied": "RULE: If allergy.changeReported = false → COMPLETE",
+        "confidence": "deterministic",
+        "nextAction": "Task completed, no further action needed"
+      },
+      "metadata": {
+        "allergy": {
+          "changeReported": false,
+          "allergies": [
+            "Penicillin"
+          ]
+        }
+      }
+    }
+  ],
+  "auditEvents": [
+    {
+      "id": "audit-1776875599765-qet9t3ouw",
+      "type": "visit_state_changed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "previousState": "NOT_STARTED",
+        "newState": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "audit-1776875599765-rlfijt0xx",
+      "type": "task_created",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-1",
+        "taskType": "insurance_verification"
+      }
+    },
+    {
+      "id": "audit-1776875599765-oii9cl7o9",
+      "type": "task_created",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-2",
+        "taskType": "prior_auth_check"
+      }
+    },
+    {
+      "id": "audit-1776875599765-i4ia67jl2",
+      "type": "task_created",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-3",
+        "taskType": "questionnaire"
+      }
+    },
+    {
+      "id": "audit-1776875599765-6dy3x96ya",
+      "type": "task_created",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-4",
+        "taskType": "visit_reason"
+      }
+    },
+    {
+      "id": "audit-1776875599765-ucvy77me8",
+      "type": "task_created",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-5",
+        "taskType": "medication_review"
+      }
+    },
+    {
+      "id": "audit-1776875599765-ddpcg73ix",
+      "type": "task_created",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-6",
+        "taskType": "allergy_review"
+      }
+    },
+    {
+      "id": "audit-1776875599765-q16t5ktfi",
+      "type": "task_completed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-1",
+        "taskType": "insurance_verification",
+        "explanation": {
+          "decision": "completed",
+          "reasonCode": "INS_VERIFIED",
+          "reasonText": "Insurance successfully verified and policy is active",
+          "ruleApplied": "RULE: If insurance.verified = true AND insurance.active = true → COMPLETE",
+          "confidence": "deterministic",
+          "nextAction": "Task completed, no further action needed"
+        }
+      }
+    },
+    {
+      "id": "audit-1776875599765-3gymnqg1r",
+      "type": "task_completed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-2",
+        "taskType": "prior_auth_check",
+        "explanation": {
+          "decision": "completed",
+          "reasonCode": "PA_NOT_REQUIRED",
+          "reasonText": "Prior authorization not required for this visit",
+          "ruleApplied": "RULE: If priorAuth.required = false → COMPLETE",
+          "confidence": "deterministic",
+          "nextAction": "Task completed, no further action needed"
+        }
+      }
+    },
+    {
+      "id": "audit-1776875599765-r83sq17q0",
+      "type": "task_completed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-3",
+        "taskType": "questionnaire",
+        "explanation": {
+          "decision": "completed",
+          "reasonCode": "QUEST_COMPLETE",
+          "reasonText": "Pre-visit questionnaire completed by patient",
+          "ruleApplied": "RULE: If questionnaire.completed = true → COMPLETE",
+          "confidence": "deterministic",
+          "nextAction": "Task completed, no further action needed"
+        }
+      }
+    },
+    {
+      "id": "audit-1776875599765-wgu3yypju",
+      "type": "task_completed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-4",
+        "taskType": "visit_reason",
+        "explanation": {
+          "decision": "completed",
+          "reasonCode": "VR_ROUTINE",
+          "reasonText": "Visit reason provided and appears routine",
+          "ruleApplied": "RULE: If visitReason provided AND no routing triggers detected → COMPLETE",
+          "confidence": "deterministic",
+          "nextAction": "Task completed, no further action needed"
+        }
+      }
+    },
+    {
+      "id": "audit-1776875599765-eht3sj7k9",
+      "type": "task_completed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-5",
+        "taskType": "medication_review",
+        "explanation": {
+          "decision": "completed",
+          "reasonCode": "MED_NO_CHANGE",
+          "reasonText": "No medication changes reported",
+          "ruleApplied": "RULE: If medication.changeReported = false → COMPLETE",
+          "confidence": "deterministic",
+          "nextAction": "Task completed, no further action needed"
+        }
+      }
+    },
+    {
+      "id": "audit-1776875599765-ev5sfvv52",
+      "type": "task_completed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "taskId": "task-6",
+        "taskType": "allergy_review",
+        "explanation": {
+          "decision": "completed",
+          "reasonCode": "ALLERGY_NO_CHANGE",
+          "reasonText": "No allergy changes reported",
+          "ruleApplied": "RULE: If allergy.changeReported = false → COMPLETE",
+          "confidence": "deterministic",
+          "nextAction": "Task completed, no further action needed"
+        }
+      }
+    },
+    {
+      "id": "audit-1776875599765-bahm1u4cg",
+      "type": "visit_state_changed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "previousState": "IN_PROGRESS",
+        "newState": "READY_FOR_REVIEW"
+      }
+    },
+    {
+      "id": "audit-1776875599765-eduj106lb",
+      "type": "review_completed",
+      "timestamp": "2026-04-22T16:33:19.765Z",
+      "entityId": "visit-1776875599764-dpc78twm7",
+      "entityType": "visit",
+      "details": {
+        "reviewedBy": "Jane Doe (Front Desk)",
+        "previousState": "READY_FOR_REVIEW"
+      }
+    }
+  ],
+  "createdAt": "2026-04-22T16:33:19.764Z",
+  "updatedAt": "2026-04-22T16:33:19.765Z",
+  "reviewedAt": "2026-04-22T16:33:19.765Z",
+  "reviewedBy": "Jane Doe (Front Desk)"
+}
