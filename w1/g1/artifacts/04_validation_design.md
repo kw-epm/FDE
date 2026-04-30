@@ -23,10 +23,11 @@ This document defines how to verify that the FNOL Processing Agent (FPA) is work
 | V1 — Happy Path | End-to-end autonomous claim processing | 3 |
 | V2 — Parsing Edge Cases | Field extraction accuracy and confidence thresholds | 7 |
 | V3 — Coverage Validation | Coverage match, exclusion, lapsed policy | 5 |
-| V4 — Severity & Delegation Boundary | Severity scoring, escalation triggers, hard constraints | 6 |
+| V4 — Severity & Delegation Boundary | Severity scoring, escalation triggers, hard constraints | 7 |
 | V5 — SLA Monitoring | SLA clock, AT_RISK alerting, INTERIM acknowledgment | 4 |
-| V6 — Integration Failure Modes | SOAP timeout, CRM failure, DMS unavailable | 4 |
+| V6 — Integration Failure Modes | SOAP timeout, CRM failure, DMS unavailable | 5 |
 | V7 — Concurrency | Duplicate claim receipt, simultaneous field edit | 2 |
+| V8 — Post-Launch Monitoring | Continuous production drift signals (not pre-launch tests) | 4 |
 
 ---
 
@@ -83,14 +84,15 @@ This document defines how to verify that the FNOL Processing Agent (FPA) is work
 **Given:**
 - Phone transcript uploaded: "Caller: I need to report an accident. I was hit by another driver, I'm in the hospital. My policy is LI-456789. It happened this morning in Austin, Texas. I think the damages might be around $30,000 to my car."
 - Policy LI-456789: ACTIVE, covers LIABILITY
-- bodily_injury_flag = true
-- Adjuster assigned after supervisor severity review (BODILY_INJURY specialist, TX coverage)
+- bodily_injury_flag = true ("I'm in the hospital")
+- multiple_parties_flag = true ("another driver" matches IN-002 trigger phrase "other driver")
+- Adjuster assigned after supervisor severity review (dual-qualified adjuster: specializations = [LIABILITY, BODILY_INJURY], TX coverage; required by RT-001 bodily injury exception)
 
 **When:** Agent processes
 
 **Then:**
 - Caller lines extracted; representative lines excluded from NLP
-- bodily_injury_flag = true; claim_type = LIABILITY; severity scoring includes +3 (bodily injury) + +2 (LIABILITY) = 5 + estimated loss $30K (+2) = 7 → HIGH → CRITICAL path
+- bodily_injury_flag = true; multiple_parties_flag = true; claim_type = LIABILITY; severity scoring: bodily_injury (+3) + LIABILITY (+2) + $30K loss (+2) + multiple_parties (+1) = 8 → severity_level = CRITICAL; SEVERITY_REVIEW WorkItem triggered (CRITICAL severity + bodily_injury_flag = true)
 - SV-002 creates SEVERITY_REVIEW WorkItem → processing_status = AWAITING_SEVERITY_REVIEW
 - INTERIM acknowledgment sent immediately on AWAITING_SEVERITY_REVIEW entry: claim reference, "An adjuster will contact you within 24 hours"
 - acknowledged_at set at INTERIM send time (SLA met)
@@ -157,17 +159,17 @@ This document defines how to verify that the FNOL Processing Agent (FPA) is work
 
 ---
 
-### V2-05 — Duplicate Claim Submission (Same Policy, Same Incident Date, Same Channel)
-**Given:** Claimant submits the same FNOL twice (web form double-submit within 60 seconds)
+### V2-05 — Web Form Double-Submit Blocked by IN-001 Idempotency Check
+**Given:** Claimant clicks "Submit" twice in quick succession; both submissions carry the same form submission token (source_message_id = "FORM-TOKEN-abc123"); second submission arrives 3 seconds after the first
 
-**When:** Both submissions processed
+**When:** Both submissions are received by IN-001
 
 **Then:**
-- First submission: creates Claim, processing begins normally
-- Second submission: system detects matching (policy_number + incident_date + claimant_id) within a 10-minute window
-- Second submission creates a DUPLICATE_DETECTED flag in AuditEvent; does NOT create a second Claim
+- First submission (token FORM-TOKEN-abc123): IN-001 finds no existing Claim with this source_message_id → creates Claim, stores source_message_id, processing begins normally
+- Second submission (same token FORM-TOKEN-abc123): IN-001 idempotency check finds existing Claim with source_message_id = FORM-TOKEN-abc123 received within DUPLICATE_WINDOW_MINUTES → incoming event discarded; no second Claim record created; existing Claim.id returned to caller
+- No DUPLICATE_DETECTED AuditEvent logged (this is a pre-creation technical guard, not a business logic duplicate — IN-003 is never reached)
 - Claimant receives one acknowledgment only
-- **Verify:** idempotency check prevents duplicate claim creation
+- **Verify:** IN-001 idempotency operates on source_message_id (the form submission token), not on claim content fields (policy_number + incident_date + claimant_id); content-based deduplication is IN-003's responsibility (tested in V7-01)
 
 ---
 
@@ -310,6 +312,7 @@ Both: AUTO_COLLISION, no bodily injury, coverage CONFIRMED
 - Claim B: is_high_value = true → SEVERITY_REVIEW WorkItem created regardless of severity_level
 - **Verify:** threshold is inclusive at exactly $50,000.00; the ≥ comparison uses decimal(12,2) arithmetic — no floating-point ambiguity
 - **Verify:** estimated_loss_amount is stored and compared as decimal(12,2) per the schema; test rejects any implementation using floating-point types (float/double) for this field
+- **How to verify the type constraint:** runtime logic tests alone cannot prove decimal storage. Use both: (a) Phase 0 code review checklist item — "Confirm estimated_loss_amount column is declared DECIMAL/NUMERIC in database schema, not FLOAT or DOUBLE; verify ORM model definition"; and (b) storage-layer precision assertion — insert $49999.99 and $50000.00, read back both values, assert they are exactly equal to the inserted values to 2 decimal places. A float64 implementation rounds $49999.999... to $50000.00, which would erroneously trigger is_high_value = true for a claim just below threshold.
 
 ---
 
@@ -320,11 +323,13 @@ Both: AUTO_COLLISION, no bodily injury, coverage CONFIRMED
 
 **Then:**
 - coverage_status = DENIED (only set by human; never by agent)
+- Claim.coverage_denial_reason is populated by the specialist (required for DENIED resolution; WorkItem UI enforces this field as mandatory on the DENIED resolution path — resolution cannot be submitted without it)
 - processing_status = HALTED
-- AuditEvent: actor_type = HUMAN, event_type = COVERAGE_DENIED_BY_HUMAN
+- AuditEvent: actor_type = HUMAN, event_type = COVERAGE_DENIED_BY_HUMAN, to_value = coverage_denial_reason text
 - No adjuster assignment occurs
 - No FULL acknowledgment with adjuster name is sent
 - **Verify:** the agent cannot set coverage_status = DENIED at any point in any module
+- **Verify:** coverage_denial_reason is non-null when coverage_status = DENIED; the schema permits null only until a human sets DENIED
 
 ---
 
@@ -430,7 +435,7 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 ## V6 — Integration Failure Modes
 
 ### V6-01 — SOAP System Unavailable After All Retries
-**Given:** Policy admin SOAP returns connection timeout for 3 consecutive attempts (15s, 20s, 30s)
+**Given:** Policy admin SOAP returns connection timeout on all retry attempts (PL-001 exhausts retry policy)
 
 **When:** PL-001 exhausts retries
 
@@ -470,6 +475,7 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 ---
 
 ### V6-04 — DMS Store Fails at Intake (IN-001)
+
 **Given:** DMS returns HTTP 503 at IN-001
 
 **When:** IN-001 attempts to store raw_input
@@ -483,6 +489,21 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 ---
 
+### V6-05 — CV-002 CheckExclusions SOAP Failure
+**Given:** Claim has passed PL-001 (policy found, ACTIVE) and CV-001 (claim_type in coverage_types, incident_date in period). CheckExclusions SOAP call returns SERVICE_UNAVAILABLE on all retry attempts.
+
+**When:** CV-002 exhausts retries
+
+**Then:**
+- SOAP_FAILURE WorkItem created; processing_status = HALTED; IT_ONCALL alerted
+- No severity scoring begins; no routing proceeds
+- coverage_status is NOT set (remains null — exclusion status unverified)
+- INTERIM acknowledgment sent if not already sent (claim is halted, no adjuster assigned)
+- **Verify:** CheckExclusions SOAP failure does NOT set coverage_status = CONFIRMED or treat excluded = false — coverage cannot be cleared when verification is unavailable
+- **Verify:** When IT resolves the SOAP issue and supervisor re-queues the claim, processing resumes from COVERAGE_VALIDATION (CV-002 re-runs), not from the beginning of the pipeline
+
+---
+
 ## V7 — Concurrency
 
 ### V7-01 — Same Claim Received via Two Channels Simultaneously
@@ -492,10 +513,10 @@ Claim: AUTO_COLLISION, estimated_loss_amount = $4,000, bodily_injury_flag = fals
 
 **Then:**
 - First receipt (web form, 10:00:00): creates Claim with unique ID; processing begins
-- Second receipt (transcript, 10:02:00): during IN-002, system detects matching policy_number + incident_date + claimant contact within 10-minute window; flags as potential duplicate
+- Second receipt (transcript, 10:02:00): IN-002 completes parsing successfully; IN-003 then runs and detects matching policy_number + incident_date + claimant contact within 10-minute window; flags as potential duplicate
 - DUPLICATE_DETECTED event logged; specialist notified; second claim held for manual deduplication
 - Only one claim proceeds to full processing
-- **Verify:** deduplication check uses policy_number + incident_date + claimant_id (not source_channel) as the key
+- **Verify:** deduplication check uses policy_number + incident_date + claimant_id (not source_channel) as the key — this is IN-003 (business-logic deduplication). The two submissions arrive on different channels and have different source_message_ids (web form submission token vs. phone transcript upload session ID), so IN-001's source_message_id idempotency check does not trigger. IN-003's content-based matching is the correct deduplication mechanism for this cross-channel scenario.
 
 ---
 
@@ -559,3 +580,5 @@ All thresholds above must be met in a pre-production pilot of minimum 200 live c
 **Phase 1 → Phase 2 exit criterion (coverage false-clear rate):** Coverage false-clear rate cannot be statistically measured at n=200. Instead: after Phase 1 processes ≥ 1,000 autonomous claims, perform a reconciliation check (claims agent-cleared that subsequently raised a coverage dispute). If false-clear rate ≤ 1% at that point, proceed to Phase 2 full rollout. If > 1%: hold Phase 2; investigate root cause; lower EXCLUSION_SIMILARITY_THRESHOLD and re-run Phase 1.
 
 **Statistical power note for coverage false-clear rate:** At n=200, a 1% false-clear rate corresponds to 2 expected events. The probability of observing 0 events from a true 1% rate is ~13% (Poisson approximation) — meaning the pilot could pass this threshold by chance even if the true rate is 1%. For a statistically valid measurement of a ≤ 1% rate, n ≥ 1,000 claims is required (95% confidence interval width ≈ ±0.6%). The coverage false-clear threshold must therefore be validated on a 30-day production sample of ≥ 1,000 autonomously processed claims, not solely on the initial pilot. Pilot evaluation uses the test suite (V3); production evaluation uses reconciliation data.
+
+**Statistical power note for routing accuracy threshold:** At n=200, a 2% error rate corresponds to ~4 expected errors. The 95% binomial confidence interval for an observed 98% accuracy at n=200 spans approximately 95.3%–99.4% — meaning the pilot cannot reliably distinguish 98.0% from 96.0%. The go-live gate at ≥ 98% on n=200 confirms there is no catastrophic routing failure, not that the year-1 target is precisely achieved. Sustained measurement is provided by V8-02 (monthly n=200 audit); that rolling signal — not the one-time pilot — is the meaningful accuracy monitor over time. If a higher-confidence go-live gate is required, increase pilot sample to n=500 (95% CI ≈ ±1.2pp at 98% accuracy).

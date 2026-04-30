@@ -7,15 +7,15 @@ A mid-size insurance company's 12-person claims team processes 300 First Notice 
 The process is failing on all three operational dimensions:
 
 **1. Speed failure — 31% SLA breach rate**
-93 claims per day (~23,250/year) miss the 2-hour acknowledgment window. The root cause is capacity: the team's theoretical throughput at 22 min/claim across 8-hour shifts is ~262 claims/day (12 × 480 ÷ 22 = 261.8). At 300 claims/day, the team runs at 114.5% of capacity, with no buffer for volume spikes. Any surge — a weather event, a product recall — causes immediate queue collapse.
+93 claims per day (~23,250/year) miss the 2-hour acknowledgment window. The root cause is capacity: the team's **maximum theoretical processing capacity** at 22 min/claim across 8-hour shifts is ~262 claims/day (12 × 480 ÷ 22 = 261.8). This is a ceiling figure: it assumes 100% productive utilization — no breaks, no administrative overhead, no meeting time, no handling-time variance. At 300 claims/day, the team runs at 114.5% of this theoretical ceiling, with no buffer for volume spikes. Real operational capacity is lower than 262/day [Inferred — actual utilization rate not measured in this engagement]; the 114.5% figure is therefore a lower bound on overload severity, not an accurate measure of day-to-day strain. The real utilization rate is worse than it appears. Any surge — a weather event, a product recall — causes immediate queue collapse.
 
-**Why the breach rate (31% = 93/day) is higher than the capacity overflow (300 − 262 = 38/day):** The 38-claim overflow represents the absolute floor — claims that cannot be processed within the shift regardless of effort. The additional 55 daily breaches arise from three compounding factors: (a) *arrival bunching* — claims do not arrive uniformly distributed; when 20 arrive in the first 45 minutes, the queue backs up even though the daily total would be manageable; (b) *handling time variance* — the 22-minute average likely masks a bimodal distribution [Inferred — not measured in this engagement; consistent with typical mixed-complexity claims work patterns]: routine claims may take 12–15 min, complex claims (bodily injury, coverage dispute) 35–45 min; a single complex claim in a full queue can delay the next 2–3 routine claims past their SLA windows; (c) *channel-switching overhead* — specialists manually monitor three separate inbound channels, adding 3–5 min of context-switching per transition that is not captured in per-claim time estimates. The 31% breach rate is not a quality problem; it is a structural capacity problem wearing a quality mask.
+**Why the breach rate (31% = 93/day) is higher than the capacity overflow (300 − 262 = 38/day):** The 38-claim overflow represents the absolute floor — claims that cannot be processed within the shift regardless of effort. The additional 55 daily breaches arise from three compounding factors: (a) *arrival bunching* — claims do not arrive uniformly distributed; when 20 arrive in the first 45 minutes, the queue backs up even though the daily total would be manageable; (b) *handling time variance* — the 22-minute average likely masks a bimodal distribution [Inferred — not measured in this engagement; consistent with typical mixed-complexity claims work patterns]: routine claims may take 12–15 min, complex claims (bodily injury, coverage dispute) 35–45 min; a single complex claim in a full queue can delay the next 2–3 routine claims past their SLA windows [Inferred — modelled from queue-saturation dynamics; specific number depends on queue depth at the moment of the delay]; (c) *channel-switching overhead* — specialists manually monitor three separate inbound channels, adding 3–5 min of context-switching per transition that is not captured in per-claim time estimates. The 31% breach rate is not a quality problem; it is a structural capacity problem wearing a quality mask.
 
 **2. Accuracy failure — 18% routing error rate**
 54 claims per day (~13,500/year) arrive at the wrong adjuster. Each mis-route generates rework: the receiving adjuster identifies the error, returns the claim to the pool, a correct adjuster is reassigned, and the claimant must be re-contacted. Estimated rework cost: 25 min of specialist time per mis-routed claim plus one claimant re-contact. Root cause: routing is a manual workload-balancing step that specialists shortcut under queue pressure, and there is no system enforcement of specialization or geography rules.
 
 **3. Capacity failure — zero headroom for volume growth**
-At 300 claims/day and 22 min average handling, the team already works beyond 8-hour shift capacity. Any channel growth, line-of-business expansion, or seasonal claim spike (catastrophic weather) cannot be absorbed without either SLA degradation or headcount addition. Processing cost per claim (~$10.50 fully loaded) is unsustainable for the commodity cases that represent the majority of volume.
+At 300 claims/day and 22 min average handling, the team already works beyond 8-hour shift capacity. Any channel growth, line-of-business expansion, or seasonal claim spike (catastrophic weather) cannot be absorbed without either SLA degradation or headcount addition. Processing cost per claim (~$10.50 fully loaded [Calculated: $720K–$840K annual labor ÷ ~75,000 annual claims at 300/day × 250 working days — assumes operating-day-only intake; Inferred — scenario does not confirm whether 300/day is a calendar-day or operating-day figure. Calendar-day intake (300 × 365 = 109,500/year) would give ~$6.60–$7.70/claim and higher utilisation in the capacity model. This spec uses operating-day throughout the labor analysis; the agent's 24/7 LLM cost in Artifact 3 correctly uses 365 days. Client must confirm intake distribution before finalising the business case]) is unsustainable for the commodity cases that represent the majority of volume.
 
 **Combined annual impact (estimated):**
 - Current fully-loaded labor cost: $720K–$840K/year (12 specialists, $60K–$70K fully loaded) [Inferred] — this is the cost being inefficiently allocated, not a cost that disappears; specialists are retained and redeployed
@@ -30,7 +30,7 @@ Filing a First Notice of Loss is not a routine transaction. The claimant has jus
 
 **What claimants currently experience:**
 - **31% chance of no acknowledgment within 2 hours** — they do not know if their submission was received or lost. Many call the main line to check, adding inbound volume and further straining the team.
-- **18% chance of wrong adjuster contact** — they are contacted by an adjuster unfamiliar with their claim type, cannot get answers, and must re-explain the situation when transferred. Retention data shows a measurable non-renewal uplift for claimants who experienced a routing error.
+- **18% chance of wrong adjuster contact** — they are contacted by an adjuster unfamiliar with their claim type, cannot get answers, and must re-explain the situation when transferred. Being forced to re-explain a stressful incident to a second unfamiliar adjuster is a trust-destroying experience that is plausibly linked to non-renewal based on general service-quality literature [Inferred — no company-specific retention data was provided in this engagement].
 - **No self-service status visibility** — they cannot check where their claim is in the process without calling.
 
 The 2-hour SLA is not primarily an internal efficiency target. It is the claimant's first signal that the insurer is responsive. Missing it at a 31% rate is a trust failure that compounds over the life of the claim relationship.
@@ -47,21 +47,53 @@ The 2-hour SLA is not primarily an internal efficiency target. It is the claiman
 
 **Three value levers:**
 
-**Lever 1 — Labor redeployment (~$350K–$420K value, year one)**
-If the agent handles 65–70% of volume autonomously (the routine, clear-coverage, low-severity claims), 12 specialists shift from commodity processing to complex-claim-only handling. At current headcount, that means each specialist's day changes from 25 mixed claims to 7–8 complex claims handled well — no net reduction in headcount, but material improvement in quality for the hard cases, and significant buffer for volume growth. 65–70% of 12 specialists = 7.8–8.4 FTE-equivalents freed from commodity processing; rounded conservatively to 7–8. At $50K–$60K redeployment value per FTE = $350K–$420K/year.
+**Lever 1 — Capacity redeployment (conditional value; not a cash saving)**
+If the agent handles 65–70% of volume autonomously, 7–8 FTE-equivalents of specialist time are freed from commodity processing (65–70% × 12 = 7.8–8.4, rounded conservatively). That freed capacity is real. Whether it converts to financial value depends entirely on what the organisation does with it — the capacity itself is worth nothing until it is applied.
 
-**Lever 2 — Rework elimination (~$115K–$135K/year)**
-Routing accuracy improvement from 82% to ≥ 98% eliminates ~50 mis-routed claims/day. Each eliminated rework event saves ~25 min of specialist time plus claimant re-contact.
+Value materialises only if one or more of the following is true:
 
-**Lever 3 — Regulatory compliance risk reduction (material but jurisdiction-dependent)**
-Achieving ≥ 95% SLA compliance removes the company from the regulatory watchlist, eliminates corrective action plan overhead, and reduces audit exposure. Financial value is jurisdiction-dependent [Assumption B4] but the directional case is unambiguous.
+- **Hiring is avoided:** the company was about to add headcount to handle volume growth. Freed capacity absorbs that growth instead. Value = avoided salary + overhead per hire [Inferred — no planned headcount data provided; must be confirmed with operations].
+- **Overtime is eliminated:** specialists are currently working paid overtime to clear the daily backlog. Freed capacity removes the overtime requirement. Value = current annual overtime cost [Inferred — not stated in scenario; requires payroll data].
+- **Complex claim outcomes improve measurably:** specialist time redirected from commodity to complex claims reduces coverage disputes, adjuster reassignments, or litigation rates. Value = avoided downstream cost [Inferred — no outcome data provided; requires historical claims analysis].
+- **Volume growth is absorbed:** business growth of 20–30% in claim volume is absorbed without additional headcount. Value = hiring cost avoidance on future growth [Inferred — no growth forecast provided].
 
-**Combined year-one value estimate: $465K–$555K** (labor redeployment + rework elimination) — above any realistic implementation cost for a well-scoped V1. Note: this is redeployment value, not labor cost elimination; headcount stays at 12, but each specialist hour shifts from commodity processing to complex-claim work worth more per hour.
+**No single cash value is assigned to Lever 1 in this document.** A number would require at least one of the above conditions to be confirmed with supporting data. Presenting a dollar figure without that confirmation is consultant math, not financial analysis.
 
-**Why an AI agent is the right solution:**
-The distribution of the work tells you the answer. 65–70% of FNOL claims follow predictable patterns: the text is clear, the policy is active and matched, the severity is evident, the adjuster assignment is deterministic. These claims do not require 22 minutes of specialist judgment. They require consistent rule application — which an agent does faster and more consistently than a specialist under queue pressure.
+**Lever 2 — Rework elimination (~$115K–$135K/year in time-cost avoided)**
+Routing accuracy improvement from 82% to ≥ 98% eliminates ~50 mis-routed claims/day (~13,500/year). Each avoided rework event frees 25 min of specialist time plus one claimant re-contact [Calculated: 13,500 × 25 min × specialist cost/min, at $60K–$70K fully loaded (~$0.48–$0.56/min) = $115K–$135K/year].
 
-The remaining 30–35% — bodily injury, coverage disputes, high-value claims, ambiguous text — are precisely where specialist judgment is irreplaceable and where the current team is under-resourced because commodity claims consume their capacity. The agent's job is to clear the commodity volume and route complex claims to a specialist with the data already assembled.
+This is opportunity-cost arithmetic, not direct cash outflow — the salary is paid regardless. The cash value is real only if the freed time enables productive output that would otherwise require additional cost (more claims processed, backlog cleared, overtime avoided). However, unlike Lever 1, the direction is unambiguous: time currently wasted on avoidable rework disappears. That is the most defensible element of the business case.
+
+**Lever 3 — Regulatory compliance risk reduction (directional; not quantifiable here)**
+Achieving ≥ 95% SLA compliance substantially reduces the DOI audit exposure that sustained non-compliance creates and eliminates any active corrective action plan overhead [Inferred — must be validated with legal/compliance; see Assumption B4]. Financial value is jurisdiction-dependent and cannot be responsibly estimated without state-level regulatory analysis.
+
+**Honest summary of the business case:**
+
+| Value type | Amount | Confidence |
+|---|---|---|
+| Rework elimination (time-cost proxy) | $115K–$135K/year | Calculable from stated inputs; cash realisation conditional on productive redeployment |
+| Capacity redeployment | Not quantified | Real capacity freed; dollar value requires confirmation of hiring avoidance, overtime, or growth data |
+| Regulatory risk reduction | Not quantified | Directionally strong; jurisdiction-dependent |
+
+The business case is strong without a padded combined total. The rework elimination alone — $115K–$135K/year in avoidable specialist time — is a concrete, defensible number. The capacity value is the upside that makes this a compelling investment, but it must be validated against actual operational data before appearing in a financial approval document.
+
+**Why an AI agent is a strong candidate solution — and what must still be validated:**
+The work distribution is a necessary condition for considering an AI agent, not a sufficient one. 65–70% of FNOL claims reportedly follow predictable patterns: the text is clear, the policy is active and matched, the severity is evident, the adjuster assignment is deterministic [Inferred — not measured; this estimate is the premise of the business case, not a validated finding]. Claims in this category require consistent rule application rather than specialist judgment — which an agent can do faster and more consistently than a specialist under queue pressure.
+
+The remaining 30–35% — bodily injury, coverage disputes, high-value claims, ambiguous text — are precisely where specialist judgment is irreplaceable. The agent's proposed role is to clear the commodity volume and route complex claims to a specialist with the data already assembled.
+
+**However, the distribution of work alone does not establish that this solution is viable.** Before committing to the agent approach, the following feasibility questions must be answered — each represents a risk that could invalidate or significantly constrain the design:
+
+- **Data quality:** Are historical FNOL inputs clean enough for NLP extraction to reach the 0.90 confidence threshold? If the actual low-confidence parse rate is 40% rather than 25%, the FIELD_COMPLETION queue dominates and throughput gains disappear.
+- **Integration feasibility:** Do the legacy policy admin SOAP operations (GetPolicyByNumber, CheckExclusions) actually exist and perform within 10-second timeout tolerances? An undocumented legacy system is the single most common source of AI project delay [Assumptions A1, A2, A3].
+- **Claims language complexity:** Are claimants' self-reported incident descriptions sufficiently structured for classification? Regional dialects, multi-language submissions, dictated transcripts, and non-native speakers can all degrade NLP accuracy significantly — not modelled here.
+- **Policy rules codification:** Can the legacy coverage type codes be deterministically mapped to the six-class claim_type enum? If coverage logic requires underwriting judgment rather than a lookup table, CV-001 cannot be automated [Assumption A2].
+- **Compliance constraints:** Does any operating state's insurance regulation prohibit or restrict automated acknowledgment, automated routing, or NLP-based coverage assessment beyond the coverage-denial constraint already identified? [Assumption B4].
+- **Hallucination and extraction error risk:** The NLP extraction model can confidently produce a wrong answer. The 0.90 confidence threshold is a calibration assumption, not a validated floor — it must be tested against actual historical FNOL data before go-live.
+- **Customer communication controls:** Templated acknowledgments must be reviewed by legal and compliance before use. The template content (including what can and cannot be promised in an INTERIM acknowledgment) is a deployment dependency, not a builder decision [Assumption C3].
+- **Exception rate reality:** If the true rate of LOW/MEDIUM, non-bodily-injury, clear-coverage claims is closer to 45% than 65%, the autonomous handling rate misses its target and the business case weakens materially.
+
+The agent approach is the right hypothesis given the problem profile. It is not yet a confirmed answer. The spec that follows is written to make these feasibility questions answerable — not to assume they are already resolved.
 
 ---
 
@@ -85,7 +117,7 @@ The remaining 30–35% — bodily injury, coverage disputes, high-value claims, 
 | Metric | Baseline | Year-1 Target | Measurement |
 |---|---|---|---|
 | Autonomous handling rate | 0% | ≥ 65% | System log: % of claims reaching ACKNOWLEDGED with no open WorkItem |
-| Peak capacity (claims/day without SLA degradation) | ~262 | ≥ 500 | Load test during simulated volume spike |
+| Peak capacity (claims/day without SLA degradation) | ~262 (theoretical max; real operational capacity lower) | ≥ 500 | Load test during simulated volume spike |
 | Specialist capacity freed for complex claims | 0% | ≥ 60% of specialist time | Time-tracking audit |
 
 ### Claimant Experience Metrics

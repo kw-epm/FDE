@@ -63,6 +63,8 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 **Status:** `[Flagged for Validation]`
 **Validation question:** "Do adjuster records in Salesforce CRM include specialization by claim type and geographic coverage regions? Is open claims count a maintained field? If not, can these attributes be added before go-live?"
 
+**Additional validation required (claimant contact records):** The `prior_claims_count` field returned by CRM Endpoint 1 (claimant lookup) must cover a rolling 365-day window to match SERIAL_CLAIMANT_WINDOW_DAYS. If the field is a lifetime count, the SERIAL_CLAIMANT fraud signal will be systematically over-triggered for long-standing customers. Confirm with CRM admin before build.
+
 ---
 
 ### A7 — Inbound Event Deduplication Keys Are Available per Channel
@@ -78,7 +80,7 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 
 ### B1 — High-Value Threshold is $50,000 Estimated Loss
 **Statement:** A claim is classified as "high-value" (requiring supervisor review before routing) if the estimated loss amount stated in the claim is ≥ $50,000.
-**Why it matters:** The HIGH_VALUE_THRESHOLD directly controls how many claims go through the AWAITING_SEVERITY_REVIEW path. At $50K, approximately 10–15% of claims trigger the threshold. At $25K, that rises significantly; at $100K, it drops to perhaps 5%.
+**Why it matters:** The HIGH_VALUE_THRESHOLD directly controls how many claims go through the AWAITING_SEVERITY_REVIEW path. At $50K, approximately 10–15% of claims would trigger the threshold [Inferred — no historical claim-value distribution was provided in this engagement; this estimate is indicative only]. Lowering the threshold to $25K would increase that share materially; raising it to $100K would reduce it [Inferred].
 **Source:** Working threshold selected in this draft for buildability. Not confirmed in a formal policy document.
 **Impact if wrong:** Either too many claims in human review queue (threshold too low → throughput degraded) or high-value claims being autonomously routed (threshold too high → financial exposure).
 **Status:** `[Flagged for Validation]`
@@ -170,7 +172,7 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 ---
 
 ### D2 — Volume Distribution is Relatively Uniform During Operating Hours
-**Statement:** 300 claims/day arrive with some variation but without extreme concentration at specific times. Peak arrival rate is estimated at no more than 1.5× the average rate for any sustained 30-minute window.
+**Statement:** 300 claims/day arrive with some variation but without extreme concentration at specific times. Peak arrival rate is estimated at no more than 1.5× the average rate for any sustained 30-minute window [Inferred — no arrival distribution data was provided in this engagement; this multiplier reflects typical web and email submission patterns and is used to calibrate the SLA monitoring frequency and queue handling design].
 **Why it matters:** The SLA monitoring (AC-002) fires every 5 minutes and the autonomous processing path is designed for near-real-time throughput. If claims arrive in large batches (e.g., 150 claims in the first 30 minutes of the operating day), queue depth and SLA performance may differ significantly from the steady-state model.
 **Impact if wrong (extreme batching):** The architecture may need queue-depth-based scaling to handle peak arrival. This is an infrastructure decision for the builder.
 **Status:** `[Inferred — email and web form submissions typically distribute through the day; phone transcripts depend on call centre hours]`
@@ -183,6 +185,7 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 **Impact if wrong:** Miscalibrated thresholds would send too many or too few claims to SEVERITY_REVIEW, affecting both specialist workload and claims quality. A threshold set too low overloads the review queue; too high lets high-risk claims route autonomously.
 **Status:** `[Flagged for Validation — requires calibration against historical claims data before or during pilot]`
 **Validation question:** "Do you have historical FNOL data that includes final outcome (litigation / coverage dispute / adjuster reassignment) that could be used to validate whether HIGH/CRITICAL severity claims actually had worse outcomes? Can the scoring weights be compared against the specialist team's intuitive routing rules?"
+See also Assumption D5 for the broader configuration parameter calibration dependency.
 
 ---
 
@@ -192,6 +195,15 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 **Impact if wrong (significant lag):** The FPA must implement optimistic concurrency control: after assigning a claim, increment a local counter and use it for subsequent routing decisions until CRM confirms. Or: accept that queue limits are approximate and set MAX_ADJUSTER_QUEUE_SIZE conservatively (e.g., 12 instead of 15).
 **Status:** `[Flagged for Validation]`
 **Validation question:** "When the FPA creates a CRM claim record (RT-002) and assigns an adjuster, how quickly does the adjuster's open_claims_count update in CRM? Is it real-time, or is there a sync delay? Does Salesforce CRM expose a real-time event for assignment updates?"
+
+---
+
+### D5 — Configuration Parameter Defaults Are Uncalibrated
+**Statement:** All numeric thresholds in the Configuration Parameters table (Artifact 3) — PARSE_CONFIDENCE_THRESHOLD (0.90), EXCLUSION_SIMILARITY_THRESHOLD (0.75), MAX_ADJUSTER_QUEUE_SIZE (15), SLA_AT_RISK_BUFFER_MINUTES (30), SERIAL_CLAIMANT_WINDOW_DAYS (365), SERIAL_CLAIMANT_THRESHOLD (5), DUPLICATE_WINDOW_MINUTES (10) — are initial build estimates. None was derived from this company's historical claims data. The HIGH_VALUE_THRESHOLD ($50,000) is treated separately under Assumption B1.
+**Why it matters:** Each threshold directly controls operational behaviour. PARSE_CONFIDENCE_THRESHOLD determines how many claims fall to FIELD_COMPLETION specialist workload; EXCLUSION_SIMILARITY_THRESHOLD determines false-clear rate; SERIAL_CLAIMANT_THRESHOLD calibrates fraud-signal sensitivity. A threshold calibrated for a generic insurer may systematically over-route or under-route for this company's claim profile.
+**Impact if wrong:** Miscalibrated thresholds produce the wrong mix of autonomous vs. human-reviewed claims — either overloading the specialist queue (threshold too sensitive) or routing claims that should be reviewed (threshold too permissive). The primary calibration mechanism is Phase 0 shadow mode: run the agent against the 4-week pilot, compare autonomous outputs to specialist decisions, then adjust thresholds before Phase 1 go/no-go.
+**Status:** `[Flagged for Calibration — required before Phase 1 go/no-go]`
+**Validation question:** "Can you provide 3–6 months of historical FNOL data with specialist routing outcomes (claim type assigned, adjuster assigned, final coverage decision) for threshold calibration before build begins?"
 
 ---
 
@@ -211,6 +223,7 @@ Every assumption is a bet. If the assumption is wrong, something in the spec bre
 - C1 — Operating hours and after-hours handling defined
 - D3 — Severity score calibration validated against historical claims data
 - D4 — CRM adjuster queue depth refresh latency confirmed
+- D5 — All configuration thresholds calibrated against Phase 0 shadow data before Phase 1 go/no-go
 
 **Priority 3 (affects go-live readiness but not build):**
 - A5 — CRM outbound email confirmed

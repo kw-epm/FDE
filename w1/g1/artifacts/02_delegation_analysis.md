@@ -58,7 +58,7 @@ These three constraints define the floor. Every other boundary is a design choic
 
 **Sub-decision A — Policy found, status active:**
 **Delegation:** **[Agent — Autonomous]**
-**Justification:** This is a deterministic database lookup. The result is either a policy record or it is not. No judgment required. Automating this step alone eliminates 2–4 minutes per claim on all successful lookups.
+**Justification:** This is a deterministic database lookup. The result is either a policy record or it is not. No judgment required. Automating this step alone eliminates a material portion of per-claim handling time across all successful lookups [Inferred — no step-level timing breakdown of the 22-minute average was provided in this engagement; the 2–4 minute estimate reflects typical manual legacy-SOAP lookup effort but must be validated against specialist time-tracking data].
 
 **Sub-decision B — Policy not found:**
 **Delegation:** **[Agent — Flag & Hold]**
@@ -93,6 +93,10 @@ These three constraints define the floor. Every other boundary is a design choic
 **Sub-decision E — SOAP response returns policy with empty or malformed coverage_types_list:**
 **Delegation:** **[Agent — Flag & Hold]**
 **Justification:** An empty coverage list could mean: the policy genuinely has no covered perils (unusual — likely a data error), the SOAP response was truncated, or the coverage type mapping [Assumption A2] failed to resolve any codes. The agent cannot distinguish these cases. Treating an empty list as "no coverage" (EXCLUDED) risks wrongly denying a valid claimant; treating it as "coverage unknown" (DISPUTED) is the safer default. Agent sets coverage_status = DISPUTED, creates COVERAGE_REVIEW WorkItem with note "Policy returned empty coverage_types_list — possible SOAP data error or unmapped coverage codes", and holds for specialist review.
+
+**Sub-decision F — CV-002 SOAP system failure (CheckExclusions unavailable):**
+**Delegation:** **[Human — Decide]** (IT + specialist)
+**Justification:** Same reasoning as PL-001 SOAP failure (Section 2, Sub-decision C). If the exclusion-check operation is unavailable, the claim cannot proceed with unverified exclusion status. Failing open — treating an unavailable exclusion check as "no exclusions found" and proceeding — would produce a coverage_status = CONFIRMED record that the assigned adjuster and downstream systems treat as authoritative, even though the exclusion check never ran. The claim halts; IT is alerted; a specialist performs manual exclusion review once IT resolves the SOAP issue.
 
 **Why not require human review of all coverage validations?** Because the clear-coverage path (active policy, matching coverage type, no exclusion trigger) is the majority of claims, and the rule is fully encodable. The risk is a false clear — which is caught in the daily audit. The risk of requiring human review of all coverage validations is that the team bottleneck shifts from commodity processing to commodity review, with no SLA improvement.
 
@@ -171,7 +175,7 @@ These three constraints define the floor. Every other boundary is a design choic
 
 ## Why These Boundaries Are Drawn Here
 
-**The coverage denial boundary** sits at human-always because of explicit regulatory basis — this is not a "feels like a human decision" call. Any spec that allows the agent to deny coverage will fail legal review.
+**The coverage denial boundary** sits at human-always as a conservative legal-control assumption pending legal validation — this is not a "feels like a human decision" call. Any spec that allows the agent to deny coverage without legal sign-off is high risk.
 
 **The bodily injury boundary** sits at human-always (pre-routing) because the litigation exposure of routing a bodily injury claim to the wrong adjuster — or to a general adjuster who mishandles the initial contact — outweighs the throughput cost of a supervisor confirmation. This is a conservative design constraint and should be validated with operations/legal owners. **It may be relaxed in V2:** if operations validates that self-reported minor injuries (no hospitalisation, no third party) can be auto-routed to a bodily-injury-qualified adjuster, the C2 constraint becomes a severity sub-threshold rather than a binary flag. The current spec treats it as binary pending that validation [Assumption B2].
 

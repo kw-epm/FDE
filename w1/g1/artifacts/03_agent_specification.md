@@ -26,7 +26,7 @@
 
 ## Configuration Parameters
 
-These values are set at deployment and adjustable by the claims operations team without code changes:
+These values are set at deployment and adjustable by the claims operations team without code changes. **All defaults below are initial build estimates with no historical data basis; every threshold must be calibrated against Phase 0 shadow mode data before Phase 1 go/no-go [Assumption D5].**
 
 | Parameter | Default | Description |
 |---|---|---|
@@ -92,9 +92,10 @@ Claim:
     ROUTING → ACKNOWLEDGED                   (adjuster assigned; RT-002 complete)
     AWAITING_ROUTING_OVERRIDE → ACKNOWLEDGED (supervisor manually assigns adjuster)
     ACKNOWLEDGED → COMPLETED                 (AC-001 send confirmed)
-    Any → HALTED                             (PL-001 SOAP failure after all retries — the only SOAP failure that halts;
-                                              CV-002 CheckExclusions SOAP failure does NOT halt — see CV-002 for its fail-safe path)
-    HALTED → POLICY_LOOKUP                   (supervisor manually re-queues after IT resolves SOAP_FAILURE; only valid when halt_reason contains "SOAP_FAILURE/PL-001")
+    Any → HALTED                             (PL-001 or CV-002 SOAP failure after all retries)
+    HALTED → POLICY_LOOKUP                   (supervisor manually re-queues after IT resolves SOAP_FAILURE/PL-001)
+    HALTED → COVERAGE_VALIDATION             (supervisor manually re-queues after IT resolves SOAP_FAILURE/CV-002)
+    — Claims halted with halt_reason starting "DUPLICATE:" are permanently halted; the resume transition is not available. Resuming a DUPLICATE-merge claim would create exactly the duplicate processing the merge was designed to prevent.
 
   claimant_id: string, FK to CRM Contact (on CRM contact deletion: set null), nullable until IN-002 enrichment
   policy_number: string, max 20 chars (the regex [A-Z]{2,3}-\d{6,10} yields max 14 chars; 20 allows for namespace variations), extracted by IN-002, required after AWAITING_FIELD_COMPLETION resolves
@@ -288,12 +289,18 @@ Run modules in this order so that inputs exist before they are consumed:
 |---|---|---|
 | policy_number | NLP + regex (pattern: [A-Z]{2,3}-\d{6,10} or as defined by Integration 2 WSDL [Assumption A1]) | Yes |
 | claimant contact | NLP entity extraction: name + (email OR phone) — at least one of email/phone required | Yes |
-| claim_type | NLP classification against 7-class enum; if web form, map from form dropdown | Yes |
+| claim_type | NLP classification against 6-class enum (AUTO_COLLISION, AUTO_THEFT, PROPERTY_DAMAGE, PROPERTY_THEFT, BODILY_INJURY, LIABILITY); if web form, map from form dropdown | Yes |
 | incident_date | NLP date extraction; relative dates ("yesterday", "last Tuesday") resolved to absolute date using received_at | Yes |
 | incident_location | NLP location extraction; derive incident_state from location string | No (nullable) |
 | estimated_loss_amount | NLP numeric extraction; currency normalised to USD | No (nullable) |
 | bodily_injury_mentioned | Binary NLP classification: true if any of: injury, hurt, injured, hospital, ambulance, pain, medical treatment, fracture, broken bone, broken arm, broken leg, broken rib found in text. "broken" alone is NOT a trigger — must be followed by a body-part term. | No (but flags bodily_injury_flag) |
 | multiple_parties_mentioned | Binary NLP: true if: other driver, third party, another vehicle, other person involved | No (but flags multiple_parties_flag) |
+
+**Unknown label policy (no `OTHER` enum in V1):**
+- If NLP classifier outputs a label outside the 6 allowed claim types, treat claim_type as missing data.
+- Set parse_confidence to 0.00 for claim_type and route to FIELD_COMPLETION (AWAITING_FIELD_COMPLETION).
+- Log PARSING_LOW_CONFIDENCE with `low_confidence_fields = [{"field":"claim_type","confidence":0.00}]`.
+- The system MUST NOT invent new enum values at runtime.
 
 **Confidence and thresholds:**
 - parse_confidence = minimum confidence across the 4 required fields (policy_number, claimant contact, claim_type, incident_date)
@@ -397,7 +404,7 @@ WorkItem SLA: 20 minutes during operating hours; escalate to SUPERVISOR after 20
   - Create COVERAGE_REVIEW WorkItem (content includes: exclusion clause text, matched phrases, similarity score, incident description)
   - Set processing_status = AWAITING_COVERAGE_REVIEW
   - Trigger AC-001 (INTERIM)
-- If CheckExclusions SOAP fails: log error; treat as excluded = false (fail-safe: proceed to severity scoring; note the check failure in AuditEvent); do NOT suppress the error — alert supervisor via dashboard flag
+- If CheckExclusions SOAP fails (any fault after retries): log error; create SOAP_FAILURE WorkItem; set processing_status = HALTED; alert IT_ONCALL. Do NOT proceed to severity scoring with unverified exclusion status. This is the same halt behaviour as PL-001 SOAP failure — consistent with the Artifact 2 constraint that processing does not continue on unverified coverage.
 
 **COVERAGE_REVIEW WorkItem content:**
 ```json
@@ -417,6 +424,7 @@ WorkItem SLA: 20 minutes during operating hours; escalate to SUPERVISOR after 20
 }
 ```
 Assigned to SUPERVISOR. SLA: 45 minutes during operating hours; escalate to CLAIMS_MANAGER after 45 minutes.
+**Resolution requirement:** when the supervisor resolves this WorkItem with decision = DENIED, Claim.coverage_denial_reason (max 1000 chars) is a required field — the resolution must not be submittable without it. The WorkItem UI must enforce this: the DENIED resolution path shows a mandatory free-text reason field before submission. The agent must not set coverage_denial_reason; it is only written via WorkItem resolution.
 
 ---
 
@@ -438,6 +446,8 @@ Assigned to SUPERVISOR. SLA: 45 minutes during operating hours; escalate to CLAI
 | claim_type = LIABILITY | +2 |
 | multiple_parties_flag = true | +1 |
 | Prior FNOL claims by this claimant_id in past SERIAL_CLAIMANT_WINDOW_DAYS ≥ SERIAL_CLAIMANT_THRESHOLD | +1 (flag for adjuster note; does not change severity level alone). **Data source:** use `prior_claims_count` from CRM Endpoint 1 (returned during IN-002 enrichment) as the authoritative value — it covers claims predating FPA deployment. The FPA's own claim store supplements this after 12 months of operation. If CRM contact not found (claimant_id = null): score 0 for this component and log absence in SEVERITY_SCORED AuditEvent. |
+
+**Scoring note:** The null estimated_loss row scores +2 — higher than the known-small (<$10K) row at +1. Absent loss information is itself a risk signal: the claimant either has not yet assessed the damage or has chosen not to state it. Both cases warrant more cautious adjuster attention than a confidently stated small loss.
 
 **Severity level derivation:**
 - Score 1–3: LOW
@@ -487,6 +497,7 @@ After supervisor resolves: supervisor may confirm severity_level or override it;
 
 **Assignment algorithm:**
 1. Query CRM Endpoint 2: GET /users with role=adjuster, specialization includes claim_type, is_active=true (see Integration 1)
+   **Bodily injury exception:** when bodily_injury_flag = true, additionally require that the adjuster's specializations array includes BODILY_INJURY. This selects only adjusters dual-qualified for both the primary claim_type and bodily injury handling. A LIABILITY adjuster without BODILY_INJURY in their specializations must not receive a bodily-injury-flagged claim. If no dual-qualified adjuster is available after step 5, fall through to the ROUTING_OVERRIDE WorkItem path — do NOT relax the dual-qualification requirement.
 2. Filter by: incident_state ∈ user.coverage_regions
 3. Filter out: users with open_claims_count ≥ MAX_ADJUSTER_QUEUE_SIZE
 4. From remaining: rank by open_high_severity_claims_count ascending, then by open_claims_count ascending; select top rank (first eligible)
@@ -587,15 +598,12 @@ Assigned to SUPERVISOR. SLA: 15 minutes; escalate to CLAIMS_MANAGER after 15 min
 ### Integration 1 — Salesforce CRM (REST API)
 
 **Purpose:** Claimant lookup, adjuster query, claim record creation, acknowledgment delivery
-**Authentication:** OAuth 2.0 client credentials; env vars `SFCC_CLIENT_ID`, `SFCC_CLIENT_SECRET`; token endpoint: `[CRM_BASE_URL]/oauth2/token`
+**Authentication:** OAuth 2.0 client credentials; credentials and token endpoint URL are deployment configuration items provided by IT [Assumption A3]
 **Base URL:** `[CRM_BASE_URL]` — to be provided by client IT team [Assumption A3]
 **Timeout:** 5 seconds per request
-**Retry:** HTTP 5xx → 3 retries, exponential backoff (2s, 4s, 8s). HTTP 4xx → no retry; log error.
-**Rate limits (V1 build contract):** 60 requests/min sustained, 120 requests/min burst per FPA integration user.
-If CRM enforces stricter limits in production, update config before go-live (do not change code):
-`CRM_RATE_LIMIT_SUSTAINED_RPM`, `CRM_RATE_LIMIT_BURST_RPM`.
-429 handling: honor `Retry-After` header if present; otherwise wait 10s; retry up to 3 times; on final failure create SYSTEM_ERROR WorkItem.
-**OAuth token failure:** If token refresh fails: retry up to 2 times with 5s interval. If still failing: create SYSTEM_ERROR WorkItem; set sla_status = AT_RISK for all claims currently in processing; alert IT_ONCALL. Do not proceed with any CRM calls during token failure.
+**Retry:** HTTP 5xx → 3 retries, exponential backoff; intervals are deployment configuration items. HTTP 4xx → no retry; log error.
+**Rate limits:** Must be confirmed with client IT before build [Assumption A3]; implement configurable rate limits (`CRM_RATE_LIMIT_SUSTAINED_RPM`, `CRM_RATE_LIMIT_BURST_RPM` deployment config). 429 handling: honor `Retry-After` header if present; otherwise exponential backoff; on final failure create SYSTEM_ERROR WorkItem.
+**Authentication failure:** If token refresh fails after retries: create SYSTEM_ERROR WorkItem; set sla_status = AT_RISK for all claims currently in processing; alert IT_ONCALL. Do not proceed with CRM calls during token failure.
 
 **Endpoint 1 — Claimant lookup:**
 ```
@@ -607,7 +615,7 @@ Response 200:
   "name": string,
   "email": string (nullable),
   "phone": string (nullable),
-  "prior_claims_count": integer,   ← for SERIAL_CLAIMANT scoring in SV-001
+  "prior_claims_count": integer,   ← for SERIAL_CLAIMANT scoring in SV-001; window must match SERIAL_CLAIMANT_WINDOW_DAYS (default 365 days) — confirm with CRM admin whether this field is a rolling 365-day count or a lifetime count; if lifetime, the SERIAL_CLAIMANT signal will be miscalibrated [See Assumption A6 — Additional validation required (claimant contact records)]
   "policy_numbers": [string]
 }
 Response 404: no matching contact (non-blocking; claimant_id remains null)
@@ -670,77 +678,31 @@ Response 404: contact_id not found → log error; create SYSTEM_ERROR WorkItem; 
 ### Integration 2 — Legacy Policy Administration System (SOAP)
 
 **Purpose:** Policy lookup and exclusion check
-**Authentication:** WS-Security UsernameToken; env vars `POLICY_ADMIN_USERNAME`, `POLICY_ADMIN_TOKEN`
+**Authentication:** WS-Security token; credentials provided by IT [Assumption A3]
 **WSDL:** `[POLICY_ADMIN_BASE_URL]/PolicyService?wsdl` — to be provided by client IT [Assumption A1]
 **Base URL:** `[POLICY_ADMIN_BASE_URL]` — to be provided by client IT [Assumption A3]
 
 **Timeout:** 10 seconds (legacy system; allow generous timeout)
-**Retry:** SOAP fault → 3 retries, 5-second intervals. Connection timeout → 3 retries, exponential backoff (5s, 10s, 20s). HTTP 4xx (proxy errors) → no retry; create SOAP_FAILURE WorkItem immediately.
-**Rate limits (V1 build contract):** 30 SOAP calls/min sustained, 60/min burst.
-If policy admin enforces stricter limits, update config before go-live:
-`SOAP_RATE_LIMIT_SUSTAINED_RPM`, `SOAP_RATE_LIMIT_BURST_RPM`.
-**Concurrency enforcement:** Limit concurrent SOAP calls via a connection pool or counting semaphore with `max_pool_size` = 5 (deployment config: `MAX_SOAP_CONCURRENT_CALLS`, default 5). If all connections occupied, incoming requests queue (do not fail fast). Connection pool size must be confirmed with IT before load testing.
+**Retry:** SOAP fault → 3 retries, exponential backoff; connection timeout → 3 retries, exponential backoff. HTTP 4xx (proxy errors) → no retry; create SOAP_FAILURE WorkItem immediately. Retry intervals are deployment configuration items.
+**Rate limits:** Must be confirmed with client IT before build [Assumption A3]; implement configurable rate limits (`SOAP_RATE_LIMIT_SUSTAINED_RPM`, `SOAP_RATE_LIMIT_BURST_RPM` deployment config).
+**Concurrency:** Limit concurrent SOAP calls via the `MAX_SOAP_CONCURRENT_CALLS` configuration parameter (see Configuration Parameters table). If all connections occupied, incoming requests queue (do not fail fast). Pool size must be confirmed with IT before load testing.
 
 **Operation 1 — GetPolicyByNumber:**
-```xml
-Request:
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                  xmlns:pol="[POLICY_ADMIN_NAMESPACE]">
-  <soapenv:Body>
-    <pol:GetPolicyByNumber>
-      <pol:policyNumber>{policy_number}</pol:policyNumber>
-    </pol:GetPolicyByNumber>
-  </soapenv:Body>
-</soapenv:Envelope>
+- **Input:** policyNumber (string, max 20 chars)
+- **Returns — success:** policyId, status (ACTIVE|LAPSED|CANCELLED|SUSPENDED), effectiveDate (YYYY-MM-DD), expirationDate (YYYY-MM-DD), deductibleAmount (decimal), coverageTypes (list of strings), coverageLimits (list of {coverageType, amount}), exclusions (list of {code, text})
+- **Returns — fault (POLICY_NOT_FOUND):** fault code POLICY_NOT_FOUND with message string
 
-Response (success):
-<GetPolicyByNumberResponse>
-  <Policy>
-    <policyId>string</policyId>
-    <status>ACTIVE|LAPSED|CANCELLED|SUSPENDED</status>
-    <effectiveDate>YYYY-MM-DD</effectiveDate>
-    <expirationDate>YYYY-MM-DD</expirationDate>
-    <deductibleAmount>decimal</deductibleAmount>
-    <coverageTypes>
-      <coverageType>AUTO_COLLISION|AUTO_THEFT|PROPERTY_DAMAGE|...</coverageType>
-    </coverageTypes>
-    <coverageLimits>
-      <limit coverageType="..." amount="decimal"/>
-    </coverageLimits>
-    <exclusions>
-      <exclusion code="string" text="string"/>
-    </exclusions>
-  </Policy>
-</GetPolicyByNumberResponse>
-
-Response (not found):
-<PolicyFault><code>POLICY_NOT_FOUND</code><message>string</message></PolicyFault>
-```
-
-Note: the exact SOAP namespace `[POLICY_ADMIN_NAMESPACE]` and the mapping between the legacy system's coverage type codes and the FPA's internal claim_type enum must be validated with IT [Assumption A2]. The mapping table is a deployment configuration item.
+Note: exact SOAP element names and namespace are defined in the WSDL from IT [Assumption A1]. Coverage type codes in the response require mapping to the FPA's internal claim_type enum [Assumption A2]; the mapping table is a deployment configuration item.
 
 **Operation 2 — CheckExclusions:**
-```xml
-Request:
-<pol:CheckExclusions>
-  <pol:policyId>{policy_id}</pol:policyId>
-  <pol:incidentDescription>{incident_description_text}</pol:incidentDescription>
-  <pol:claimType>{claim_type}</pol:claimType>
-</pol:CheckExclusions>
+- **Input:** policyId (string), incidentDescription (text extracted from claim), claimType (string)
+- **Returns — success:** excluded (boolean), matchedExclusions (list of {code, text, similarity: decimal 0.00–1.00})
+- **Returns — fault:** INVALID_POLICY_ID or SERVICE_UNAVAILABLE
 
-Response (success):
-<CheckExclusionsResponse>
-  <excluded>true|false</excluded>
-  <matchedExclusions>
-    <exclusion code="string" text="string" similarity="decimal 0.00–1.00"/>
-  </matchedExclusions>
-</CheckExclusionsResponse>
+On INVALID_POLICY_ID fault: log error; create SOAP_FAILURE WorkItem; set processing_status = HALTED; alert IT_ONCALL (policy record inconsistency — cannot verify exclusion status without a valid policy ID).
+On SERVICE_UNAVAILABLE fault (after retries): create SOAP_FAILURE WorkItem; set processing_status = HALTED; alert IT_ONCALL.
 
-Response (fault):
-<PolicyFault><code>INVALID_POLICY_ID|SERVICE_UNAVAILABLE</code><message>string</message></PolicyFault>
-```
-On INVALID_POLICY_ID fault: log error; treat as excluded = false with supervisor dashboard alert (policy record inconsistency — CV check skipped).
-On SERVICE_UNAVAILABLE fault: retry per Integration 2 retry spec; if retries fail: create SOAP_FAILURE WorkItem.
+Note: exact SOAP element names and namespace are defined in the WSDL from IT [Assumption A1].
 
 **Fallback if SOAP unavailable:** Do NOT proceed with unverified coverage. Create SOAP_FAILURE WorkItem; halt claim processing; alert IT_ONCALL. This is the hardest failure mode — no workaround in V1.
 
@@ -749,13 +711,11 @@ On SERVICE_UNAVAILABLE fault: retry per Integration 2 retry spec; if retries fai
 ### Integration 3 — Document Management System (REST)
 
 **Purpose:** Store raw claim input; retrieve for processing
-**Authentication:** API key in header `X-DMS-Key`; env var `DMS_API_KEY`
+**Authentication:** API key; mechanism and credentials provided by IT [Assumption A3, A4]
 **Base URL:** `[DMS_BASE_URL]` — to be provided by client IT [Assumption A3]
 **Timeout:** 5 seconds
-**Retry:** HTTP 5xx → 2 retries, 2s backoff
-**Rate limits (V1 build contract):** 120 requests/min sustained, 240/min burst.
-If DMS enforces stricter limits, update config before go-live:
-`DMS_RATE_LIMIT_SUSTAINED_RPM`, `DMS_RATE_LIMIT_BURST_RPM`.
+**Retry:** HTTP 5xx → 2 retries, exponential backoff; intervals are deployment configuration items
+**Rate limits:** Must be confirmed with client IT before build [Assumption A4]; implement configurable rate limits (`DMS_RATE_LIMIT_SUSTAINED_RPM`, `DMS_RATE_LIMIT_BURST_RPM` deployment config).
 
 **Endpoint 1 — Store document:**
 ```
@@ -780,12 +740,12 @@ Response 413: content too large (>10MB) → log warning; proceed without storing
 
 | WorkItem Type | Trigger | Assigned Role | SLA | Timeout Action |
 |---|---|---|---|---|
-| FIELD_COMPLETION | Parse confidence < 0.90 or required field missing | SPECIALIST | 20 min | Escalate to SUPERVISOR |
+| FIELD_COMPLETION | Parse confidence < PARSE_CONFIDENCE_THRESHOLD or required field missing | SPECIALIST | 20 min | Escalate to SUPERVISOR |
 | DUPLICATE_REVIEW | Duplicate candidate found in DUPLICATE_WINDOW_MINUTES; sets AWAITING_DUPLICATE_REVIEW | SPECIALIST | 20 min | Escalate to SUPERVISOR |
 | COVERAGE_REVIEW | Exclusion match, lapsed policy, or claim type mismatch | SUPERVISOR | 45 min | Escalate to CLAIMS_MANAGER |
 | SEVERITY_REVIEW | HIGH/CRITICAL severity, is_high_value, or bodily_injury_flag | SUPERVISOR | 30 min | Escalate to CLAIMS_MANAGER |
 | ROUTING_OVERRIDE | No eligible adjuster available | SUPERVISOR | 15 min | Escalate to CLAIMS_MANAGER |
-| SOAP_FAILURE | Policy admin SOAP failure after all retries | IT_ONCALL | 30 min | Manual policy lookup by specialist |
+| SOAP_FAILURE | Policy admin SOAP failure (PL-001 or CV-002) after all retries | IT_ONCALL | 30 min | Manual policy lookup or exclusion check by specialist |
 | SYSTEM_ERROR | Any other integration failure after retries | IT_ONCALL | 1 hour | Manual processing |
 
 ---
@@ -794,13 +754,14 @@ Response 413: content too large (>10MB) → log warning; proceed without storing
 
 **Phase 0 — Shadow mode (weeks 1–4 of pilot):** The FPA runs against live inbound claims but makes no autonomous decisions. All outputs (extracted fields, coverage recommendations, severity scores, routing proposals) are logged and compared against specialist decisions. Shadow metrics establish baseline accuracy before any autonomous action is taken.
 
-**Phase 1 — Partial rollout (weeks 5–8):** EMAIL channel claims only; low-complexity filter (claim_type ≠ BODILY_INJURY, estimated_loss_amount < $10,000). Autonomous processing enabled for this subset. All other claims follow shadow-mode path. Pilot accuracy metrics reviewed weekly. Note: the fraction of total volume this represents depends on channel distribution and loss-amount distribution — both unknown at spec time. Builder must estimate from historical intake data before Phase 1 rollout begins.
+**Phase 1 — Partial rollout (weeks 5–8):** EMAIL channel claims only; low-complexity filter: claim_type ∈ {AUTO_COLLISION, AUTO_THEFT, PROPERTY_DAMAGE, PROPERTY_THEFT} AND estimated_loss_amount < $10,000 AND bodily_injury_flag = false. Autonomous processing enabled for this subset. All other claims follow shadow-mode path. Pilot accuracy metrics reviewed weekly.
+Note: the bodily_injury_flag = false condition is the materially restrictive element — hard constraint C2 would already hold any bodily-injury-flagged claim for SEVERITY_REVIEW regardless of claim_type. Making it explicit in the Phase 1 filter ensures the rollout boundary is transparent and does not depend implicitly on a downstream hard constraint to enforce it. LIABILITY is excluded despite potentially scoring LOW/MEDIUM because its +2 severity weight reflects third-party exposure and latent litigation risk that does not always manifest in the initial estimated loss figure — a $8,000 LIABILITY claim can escalate in ways a $8,000 AUTO_COLLISION claim typically does not. Relaxing this exclusion is a candidate Phase 2 decision once pilot data establishes autonomous handling quality for the included claim types. Note: the fraction of total volume this filter admits depends on channel distribution and loss-amount distribution — both unknown at spec time. Builder must estimate from historical intake data before Phase 1 rollout begins.
 
 **Phase 2 — Full autonomous path (week 9+):** All claim types enabled once Phase 1 accuracy thresholds are met (per Artifact 4 production readiness table). Human shadow review shifts from full-sample to 10% random audit.
 
 **Kill switch:** A deployment configuration flag (`AUTONOMOUS_PROCESSING_ENABLED`, default false) must be present before go-live. Setting it to false reverts all claims to AWAITING_FIELD_COMPLETION WorkItems (full human review) without code changes. Operations team must have documented procedure for activating the kill switch in under 5 minutes.
 
-**Operating cost note:** Agent operates 24/7 per the SLA requirements. Cost estimate: ~5–8% of 300 claims/day × 365 calendar days = ~5,500–8,800 complex reasoning calls/year × $1–$2/call = ~$5,500–$17,600/year. Materially below the $465K–$555K value estimate. Builder must validate against chosen model provider's actual per-call pricing before go/no-go.
+**Operating cost note:** Agent operates 24/7 per the SLA requirements. Cost estimate: ~5–8% of 300 claims/day × 365 calendar days = ~5,500–8,800 complex reasoning calls/year × $1–$2/call = ~$5,500–$17,600/year. Materially below the $115K–$135K/year rework elimination value quantified in Artifact 1, and well below any realistic estimate of conditional capacity redeployment value. Builder must validate against chosen model provider's actual per-call pricing before go/no-go.
 
 ---
 
@@ -826,3 +787,16 @@ The claims manager dashboard adds:
 - Routing accuracy rate (audit sample: adjuster confirmed correct / total sample)
 - Coverage review outcome distribution (confirmed / denied / disputed resolved)
 - SOAP_FAILURE and SYSTEM_ERROR counts (IT health signal)
+
+---
+
+## Definition Of Done (Spec Handoff)
+
+This specification is ready for implementation handoff only when all items below are true:
+
+- All Priority 1 assumptions in Artifact 5 are validated with named stakeholders and documented outcomes.
+- Integration credentials, base URLs, and numeric rate limits are confirmed in environment configuration.
+- Claim acknowledgment templates (`FNOL_ACK_FULL_V1`, `FNOL_ACK_INTERIM_V1`) are created and approved in CRM.
+- WorkItem UI requirements (Artifact 3 scope note) are agreed with builder and product owner.
+- Pilot gates in Artifact 4 are acknowledged by operations and compliance owners.
+- Any unresolved assumption is explicitly marked as out-of-scope for V1 with rollback or contingency behavior documented.
