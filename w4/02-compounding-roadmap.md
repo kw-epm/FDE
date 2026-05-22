@@ -6,6 +6,8 @@
 
 **Cross-reference to Deliverable #1:** all Wave costs in this roadmap are **build costs only**. They use Deliverable #1's $95k Wave 1 build baseline and exclude the ongoing $50k/year AI-ownership run cost, LLM/tool spend, residual rework, and HITL operating cost from Deliverable #1.
 
+**Source basis:** Wave 1 scope and assets come from Week 3 D#2/D#4a/D#4b; Wave 1 build cost and FDE day-rate come from Deliverable #1 §5/T19; Wave 2–3 cost reductions are FDE estimates derived from the reuse matrix in §3; wave sequencing follows `inputs/atx/atx-scoring.md` Step 4 (self-financing Wave 1 → compounding Wave 2 → multi-agent Wave 3+). Roadmap-only numbers are labelled as assumptions where used.
+
 ---
 
 ## 1. The compounding thesis (one paragraph)
@@ -18,7 +20,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 
 ### Wave 1 — MedFlex Matching (months 0–2)
 
-**Scope.** Healthcare staffing — agentic matching engine for shift requests. Planned matching + urgent rematching capability specs. 8-week build per the scenario engagement framing.
+**Scope.** Healthcare staffing — agentic matching engine for shift requests. Planned matching + urgent rematching capability specs. 8-week build per the scenario engagement framing (Deliverable #1 §5; Week 3 D#2/D#4a/D#4b).
 
 **What gets built (new, from scratch):**
 
@@ -44,7 +46,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 **Domain-specific (not reusable past Wave 1):**
 - MedFlex credential taxonomy *as encoded in matching rules*
 - Planned-matching system prompt, urgent-rematching system prompt
-- MedFlex matching eval set (~500 historical tickets)
+- MedFlex matching eval set (~500 historical examples; same basis as Deliverable #1 T32 500-row golden set)
 
 **Build cost:** ~$95,000 (per Deliverable #1 §5). Of that, ~$72,000 is platform + MedFlex-domain-integration work that compounds into Waves 2 and 3 (see §3 matrix and §4 cost trajectory); ~$23,000 is matching-specific build that does not compound (system prompts, eval set, trust-ramp tuning).
 
@@ -52,8 +54,8 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 
 **Scope.** Two related workflows that are currently manual paperwork at MedFlex:
 
-1. **Nurse onboarding** — a new contractor uploads license PDFs, certification cards, immunization records, BLS/ACLS proofs, references. Today an onboarding coordinator hand-keys this into the nurse repository over 3–5 working days. An onboarding agent extracts the structured data, cross-checks against state nursing-board APIs, and produces a ready-to-match profile that goes through HITL approval. Target: 24-hour onboarding for clean dossiers.
-2. **Credential lifecycle** — licenses and certs expire. Today MedFlex discovers expired credentials at match time (the worst possible moment — the Wave 1 credential pre-flight currently *blocks* the match). A credential-watcher service tracks every credential's expiry, sends reminders at 60/30/7 days, auto-refreshes from state boards where APIs allow, and flags at-risk credentials before they affect matching.
+1. **Nurse onboarding** — a new contractor uploads license PDFs, certification cards, immunization records, BLS/ACLS proofs, references. Assumption for the roadmap: today an onboarding coordinator hand-keys this into the nurse repository over 3–5 working days. An onboarding agent extracts the structured data, cross-checks against state nursing-board APIs, and produces a ready-to-match profile that goes through HITL approval. Target: 24-hour onboarding for clean dossiers.
+2. **Credential lifecycle** — licenses and certs expire. Today MedFlex discovers expired credentials at match time (the worst possible moment — the Wave 1 credential pre-flight currently *blocks* the match). A credential-watcher service tracks every credential's expiry, sends reminders at 60/30/7 days (FDE assumption), auto-refreshes from state boards where APIs allow, and flags at-risk credentials before they affect matching.
 
 **What gets reused from Wave 1 (the compounding):**
 
@@ -74,7 +76,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 **What gets newly built (becomes Wave 3 platform asset):**
 
 - **Document OCR pipeline** (license PDFs, immunization cards, scanned forms — handles printed + handwritten + photographed sources).
-- **State nursing-board API adapters** — one thin wrapper per state, reusing the Wave 1 structured-API template. Initial scope: top 5 states by MedFlex volume (~80% coverage).
+- **State nursing-board API adapters** — one thin wrapper per state, reusing the Wave 1 structured-API template. Initial scope assumption: top 5 states by MedFlex volume (~80% coverage).
 - **Renewal-tracking state machine** (active → 60d-warning → 30d-warning → 7d-warning → expired-grace → expired-locked). Reuses the Wave 1 state machine library.
 - **Dossier completeness checker** (deterministic — what's missing? what's expired? what needs HITL?).
 
@@ -84,7 +86,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 - Onboarding coordinator system prompt + renewal-reminder prompts
 - Onboarding + renewal eval sets
 
-**Build cost:** ~$58,000. Standalone build of these two workflows from zero (no Wave 1 platform) would cost ~$95,000 — the credential pre-flight engine, nurse schema, ServiceNow adapter, HITL queue, audit log, and trust-ramp framework would all need to be built from scratch.
+**Build cost:** ~$58,000 (FDE estimate from §3 day matrix + wave-specific work). Standalone build of these two workflows from zero (no Wave 1 platform) would cost ~$95,000 — the credential pre-flight engine, nurse schema, ServiceNow adapter, HITL queue, audit log, and trust-ramp framework would all need to be built from scratch.
 
 **Saving vs standalone: ~$37,000.**
 
@@ -131,7 +133,7 @@ The three agents coordinate via an inter-agent message bus and read/write a shar
 - Multi-agent orchestration system prompts
 - Coverage-risk eval set (historical under-staffing events)
 
-**Build cost:** ~$48,000. Standalone build of three coordinating agents from zero (no Wave 1 or Wave 2 platform) would cost ~$130,000 — every agent would need its own matching/credential/hospital plumbing rebuilt.
+**Build cost:** ~$48,000 (FDE estimate from §3 day matrix + wave-specific work). Standalone build of three coordinating agents from zero (no Wave 1 or Wave 2 platform) would cost ~$130,000 — every agent would need its own matching/credential/hospital plumbing rebuilt.
 
 **Saving vs standalone: ~$82,000.**
 
