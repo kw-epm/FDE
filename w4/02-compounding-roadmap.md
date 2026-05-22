@@ -58,7 +58,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 | Wave 1 asset | How Wave 2 uses it |
 |---|---|
 | Credential pre-flight engine | Re-run at onboarding time (not just match time). Same logic; new trigger. |
-| Nurse profile schema + repository | Wave 2 *creates* records in the schema Wave 1 *reads*. Zero schema change. |
+| Nurse profile schema + repository | Wave 2 *creates* records in the core schema Wave 1 *reads*. New document metadata can be added as an extension, not a rewrite. |
 | Hospital profile adapter | Used to validate which hospitals an onboarded nurse can be matched to (ward credentials, immunization requirements per facility). |
 | ServiceNow adapter | Onboarding requests come through ServiceNow tickets; renewal alerts are written back as ServiceNow tasks. Same adapter, new ticket types. |
 | Immutable audit log | Extended with onboarding-event types and credential-state-change events. Same store, same regulator-readable format. |
@@ -90,7 +90,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 
 **Scope.** Per ATX scoring §Step 4 — *"Wave 3+: multi-agent workflows, agents that coordinate with each other, platform-level optimisation"* — Wave 3 turns MedFlex's day-to-day operations into a coordinated agent stack:
 
-- **Matching agent** (the Wave 1 agent, unchanged).
+- **Matching agent** (the Wave 1 agent, with its core ranking logic unchanged).
 - **Credential-watcher agent** (the Wave 2 service, promoted to first-class agent — it now proactively pushes alerts into the matching flow: *"nurse N is about to lose her ACLS in 30 days; if you match her to a cardiology shift after Dec 12 it will fail credential pre-flight"*).
 - **Coverage-risk agent** (new — forecasts under-staffed shifts 3–7 days out by reading current matched coverage against historical demand patterns; pre-fires urgent-rematch flows before the gap becomes critical).
 
@@ -139,24 +139,24 @@ Each row is an asset. Each cell shows whether the asset is built new (B), reused
 
 | Asset | Layer | Wave 1 (Matching) | Wave 2 (Onboarding + Credentials) | Wave 3 (Multi-agent ops) |
 |---|---|---|---|---|
-| LLM call wrapper (retry / timeout / cost meter / circuit breaker) | Platform | **B (4d)** | R | R |
-| JSON schema validator | Platform | **B (2d)** | R | R |
-| Confidence-threshold framework | Platform | **B (3d)** | R+ (1d tuning) | R+ (1d tuning) |
-| HITL queue + coordinator dashboard | Platform | **B (5d)** | R+ (2d new views) | R+ (2d new views) |
-| State machine library | Platform | **B (4d)** | R (renewal SM) | R (forecast SM) |
-| Structured-API integration template | Platform | **B (2d)** | R (per state board) | R |
-| Eval harness (golden tests + regression) | Platform | **B (3d)** | R+ (new eval sets: 1d) | R+ (new eval sets: 1d) |
-| Prompt registry + version control | Platform | **B (2d)** | R | R |
-| Notification rails (SMS + email) | Platform | **B (3d)** | R+ (renewal templates: 1d) | R |
-| Cost/token meter + daily reporting | Platform | **B (2d)** | R | R |
-| Trust-ramp framework | Platform | **B (2d)** | R+ (onboarding cadence: 1d) | R+ (coverage-risk cadence: 1d) |
-| **Credential pre-flight engine** | MedFlex domain | **B (5d)** | R (triggered at onboarding too) | R (used by Credential-watcher) |
-| **Nurse profile schema + repository** | MedFlex domain | **B (4d)** | R (W2 *writes*, W1 *reads*) | R |
-| **Hospital profile + adapter** | MedFlex domain | **B (3d)** | R | R |
-| **ServiceNow integration adapter** | MedFlex domain | **B (4d)** | R+ (new ticket types: 1d) | R+ (forecast alerts: 1d) |
-| **Immutable audit log** | MedFlex domain | **B (3d)** | R+ (onboarding events: 1d) | R+ (cross-agent events: 1d) |
+| LLM call wrapper (retry / timeout / cost meter / circuit breaker) | Platform | **B (3d)** | R | R |
+| JSON schema validator | Platform | **B (1d)** | R | R |
+| Confidence-threshold framework | Platform | **B (2d)** | R+ (1d tuning) | R+ (1d tuning) |
+| HITL queue + coordinator dashboard | Platform | **B (4d)** | R+ (2d new views) | R+ (1d new view) |
+| State machine library | Platform | **B (3d)** | R (renewal SM) | R (forecast SM) |
+| Structured-API integration template | Platform | **B (1d)** | R (per state board) | R |
+| Eval harness (golden tests + regression) | Platform | **B (2d)** | R+ (new eval sets: 1d) | R+ (new eval sets: 1d) |
+| Prompt registry + version control | Platform | **B (1d)** | R | R |
+| Notification rails (SMS + email) | Platform | **B (2d)** | R+ (renewal templates: 1d) | R |
+| Cost/token meter + daily reporting | Platform | **B (1d)** | R | R |
+| Trust-ramp framework | Platform | **B (1d)** | R+ (onboarding cadence: 1d) | R+ (coverage-risk cadence: 1d) |
+| **Credential pre-flight engine** | MedFlex domain | **B (4d)** | R (triggered at onboarding too) | R (used by Credential-watcher) |
+| **Nurse profile schema + repository** | MedFlex domain | **B (3d)** | R (W2 *writes*, W1 *reads*) | R |
+| **Hospital profile + adapter** | MedFlex domain | **B (2d)** | R | R |
+| **ServiceNow integration adapter** | MedFlex domain | **B (3d)** | R+ (new ticket types: 1d) | R+ (forecast alerts: 1d) |
+| **Immutable audit log** | MedFlex domain | **B (2d)** | R+ (onboarding events: 1d) | R+ (cross-agent events: 1d) |
 | Document OCR pipeline | MedFlex domain | not used | **B (5d)** | R (if hospital-side workflow added) |
-| State nursing-board API adapters | MedFlex domain | not used | **B (8d, 5 states)** | R |
+| State nursing-board API adapters | MedFlex domain | not used | **B (7d, 5 states)** | R |
 | Renewal-tracking state machine | MedFlex domain | not used | **B (3d)** | R (Credential-watcher core) |
 | Dossier completeness checker | MedFlex domain | not used | **B (2d)** | R (extended for shift-window checks) |
 | **Inter-agent message bus** | Platform | not used | not used | **B (4d)** |
@@ -166,8 +166,8 @@ Each row is an asset. Each cell shows whether the asset is built new (B), reused
 
 **Reading the matrix:**
 
-- **Wave 1** builds 16 assets (11 platform + 5 MedFlex-domain) — ~48 days, ~$72k in FDE engineering at $1,500/day. The remaining ~$23k of the $95k Wave 1 cost is matching-specific build (system prompts, eval set, trust-ramp tuning) that does *not* compound.
-- **Wave 2** reuses every Wave 1 asset (R or R+), builds 4 new assets — ~18 days new build + ~7 days reuse-tuning = ~25 days, ~$38k. The remaining ~$20k is onboarding/renewal-specific build (prompts, eval sets, change management with the onboarding team).
+- **Wave 1** builds 16 assets (11 platform + 5 MedFlex-domain) — ~35 FDE days of reusable engineering (~$52.5k at $1,500/day). The reusable asset-layer allocation is higher, ~$72k, because it also includes the one-off platform infrastructure setup from Deliverable #1 (~$15k) and a small reusable share of assessment/design. The remaining ~$23k of the $95k Wave 1 cost is matching-specific build and change work that does *not* compound.
+- **Wave 2** reuses every Wave 1 asset (R or R+), builds 4 new assets — ~17 days new build + ~8 days reuse-tuning = ~25 days, ~$38k. The remaining ~$20k is onboarding/renewal-specific build (prompts, eval sets, change management with the onboarding team).
 - **Wave 3** reuses every Wave 1 + Wave 2 asset (R or R+), builds 4 new assets — ~15 days new build + ~6 days reuse-tuning = ~21 days, ~$32k. The remaining ~$16k is multi-agent-orchestration-specific build (orchestration prompts, cross-agent eval set, coverage-risk threshold calibration).
 
 The asset pool grows from 16 (Wave 1) to 20 (Wave 2) to 24 (Wave 3). Every new asset is paid for once and amortised over every future MedFlex engagement that needs it.
@@ -207,7 +207,7 @@ The compounding is on the **~70% asset-layer portion** (platform plumbing + MedF
 
 ## 6. How to pick Wave 2 to maximise compounding
 
-A good Wave 2 — inside the same engagement — satisfies three rules:
+A good Wave 2 — inside the same client/account — satisfies three rules:
 
 1. **Reuses the Wave 1 domain integrations.** If the next workflow does not use the credential engine, the nurse schema, the hospital adapter, the ServiceNow adapter, and the audit log, you are *starting another engagement*, not extending this one. Onboarding + credential lifecycle uses all five.
 2. **Adds at least one new asset that becomes a Wave 3 prerequisite.** Wave 2's renewal-tracking state machine and state-board API adapters are exactly what the Credential-watcher agent needs in Wave 3. Wave 2 isn't just *cheaper because of Wave 1* — it actively *enables* Wave 3.
