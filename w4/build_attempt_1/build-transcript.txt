@@ -1,0 +1,267 @@
+================================================================
+BUILD TRANSCRIPT — Pavel 4a Cold Run
+Date of run: 2026-05-22
+================================================================
+
+Note on format: this transcript is assembled from three sources
+of record kept during the run:
+
+  1. The kickoff prompt sent into the fresh session
+  2. The action log the builder kept (execution-log.md)
+  3. The builder's end-of-run summary (the 5-section report)
+
+All three are reproduced below verbatim.
+
+================================================================
+1. KICKOFF PROMPT (sent into the fresh session)
+================================================================
+
+You are starting a fresh build session. No prior context.
+
+Working directory: /mnt/c/xyh/fde/w4/build_attempt_1
+
+Read spec.md and build the agent it describes. You have approximately 30 minutes of work — soft budget ~100–120 tool calls. **Do not stop just because the code compiles. Stop when something is actually running and you have observed its behavior, or when you hit a wall you cannot resolve in this budget.**
+
+This is an exam: do not ask me mid-build. If you would have asked, pick an interpretation and flag it in your final report.
+
+## What this run must include (in addition to writing code):
+
+1. **Actually run the agent against the mock fixtures.** That means: install dependencies, set up whatever DB you need, set `SERVICENOW_BASE_URL=mock` and `MEDFLEX_API_BASE_URL=mock`, and start the polling loop or invoke its core function. Show that at least one ServiceNow fixture ticket flows through end-to-end and produces a `shift_requests` row.
+2. **Write pytest tests covering EC-1 through EC-7 and FM-1/FM-2/FM-3.** Run them. Report pass/fail per test. Failing tests are not a problem — they are evidence of what the spec did or did not nail down.
+3. **Stub the LLM call** for tests. Do not hit the real Anthropic API. Build a small `FakeLLMClient` that returns canned `LLMParseResult` JSON keyed on input text. Use it in tests AND optionally in the live run (since no real API key will be available).
+4. **Resolve build-environment frictions honestly.** If Postgres is not running, decide: install it, switch to SQLite, or punt. Whatever you do, name the choice. If `pip install` fails on something, say so. The exam is about how a cold builder handles real-world friction, not about producing a clean build.
+
+## Reporting
+
+Save a build log of what you ran and what happened to `/mnt/c/xyh/fde/w4/build_attempt_1/execution-log.md`. One line per material action — what you ran, what came back, any error. This is your transcript-equivalent.
+
+Then return a final report message to me with these five sections:
+
+1. **What I built and what I observed running** — files produced, things you successfully ran, end-to-end behavior witnessed.
+2. **What I couldn't build, and why** — punts, blockers, things you tried and gave up on.
+3. **What tests caught** — list the EC/FM tests, pass/fail status, and what the failures revealed about the spec.
+4. **Questions I would have asked the spec author** — be specific.
+5. **Places where I had to choose between two interpretations** — name the choice and the alternative.
+
+Be brutally honest in sections 2–5. The reflection downstream is graded on how well misses are named. If you silently picked something without realising it was a choice at the time, list it anyway.
+
+## Constraints
+
+- Do not modify anything outside `/mnt/c/xyh/fde/w4/build_attempt_1/`.
+- Do not read `medflex-agent1.dry_run/` or `build-notes.dry_run.md` — those are a prior attempt and would contaminate your judgment.
+- Do not read this directory's `build-notes.md` either — you'll overwrite it later with your own observations, but reading it first contaminates.
+- You may read any file you write yourself.
+- You may use Bash to install, run, test.
+- You may write to a `tests/` directory under the project you create.
+
+Start now.
+
+================================================================
+2. ACTION LOG (execution-log.md, written by the builder during the run)
+================================================================
+
+# Execution log — Agent 1 intake build (build_attempt_1)
+
+## Environment recon
+- `python3 --version` -> 3.13.5 (spec wanted 3.11; using 3.13)
+- `pg_isready` -> not found. No Postgres in this WSL environment.
+- `python3 -c 'import sqlite3'` -> ok
+- `python3 -c 'import pydantic'` -> ModuleNotFoundError
+- `python3 -c 'import httpx'`    -> ModuleNotFoundError
+- `python3 -c 'import psycopg2'` -> ModuleNotFoundError
+- `python3 -c 'import pytest'`   -> 9.0.3 already installed
+
+## Decisions
+- Switched persistence from Postgres -> SQLite (stdlib). Wrote both `schema.sql` (Postgres, preserved verbatim from spec) and `schema_sqlite.sql` (adapted).
+- Skipped `psycopg2-binary`; not needed for SQLite. Documented in `requirements.txt`.
+- `pip3 install --user pydantic httpx` rejected by Debian PEP 668. Used `--break-system-packages`. Installed pydantic 2.13.4 and httpx 0.28.1.
+- Cannot `python3 -m venv` either (python3-venv not installed). Live with user-site install.
+
+## File creation order
+- `requirements.txt`
+- `fixtures/servicenow_fixture.json` (verbatim from spec)
+- `fixtures/hospital_profiles.json` (verbatim from spec)
+- `prompts/intake_parse_system.txt` (verbatim from spec)
+- `models.py`        — Pydantic v2 enums + `LLMParseResult` + `ShiftRequest`
+- `schema.sql` / `schema_sqlite.sql`
+- `db.py`            — SQLite connect, insert, idempotency, duplicate, audit
+- `servicenow_client.py` — mock + real HTTP, error mapping per spec
+- `hospital_api.py`  — mock + real, 1-hour TTL cache, FM-3 fallback to None
+- `llm_client.py`    — `FakeLLMClient` keyed by source_text substrings, `RealLLMClient` stub for Anthropic
+- `agent1_intake.py` — `process_ticket`, `run_one_cycle`, polling loop, EC-7 multi-shift detector
+
+## Live mock run #1
+- `rm -f /tmp/medflex_agent1.sqlite`
+- `SERVICENOW_BASE_URL=mock MEDFLEX_API_BASE_URL=mock INTAKE_USE_FAKE_LLM=true INTAKE_RUN_ONCE=true DATABASE_URL=/tmp/medflex_agent1.sqlite python3 agent1_intake.py`
+- Output: 3 ServiceNow fixture tickets processed:
+  - ticket_001 -> ShiftRequest PENDING_MATCH, confidence 0.95, ICU + RN + ICU_CERTIFIED
+  - ticket_002 -> CLARIFICATION_NEEDED, 0.55, urgency CRITICAL, DATE_UNCLEAR + TIME_UNCLEAR flags
+  - ticket_003 -> PENDING_MATCH, 0.93, PEDIATRIC, RN + PEDS_CERTIFIED
+- Audit log: 3 rows, action=CREATED, all populated with confidence + to_status.
+- DB inspect via `sqlite3` confirms 3 rows in `shift_requests`, 5 in `credential_requirements`, 2 in `ambiguity_flags`, 3 in `audit_log`.
+
+## Tests
+- First run: 9 passed, 1 failed.
+  - `test_ec7_multi_shift_block` failed: original regex was too rigid (required `(comma|" and ")` between every pair). Replaced with a permissive ordinal-day scanner + plurality hint.
+- Second run: 10/10 passed.
+
+## Live mock run #2 (idempotency)
+- Re-ran the agent against the SAME populated SQLite database.
+- All 3 fixture tickets were correctly skipped with `skipped_reason=already_processed`.
+- DB row count unchanged at 3.
+
+## Punts / honest notes
+- Postgres -> SQLite is a real divergence. The Postgres-specific bits (gen_random_uuid, JSONB, CHECK char_length) are documented but unverified.
+- Did not exercise the RealLLMClient (no API key). FakeLLMClient covered both tests and the live mock run.
+- FM-1 test only checks non-crashy behavior on one ServiceNow failure. The spec's "3 consecutive failures + pause" loop is NOT exercised end-to-end — that would need a stateful poller.
+- OPS_ALERT webhook implementation is described in spec but not wired up. Build skipped it (called out as a place I noticed).
+- The "LLM call timeout + retry once after 5s" is implemented in RealLLMClient but cannot be tested without a flaky real client.
+- Coordinator clarification queue is a SELECT, not a separate table — implemented as `db.fetch_clarification_queue()`.
+
+================================================================
+3. END-OF-RUN SUMMARY (the builder's 5-section report)
+================================================================
+
+## 1. What I built and what I observed running
+
+Built the full project tree under /mnt/c/xyh/fde/w4/build_attempt_1/medflex-agent1/:
+- models.py — Pydantic v2 enums (CredentialCategory, UnitType, Urgency,
+  AmbiguityType, ShiftRequestStatus, ParsedBy), CredentialRequirement,
+  AmbiguityFlag, LLMParseResult, ShiftRequest.
+- db.py — SQLite-backed persistence (connect with schema init,
+  insert_shift_request, already_processed, find_duplicate, write_audit,
+  fetch_clarification_queue).
+- schema.sql (Postgres, verbatim from spec) + schema_sqlite.sql
+  (adapted for build env).
+- servicenow_client.py — mock (reads fixture) + real httpx client with
+  the HTTP-status-to-action mapping from the spec.
+- hospital_api.py — mock + real, 1-hour TTL in-memory cache,
+  hospital_exists() for EC-6.
+- llm_client.py — FakeLLMClient keyed by source_text substrings,
+  RealLLMClient for Anthropic, shared _parse_and_validate covering
+  schema-failure (FM-2). build_default_fake() returns canned responses
+  for all fixtures + EC inputs.
+- agent1_intake.py — process_ticket, run_one_cycle, polling loop with
+  INTAKE_RUN_ONCE. Multi-shift detector for EC-7.
+- fixtures/ and prompts/ written verbatim from spec.
+
+End-to-end live run (SERVICENOW_BASE_URL=mock MEDFLEX_API_BASE_URL=mock
+INTAKE_USE_FAKE_LLM=true INTAKE_RUN_ONCE=true python3 agent1_intake.py):
+- 3 fixture tickets processed; 3 shift_requests rows persisted with
+  credentials, ambiguity flags, and matching audit_log entries.
+- ticket_001 -> PENDING_MATCH, 0.95, ICU
+- ticket_002 -> CLARIFICATION_NEEDED, 0.55, urgency CRITICAL with
+  DATE_UNCLEAR + TIME_UNCLEAR
+- ticket_003 -> PENDING_MATCH, 0.93, PEDIATRIC
+- Idempotency verified: second poll cycle skipped all 3 tickets
+  (no duplicate rows).
+
+## 2. What I couldn't build, and why
+
+- Postgres -> SQLite divergence. No Postgres in WSL. Kept the Postgres
+  schema as-is (schema.sql) but the code runs on schema_sqlite.sql.
+  Postgres-specific bits (gen_random_uuid, JSONB, CHECK char_length)
+  are therefore unverified.
+- `python3 -m venv` failed (python3-venv not installed). Used
+  `pip install --break-system-packages` into the user site instead of
+  a clean virtualenv.
+- No exercise of RealLLMClient — no API key available and out of scope
+  per instructions. The Anthropic-call timeout + 5s retry path is
+  implemented but untested.
+- FM-1 "3 consecutive 5xx -> 15-minute pause + ops alert" not exercised
+  end-to-end. My FM-1 test only checks that a single ServiceNow failure
+  doesn't crash the poll cycle. The stateful failure counter and
+  pause-on-N-fails behavior is not implemented at all — I noticed it
+  and skipped it.
+- OPS_ALERT_WEBHOOK_URL POST not implemented. Spec defines the payload
+  but I didn't wire httpx.post calls anywhere — the build would surface
+  failures via stderr logs only.
+- DAILY_LLM_COST_LIMIT_USD circuit breaker not implemented. Tracked as
+  a known gap.
+- CLARIFICATION_TIMEOUT_MINUTES escalation timer not implemented. Would
+  require either a separate scheduled job or a cron in the poll loop;
+  neither built.
+
+## 3. What tests caught
+
+10 tests, all pass on second run:
+
+| Test                       | Status                       | Notes |
+|----------------------------|------------------------------|-------|
+| EC-1 ASAP                  | PASS                         | DATE_UNCLEAR flag, CRITICAL urgency, CLARIFICATION_NEEDED, confidence < 0.65 — all asserted. |
+| EC-2 Step-down shorthand   | PASS                         | GENERAL + RN + CREDENTIAL_UNCLEAR, PENDING_MATCH with mid-band confidence. |
+| EC-3 Conflicting reqs      | PASS                         | CONFLICTING_REQUIREMENTS flag + < 0.65 + CLARIFICATION_NEEDED. |
+| EC-4 Duplicate detected    | PASS                         | Second ticket gets DUPLICATE_SUSPECTED + CLARIFICATION_NEEDED; first record unchanged. |
+| EC-5 No time specified     | PASS                         | shift_start/end null, TIME_UNCLEAR, mid-band confidence, PENDING_MATCH. |
+| EC-6 Unknown hospital      | PASS                         | Routed to manual queue, 0 shift_requests rows created. |
+| EC-7 Multi-shift block     | FAIL first run, PASS after fix | Initial regex required `,` or ` and ` between every pair and didn't match `20th, 21st, and 22nd`. Rewrote as ordinal-token scan + plurality hint. Spec catch: EC-7's required behavior is testable but the spec gives no rule for how to detect the multi-shift case — is the LLM expected to flag it? The orchestrator? Both? I had to guess. |
+| FM-1 ServiceNow down       | PASS                         | One-cycle non-crash. Stateful "3 consecutive + pause" behavior NOT tested (not implemented). |
+| FM-2 LLM invalid JSON      | PASS                         | Manual-queue routing + LLM_PARSE_FAILURE audit row. Spec catch: "retry once after 5s" is in RealLLMClient but the spec doesn't say whether LLMSchemaError (schema-valid JSON but wrong fields) is also retried, or only network/timeout errors. I retry both in the real client. |
+| FM-3 Hospital profile down | PASS                         | Parses with defaults, ShiftRequest still created. Spec catch: spec says "log warning" but doesn't say whether the coordinator should see an explicit flagged_ambiguities entry. I added one (INSUFFICIENT_INFORMATION with hospital_id excerpt) when status would otherwise be PENDING_MATCH. This may be over-reading. |
+
+## 4. Questions I would have asked the spec author
+
+1. EC-7 detection responsibility. Should the LLM return all 3 dates in
+   one response, or should the orchestrator detect multi-shift after
+   parse? My implementation does the latter via regex, which feels brittle.
+2. FM-2 retry scope. Does "retry once after 5s" cover only timeouts, or
+   also JSON schema failures? Schema failures often won't fix themselves
+   on retry.
+3. FM-3 visibility. When the agent falls back to default shift times,
+   does the resulting record get a flagged_ambiguities entry, just an
+   audit row, or both?
+4. EC-4 duplicate handling. Spec says "add DUPLICATE_SUSPECTED; do not
+   auto-cancel; route to coordinator review." Does "route to coordinator
+   review" mean set status to CLARIFICATION_NEEDED, or keep PENDING_MATCH
+   with the flag visible? I chose CLARIFICATION_NEEDED.
+5. Multi-shift + duplicate. What happens if shift #2 of a 3-shift block
+   duplicates an existing record? My code flags only that one shift and
+   lets the others go to PENDING_MATCH — but the spec doesn't say.
+6. Idempotency key. EC-7 says (servicenow_ticket_id, ticket_sequence_num).
+   Does the FIRST poll cycle need to be atomic across all 3 sequence
+   rows (transactional)? Mine inserts them one-by-one with autocommit.
+7. HIPAA / PHI in source_text. Spec says don't log source_text in
+   plaintext app logs. My audit_log table doesn't store it, but I print
+   log lines via Python logging that include ticket_id but not
+   source_text. That feels right but isn't explicitly confirmed.
+8. CRNA / NP / specialty-only requests. What confidence applies if the
+   source text says only "need an NP" with no unit type? Unit_type=UNKNOWN
+   drops the unit-type component to 0, capping overall at 0.64 ->
+   clarification. Intended?
+
+## 5. Places where I had to choose between two interpretations
+
+- Postgres vs SQLite. Spec was Postgres. I switched to SQLite stdlib
+  because Postgres wasn't installable in the build window. Alternative:
+  punt the whole DB layer.
+- hospital_exists semantics in mock mode. I treat the _default fallback
+  as "hospital not found" for EC-6 purposes (only explicit keys count
+  as known hospitals). Alternative: treat any successful default lookup
+  as "hospital known" — would break EC-6.
+- EC-7 split point. I split multi-shift inside the orchestrator using a
+  regex after the LLM returned a single date. Alternative: have the
+  FakeLLMClient return all 3 dates and have the orchestrator just iterate.
+- FM-3 ambiguity flag. I added an INSUFFICIENT_INFORMATION flag when
+  profile was missing and status was PENDING_MATCH. Alternative: just
+  log the warning and leave the flag list alone (closer to the literal
+  spec text).
+- Duplicate ambiguity sets status to CLARIFICATION_NEEDED. Alternative:
+  keep status PENDING_MATCH and rely on the flag visibility.
+- EC-2 unit_type=GENERAL for "step-down". I hardcoded this in the canned
+  FakeLLM response per the spec's example. Alternative: GENERAL with
+  inference_confidence of 0.5 might better reflect reality.
+- _build_llm_client() defaults to Fake when no API key. Alternative:
+  hard-fail at startup. I chose Fake to make local dev frictionless,
+  since spec says "set MEDFLEX_API_BASE_URL=mock for local testing"
+  already.
+- Multi-shift ticket_sequence_num reuses ticket_id. Spec mentions
+  (servicenow_ticket_id, ticket_sequence_num) as the idempotency key.
+  I implemented this but no UNIQUE constraint enforces it at the DB
+  level — only application-side check. Alternative: add a UNIQUE index
+  in the SQLite schema.
+
+================================================================
+END OF TRANSCRIPT
+================================================================
+
+Result: 10/10 tests pass; live mock run wrote 3 rows; idempotency confirmed.

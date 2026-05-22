@@ -1,0 +1,20 @@
+[
+  {
+    "sys_id": "ticket_001",
+    "description": "Need ICU-trained RN for nights January 20th, 7pm to 7am. St. Mary's downtown.",
+    "u_hospital_id": "hospital_stmarys_01",
+    "sys_created_on": "2026-01-19T10:00:00Z"
+  },
+  {
+    "sys_id": "ticket_002",
+    "description": "RN needed ASAP for med-surg floor",
+    "u_hospital_id": "hospital_metro_02",
+    "sys_created_on": "2026-01-19T11:30:00Z"
+  },
+  {
+    "sys_id": "ticket_003",
+    "description": "Pediatric RN, day shift, February 3rd",
+    "u_hospital_id": "hospital_stmarys_01",
+    "sys_created_on": "2026-01-19T12:00:00Z"
+  }
+]

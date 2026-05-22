@@ -1,0 +1,32 @@
+{
+  "_default": {
+    "standard_shift_times": {
+      "days":    {"start": "07:00", "end": "19:00"},
+      "nights":  {"start": "19:00", "end": "07:00"},
+      "evenings":{"start": "15:00", "end": "23:00"}
+    },
+    "preferred_credential_categories": ["RN"],
+    "common_unit_types": ["MED_SURG", "GENERAL"],
+    "coordinates": {"lat": 40.7128, "lng": -74.0060}
+  },
+  "hospital_stmarys_01": {
+    "standard_shift_times": {
+      "days":    {"start": "07:00", "end": "19:00"},
+      "nights":  {"start": "19:00", "end": "07:00"},
+      "evenings":{"start": "15:00", "end": "23:00"}
+    },
+    "preferred_credential_categories": ["RN", "ICU_CERTIFIED", "ACLS"],
+    "common_unit_types": ["ICU", "ER", "MED_SURG"],
+    "coordinates": {"lat": 40.7549, "lng": -73.9840}
+  },
+  "hospital_metro_02": {
+    "standard_shift_times": {
+      "days":    {"start": "07:00", "end": "19:00"},
+      "nights":  {"start": "19:00", "end": "07:00"},
+      "evenings":{"start": "15:00", "end": "23:00"}
+    },
+    "preferred_credential_categories": ["RN", "LPN"],
+    "common_unit_types": ["MED_SURG", "GENERAL", "PSYCH"],
+    "coordinates": {"lat": 40.6892, "lng": -74.0445}
+  }
+}
