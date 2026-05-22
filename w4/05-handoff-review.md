@@ -8,20 +8,18 @@
 
 ## Part 1: Triage
 
-**Review lens.** I am using the ATX handoff discipline here: separate build blockers from non-blocking concerns, preserve acceptable spec choices even if I would have designed them differently, and escalate the smallest concrete change that makes the spec safe to build.
-
 **OVERALL ASSESSMENT**
 
 The architecture is sound. The intent is right. One factual error in the spec blocks the build. Three smaller items can be fixed in parallel without holding up the start.
 
 **BLOCKERS (must resolve before work begins)**
 
-1. **§3.3 misuses 'SUSPENDED'.** The spec puts any licence expired over 90 days into 'Status = SUSPENDED'. But 'suspended' is a board-imposed licence status, not a synonym for 'lapsed a long time ago'. A nurse who forgot to renew gets the same operational label as one with a sanction on her record. The hospital reads the dashboard and makes the wrong call on a real person. The worker carries a harmful label for as long as the cache holds it.
-   *Fix:* rename to 'EXPIRED_OVER_90_DAYS'. Keep 'SUSPENDED' only for what §3.2.5 finds in the disciplinary record.
+1. **§3.3 misuses 'SUSPENDED'.** The spec puts any licence expired over 90 days into 'Status = SUSPENDED'. But 'suspended' is a board-imposed licence status, not a synonym for 'lapsed a long time ago'. A nurse who forgot to renew gets the same operational label as one with a sanction on her record. The hospital reads the dashboard and makes the wrong call on a real person.
+   *Fix:* rename to 'EXPIRED_OVER_90_DAYS'. Keep 'SUSPENDED' only for what §3.2 step 5 finds in the disciplinary record.
 
 **CONCERNS (should be resolved; not build stops)**
 
-1. **§8 vs §7. Impossible metric.** §8 asks for 0% false positives on VERIFIED for expired or suspended licences. But §7 already says there is a 24 to 48 hour lag at the source. The agent can hit a false positive from upstream lag alone. Pair the target with a freshness window (mark 'VERIFIED' only if confirmed in the last 24 hours), or set a real tolerance.
+1. **§8 vs §7. Impossible metric.** §8 asks for 0% false positives on VERIFIED for expired or suspended licences. But §7 already says there is a 24 to 48 hour lag at the source. The agent can hit a false positive from upstream lag alone. Pair the target with a source-freshness rule and lag-aware tolerance, or define when a result must be labelled "freshness risk" instead of VERIFIED.
 2. **§3.1 secondary source = public portals.** This implies scraping. Partner legal should name which states are scrape-acceptable. Restrict the secondary path to that list.
 3. **§6 throughput is 'TBD'.** Volume drives both the architecture and the state-board rate-limit conversation. We need pilot and full-rollout volumes before we size the build.
 
@@ -52,7 +50,7 @@ Thanks for the clean handoff. The architecture reads well. §3.3's line that 'th
 
 **Three concerns I would like resolved in parallel.** Not build stops, but they should not slip past the pilot.
 
-1. The §8 0% false-positive target does not work with the 24 to 48 hour state-board lag that your own §7 names. Please pair it with a freshness window.
+1. The §8 0% false-positive target does not work with the 24 to 48 hour state-board lag that your own §7 names. Please pair it with a source-freshness rule or lag-aware tolerance.
 2. §3.1's secondary path implies scraping public portals. Your legal team should clear which states are acceptable before we wire it in.
 3. §6 throughput is still TBD. We need a pilot volume to plan the build against.
 
