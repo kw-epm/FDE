@@ -9,7 +9,15 @@
 
 ## 1. Assumptions and source ledger
 
-**Traceability rule for this document:** every financial or operational number below is either **S**ourced from the MedFlex scenario/prior deliverables, **P**ublic benchmark/pricing, **U**ser-confirmed, or an **E**xplicit FDE estimate. Derived figures point back to the row IDs in this table.
+**Traceability rule for this document:** every financial or operational number below has a source type. Derived figures point back to the row IDs in this table.
+
+| Type | Meaning |
+|---|---|
+| S | Sourced from the MedFlex scenario or prior deliverables |
+| P | Public benchmark or pricing source |
+| U | User-confirmed input |
+| E | Explicit FDE estimate |
+| D | Derived calculation from other ledger rows |
 
 | ID | Assumption / input | Value | Type | Source / derivation |
 |---|---|---:|---|---|
