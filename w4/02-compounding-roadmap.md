@@ -4,6 +4,8 @@
 **Date:** 2026-05-22
 **Anchor:** Wave 1 is MedFlex matching (Week 3). Wave 2 extends MedFlex into nurse onboarding & credential lifecycle. Wave 3 turns MedFlex into a multi-agent operations stack (Matching + Credential-watcher + Coverage-risk agents).
 
+**Cross-reference to Deliverable #1:** all Wave costs in this roadmap are **build costs only**. They use Deliverable #1's $95k Wave 1 build baseline and exclude the ongoing $50k/year AI-ownership run cost, LLM/tool spend, residual rework, and HITL operating cost from Deliverable #1.
+
 ---
 
 ## 1. The compounding thesis (one paragraph)
@@ -21,7 +23,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 **What gets built (new, from scratch):**
 
 *Platform plumbing (engineering-layer assets):*
-- LLM call wrapper (retry, timeout, JSON validation, cost meter, circuit breaker)
+- LLM call wrapper (provider abstraction, retry, timeout, JSON validation)
 - Confidence-threshold framework (config-driven escalation rules; thresholds tuned per workflow)
 - HITL queue + coordinator dashboard
 - State machine library (offer → lock → confirm; same engine handles planned and urgent modes)
@@ -30,7 +32,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 - Prompt registry with version control
 - Notification rails (SMS + email send infrastructure)
 - Cost/token meter + daily reporting + cost circuit breaker
-- Trust-ramp framework (weeks 1–2 manual → week 8 auto)
+- Trust-ramp framework (weeks 1–2 manual → week 8 sample-audit / 25% HITL)
 
 *MedFlex domain integrations (the assets that compound into Waves 2 and 3):*
 - **Credential pre-flight engine** — checks a nurse has the licenses, certifications, immunizations required for a target shift. Built for matching; reused by onboarding and credential-watching.
@@ -44,7 +46,7 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 - Planned-matching system prompt, urgent-rematching system prompt
 - MedFlex matching eval set (~500 historical tickets)
 
-**Build cost:** ~$95,000 (per Deliverable #1). Of that, ~$72,000 is platform + MedFlex-domain-integration work that compounds into Waves 2 and 3 (see §3 matrix and §4 cost trajectory); ~$23,000 is matching-specific build that does not compound (system prompts, eval set, trust-ramp tuning).
+**Build cost:** ~$95,000 (per Deliverable #1 §5). Of that, ~$72,000 is platform + MedFlex-domain-integration work that compounds into Waves 2 and 3 (see §3 matrix and §4 cost trajectory); ~$23,000 is matching-specific build that does not compound (system prompts, eval set, trust-ramp tuning).
 
 ### Wave 2 — MedFlex Nurse Onboarding & Credential Lifecycle (months 3–5)
 
@@ -87,6 +89,8 @@ A first FDE engagement spends most of its budget on two kinds of work that compo
 **Saving vs standalone: ~$37,000.**
 
 ### Wave 3 — MedFlex Multi-Agent Operations (months 6–8)
+
+Roadmap **Wave 3** is not the same thing as Deliverable #1's **Phase 3** operating state. Deliverable #1 Phase 3 means the Wave 1 matching agent has matured to lower HITL after month 6; roadmap Wave 3 means a new follow-on build that adds multi-agent coordination.
 
 **Scope.** Per ATX scoring §Step 4 — *"Wave 3+: multi-agent workflows, agents that coordinate with each other, platform-level optimisation"* — Wave 3 turns MedFlex's day-to-day operations into a coordinated agent stack:
 
@@ -139,7 +143,7 @@ Each row is an asset. Each cell shows whether the asset is built new (B), reused
 
 | Asset | Layer | Wave 1 (Matching) | Wave 2 (Onboarding + Credentials) | Wave 3 (Multi-agent ops) |
 |---|---|---|---|---|
-| LLM call wrapper (retry / timeout / cost meter / circuit breaker) | Platform | **B (3d)** | R | R |
+| LLM call wrapper (provider abstraction / retry / timeout / JSON validation) | Platform | **B (3d)** | R | R |
 | JSON schema validator | Platform | **B (1d)** | R | R |
 | Confidence-threshold framework | Platform | **B (2d)** | R+ (1d tuning) | R+ (1d tuning) |
 | HITL queue + coordinator dashboard | Platform | **B (4d)** | R+ (2d new views) | R+ (1d new view) |
