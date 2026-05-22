@@ -8,13 +8,15 @@
 
 ## Part 1: Triage
 
+**Review lens.** I am using the ATX handoff discipline here: separate build blockers from non-blocking concerns, preserve acceptable spec choices even if I would have designed them differently, and escalate the smallest concrete change that makes the spec safe to build.
+
 **OVERALL ASSESSMENT**
 
 The architecture is sound. The intent is right. One factual error in the spec blocks the build. Three smaller items can be fixed in parallel without holding up the start.
 
 **BLOCKERS (must resolve before work begins)**
 
-1. **§3.3 misuses 'SUSPENDED'.** The spec puts any licence expired over 90 days into 'Status = SUSPENDED'. But 'suspended' is a legal status set by a state board after a disciplinary action. It is not a synonym for 'lapsed a long time ago'. A nurse who forgot to renew gets the same label as one with a sanction on her record. The hospital reads the dashboard and makes the wrong call on a real person. The worker carries a harmful label for as long as the cache holds it.
+1. **§3.3 misuses 'SUSPENDED'.** The spec puts any licence expired over 90 days into 'Status = SUSPENDED'. But 'suspended' is a board-imposed licence status, not a synonym for 'lapsed a long time ago'. A nurse who forgot to renew gets the same operational label as one with a sanction on her record. The hospital reads the dashboard and makes the wrong call on a real person. The worker carries a harmful label for as long as the cache holds it.
    *Fix:* rename to 'EXPIRED_OVER_90_DAYS'. Keep 'SUSPENDED' only for what §3.2.5 finds in the disciplinary record.
 
 **CONCERNS (should be resolved; not build stops)**
@@ -46,7 +48,7 @@ RE: ACVA v1.0 Spec Review
 
 Thanks for the clean handoff. The architecture reads well. §3.3's line that 'the agent shall not make work-eligibility determinations' is the single sentence that keeps this a tool rather than a liability magnet. The in-scope and out-of-scope split is clear, which we appreciated.
 
-**One thing my team needs fixed before we start.** §3.3 puts any licence past 90-day expiry into 'SUSPENDED'. A state board only issues that status after a disciplinary action. So a nurse who simply forgot to renew on time ends up flagged the same as one with a sanction. The hospital reads the dashboard, declines the hire, and we have done real harm to a real person. The fix is fast: rename the bucket to 'EXPIRED_OVER_90_DAYS'. Keep 'SUSPENDED' only for actual board findings.
+**One thing my team needs fixed before we start.** §3.3 puts any licence past 90-day expiry into 'SUSPENDED'. That is a board-imposed licence status, not an age bucket. So a nurse who simply forgot to renew on time ends up flagged the same way as one with a sanction. The hospital reads the dashboard, declines the hire, and we have done real harm to a real person. The fix is fast: rename the bucket to 'EXPIRED_OVER_90_DAYS'. Keep 'SUSPENDED' only for actual board findings.
 
 **Three concerns I would like resolved in parallel.** Not build stops, but they should not slip past the pilot.
 
