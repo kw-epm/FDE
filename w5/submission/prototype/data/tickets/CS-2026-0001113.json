@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001113",
+  "subject": "Account access issue",
+  "description": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Hayden Reed.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-23T19:59:01+00:00",
+  "sla_breach_at": "2026-04-23T23:59:01+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001349",
+    "name": "Phoenix Adams",
+    "email": "phoenixadams@yahoo.example",
+    "account_name": "Hayden Reed",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T19:59:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Adams",
+      "message": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Hayden Reed.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:00:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hello Phoenix, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:01:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Adams",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:02:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your account access ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:04:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Adams",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:05:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:05:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:06:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Adams",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

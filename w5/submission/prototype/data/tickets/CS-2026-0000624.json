@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000624",
+  "subject": "Question about my latest invoice",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Logan Smith, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-22T21:48:25+00:00",
+  "sla_breach_at": "2026-04-23T01:48:25+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002115",
+    "name": "Rowan Scott",
+    "email": "rowan.scott@proton.example",
+    "account_name": "Logan Smith",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T21:48:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Scott",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Logan Smith, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:49:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hi Rowan, I'm Mateo Cruz. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:51:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Scott",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:52:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:54:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Scott",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:55:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:55:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:56:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Scott",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

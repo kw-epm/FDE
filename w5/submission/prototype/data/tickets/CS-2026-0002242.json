@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0002242",
+  "subject": "Forgot my password",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-25T01:08:42+00:00",
+  "sla_breach_at": "2026-04-25T05:08:42+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003319",
+    "name": "Elena Martin",
+    "email": "elenamartin@icloud.example",
+    "account_name": "Priya Morris",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T01:08:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Martin",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:09:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi Elena, I'm Gabby Olsson. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:11:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Martin",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:11:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:12:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Martin",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:13:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:14:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Martin",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:15:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:16:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Martin",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:17:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:18:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:19:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Martin",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

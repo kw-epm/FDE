@@ -1,0 +1,70 @@
+WEBVTT
+
+NOTE ticket_id: CS-2026-0000658
+NOTE channel: phone
+NOTE intake_ts: 2026-04-23T01:53:23+00:00
+NOTE customer_id: CUST-002757
+
+1
+00:00:00.000 --> 00:00:04.833
+<v Agent>Thank you for calling CloudServe support, this is Felix Tang. How can I help you today?
+
+2
+00:00:05.800 --> 00:00:10.800
+<v Customer>Hi, my name is Sam. I have an account with you and I need help with invoice clarification.
+
+3
+00:00:12.569 --> 00:00:16.180
+<v Agent>I can help with that. Can I get the email address on the account?
+
+4
+00:00:16.800 --> 00:00:18.800
+<v Customer>It's samsanchez@gmail.example.
+
+5
+00:00:20.604 --> 00:00:22.604
+<v Agent>Got it. Pulling up your account now.
+
+6
+00:00:23.661 --> 00:00:26.549
+<v Agent>I have your account here, Owen Cox, on the pro plan.
+
+7
+00:00:27.141 --> 00:00:29.141
+<v Customer>What do I do?
+
+8
+00:00:30.848 --> 00:00:36.015
+<v Agent>It's actually a self-service flow — I can walk you through it now if you have a browser open.
+
+9
+00:00:38.011 --> 00:00:40.011
+<v Customer>Yeah, I do.
+
+10
+00:00:40.742 --> 00:00:45.020
+<v Agent>Ok — go to app dot cloudserve dot example slash login, click forgot password…
+
+11
+00:00:45.892 --> 00:00:47.892
+<v Customer>Done. The reset email just came in.
+
+12
+00:00:48.552 --> 00:00:50.552
+<v Agent>Perfect. Try the new password now.
+
+13
+00:00:52.528 --> 00:00:54.528
+<v Customer>Working. Thanks.
+
+14
+00:00:56.014 --> 00:00:58.014
+<v Agent>Anything else I can help with today?
+
+15
+00:00:58.665 --> 00:01:00.665
+<v Customer>All set, thanks.
+
+16
+00:01:02.153 --> 00:01:04.764
+<v Agent>Thanks for calling CloudServe. Have a good day.

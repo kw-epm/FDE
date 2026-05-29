@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000106",
+  "subject": "Billing date confusion",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Germany. We sent a tax exemption form last year.\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "closed",
+  "created_at": "2026-04-22T05:27:17+00:00",
+  "sla_breach_at": "2026-04-22T09:27:17+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003932",
+    "name": "Drew Hall",
+    "email": "drew.hall@company.example",
+    "account_name": "Sana Cook",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T05:27:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Hall",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Germany. We sent a tax exemption form last year.\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:28:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hello Drew, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:29:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:30:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: billing_question; risk_flags=regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

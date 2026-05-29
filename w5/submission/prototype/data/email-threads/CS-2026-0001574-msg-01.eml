@@ -1,0 +1,14 @@
+From: Owen Allen <owen.allen@outlook.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: How does the API rate limit work?
+Date: Wed, 22 Apr 2026 02:09:44 +0000
+Message-ID: <177730075196.7.17637725292532835809@outlook.example>
+X-CloudServe-Ticket-Id: CS-2026-0001574
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001876
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+What are the API rate limits on the Pro plan? We're seeing 429s and need to k=
+now if we should upgrade or batch differently.

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001804",
+  "subject": "Lost my authenticator phone",
+  "description": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-04-26T02:21:42+00:00",
+  "sla_breach_at": "2026-04-26T02:51:42+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "account_access",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003381",
+    "name": "Noor Bailey",
+    "email": "noor_bailey@gmail.example",
+    "account_name": "Meridian Capital Works",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T02:21:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Bailey",
+      "message": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:24:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi there \u2014 I'm Olivia Park from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:25:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Bailey",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:27:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:28:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Bailey",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:29:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:29:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:30:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Bailey",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

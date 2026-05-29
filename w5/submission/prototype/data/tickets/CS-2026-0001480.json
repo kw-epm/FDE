@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001480",
+  "subject": "API timeouts on /api/v2/projects",
+  "description": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-22T11:05:58+00:00",
+  "sla_breach_at": "2026-04-22T15:05:58+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002418",
+    "name": "Theo Cooper",
+    "email": "theo.cooper@outlook.example",
+    "account_name": "Owen James",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T11:05:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Cooper",
+      "message": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:07:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi there \u2014 I'm Ravi Chen (Billing) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:09:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:10:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: technical_issue; risk_flags=none.",
+      "internal_note": true
+    }
+  ]
+}

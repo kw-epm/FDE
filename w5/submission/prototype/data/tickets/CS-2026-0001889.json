@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001889",
+  "subject": "Reset link expired",
+  "description": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "closed",
+  "created_at": "2026-04-22T11:14:58+00:00",
+  "sla_breach_at": "2026-04-22T15:14:58+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003468",
+    "name": "Owen Howard",
+    "email": "owen.howard@outlook.example",
+    "account_name": "Phoenix Walker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T11:14:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Howard",
+      "message": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:17:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hello Owen, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:19:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:20:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: password_reset; risk_flags=regulatory_complaint,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

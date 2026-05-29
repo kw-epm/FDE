@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001664",
+  "subject": "Why was I charged twice?",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T12:29:16+00:00",
+  "sla_breach_at": "2026-04-24T16:29:16+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001472",
+    "name": "Phoenix Evans",
+    "email": "phoenix.evans@fastmail.example",
+    "account_name": "Mateus Cook",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T12:29:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Evans",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:31:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi there \u2014 I'm Lina Petrov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:32:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Evans",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:33:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:34:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Evans",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:35:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:36:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:36:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Evans",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

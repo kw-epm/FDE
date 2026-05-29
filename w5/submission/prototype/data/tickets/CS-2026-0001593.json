@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001593",
+  "subject": "Refund for unused subscription",
+  "description": "I haven't used the service since signing up 3 months ago. I just realised I've been paying. Can I get a refund for the unused months?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-23T00:42:46+00:00",
+  "sla_breach_at": "2026-04-23T04:42:46+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001635",
+    "name": "Lin Nelson",
+    "email": "lin.nelson@yahoo.example",
+    "account_name": "Hiro King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T00:42:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Nelson",
+      "message": "I haven't used the service since signing up 3 months ago. I just realised I've been paying. Can I get a refund for the unused months?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:45:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi Lin, I'm Kai Williams. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:47:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:49:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:51:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Hiro King",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:55:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:55:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-23T00:59:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Nelson",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

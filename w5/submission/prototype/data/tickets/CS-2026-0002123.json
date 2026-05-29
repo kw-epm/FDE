@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0002123",
+  "subject": "Question about my latest invoice",
+  "description": "Got my invoice today and there's a 'metered overage' line for $9998. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T10:38:30+00:00",
+  "sla_breach_at": "2026-04-20T11:08:30+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "billing_question",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002354",
+    "name": "Priya Johnson",
+    "email": "priyajohnson@company.example",
+    "account_name": "Polaris Robotics Industries",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T10:38:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Johnson",
+      "message": "Got my invoice today and there's a 'metered overage' line for $9998. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:39:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hi there \u2014 I'm Imani Lewis from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:41:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Johnson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:42:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:43:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Johnson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:44:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:44:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Johnson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:45:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:46:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:46:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Johnson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

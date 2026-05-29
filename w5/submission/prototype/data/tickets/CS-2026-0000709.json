@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000709",
+  "subject": "Status page out of date?",
+  "description": "We're seeing 5xx errors across the board. Your status page says all green but we can't load anything. Are you down?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T22:21:32+00:00",
+  "sla_breach_at": "2026-04-25T02:21:32+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001781",
+    "name": "Kit Campbell",
+    "email": "kitcampbell@fastmail.example",
+    "account_name": "Cameron Green",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T22:21:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Campbell",
+      "message": "We're seeing 5xx errors across the board. Your status page says all green but we can't load anything. Are you down?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:23:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hello Kit, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:24:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Campbell",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:25:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "If you head to `kb-articles/service-status.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:26:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Campbell",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:27:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:27:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:28:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Campbell",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

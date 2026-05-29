@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000878",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-26T16:48:35+00:00",
+  "sla_breach_at": "2026-04-26T20:48:35+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003007",
+    "name": "Diego Stewart",
+    "email": "diego.stewart@fastmail.example",
+    "account_name": "Charlie Reed",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T16:48:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Stewart",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:49:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi there \u2014 I'm Priya Shah from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:51:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Stewart",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:52:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:54:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Stewart",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:55:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:56:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Stewart",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:57:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:59:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Stewart",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T17:00:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T17:01:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T17:01:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Stewart",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

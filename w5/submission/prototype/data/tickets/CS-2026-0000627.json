@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000627",
+  "subject": "Billing date confusion",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-20T20:34:47+00:00",
+  "sla_breach_at": "2026-04-21T00:34:47+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002061",
+    "name": "Quinn Adams",
+    "email": "quinnadams@proton.example",
+    "account_name": "Charlie Sanchez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T20:34:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Adams",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:36:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Quinn, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:37:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Adams",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:38:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:39:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Adams",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:40:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:40:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Adams",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:41:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:42:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T20:42:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Adams",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

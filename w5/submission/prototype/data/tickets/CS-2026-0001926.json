@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001926",
+  "subject": "Need invoice itemisation",
+  "description": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T18:32:13+00:00",
+  "sla_breach_at": "2026-04-21T22:32:13+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001642",
+    "name": "Jasmine Morgan",
+    "email": "jasmine.morgan@corp.example",
+    "account_name": "Elena Lopez",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T18:32:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Morgan",
+      "message": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:34:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hello Jasmine, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:34:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Morgan",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:34:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:36:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Morgan",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:37:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:38:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Morgan",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:40:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:41:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Morgan",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:42:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:43:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:44:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Morgan",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

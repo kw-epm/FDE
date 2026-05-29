@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001289",
+  "subject": "Why was I charged twice?",
+  "description": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-23T02:26:06+00:00",
+  "sla_breach_at": "2026-04-23T06:26:06+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003463",
+    "name": "Ravi King",
+    "email": "ravi_king@fastmail.example",
+    "account_name": "Charlie Johnson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T02:26:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi King",
+      "message": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T02:28:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi there \u2014 I'm Ben Carter from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T02:30:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi King",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T02:31:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T02:32:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi King",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T02:33:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T02:34:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T02:34:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi King",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

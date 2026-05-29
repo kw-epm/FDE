@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002119",
+  "subject": "File upload fails for large files",
+  "description": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T06:15:20+00:00",
+  "sla_breach_at": "2026-04-26T10:15:20+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002149",
+    "name": "Theo Howard",
+    "email": "theo_howard@company.example",
+    "account_name": "Blake Peterson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T06:15:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Howard",
+      "message": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:17:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hello Theo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:19:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:20:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: technical_issue; risk_flags=repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

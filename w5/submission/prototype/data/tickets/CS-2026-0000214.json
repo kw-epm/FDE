@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000214",
+  "subject": "Password reset email never arrived",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is skyler.jackson@gmail.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "open",
+  "created_at": "2026-04-26T22:25:11+00:00",
+  "sla_breach_at": "2026-04-27T02:25:11+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002203",
+    "name": "Skyler Jackson",
+    "email": "skyler.jackson@gmail.example",
+    "account_name": "Anya Martin",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T22:25:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Jackson",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is skyler.jackson@gmail.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:27:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi there \u2014 I'm Kai Williams from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:28:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Jackson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:28:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:30:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Jackson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:30:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:32:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Jackson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:33:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:34:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:34:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Jackson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

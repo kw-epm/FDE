@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001263",
+  "subject": "Can't reset my password",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "closed",
+  "created_at": "2026-04-20T23:13:59+00:00",
+  "sla_breach_at": "2026-04-21T03:13:59+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001086",
+    "name": "Reese Cox",
+    "email": "reese.cox@outlook.example",
+    "account_name": "Phoenix Brown",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T23:13:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Cox",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T23:14:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hi there \u2014 I'm Uma Bardwaj (Compliance) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T23:16:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T23:17:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: password_reset; risk_flags=nps_detractor,regulatory_complaint,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

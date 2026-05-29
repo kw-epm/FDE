@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000793",
+  "subject": "API timeouts on /api/v2/projects",
+  "description": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T04:39:20+00:00",
+  "sla_breach_at": "2026-04-21T04:54:20+00:00",
+  "sla_target_minutes": 15,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002783",
+    "name": "Sofia Evans",
+    "email": "sofia.evans@fastmail.example",
+    "account_name": "Meridian Robotics Systems",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T04:39:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia Evans",
+      "message": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:42:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hi there \u2014 I'm Uma Bardwaj (Compliance) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:44:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:45:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: technical_issue; risk_flags=high_value_customer,enterprise_contract.",
+      "internal_note": true
+    }
+  ]
+}

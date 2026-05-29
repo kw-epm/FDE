@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001215",
+  "subject": "File upload fails for large files",
+  "description": "Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller files (~30MB) work fine. Is there a per-file size limit on Pro?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T17:07:37+00:00",
+  "sla_breach_at": "2026-04-21T21:07:37+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003564",
+    "name": "Devin Anderson",
+    "email": "devin_anderson@gmail.example",
+    "account_name": "Diego Brown",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T17:07:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Anderson",
+      "message": "Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller files (~30MB) work fine. Is there a per-file size limit on Pro?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:09:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hi there \u2014 I'm Victoria Lim (Account Mgmt) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:10:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:11:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: technical_issue; risk_flags=none.",
+      "internal_note": true
+    }
+  ]
+}

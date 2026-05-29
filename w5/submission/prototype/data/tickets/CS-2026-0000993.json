@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000993",
+  "subject": "Downgrade from free to starter",
+  "description": "Need to cut costs this quarter. Move us from free to starter please.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T02:32:35+00:00",
+  "sla_breach_at": "2026-04-25T06:32:35+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_downgrade",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002540",
+    "name": "Kit Ramirez",
+    "email": "kitramirez@proton.example",
+    "account_name": "Lex Peterson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "service_downgrade",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T02:32:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Ramirez",
+      "message": "Need to cut costs this quarter. Move us from free to starter please.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:34:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi there \u2014 I'm Dmitri Volkov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:36:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:37:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:38:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service downgrade for Lex Peterson",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:41:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:43:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-25T02:44:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Ramirez",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

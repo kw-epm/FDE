@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000036",
+  "subject": "Billing date confusion",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Lane Murphy, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-23T12:55:47+00:00",
+  "sla_breach_at": "2026-04-23T16:55:47+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002231",
+    "name": "Ravi Roberts",
+    "email": "ravi_roberts@icloud.example",
+    "account_name": "Lane Murphy",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T12:55:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Roberts",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Lane Murphy, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:56:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi there \u2014 I'm Cassidy Nguyen from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:57:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Roberts",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:58:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:59:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Roberts",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:00:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:01:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Roberts",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:02:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:03:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Roberts",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:04:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:04:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:04:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Roberts",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

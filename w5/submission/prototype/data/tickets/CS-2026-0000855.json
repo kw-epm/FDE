@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000855",
+  "subject": "SSO not working with Azure AD",
+  "description": "Trying to add Okta as our SAML provider but the IdP metadata URL doesn't seem to validate. Can you help?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-24T23:49:23+00:00",
+  "sla_breach_at": "2026-04-25T03:49:23+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "sso_setup",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003990",
+    "name": "Iris Edwards",
+    "email": "iris.edwards@outlook.example",
+    "account_name": "Kit Anderson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "sso_setup",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T23:49:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Edwards",
+      "message": "Trying to add Okta as our SAML provider but the IdP metadata URL doesn't seem to validate. Can you help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:50:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hello Iris, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:51:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:52:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:53:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Edwards",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:54:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "If you head to `kb-articles/sso-setup.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:55:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Edwards",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:55:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Here's what I can see: your sso setup ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:56:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:57:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+From: Jordan Bailey <jordanbailey@company.example>
+To: Jules Becker <jules.becker@cloudserve.example>
+Subject: Re: Question about my latest invoice
+Date: Thu, 23 Apr 2026 07:06:28 +0000
+Message-ID: <177730074174.7.820396469420950944@company.example>
+In-Reply-To: <177730074173.7.800551457014001740@cloudserve.example>
+References: <177730074172.7.12740727731117327155@company.example>
+ <177730074173.7.800551457014001740@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0000513
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002732
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+That works, thanks.

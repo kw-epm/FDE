@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0002095",
+  "subject": "How do I add a teammate?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-24T01:18:12+00:00",
+  "sla_breach_at": "2026-04-24T05:18:12+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003063",
+    "name": "Jordan Richardson",
+    "email": "jordan_richardson@outlook.example",
+    "account_name": "Charlie Lee",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T01:18:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Richardson",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:19:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hi there \u2014 I'm Nora Hassan from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:20:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Richardson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:20:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:22:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Richardson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:22:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:23:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Richardson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:24:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:25:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:26:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Richardson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

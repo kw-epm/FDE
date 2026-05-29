@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: resolveone-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: resolveone
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+    nodePort: 30084          # pick a free nodePort; front it with your ingress / load-balancer

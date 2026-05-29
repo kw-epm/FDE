@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001128",
+  "subject": "Adding SAML provider",
+  "description": "Our IT team is setting up SSO with Azure AD and the test sign-in throws 'AssertionConsumerService binding mismatch'. Metadata XML attached.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-21T19:35:56+00:00",
+  "sla_breach_at": "2026-04-21T23:35:56+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "sso_setup",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003468",
+    "name": "Owen Howard",
+    "email": "owen.howard@outlook.example",
+    "account_name": "Phoenix Walker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "sso_setup",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T19:35:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Howard",
+      "message": "Our IT team is setting up SSO with Azure AD and the test sign-in throws 'AssertionConsumerService binding mismatch'. Metadata XML attached.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:37:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi there \u2014 I'm Henry Akira from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:38:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Howard",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:39:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:40:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Howard",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:40:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:41:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Howard",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:41:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:42:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Howard",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:43:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:44:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T19:45:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Howard",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

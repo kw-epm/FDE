@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000424",
+  "subject": "SCIM provisioning",
+  "description": "Need to set up SCIM auto-provisioning from our IdP. Is this on Business or only Enterprise?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-24T17:21:07+00:00",
+  "sla_breach_at": "2026-04-24T17:51:07+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "sso_setup",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003886",
+    "name": "Logan Young",
+    "email": "loganyoung@outlook.example",
+    "account_name": "Zenith Health Labs",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "sso_setup",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T17:21:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Young",
+      "message": "Need to set up SCIM auto-provisioning from our IdP. Is this on Business or only Enterprise?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:23:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hello Logan, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:24:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Young",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:26:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:27:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Young",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:28:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:28:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Young",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:29:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:31:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Young",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:32:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "If you head to `kb-articles/sso-setup.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:33:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:33:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Young",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

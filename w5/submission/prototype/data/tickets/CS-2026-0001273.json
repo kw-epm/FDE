@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001273",
+  "subject": "Is the API up?",
+  "description": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-04-20T05:33:23+00:00",
+  "sla_breach_at": "2026-04-20T09:33:23+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002881",
+    "name": "Lane Thomas",
+    "email": "lane_thomas@outlook.example",
+    "account_name": "Yuki Stewart",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T05:33:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:35:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hello Lane, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:36:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:37:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:38:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:39:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/service-status.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:40:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:41:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/service-status.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:42:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:43:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Here's what I can see: your outage inquiry ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:43:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:44:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

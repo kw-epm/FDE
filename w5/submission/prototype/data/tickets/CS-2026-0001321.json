@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001321",
+  "subject": "Billing date confusion",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-21T01:48:45+00:00",
+  "sla_breach_at": "2026-04-21T05:48:45+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002250",
+    "name": "Jamie Nelson",
+    "email": "jamie_nelson@fastmail.example",
+    "account_name": "Rowan Jackson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T01:48:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Nelson",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T01:50:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi there \u2014 I'm Lina Petrov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T01:51:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Nelson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T01:51:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T01:52:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Nelson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T01:53:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T01:54:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T01:55:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Nelson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

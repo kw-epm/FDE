@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002252",
+  "subject": "I am extremely disappointed",
+  "description": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "new",
+  "created_at": "2026-04-26T22:28:28+00:00",
+  "sla_breach_at": "2026-04-27T02:28:28+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001021",
+    "name": "Mateus Torres",
+    "email": "mateus.torres@gmail.example",
+    "account_name": "Cameron Hill",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": null,
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T22:28:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Mateus Torres",
+      "message": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:29:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi there \u2014 I'm Olivia Park from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:32:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T22:33:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: complaint; risk_flags=complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

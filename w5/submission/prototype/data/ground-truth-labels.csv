@@ -1,0 +1,49 @@
+ticket_id,channel,fixture_issue_type,plan_tier,true_tier,true_action,true_route,kb_articles,eligibility_category,uncertain,note
+CS-2026-0000006,chat,refund_request,business,2,PREFILL_AND_ROUTE,BILLING_RAVI_CHEN,refund-policy.md,POST_CANCELLATION_CHARGE,N,cancelled 2mo ago + confirm email then charged $799 — clearly eligible
+CS-2026-0000011,chat,refund_request,free,2,PREFILL_AND_ROUTE,BILLING_RAVI_CHEN,refund-policy.md,FORGOT_TO_CANCEL_DISCRETIONARY,N,haven't used 3mo / forgot — discretionary not auto-eligible
+CS-2026-0000034,chat,refund_request,free,2,PREFILL_AND_ROUTE,BILLING_RAVI_CHEN,billing-faq.md;refund-policy.md,INELIGIBLE,Y,FIXTURE MISLABEL: really a billing clarification ($0 charged); guardrail still routes to human who closes fast
+CS-2026-0000045,chat,refund_request,free,2,PREFILL_AND_ROUTE,BILLING_RAVI_CHEN,refund-policy.md,FORGOT_TO_CANCEL_DISCRETIONARY,N,subject says 'accidental upgrade' but body is forgot-to-cancel — label by body
+CS-2026-0000073,chat,refund_request,free,2,PREFILL_AND_ROUTE,BILLING_RAVI_CHEN,refund-policy.md,POST_CANCELLATION_CHARGE,Y,$0 charge — nothing to refund; human closes; still routes as refund
+CS-2026-0000012,chat,service_cancellation,free,2,PREFILL_AND_ROUTE,COMPLIANCE,cancellation-process.md;refund-policy.md,NEEDS_HUMAN_LOOKUP,N,cancel intent + refund-policy question; no save offer (free)
+CS-2026-0000049,chat,service_cancellation,free,2,PREFILL_AND_ROUTE,COMPLIANCE,cancellation-process.md,NEEDS_HUMAN_LOOKUP,N,cancel asap; no save offer (free)
+CS-2026-0000096,chat,service_cancellation,free,2,PREFILL_AND_ROUTE,COMPLIANCE,cancellation-process.md,NEEDS_HUMAN_LOOKUP,N,close account; no save offer (free)
+CS-2026-0000122,chat,service_cancellation,starter,2,PREFILL_AND_ROUTE,COMPLIANCE,cancellation-process.md,NEEDS_HUMAN_LOOKUP,N,moving vendor; reason=switching-vendor; no save offer (starter)
+CS-2026-0000145,chat,service_downgrade,free,2,PREFILL_AND_ROUTE,COMPLIANCE,service-downgrade.md,NEEDS_HUMAN_LOOKUP,Y,body says free->starter = UPGRADE not downgrade; fixture mislabel; plan change still to human
+CS-2026-0000197,chat,service_downgrade,business,2,PREFILL_AND_ROUTE,COMPLIANCE,service-downgrade.md,MID_CYCLE_DOWNGRADE_INELIGIBLE,N,business tier -> attach SAVE OFFER note for human
+CS-2026-0000300,chat,service_downgrade,starter,2,PREFILL_AND_ROUTE,COMPLIANCE,service-downgrade.md,MID_CYCLE_DOWNGRADE_INELIGIBLE,N,starter -> no save offer; effective next cycle
+CS-2026-0000087,chat,return_request,free,2,PREFILL_AND_ROUTE,BILLING_RAVI_CHEN,refund-policy.md,NEEDS_HUMAN_LOOKUP,N,welcome-kit return + refund -> entitlement gate
+CS-2026-0000306,chat,return_request,starter,3,ESCALATE,COMPLIANCE_UMA_BARDWAJ,complaint-handling.md,NA,N,KEY: 'state attorney general' -> LEGAL lexicon OVERRIDES the entitlement route; goes Tier 3 not Tier 2
+CS-2026-0000002,chat,password_reset,starter,1,AUTO_RESOLVE,NA,password-reset.md,NA,N,account locked -> KB says auto-clears 30 min; no agent action
+CS-2026-0000031,chat,password_reset,pro,1,AUTO_RESOLVE,NA,password-reset.md,NA,N,reset email not arriving -> check spam / SSO suppression
+CS-2026-0000033,chat,password_reset,pro,1,AUTO_RESOLVE,NA,password-reset.md,NA,N,account locked -> auto-clears 30 min
+CS-2026-0000007,chat,billing_question,free,1,AUTO_RESOLVE,NA,billing-faq.md,NA,N,mid-cycle upgrade proration -> explained in billing-faq
+CS-2026-0000029,chat,billing_question,starter,1,AUTO_RESOLVE,NA,billing-faq.md,NA,N,next charge date -> Profile>Billing
+CS-2026-0000036,chat,billing_question,free,1,AUTO_RESOLVE,NA,billing-faq.md,NA,Y,KEY: 'two charges - is one an error?' -> Tier1 explain ONLY IF record shows no duplicate; if duplicate found -> becomes refund/Tier2. Agent must check record
+CS-2026-0000038,chat,billing_question,starter,1,AUTO_RESOLVE,NA,billing-faq.md,NA,N,mid-cycle proration
+CS-2026-0000017,chat,how_to_question,free,1,AUTO_RESOLVE,NA,data-export.md,NA,N,export audit logs -> how-to
+CS-2026-0000051,chat,how_to_question,free,1,AUTO_RESOLVE,NA,data-export.md,NA,N,where are audit logs -> how-to
+CS-2026-0000117,chat,invoice_clarification,business,1,AUTO_RESOLVE,NA,billing-faq.md;team-seat-management.md,NA,N,per-seat invoice breakdown
+CS-2026-0000135,chat,invoice_clarification,free,1,AUTO_RESOLVE,NA,billing-faq.md,NA,N,detailed invoice request
+CS-2026-0000158,chat,invoice_clarification,free,1,AUTO_RESOLVE,NA,billing-faq.md,NA,Y,empty-PDF invoice -> regenerate; mild technical edge
+CS-2026-0000001,chat,sso_setup,starter,1,AUTO_RESOLVE,NA,sso-setup.md,NA,N,SCIM availability question -> how-to
+CS-2026-0000195,chat,sso_setup,free,1,AUTO_RESOLVE,NA,sso-setup.md,NA,Y,Azure AD binding mismatch -> sso-setup KB; escalate to technical if KB insufficient
+CS-2026-0000055,chat,account_access,free,2,PREFILL_AND_ROUTE,CSR_POOL,2fa-troubleshooting.md,NA,N,lost authenticator + backup codes -> identity verification; account_access held at Tier 2
+CS-2026-0000090,chat,account_access,free,2,PREFILL_AND_ROUTE,CSR_POOL,2fa-troubleshooting.md,NA,N,2FA recovery -> identity verification (boundary held at Tier 2)
+CS-2026-0000183,chat,account_access,pro,1,AUTO_RESOLVE,NA,sso-setup.md,NA,Y,really an SSO technical issue not account recovery; fixture=account_access
+CS-2026-0000228,chat,data_export,business,2,PREFILL_AND_ROUTE,COMPLIANCE,data-export.md;data-residency.md,NA,Y,GDPR DSAR -> needs compliance handling/log; held above pure self-serve
+CS-2026-0000297,chat,data_export,free,2,PREFILL_AND_ROUTE,COMPLIANCE,data-export.md;data-residency.md,NA,Y,GDPR DSAR -> compliance
+CS-2026-0000057,chat,complaint,starter,3,ESCALATE,CSR_POOL,complaint-handling.md,NA,N,furious + 4h wait + unresolved; no legal language -> CSR pool
+CS-2026-0000072,chat,complaint,starter,3,ESCALATE,CSR_POOL,complaint-handling.md,NA,N,furious -> CSR pool
+CS-2026-0000119,chat,complaint,starter,3,ESCALATE,CSR_POOL,complaint-handling.md,NA,N,filing a complaint -> CSR pool
+CS-2026-0000188,chat,complaint,business,3,ESCALATE,CSR_POOL,complaint-handling.md,NA,N,'want a real human not a bot' -> escalate; business (not enterprise)
+CS-2026-0000004,chat,technical_issue,free,3,ESCALATE,CSR_POOL,api-rate-limits.md;service-status.md,NA,N,504s on API -> technical specialist
+CS-2026-0000053,chat,technical_issue,free,3,ESCALATE,CSR_POOL,api-rate-limits.md,NA,N,504s on API (subject 'mobile crash' is a fixture mismatch)
+CS-2026-0000042,chat,outage_inquiry,starter,1,AUTO_RESOLVE,NA,service-status.md,NA,Y,status-page question -> inform; if confirmed ongoing outage -> escalate
+CS-2026-0000092,chat,outage_inquiry,free,1,AUTO_RESOLVE,NA,service-status.md,NA,Y,'is the API up?' -> status info; escalate if real outage
+CS-2026-0000010,phone,invoice_clarification,NA,3,DEFER_PHONE,HUMAN_QUEUE,NA,NA,N,PHONE -> deferred regardless of issue (CTO red line)
+CS-2026-0000016,phone,account_access,NA,3,DEFER_PHONE,HUMAN_QUEUE,NA,NA,N,PHONE -> deferred
+CS-2026-0000018,phone,password_reset,NA,3,DEFER_PHONE,HUMAN_QUEUE,NA,NA,N,PHONE -> deferred (even though password_reset is Tier 1 on chat; channel overrides)
+CS-2026-0000003,email,technical_issue,NA,1,AUTO_RESOLVE,NA,free-tier-limitations.md;api-rate-limits.md,NA,Y,per-file size limit question -> how-to; escalate if it's a bug
+CS-2026-0000005,email,refund_request,NA,2,PREFILL_AND_ROUTE,BILLING_RAVI_CHEN,refund-policy.md,OUTAGE_CREDIT_PRORATA,N,outage>4h -> pro-rata service credit per KB, not full refund; human decides
+CS-2026-0000008,email,account_access,NA,2,PREFILL_AND_ROUTE,CSR_POOL,2fa-troubleshooting.md,NA,Y,2FA codes rejected -> troubleshoot vs identity verification; held at Tier 2
+CS-2026-0000009,email,account_access,NA,1,AUTO_RESOLVE,NA,sso-setup.md,NA,Y,Okta binding mismatch -> SSO config how-to; escalate to technical if KB insufficient

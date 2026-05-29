@@ -1,0 +1,15 @@
+From: Riley Edwards <rileyedwards@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Can't sign in =?utf-8?b?4oCU?= 2FA code rejected
+Date: Sun, 26 Apr 2026 02:00:19 +0000
+Message-ID: <177730074250.7.11988230901654197797@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000587
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001521
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our team uses Okta SSO and as of this morning we get an error 'AssertionConsu=
+merService binding mismatch' on sign-in. Nothing changed on our side. Account=
+: Owen Rivera.

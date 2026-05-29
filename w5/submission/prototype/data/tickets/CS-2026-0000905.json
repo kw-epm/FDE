@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000905",
+  "subject": "Why was I charged twice?",
+  "description": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-24T03:20:28+00:00",
+  "sla_breach_at": "2026-04-24T07:20:28+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003989",
+    "name": "Devin Young",
+    "email": "devinyoung@icloud.example",
+    "account_name": "Blake Martinez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T03:20:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Young",
+      "message": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:23:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi there \u2014 I'm Priya Shah from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:24:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Young",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:26:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:27:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Young",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:28:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:29:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:30:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Young",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+From: Quinn Garcia <quinn.garcia@proton.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Dashboard returning 500 errors
+Date: Thu, 23 Apr 2026 03:42:06 +0000
+Message-ID: <177730075126.7.15055381648880794449@proton.example>
+X-CloudServe-Ticket-Id: CS-2026-0001496
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001901
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+We're getting consistent 504s on /api/v2/projects?limit=3D100 over the last h=
+our. Smaller pagesize works. This is on our Pro plan.

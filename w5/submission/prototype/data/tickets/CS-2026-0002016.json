@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0002016",
+  "subject": "PDF invoice missing",
+  "description": "Can you send me a more detailed invoice for April? My finance team needs the line items broken down per seat.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T20:45:11+00:00",
+  "sla_breach_at": "2026-04-25T00:45:11+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002918",
+    "name": "Cameron Mitchell",
+    "email": "cameron.mitchell@company.example",
+    "account_name": "Indigo King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T20:45:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Mitchell",
+      "message": "Can you send me a more detailed invoice for April? My finance team needs the line items broken down per seat.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:46:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hello Cameron, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:47:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Mitchell",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:47:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:48:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Mitchell",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:49:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:50:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Mitchell",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:51:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:52:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Mitchell",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:54:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:54:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:54:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Mitchell",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

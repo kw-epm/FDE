@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000970",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "open",
+  "created_at": "2026-04-26T15:26:34+00:00",
+  "sla_breach_at": "2026-04-26T19:26:34+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002400",
+    "name": "Reese James",
+    "email": "reese_james@proton.example",
+    "account_name": "Priya Jackson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T15:26:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese James",
+      "message": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:28:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi there \u2014 I'm Kai Williams from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:29:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese James",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:30:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:31:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese James",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:32:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:33:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:34:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese James",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

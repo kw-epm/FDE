@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001868",
+  "subject": "Cancel subscription",
+  "description": "I'd like to cancel my account effective end of this billing period. Account email is kithall@gmail.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T00:57:35+00:00",
+  "sla_breach_at": "2026-04-26T04:57:35+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002158",
+    "name": "Kit Hall",
+    "email": "kithall@gmail.example",
+    "account_name": "Chen Rodriguez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T00:57:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Hall",
+      "message": "I'd like to cancel my account effective end of this billing period. Account email is kithall@gmail.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:00:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Kit, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:03:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:05:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I've put together the request and routed it to Victoria Lim (Account Mgmt). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:07:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Chen Rodriguez",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:09:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:10:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Internal: routed to Victoria Lim (Account Mgmt). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-26T01:12:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Hall",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

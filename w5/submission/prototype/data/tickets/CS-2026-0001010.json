@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001010",
+  "subject": "Why was I charged twice?",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in France. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-22T13:33:43+00:00",
+  "sla_breach_at": "2026-04-22T17:33:43+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002145",
+    "name": "Jamie Edwards",
+    "email": "jamieedwards@gmail.example",
+    "account_name": "Reese Ward",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T13:33:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Edwards",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in France. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:35:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi Jamie, I'm Cassidy Nguyen. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:36:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Edwards",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:38:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:39:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:40:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:41:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Edwards",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:42:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:42:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:43:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

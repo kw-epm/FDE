@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001825",
+  "subject": "Question about my latest invoice",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T06:26:17+00:00",
+  "sla_breach_at": "2026-04-22T10:26:17+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001218",
+    "name": "Skyler Edwards",
+    "email": "skyler.edwards@yahoo.example",
+    "account_name": "Morgan Rodriguez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T06:26:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Edwards",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T06:27:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Skyler, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T06:28:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Edwards",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T06:29:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T06:31:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Edwards",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T06:31:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T06:32:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T06:33:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

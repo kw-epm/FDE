@@ -1,0 +1,16 @@
+From: Diego Wilson <diego_wilson@proton.example>
+To: Priya Shah <priya.shah@cloudserve.example>
+Subject: Re: SSO sign-in fails with error
+Date: Tue, 21 Apr 2026 18:15:51 +0000
+Message-ID: <177730075699.7.9009025417304940903@proton.example>
+In-Reply-To: <177730075698.7.12513060011821551492@cloudserve.example>
+References: <177730075697.7.486090785669341264@proton.example>
+ <177730075698.7.12513060011821551492@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0002060
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002592
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+That works, thanks.

@@ -1,0 +1,18 @@
+From: Owen King <owen.king@gmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Adding SAML provider
+Date: Sun, 26 Apr 2026 12:24:15 +0000
+Message-ID: <177730074391.7.14557322648825844870@gmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000717
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003241
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Trying to add Okta as our SAML provider but the IdP metadata URL doesn't seem=
+ to validate. Can you help?
+
+Please prioritise this.
+
+I'll be filing a complaint with the BBB.

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000880",
+  "subject": "Reset link expired",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is drewjohnson@icloud.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-21T09:42:57+00:00",
+  "sla_breach_at": "2026-04-21T13:42:57+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001827",
+    "name": "Drew Johnson",
+    "email": "drewjohnson@icloud.example",
+    "account_name": "Jordan Lee",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T09:42:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is drewjohnson@icloud.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:43:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi Drew, I'm Henry Akira. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:45:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:46:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:47:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:47:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:48:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:49:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

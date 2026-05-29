@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001373",
+  "subject": "Why was I charged twice?",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T14:12:03+00:00",
+  "sla_breach_at": "2026-04-20T18:12:03+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001395",
+    "name": "Indigo Davis",
+    "email": "indigodavis@gmail.example",
+    "account_name": "Ari Edwards",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T14:12:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Davis",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:14:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hello Indigo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:15:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Davis",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:16:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:17:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Davis",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:17:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:17:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:18:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Davis",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

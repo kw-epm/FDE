@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001951",
+  "subject": "Forgot my password",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-24T07:28:00+00:00",
+  "sla_breach_at": "2026-04-24T11:28:00+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002633",
+    "name": "Sam Peterson",
+    "email": "sampeterson@icloud.example",
+    "account_name": "Lin Reed",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T07:28:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Peterson",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:29:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Sam, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:31:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Peterson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:32:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:34:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Peterson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:34:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:35:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Peterson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:36:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:37:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T07:37:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Peterson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

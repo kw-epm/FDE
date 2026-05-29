@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001595",
+  "subject": "Locked out \u2014 need help",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's rowan.phillips@fastmail.example.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-21T06:37:59+00:00",
+  "sla_breach_at": "2026-04-21T10:37:59+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003028",
+    "name": "Rowan Phillips",
+    "email": "rowan.phillips@fastmail.example",
+    "account_name": "Lane Smith",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Aria Patel",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T06:37:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Phillips",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's rowan.phillips@fastmail.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:38:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Hi Rowan, I'm Aria Patel. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:40:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Phillips",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:41:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:42:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Phillips",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:43:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:43:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Phillips",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:44:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:45:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:46:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Phillips",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

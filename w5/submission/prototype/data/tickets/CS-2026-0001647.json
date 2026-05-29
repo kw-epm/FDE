@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001647",
+  "subject": "SSO sign-in fails with error",
+  "description": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-24T20:30:02+00:00",
+  "sla_breach_at": "2026-04-24T22:30:02+00:00",
+  "sla_target_minutes": 120,
+  "tags": [
+    "account_access",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-001546",
+    "name": "Sofia James",
+    "email": "sofia_james@yahoo.example",
+    "account_name": "Jasmine Torres",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T20:30:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia James",
+      "message": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:30:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Sofia, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:31:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia James",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:31:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:33:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia James",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:34:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:36:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia James",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:37:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:37:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:38:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia James",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

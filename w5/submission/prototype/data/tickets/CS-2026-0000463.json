@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000463",
+  "subject": "Refund request \u2014 accidental upgrade",
+  "description": "I accidentally upgraded to free yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $0?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-21T11:10:24+00:00",
+  "sla_breach_at": "2026-04-21T15:10:24+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002628",
+    "name": "Drew Richardson",
+    "email": "drew_richardson@corp.example",
+    "account_name": "Casey Jackson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T11:10:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Richardson",
+      "message": "I accidentally upgraded to free yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $0?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:12:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hello Drew, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:14:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:17:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:19:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Casey Jackson",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:21:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:22:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T11:25:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Richardson",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

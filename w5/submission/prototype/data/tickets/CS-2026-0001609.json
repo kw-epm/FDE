@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001609",
+  "subject": "How does the API rate limit work?",
+  "description": "What are the API rate limits on the Pro plan? We're seeing 429s and need to know if we should upgrade or batch differently.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-21T14:06:29+00:00",
+  "sla_breach_at": "2026-04-21T14:36:29+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002716",
+    "name": "Logan Green",
+    "email": "logan.green@corp.example",
+    "account_name": "Nimbus Capital Works",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T14:06:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Green",
+      "message": "What are the API rate limits on the Pro plan? We're seeing 429s and need to know if we should upgrade or batch differently.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:07:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hi there \u2014 I'm Victoria Lim (Account Mgmt) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:09:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:10:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: how_to_question; risk_flags=high_value_customer,enterprise_contract.",
+      "internal_note": true
+    }
+  ]
+}

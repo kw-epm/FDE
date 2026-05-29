@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000704",
+  "subject": "Account access issue",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T01:11:03+00:00",
+  "sla_breach_at": "2026-04-20T05:11:03+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001153",
+    "name": "Mateus Edwards",
+    "email": "mateus.edwards@fastmail.example",
+    "account_name": "Marcus Watson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T01:11:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Mateus Edwards",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:12:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi Mateus, I'm Priya Shah. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:14:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Mateus Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:15:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:16:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Mateus Edwards",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:17:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:18:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:18:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Mateus Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+From: Iris Reed <iris_reed@yahoo.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Webhooks aren't firing
+Date: Sat, 25 Apr 2026 06:47:02 +0000
+Message-ID: <177730075504.7.6972426736741320848@yahoo.example>
+X-CloudServe-Ticket-Id: CS-2026-0001859
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002407
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our webhooks for project.updated stopped firing around 2pm UTC. Last successf=
+ul delivery was 13:58 UTC. Endpoint is healthy on our side.

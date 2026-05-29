@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000130",
+  "subject": "Question about my latest invoice",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-23T18:00:23+00:00",
+  "sla_breach_at": "2026-04-23T22:00:23+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001831",
+    "name": "Jasmine Walker",
+    "email": "jasmine_walker@icloud.example",
+    "account_name": "Maya King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T18:00:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Walker",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:01:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hello Jasmine, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:02:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Walker",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:03:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:05:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Walker",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:06:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:07:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Walker",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:08:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:09:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T18:09:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Walker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

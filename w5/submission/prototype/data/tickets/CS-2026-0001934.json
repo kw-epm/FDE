@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001934",
+  "subject": "Where is line item X coming from?",
+  "description": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-23T20:48:22+00:00",
+  "sla_breach_at": "2026-04-24T00:48:22+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002226",
+    "name": "Maya Rogers",
+    "email": "maya_rogers@fastmail.example",
+    "account_name": "Maya Edwards",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T20:48:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:49:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hello Maya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:50:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:51:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:52:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:53:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:55:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:56:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:58:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:59:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T21:00:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T21:00:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000181",
+  "subject": "Please close my CloudServe account",
+  "description": "Please cancel my subscription. We're moving to a different vendor.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-20T05:54:52+00:00",
+  "sla_breach_at": "2026-04-20T09:54:52+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002224",
+    "name": "Kit Baker",
+    "email": "kit_baker@fastmail.example",
+    "account_name": "Jasmine Morgan",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T05:54:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Baker",
+      "message": "Please cancel my subscription. We're moving to a different vendor.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:57:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hello Kit, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:58:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:59:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:02:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Jasmine Morgan",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:05:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:06:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T06:08:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Baker",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

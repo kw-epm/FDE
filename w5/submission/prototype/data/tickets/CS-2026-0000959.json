@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000959",
+  "subject": "SSO sign-in fails with error",
+  "description": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Xenon Retail Systems.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-24T21:31:01+00:00",
+  "sla_breach_at": "2026-04-24T22:01:01+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "account_access",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002382",
+    "name": "Wren Jackson",
+    "email": "wrenjackson@icloud.example",
+    "account_name": "Xenon Retail Systems",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T21:31:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Xenon Retail Systems.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:32:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi Wren, I'm Lina Petrov. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:32:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:33:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:34:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:35:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:35:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:35:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

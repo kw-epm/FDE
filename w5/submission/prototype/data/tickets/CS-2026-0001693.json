@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001693",
+  "subject": "File upload fails for large files",
+  "description": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-23T22:03:53+00:00",
+  "sla_breach_at": "2026-04-24T02:03:53+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002323",
+    "name": "Rowan Cox",
+    "email": "rowan_cox@company.example",
+    "account_name": "Sana Bailey",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T22:03:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Cox",
+      "message": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:05:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hello Rowan, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:07:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:08:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: technical_issue; risk_flags=none.",
+      "internal_note": true
+    }
+  ]
+}

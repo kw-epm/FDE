@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001632",
+  "subject": "Cancelled but charged again",
+  "description": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Hayden Evans.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T18:39:50+00:00",
+  "sla_breach_at": "2026-04-20T22:39:50+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003525",
+    "name": "Diego Johnson",
+    "email": "diego_johnson@outlook.example",
+    "account_name": "Hayden Evans",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T18:39:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Johnson",
+      "message": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Hayden Evans.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T18:42:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi there \u2014 I'm Elena Ramos from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T18:45:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T18:47:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T18:51:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Hayden Evans",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T18:53:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T18:54:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T18:57:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Johnson",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

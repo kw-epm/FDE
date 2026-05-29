@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000533",
+  "subject": "Forgot my password",
+  "description": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T05:25:37+00:00",
+  "sla_breach_at": "2026-04-25T09:25:37+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002869",
+    "name": "Theo Johnson",
+    "email": "theo_johnson@icloud.example",
+    "account_name": "Owen Reed",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T05:25:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Johnson",
+      "message": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:28:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hello Theo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:29:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Johnson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:29:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:31:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Johnson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:32:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:33:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Johnson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:34:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:35:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Johnson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:35:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:36:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:36:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Johnson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000666",
+  "subject": "How do I add a teammate?",
+  "description": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T03:34:23+00:00",
+  "sla_breach_at": "2026-04-25T07:34:23+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-002083",
+    "name": "Drew Parker",
+    "email": "drew_parker@proton.example",
+    "account_name": "Maya Davis",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T03:34:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Parker",
+      "message": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:36:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hello Drew, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:37:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Parker",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:38:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:40:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Parker",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:41:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:43:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Parker",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:44:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:45:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:45:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Parker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

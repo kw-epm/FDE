@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001408",
+  "subject": "Password reset email never arrived",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is theomurphy@company.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T08:23:59+00:00",
+  "sla_breach_at": "2026-04-24T12:23:59+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003962",
+    "name": "Theo Murphy",
+    "email": "theomurphy@company.example",
+    "account_name": "Wren Hall",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T08:23:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Murphy",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is theomurphy@company.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:25:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi there \u2014 I'm Felix Tang from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:27:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Murphy",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:28:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:29:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Murphy",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:29:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:30:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:30:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Murphy",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

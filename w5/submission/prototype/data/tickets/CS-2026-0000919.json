@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000919",
+  "subject": "Webhooks aren't firing",
+  "description": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-24T16:59:52+00:00",
+  "sla_breach_at": "2026-04-24T20:59:52+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001197",
+    "name": "Blake Mitchell",
+    "email": "blake.mitchell@gmail.example",
+    "account_name": "Logan Hall",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T16:59:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Blake Mitchell",
+      "message": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:01:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hi Blake, I'm Victoria Lim (Account Mgmt). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:03:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:05:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: technical_issue; risk_flags=nps_detractor,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

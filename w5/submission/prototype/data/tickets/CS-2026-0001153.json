@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001153",
+  "subject": "Forgot my password",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T19:04:07+00:00",
+  "sla_breach_at": "2026-04-24T23:04:07+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002924",
+    "name": "Ravi Walker",
+    "email": "ravi.walker@icloud.example",
+    "account_name": "Skyler Watson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T19:04:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Walker",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:06:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Ravi, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:06:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Walker",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:07:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:09:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Walker",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:10:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:11:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Walker",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:13:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:14:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Walker",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:15:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:16:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:16:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Walker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

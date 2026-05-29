@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000090",
+  "subject": "Account access issue",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T09:47:06+00:00",
+  "sla_breach_at": "2026-04-22T13:47:06+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002170",
+    "name": "Taylor Reed",
+    "email": "taylor_reed@proton.example",
+    "account_name": "Skyler Gray",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T09:47:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Reed",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:49:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hello Taylor, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:51:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Reed",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:52:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:53:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Reed",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:54:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:56:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Reed",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:57:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Here's what I can see: your account access ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:58:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Reed",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:58:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:59:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T09:59:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Reed",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

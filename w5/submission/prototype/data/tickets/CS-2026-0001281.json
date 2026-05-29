@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001281",
+  "subject": "Forgot my password",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T04:43:15+00:00",
+  "sla_breach_at": "2026-04-24T08:43:15+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003627",
+    "name": "Sana Cook",
+    "email": "sana.cook@yahoo.example",
+    "account_name": "Marcus Parker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T04:43:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Cook",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:44:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hello Sana, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:45:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Cook",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:46:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:47:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Cook",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:48:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:49:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:49:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Cook",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

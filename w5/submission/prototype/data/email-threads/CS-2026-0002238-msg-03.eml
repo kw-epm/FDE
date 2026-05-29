@@ -1,0 +1,16 @@
+From: Rowan Parker <rowan_parker@company.example>
+To: Theo Marek (Technical Escalation) <theo.marek@cloudserve.example>
+Subject: Re: API timeouts on /api/v2/projects
+Date: Thu, 23 Apr 2026 06:48:31 +0000
+Message-ID: <177730075878.7.15195878511752532806@company.example>
+In-Reply-To: <177730075877.7.7169758100339464017@cloudserve.example>
+References: <177730075876.7.18364477156263187217@company.example>
+ <177730075877.7.7169758100339464017@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0002238
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001208
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Understood. Let me know as soon as you hear back from compliance.

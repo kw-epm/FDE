@@ -1,0 +1,16 @@
+From: Taylor Peterson <taylor_peterson@gmail.example>
+To: Ravi Chen (Billing) <ravi.chen@cloudserve.example>
+Subject: Re: Webhooks aren't firing
+Date: Thu, 23 Apr 2026 20:35:11 +0000
+Message-ID: <177730074833.7.16362500945153463383@gmail.example>
+In-Reply-To: <177730074832.7.12605668703852017041@cloudserve.example>
+References: <177730074832.7.5800567698603277797@gmail.example>
+ <177730074832.7.12605668703852017041@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0001191
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001062
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+That works, thanks.

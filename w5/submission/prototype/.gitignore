@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+audit_demo.jsonl
+*.jsonl
+.pytest_cache/

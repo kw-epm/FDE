@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000145",
+  "subject": "Downgrade \u2014 too many features I don't use",
+  "description": "Need to cut costs this quarter. Move us from free to starter please.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-04-21T10:46:12+00:00",
+  "sla_breach_at": "2026-04-21T14:46:12+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_downgrade",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001368",
+    "name": "Anya Rodriguez",
+    "email": "anyarodriguez@yahoo.example",
+    "account_name": "Iris Johnson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Aria Patel",
+  "issue_type": "service_downgrade",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T10:46:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Rodriguez",
+      "message": "Need to cut costs this quarter. Move us from free to starter please.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:48:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Hi there \u2014 I'm Aria Patel from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:49:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:50:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "I've put together the request and routed it to Victoria Lim (Account Mgmt). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:53:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service downgrade for Iris Johnson",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:55:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:56:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Internal: routed to Victoria Lim (Account Mgmt). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T10:59:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Rodriguez",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

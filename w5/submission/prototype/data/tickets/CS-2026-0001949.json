@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001949",
+  "subject": "SSO sign-in fails with error",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-24T22:40:45+00:00",
+  "sla_breach_at": "2026-04-24T23:40:45+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "account_access",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001106",
+    "name": "Phoenix Perez",
+    "email": "phoenix_perez@corp.example",
+    "account_name": "Forge Health LLC",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T22:40:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Perez",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:43:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hello Phoenix, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:45:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Perez",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:46:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:47:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Perez",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:47:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Here's what I can see: your account access ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:49:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Perez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:51:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:51:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Perez",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:53:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Here's what I can see: your account access ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:53:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:53:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Perez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

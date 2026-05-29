@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000805",
+  "subject": "How do I add a teammate?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-25T17:07:12+00:00",
+  "sla_breach_at": "2026-04-25T21:07:12+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003150",
+    "name": "Ari Carter",
+    "email": "ari.carter@icloud.example",
+    "account_name": "Indigo Sanchez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T17:07:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Carter",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T17:10:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi Ari, I'm Dmitri Volkov. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T17:10:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Carter",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T17:11:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T17:13:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Carter",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T17:14:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T17:14:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T17:15:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Carter",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

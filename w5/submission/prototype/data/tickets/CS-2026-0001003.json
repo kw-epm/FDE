@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001003",
+  "subject": "Password reset email never arrived",
+  "description": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-25T00:14:29+00:00",
+  "sla_breach_at": "2026-04-25T04:14:29+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-003687",
+    "name": "Charlie Reed",
+    "email": "charlie.reed@corp.example",
+    "account_name": "Phoenix James",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T00:14:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Reed",
+      "message": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T00:17:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi there \u2014 I'm Ben Carter from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T00:18:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Reed",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T00:19:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T00:21:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Reed",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T00:22:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T00:22:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T00:23:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Reed",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

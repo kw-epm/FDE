@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002122",
+  "subject": "Why was I charged twice?",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.\n\nPlease prioritise this.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-23T09:41:03+00:00",
+  "sla_breach_at": "2026-04-23T13:41:03+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002156",
+    "name": "Hayden Carter",
+    "email": "hayden.carter@yahoo.example",
+    "account_name": "Noor Phillips",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T09:41:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Carter",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.\n\nPlease prioritise this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:41:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hello Hayden, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:43:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Carter",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:44:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:45:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Carter",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:46:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:47:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:48:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Carter",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

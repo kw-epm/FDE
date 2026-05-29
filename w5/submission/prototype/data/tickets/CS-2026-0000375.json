@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000375",
+  "subject": "Billing date confusion",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "pending",
+  "created_at": "2026-04-24T22:53:10+00:00",
+  "sla_breach_at": "2026-04-25T02:53:10+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002181",
+    "name": "Sage Green",
+    "email": "sage_green@corp.example",
+    "account_name": "Casey Anderson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T22:53:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Green",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:54:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi Sage, I'm Ravi Chen (Billing). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:57:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:59:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: billing_question; risk_flags=regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

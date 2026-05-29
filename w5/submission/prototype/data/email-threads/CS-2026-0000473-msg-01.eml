@@ -1,0 +1,14 @@
+From: Owen Thomas <owen_thomas@gmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Webhooks aren't firing
+Date: Thu, 23 Apr 2026 08:38:32 +0000
+Message-ID: <177730074138.7.10801655979556032205@gmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000473
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002110
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+We're getting consistent 504s on /api/v2/projects?limit=3D100 over the last h=
+our. Smaller pagesize works. This is on our Pro plan.

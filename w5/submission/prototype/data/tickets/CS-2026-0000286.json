@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000286",
+  "subject": "Question about my latest invoice",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Yardarm Networks Studios, charge dates: 2026-04-15 and 2026-04-16, both for $799.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-25T07:55:56+00:00",
+  "sla_breach_at": "2026-04-25T08:55:56+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002434",
+    "name": "Jordan Martinez",
+    "email": "jordan.martinez@company.example",
+    "account_name": "Yardarm Networks Studios",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T07:55:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Yardarm Networks Studios, charge dates: 2026-04-15 and 2026-04-16, both for $799.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:56:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hi there \u2014 I'm Imani Lewis from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:58:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:00:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:01:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:02:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:02:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:03:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:04:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:05:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:06:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:07:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

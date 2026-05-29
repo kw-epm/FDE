@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001555",
+  "subject": "How do I set up the Slack integration?",
+  "description": "How do I export my workspace data? We need a backup before a migration.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-22T18:10:33+00:00",
+  "sla_breach_at": "2026-04-22T22:10:33+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002652",
+    "name": "Rowan Mitchell",
+    "email": "rowanmitchell@gmail.example",
+    "account_name": "Casey Murphy",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T18:10:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Mitchell",
+      "message": "How do I export my workspace data? We need a backup before a migration.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:13:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Rowan, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:13:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Mitchell",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:14:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:15:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Mitchell",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:16:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:16:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:17:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Mitchell",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

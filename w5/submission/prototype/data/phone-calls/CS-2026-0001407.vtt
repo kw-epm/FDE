@@ -1,0 +1,62 @@
+WEBVTT
+
+NOTE ticket_id: CS-2026-0001407
+NOTE channel: phone
+NOTE intake_ts: 2026-04-20T11:58:22+00:00
+NOTE customer_id: CUST-003183
+
+1
+00:00:00.000 --> 00:00:05.056
+<v Agent>Thank you for calling CloudServe support, this is Cassidy Nguyen. How can I help you today?
+
+2
+00:00:07.036 --> 00:00:11.870
+<v Customer>Hi — I'm Indigo. I'm having trouble with service cancellation on my CloudServe account.
+
+3
+00:00:12.490 --> 00:00:16.101
+<v Agent>I can help with that. Can I get the email address on the account?
+
+4
+00:00:17.249 --> 00:00:19.249
+<v Customer>It's indigo.brown@fastmail.example.
+
+5
+00:00:21.138 --> 00:00:23.138
+<v Agent>Got it. Pulling up your account now.
+
+6
+00:00:24.919 --> 00:00:28.419
+<v Agent>I have your account here, Cameron Richardson, on the free plan.
+
+7
+00:00:29.916 --> 00:00:37.472
+<v Agent>For a service cancellation, I'll need to route this through our compliance team for approval — that's our policy on entitlement changes.
+
+8
+00:00:38.163 --> 00:00:40.163
+<v Customer>How long does that take?
+
+9
+00:00:41.137 --> 00:00:48.081
+<v Agent>Typically within one business day. I'll pre-fill the request now and send you a confirmation email with the reference number.
+
+10
+00:00:48.909 --> 00:00:50.909
+<v Customer>Alright. Anything I need to do?
+
+11
+00:00:51.826 --> 00:00:59.715
+<v Agent>Nothing on your side — just watch for the confirmation email. If you don't see it within 24 hours, call back and reference your ticket number.
+
+12
+00:01:00.469 --> 00:01:02.469
+<v Agent>Anything else I can help with today?
+
+13
+00:01:03.539 --> 00:01:05.539
+<v Customer>No, that's it.
+
+14
+00:01:06.212 --> 00:01:08.823
+<v Agent>Thanks for calling CloudServe. Have a good day.

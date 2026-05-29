@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001819",
+  "subject": "Can't reset my password",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T23:57:19+00:00",
+  "sla_breach_at": "2026-04-23T03:57:19+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001362",
+    "name": "Yuki Gray",
+    "email": "yuki_gray@outlook.example",
+    "account_name": "Anya Green",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T23:57:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Gray",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:59:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hello Yuki, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:00:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Gray",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:01:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:03:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Gray",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:03:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:04:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Gray",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:05:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:06:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:06:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Gray",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

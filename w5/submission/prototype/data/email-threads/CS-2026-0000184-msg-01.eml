@@ -1,0 +1,14 @@
+From: Skyler Carter <skylercarter@proton.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: API timeouts on /api/v2/projects
+Date: Sun, 26 Apr 2026 12:07:59 +0000
+Message-ID: <177730073835.7.3492649422193955500@proton.example>
+X-CloudServe-Ticket-Id: CS-2026-0000184
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003680
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Mobile app on iOS crashes immediately on launch since the auto-update yesterd=
+ay. iPhone 14 Pro, iOS 18.x.

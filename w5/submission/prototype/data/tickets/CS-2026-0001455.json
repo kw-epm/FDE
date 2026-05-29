@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001455",
+  "subject": "Need invoice itemisation",
+  "description": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-22T00:13:28+00:00",
+  "sla_breach_at": "2026-04-22T04:13:28+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001199",
+    "name": "Riley Watson",
+    "email": "riley.watson@company.example",
+    "account_name": "Lex Ward",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T00:13:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Watson",
+      "message": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:14:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi there \u2014 I'm Jules Becker from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:16:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Watson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:17:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:18:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Watson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:19:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:20:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Watson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:21:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:22:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:23:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Watson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+WEBVTT
+
+NOTE ticket_id: CS-2026-0000151
+NOTE channel: phone
+NOTE intake_ts: 2026-04-25T15:48:15+00:00
+NOTE customer_id: CUST-001890
+
+1
+00:00:00.000 --> 00:00:04.889
+<v Agent>Thank you for calling CloudServe support, this is Olivia Park. How can I help you today?
+
+2
+00:00:06.137 --> 00:00:10.304
+<v Customer>Hi — I'm Lex. I'm having trouble with data export on my CloudServe account.
+
+3
+00:00:11.898 --> 00:00:15.509
+<v Agent>I can help with that. Can I get the email address on the account?
+
+4
+00:00:16.424 --> 00:00:18.424
+<v Customer>It's lex_ward@fastmail.example.
+
+5
+00:00:19.172 --> 00:00:21.172
+<v Agent>Got it. Pulling up your account now.
+
+6
+00:00:22.637 --> 00:00:25.748
+<v Agent>I have your account here, Ravi Martin, on the free plan.
+
+7
+00:00:26.992 --> 00:00:34.047
+<v Agent>For a data export, I'll need to route this through our compliance team for approval — that's our policy on entitlement changes.
+
+8
+00:00:34.762 --> 00:00:36.762
+<v Customer>Ok, I understand.
+
+9
+00:00:37.698 --> 00:00:44.643
+<v Agent>Typically within one business day. I'll pre-fill the request now and send you a confirmation email with the reference number.
+
+10
+00:00:46.566 --> 00:00:48.566
+<v Customer>Alright. Anything I need to do?
+
+11
+00:00:49.464 --> 00:00:57.353
+<v Agent>Nothing on your side — just watch for the confirmation email. If you don't see it within 24 hours, call back and reference your ticket number.
+
+12
+00:00:58.012 --> 00:01:00.012
+<v Agent>Anything else I can help with today?
+
+13
+00:01:01.455 --> 00:01:03.455
+<v Customer>No, I'm good.
+
+14
+00:01:04.757 --> 00:01:07.368
+<v Agent>Thanks for calling CloudServe. Have a good day.

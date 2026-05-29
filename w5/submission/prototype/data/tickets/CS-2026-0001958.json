@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001958",
+  "subject": "SSO sign-in fails with error",
+  "description": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-04-26T09:39:51+00:00",
+  "sla_breach_at": "2026-04-26T13:39:51+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001757",
+    "name": "Diego Rodriguez",
+    "email": "diegorodriguez@yahoo.example",
+    "account_name": "Jordan Baker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T09:39:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rodriguez",
+      "message": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:41:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi Diego, I'm Jules Becker. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:41:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rodriguez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:43:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:43:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rodriguez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:44:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:46:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rodriguez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:47:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:48:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:49:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rodriguez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

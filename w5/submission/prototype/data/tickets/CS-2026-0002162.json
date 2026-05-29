@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002162",
+  "subject": "Filing a complaint",
+  "description": "I've been a customer for 1 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-24T12:03:49+00:00",
+  "sla_breach_at": "2026-04-24T16:03:49+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002343",
+    "name": "Jasmine Cooper",
+    "email": "jasmine_cooper@outlook.example",
+    "account_name": "Charlie Torres",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T12:03:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Cooper",
+      "message": "I've been a customer for 1 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:04:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hi there \u2014 I'm Stacey Holm (Refunds Authorisation) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:06:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T12:07:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: complaint; risk_flags=nps_detractor,complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

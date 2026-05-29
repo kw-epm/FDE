@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001549",
+  "subject": "How do I add a teammate?",
+  "description": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T10:43:00+00:00",
+  "sla_breach_at": "2026-04-20T10:58:00+00:00",
+  "sla_target_minutes": 15,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002904",
+    "name": "Logan Rivera",
+    "email": "logan.rivera@icloud.example",
+    "account_name": "Riverstone Manufacturing Labs",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T10:43:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Rivera",
+      "message": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:45:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hello Logan, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:47:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Rivera",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:48:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:48:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Rivera",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:49:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:51:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Rivera",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:52:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:53:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Rivera",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:54:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:55:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:55:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Rivera",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

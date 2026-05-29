@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000869",
+  "subject": "Is the API up?",
+  "description": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-22T17:56:29+00:00",
+  "sla_breach_at": "2026-04-22T21:56:29+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003852",
+    "name": "Jasmine Watson",
+    "email": "jasminewatson@gmail.example",
+    "account_name": "Avery Walker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T17:56:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Watson",
+      "message": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:58:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hello Jasmine, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:59:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Watson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:00:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:01:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Watson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:03:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Here's what I can see: your outage inquiry ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:03:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Watson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:04:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:05:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:05:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Watson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

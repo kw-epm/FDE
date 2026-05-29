@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000751",
+  "subject": "Reset link expired",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is devin_ward@yahoo.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T10:16:50+00:00",
+  "sla_breach_at": "2026-04-24T14:16:50+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003888",
+    "name": "Devin Ward",
+    "email": "devin_ward@yahoo.example",
+    "account_name": "Wren Ward",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T10:16:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Ward",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is devin_ward@yahoo.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:17:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hello Devin, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:19:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Ward",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:21:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:22:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Ward",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:22:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:23:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:24:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Ward",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

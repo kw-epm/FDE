@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000614",
+  "subject": "Can I export my data?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T16:22:06+00:00",
+  "sla_breach_at": "2026-04-22T20:22:06+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001844",
+    "name": "Kit Wright",
+    "email": "kitwright@fastmail.example",
+    "account_name": "Riley Rivera",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T16:22:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Wright",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:25:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi Kit, I'm Kai Williams. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:26:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Wright",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:27:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:28:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Wright",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:29:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:30:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Wright",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:31:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:32:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:32:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Wright",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

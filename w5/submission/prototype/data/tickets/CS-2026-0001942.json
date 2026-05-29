@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001942",
+  "subject": "How does the API rate limit work?",
+  "description": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "solved",
+  "created_at": "2026-04-25T19:31:12+00:00",
+  "sla_breach_at": "2026-04-25T23:31:12+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002227",
+    "name": "Quinn Stewart",
+    "email": "quinn.stewart@outlook.example",
+    "account_name": "Cameron Adams",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T19:31:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Stewart",
+      "message": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T19:33:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hi there \u2014 I'm Uma Bardwaj (Compliance) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T19:36:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T19:37:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: how_to_question; risk_flags=regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

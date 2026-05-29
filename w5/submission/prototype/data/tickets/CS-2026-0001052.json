@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001052",
+  "subject": "Can I export my data?",
+  "description": "What are the API rate limits on the Pro plan? We're seeing 429s and need to know if we should upgrade or batch differently.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-25T21:04:46+00:00",
+  "sla_breach_at": "2026-04-26T01:04:46+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-002910",
+    "name": "Cameron Torres",
+    "email": "camerontorres@corp.example",
+    "account_name": "Jamie Allen",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T21:04:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Torres",
+      "message": "What are the API rate limits on the Pro plan? We're seeing 429s and need to know if we should upgrade or batch differently.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:05:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi Cameron, I'm Cassidy Nguyen. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:07:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Torres",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:08:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:08:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Torres",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:10:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:12:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Torres",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:12:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:12:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T21:13:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Torres",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

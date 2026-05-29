@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001456",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Lin King, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-22T23:57:59+00:00",
+  "sla_breach_at": "2026-04-23T03:57:59+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002636",
+    "name": "Aisha Collins",
+    "email": "aishacollins@outlook.example",
+    "account_name": "Lin King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T23:57:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Lin King, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:00:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hi Aisha, I'm Nora Hassan. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:02:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:02:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:04:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:05:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:07:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:08:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:09:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:10:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:11:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:12:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

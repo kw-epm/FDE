@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000556",
+  "subject": "Please close my CloudServe account",
+  "description": "Cancelling. Please confirm when it's done. Plan: pro.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-23T17:13:11+00:00",
+  "sla_breach_at": "2026-04-23T19:13:11+00:00",
+  "sla_target_minutes": 120,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-001456",
+    "name": "Priya Hall",
+    "email": "priya.hall@gmail.example",
+    "account_name": "Elena Anderson",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T17:13:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Hall",
+      "message": "Cancelling. Please confirm when it's done. Plan: pro.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:15:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi there \u2014 I'm Olivia Park from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:19:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:21:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:22:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Elena Anderson",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:25:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:26:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-23T17:29:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Hall",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

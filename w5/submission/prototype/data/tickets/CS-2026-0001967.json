@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001967",
+  "subject": "Password reset email never arrived",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's indigo.king@yahoo.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T11:28:23+00:00",
+  "sla_breach_at": "2026-04-26T15:28:23+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002179",
+    "name": "Indigo King",
+    "email": "indigo.king@yahoo.example",
+    "account_name": "Cameron Smith",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T11:28:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo King",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's indigo.king@yahoo.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:29:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi Indigo, I'm Olivia Park. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:30:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo King",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:32:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:33:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo King",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:34:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:35:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo King",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:36:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:36:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:37:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo King",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

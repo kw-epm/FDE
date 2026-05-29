@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0002087",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "Got my invoice today and there's a 'metered overage' line for $9998. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-24T03:56:01+00:00",
+  "sla_breach_at": "2026-04-24T04:26:01+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "billing_question",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-003823",
+    "name": "Sam Wright",
+    "email": "samwright@gmail.example",
+    "account_name": "Xenon Analytics Partners",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T03:56:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Got my invoice today and there's a 'metered overage' line for $9998. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:58:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi Sam, I'm Dmitri Volkov. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:59:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:59:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:00:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:01:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:02:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:03:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:03:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:03:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

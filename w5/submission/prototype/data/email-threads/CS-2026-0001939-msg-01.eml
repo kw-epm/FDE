@@ -1,0 +1,14 @@
+From: Charlie Edwards <charlieedwards@corp.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: How do I add a teammate?
+Date: Mon, 20 Apr 2026 10:08:53 +0000
+Message-ID: <177730075588.7.20945458653312892@corp.example>
+X-CloudServe-Ticket-Id: CS-2026-0001939
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003288
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+What are the API rate limits on the Pro plan? We're seeing 429s and need to k=
+now if we should upgrade or batch differently.

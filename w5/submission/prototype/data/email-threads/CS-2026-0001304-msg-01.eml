@@ -1,0 +1,14 @@
+From: Hayden Martinez <hayden.martinez@proton.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Dashboard returning 500 errors
+Date: Sun, 26 Apr 2026 03:35:55 +0000
+Message-ID: <177730074941.7.3606837983383583828@proton.example>
+X-CloudServe-Ticket-Id: CS-2026-0001304
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002834
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our webhooks for project.updated stopped firing around 2pm UTC. Last successf=
+ul delivery was 13:58 UTC. Endpoint is healthy on our side.

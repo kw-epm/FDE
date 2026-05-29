@@ -1,0 +1,14 @@
+From: Skyler Rodriguez <skyler_rodriguez@icloud.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Status page out of date?
+Date: Thu, 23 Apr 2026 13:36:41 +0000
+Message-ID: <177730073674.7.2091804810708593580@icloud.example>
+X-CloudServe-Ticket-Id: CS-2026-0000020
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001974
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Just checking =E2=80=94 is the API available right now? We can't get a succes=
+sful response from /api/v2/health.

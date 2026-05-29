@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000520",
+  "subject": "API timeouts on /api/v2/projects",
+  "description": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-23T19:19:46+00:00",
+  "sla_breach_at": "2026-04-23T23:19:46+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001935",
+    "name": "Riley King",
+    "email": "rileyking@icloud.example",
+    "account_name": "Sana Ward",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T19:19:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley King",
+      "message": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T19:20:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hi Riley, I'm Theo Marek (Technical Escalation). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T19:22:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Theo Marek (Technical Escalation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T19:23:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Theo Marek (Technical Escalation). Reason: technical_issue; risk_flags=repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

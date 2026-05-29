@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001441",
+  "subject": "Can't sign in \u2014 2FA code rejected",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T13:45:14+00:00",
+  "sla_breach_at": "2026-04-21T17:45:14+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003552",
+    "name": "Elena King",
+    "email": "elena_king@company.example",
+    "account_name": "Phoenix Lopez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T13:45:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:47:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hello Elena, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:49:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:49:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:51:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:52:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:54:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:54:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:55:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:55:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

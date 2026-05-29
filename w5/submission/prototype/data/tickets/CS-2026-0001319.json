@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001319",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in France. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-21T09:24:27+00:00",
+  "sla_breach_at": "2026-04-21T13:24:27+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003600",
+    "name": "Avery Nelson",
+    "email": "avery.nelson@proton.example",
+    "account_name": "Jordan Martin",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T09:24:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Avery Nelson",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in France. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:25:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi there \u2014 I'm Kai Williams from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:26:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Avery Nelson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:26:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:27:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Avery Nelson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:28:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:29:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T09:29:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Avery Nelson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

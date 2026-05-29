@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000770",
+  "subject": "Password reset email never arrived",
+  "description": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-24T09:14:50+00:00",
+  "sla_breach_at": "2026-04-24T13:14:50+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003642",
+    "name": "Maya James",
+    "email": "maya.james@company.example",
+    "account_name": "Indigo Gray",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T09:14:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya James",
+      "message": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:16:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Maya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:18:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya James",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:19:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:20:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya James",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:22:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:24:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya James",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:24:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:25:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:25:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya James",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001135",
+  "subject": "Cancel my account",
+  "description": "Cancelling. Please confirm when it's done. Plan: starter.\n\nI'll be filing a complaint with the BBB.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "closed",
+  "created_at": "2026-04-21T15:17:26+00:00",
+  "sla_breach_at": "2026-04-21T18:17:26+00:00",
+  "sla_target_minutes": 180,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002246",
+    "name": "Yuki Smith",
+    "email": "yuki_smith@corp.example",
+    "account_name": "Logan Lopez",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T15:17:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Smith",
+      "message": "Cancelling. Please confirm when it's done. Plan: starter.\n\nI'll be filing a complaint with the BBB.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:19:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hi Yuki, I'm Theo Marek (Technical Escalation). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:22:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:22:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: service_cancellation; risk_flags=regulatory_complaint,churn_risk_signal,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

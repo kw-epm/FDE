@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001728",
+  "subject": "Filing a complaint",
+  "description": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T02:42:39+00:00",
+  "sla_breach_at": "2026-04-20T06:42:39+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002296",
+    "name": "Casey Jackson",
+    "email": "caseyjackson@outlook.example",
+    "account_name": "Mateus Bailey",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T02:42:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Casey Jackson",
+      "message": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:43:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi there \u2014 I'm Ravi Chen (Billing) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:45:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:47:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: complaint; risk_flags=complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

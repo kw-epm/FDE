@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002163",
+  "subject": "Why was I charged twice?",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-21T04:03:40+00:00",
+  "sla_breach_at": "2026-04-21T08:03:40+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003630",
+    "name": "Noor Thomas",
+    "email": "noor_thomas@icloud.example",
+    "account_name": "Sam Walker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T04:03:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Thomas",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:05:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hi there \u2014 I'm Mateo Cruz from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:06:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Thomas",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:07:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:08:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Thomas",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:09:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:09:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:10:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Thomas",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

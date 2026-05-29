@@ -1,0 +1,14 @@
+From: Taylor Davis <taylor.davis@outlook.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: File upload fails for large files
+Date: Mon, 20 Apr 2026 03:25:57 +0000
+Message-ID: <177730075263.7.2677383114900866684@outlook.example>
+X-CloudServe-Ticket-Id: CS-2026-0001629
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003457
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our webhooks for project.updated stopped firing around 2pm UTC. Last successf=
+ul delivery was 13:58 UTC. Endpoint is healthy on our side.

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001388",
+  "subject": "Can't reset my password",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is iris_hall@gmail.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-21T10:53:41+00:00",
+  "sla_breach_at": "2026-04-21T14:53:41+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002753",
+    "name": "Iris Hall",
+    "email": "iris_hall@gmail.example",
+    "account_name": "Taylor Hall",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T10:53:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Hall",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is iris_hall@gmail.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:56:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi Iris, I'm Kai Williams. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:57:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Hall",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:59:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:00:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Hall",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:01:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:02:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:03:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Hall",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

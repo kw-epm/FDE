@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0002151",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T05:08:44+00:00",
+  "sla_breach_at": "2026-04-25T09:08:44+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002931",
+    "name": "Sage Campbell",
+    "email": "sage_campbell@yahoo.example",
+    "account_name": "Diego Lopez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T05:08:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Campbell",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:11:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hello Sage, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:11:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Campbell",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:12:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:14:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Campbell",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:14:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:16:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Campbell",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:17:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:18:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:19:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Campbell",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

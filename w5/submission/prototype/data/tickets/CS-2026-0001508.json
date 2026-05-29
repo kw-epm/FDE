@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001508",
+  "subject": "Cancel subscription",
+  "description": "I'd like to cancel my account effective end of this billing period. Account email is cameron_sanchez@outlook.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-23T22:34:35+00:00",
+  "sla_breach_at": "2026-04-24T02:34:35+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001973",
+    "name": "Cameron Sanchez",
+    "email": "cameron_sanchez@outlook.example",
+    "account_name": "Elena Sanchez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T22:34:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Sanchez",
+      "message": "I'd like to cancel my account effective end of this billing period. Account email is cameron_sanchez@outlook.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:36:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hello Cameron, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:38:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:41:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:43:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Elena Sanchez",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:45:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:47:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-23T22:47:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Sanchez",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

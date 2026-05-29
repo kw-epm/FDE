@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000210",
+  "subject": "How does the API rate limit work?",
+  "description": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T04:11:47+00:00",
+  "sla_breach_at": "2026-04-24T05:11:47+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003322",
+    "name": "Taylor Ward",
+    "email": "taylor.ward@corp.example",
+    "account_name": "Beacon Logistics Labs",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T04:11:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Ward",
+      "message": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:14:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hello Taylor, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:14:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Ward",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:16:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:17:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Ward",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:17:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:18:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:19:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Ward",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

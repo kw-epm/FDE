@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001120",
+  "subject": "GDPR data request",
+  "description": "I'd like a full export of our workspace data including audit logs. We're on the Business plan. ETA?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T01:38:49+00:00",
+  "sla_breach_at": "2026-04-24T05:38:49+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "data_export",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002502",
+    "name": "Alex Lopez",
+    "email": "alexlopez@corp.example",
+    "account_name": "Theo Baker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "data_export",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T01:38:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Lopez",
+      "message": "I'd like a full export of our workspace data including audit logs. We're on the Business plan. ETA?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:41:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi Alex, I'm Elena Ramos. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:44:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:47:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:50:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: data export for Theo Baker",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:51:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:52:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-24T01:55:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Lopez",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

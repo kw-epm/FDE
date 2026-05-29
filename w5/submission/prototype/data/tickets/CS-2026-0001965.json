@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001965",
+  "subject": "How do I add a teammate?",
+  "description": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T07:19:05+00:00",
+  "sla_breach_at": "2026-04-20T11:19:05+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-002874",
+    "name": "Quinn Torres",
+    "email": "quinn_torres@proton.example",
+    "account_name": "Wren Stewart",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T07:19:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Torres",
+      "message": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:21:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hello Quinn, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:21:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Torres",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:22:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:23:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Torres",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:24:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:25:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Torres",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:26:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:26:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Torres",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:27:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:27:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:28:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Torres",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

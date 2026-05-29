@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002131",
+  "subject": "Can't sign in \u2014 2FA code rejected",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T18:37:50+00:00",
+  "sla_breach_at": "2026-04-21T22:37:50+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001639",
+    "name": "Reese Phillips",
+    "email": "reese_phillips@fastmail.example",
+    "account_name": "Lane Watson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T18:37:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Phillips",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:40:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hi Reese, I'm Mateo Cruz. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:42:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Phillips",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:43:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Here's what I can see: your account access ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:44:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Phillips",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:45:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:45:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T18:46:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Phillips",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

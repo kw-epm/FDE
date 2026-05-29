@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000937",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-23T12:08:17+00:00",
+  "sla_breach_at": "2026-04-23T16:08:17+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003663",
+    "name": "Phoenix Thomas",
+    "email": "phoenixthomas@gmail.example",
+    "account_name": "Jasmine Nelson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T12:08:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Thomas",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:11:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi there \u2014 I'm Elena Ramos from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:12:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Thomas",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:13:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:14:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Thomas",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:15:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:17:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Thomas",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:17:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:18:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T12:18:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Thomas",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

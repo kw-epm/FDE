@@ -1,0 +1,16 @@
+From: Indigo Peterson <indigo.peterson@company.example>
+To: Ben Carter <ben.carter@cloudserve.example>
+Subject: Re: Reset link expired
+Date: Wed, 22 Apr 2026 23:23:52 +0000
+Message-ID: <177730075231.7.3786540623392823041@company.example>
+In-Reply-To: <177730075230.7.11224814889433700090@cloudserve.example>
+References: <177730075227.7.17827948529657108530@company.example>
+ <177730075230.7.11224814889433700090@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0001605
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001280
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+That works, thanks.

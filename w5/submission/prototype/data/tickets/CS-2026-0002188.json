@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002188",
+  "subject": "Locked out \u2014 need help",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's charlie_cook@gmail.example.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-25T12:52:07+00:00",
+  "sla_breach_at": "2026-04-25T16:52:07+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003946",
+    "name": "Charlie Cook",
+    "email": "charlie_cook@gmail.example",
+    "account_name": "Ari Rogers",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Aria Patel",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T12:52:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Cook",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's charlie_cook@gmail.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T12:53:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Hi Charlie, I'm Aria Patel. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T12:55:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Cook",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T12:56:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T12:57:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Cook",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T12:59:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T12:59:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T13:00:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Cook",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

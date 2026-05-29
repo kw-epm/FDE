@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000342",
+  "subject": "Cancelled but charged again",
+  "description": "I accidentally upgraded to business yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $1598?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-22T07:49:08+00:00",
+  "sla_breach_at": "2026-04-22T08:49:08+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "refund_request",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002281",
+    "name": "Yuki Lee",
+    "email": "yuki_lee@gmail.example",
+    "account_name": "Forge Energy Group",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T07:49:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Lee",
+      "message": "I accidentally upgraded to business yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $1598?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T07:52:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hello Yuki, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T07:55:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T07:56:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T07:58:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Forge Energy Group",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T08:00:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T08:02:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T08:04:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Lee",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

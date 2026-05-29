@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001641",
+  "subject": "Worst customer service I've ever experienced",
+  "description": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T12:16:29+00:00",
+  "sla_breach_at": "2026-04-20T16:16:29+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003708",
+    "name": "Cameron Sanchez",
+    "email": "cameron.sanchez@corp.example",
+    "account_name": "Hiro Rivera",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T12:16:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Cameron Sanchez",
+      "message": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T12:18:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hello Cameron, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T12:20:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T12:21:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: complaint; risk_flags=complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001933",
+  "subject": "Billing date confusion",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Spain. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "open",
+  "created_at": "2026-04-26T13:09:02+00:00",
+  "sla_breach_at": "2026-04-26T14:09:02+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002025",
+    "name": "Casey Morris",
+    "email": "caseymorris@outlook.example",
+    "account_name": "Element Robotics & Co.",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T13:09:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Casey Morris",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Spain. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:11:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hi Casey, I'm Imani Lewis. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:12:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Casey Morris",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:13:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:15:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Casey Morris",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:16:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:17:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Casey Morris",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:18:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:20:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Casey Morris",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:21:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:21:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T13:22:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Casey Morris",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

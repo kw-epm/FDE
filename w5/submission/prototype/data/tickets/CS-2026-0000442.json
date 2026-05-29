@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000442",
+  "subject": "Outage credit",
+  "description": "Last week's outage on 2026-04-22 \u2014 what's the credit policy for affected customers?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-23T10:38:28+00:00",
+  "sla_breach_at": "2026-04-23T14:38:28+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001380",
+    "name": "Maya Johnson",
+    "email": "mayajohnson@gmail.example",
+    "account_name": "Devin Brown",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T10:38:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Johnson",
+      "message": "Last week's outage on 2026-04-22 \u2014 what's the credit policy for affected customers?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:41:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hello Maya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:41:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Johnson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:43:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Here's what I can see: your outage inquiry ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:44:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Johnson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:45:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:46:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Johnson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:47:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:48:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Johnson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:49:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:50:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:50:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Johnson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

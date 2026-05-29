@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001323",
+  "subject": "Forgot my password",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is phoenixbaker@icloud.example. Can someone help?\n\nI've been waiting and need this resolved.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T15:53:40+00:00",
+  "sla_breach_at": "2026-04-20T19:53:40+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003963",
+    "name": "Phoenix Baker",
+    "email": "phoenixbaker@icloud.example",
+    "account_name": "Marcus Parker",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T15:53:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Baker",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is phoenixbaker@icloud.example. Can someone help?\n\nI've been waiting and need this resolved.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:55:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi there \u2014 I'm Henry Akira from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:55:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Baker",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:57:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:58:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Baker",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:59:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:59:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T16:00:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Baker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

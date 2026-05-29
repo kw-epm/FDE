@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0002147",
+  "subject": "Where is line item X coming from?",
+  "description": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-23T00:12:22+00:00",
+  "sla_breach_at": "2026-04-23T04:12:22+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001165",
+    "name": "Taylor Walker",
+    "email": "taylorwalker@fastmail.example",
+    "account_name": "Jamie Martinez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Aria Patel",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T00:12:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Walker",
+      "message": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:13:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Hello Taylor, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:14:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Walker",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:15:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:17:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Walker",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:17:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:18:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Walker",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:20:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:21:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:21:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Walker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

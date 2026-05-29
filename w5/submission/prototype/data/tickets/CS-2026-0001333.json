@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001333",
+  "subject": "API timeouts on /api/v2/projects",
+  "description": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-04-23T07:02:00+00:00",
+  "sla_breach_at": "2026-04-23T11:02:00+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003103",
+    "name": "Sofia Johnson",
+    "email": "sofia.johnson@gmail.example",
+    "account_name": "Kit Howard",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T07:02:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia Johnson",
+      "message": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T07:03:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hello Sofia, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T07:04:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T07:05:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: technical_issue; risk_flags=nps_detractor,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002064",
+  "subject": "Can't sign in \u2014 2FA code rejected",
+  "description": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.\n\nMy lawyer will follow up if this isn't resolved.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "pending",
+  "created_at": "2026-04-24T15:40:14+00:00",
+  "sla_breach_at": "2026-04-24T19:40:14+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001139",
+    "name": "Phoenix Allen",
+    "email": "phoenix.allen@corp.example",
+    "account_name": "Logan Cook",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T15:40:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Phoenix Allen",
+      "message": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.\n\nMy lawyer will follow up if this isn't resolved.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:42:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hi there \u2014 I'm Stacey Holm (Refunds Authorisation) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:44:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:45:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: account_access; risk_flags=regulatory_complaint,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

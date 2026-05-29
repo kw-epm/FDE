@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000603",
+  "subject": "Question about my latest invoice",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T17:51:55+00:00",
+  "sla_breach_at": "2026-04-24T21:51:55+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002271",
+    "name": "Quinn Edwards",
+    "email": "quinnedwards@corp.example",
+    "account_name": "Lex Wright",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T17:51:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Edwards",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:52:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hello Quinn, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:54:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Edwards",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:54:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:56:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:57:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:58:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Edwards",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:59:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T18:00:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T18:00:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

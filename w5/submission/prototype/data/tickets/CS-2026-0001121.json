@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001121",
+  "subject": "Where is line item X coming from?",
+  "description": "The April invoice has a 'one-time charge' of $799 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-21T21:25:09+00:00",
+  "sla_breach_at": "2026-04-21T21:55:09+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001189",
+    "name": "Theo Morris",
+    "email": "theo_morris@yahoo.example",
+    "account_name": "Beacon Outfitters LLC",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T21:25:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Morris",
+      "message": "The April invoice has a 'one-time charge' of $799 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T21:26:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hello Theo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T21:27:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Morris",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T21:28:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T21:29:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Morris",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T21:30:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T21:30:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T21:30:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Morris",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

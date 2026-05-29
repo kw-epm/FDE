@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000158",
+  "subject": "Need invoice itemisation",
+  "description": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T21:34:09+00:00",
+  "sla_breach_at": "2026-04-27T01:34:09+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002378",
+    "name": "Drew James",
+    "email": "drew.james@icloud.example",
+    "account_name": "Alex Morris",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T21:34:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew James",
+      "message": "My PDF download for the March invoice is empty (0 bytes). Can you regenerate?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:36:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi there \u2014 I'm Dmitri Volkov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:38:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew James",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:38:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:40:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew James",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:41:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:42:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:43:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew James",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

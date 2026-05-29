@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001671",
+  "subject": "Cancel my account",
+  "description": "We've decided to stop using CloudServe. Cancel asap.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-22T20:27:48+00:00",
+  "sla_breach_at": "2026-04-23T00:27:48+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003317",
+    "name": "Indigo Morris",
+    "email": "indigo_morris@proton.example",
+    "account_name": "Blake Thomas",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T20:27:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Morris",
+      "message": "We've decided to stop using CloudServe. Cancel asap.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:29:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hello Indigo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:31:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:34:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:36:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Blake Thomas",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:39:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:41:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T20:42:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Morris",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

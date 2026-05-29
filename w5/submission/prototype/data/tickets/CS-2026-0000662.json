@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000662",
+  "subject": "Can't reset my password",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's charliejohnson@corp.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T00:23:57+00:00",
+  "sla_breach_at": "2026-04-22T01:23:57+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "password_reset",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003424",
+    "name": "Charlie Johnson",
+    "email": "charliejohnson@corp.example",
+    "account_name": "Tundra Logistics Studios",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T00:23:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Johnson",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's charliejohnson@corp.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:25:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi Charlie, I'm Jules Becker. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:26:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Johnson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:27:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:29:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Johnson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:29:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:30:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Johnson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:32:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:32:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:33:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Johnson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

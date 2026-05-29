@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000183",
+  "subject": "Account access issue",
+  "description": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Jordan Green.\n\nMy lawyer will follow up if this isn't resolved.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "closed",
+  "created_at": "2026-04-22T03:16:18+00:00",
+  "sla_breach_at": "2026-04-22T04:16:18+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "account_access",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-002517",
+    "name": "Logan Green",
+    "email": "logan.green@fastmail.example",
+    "account_name": "Jordan Green",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T03:16:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Green",
+      "message": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Jordan Green.\n\nMy lawyer will follow up if this isn't resolved.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T03:18:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hi there \u2014 I'm Victoria Lim (Account Mgmt) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T03:21:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Theo Marek (Technical Escalation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T03:22:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Theo Marek (Technical Escalation). Reason: account_access; risk_flags=regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

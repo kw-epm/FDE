@@ -1,0 +1,14 @@
+From: Taylor Wright <taylor_wright@icloud.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Outage credit
+Date: Sat, 25 Apr 2026 14:56:44 +0000
+Message-ID: <177730074729.7.12789760268304451612@icloud.example>
+X-CloudServe-Ticket-Id: CS-2026-0001076
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002512
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+We're seeing 5xx errors across the board. Your status page says all green but=
+ we can't load anything. Are you down?

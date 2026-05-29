@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001152",
+  "subject": "Account access issue",
+  "description": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T15:17:06+00:00",
+  "sla_breach_at": "2026-04-20T16:17:06+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "account_access",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001628",
+    "name": "Drew Johnson",
+    "email": "drewjohnson@icloud.example",
+    "account_name": "Zenith Robotics Co-op",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T15:17:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:20:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi there \u2014 I'm Felix Tang from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:20:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:21:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:23:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:23:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:24:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:25:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:26:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:26:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:27:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T15:28:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Johnson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

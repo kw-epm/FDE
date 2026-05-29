@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000188",
+  "subject": "This is the third time this month",
+  "description": "We've raised this exact issue three times now and nothing has changed. I want a real human, not a bot or a script.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-23T15:56:53+00:00",
+  "sla_breach_at": "2026-04-23T16:56:53+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "complaint",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001744",
+    "name": "Jasmine Wilson",
+    "email": "jasminewilson@gmail.example",
+    "account_name": "Vector Outfitters Holdings",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T15:56:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Wilson",
+      "message": "We've raised this exact issue three times now and nothing has changed. I want a real human, not a bot or a script.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T15:57:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hello Jasmine, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T15:58:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T16:00:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: complaint; risk_flags=high_value_customer,complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

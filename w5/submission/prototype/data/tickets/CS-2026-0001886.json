@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001886",
+  "subject": "Need invoice itemisation",
+  "description": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-20T05:34:06+00:00",
+  "sla_breach_at": "2026-04-20T09:34:06+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001063",
+    "name": "Lin Davis",
+    "email": "lin.davis@outlook.example",
+    "account_name": "Rowan Lee",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T05:34:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Davis",
+      "message": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:36:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hello Lin, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:36:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Davis",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:37:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:39:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Davis",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:40:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:40:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Davis",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:42:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:43:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Davis",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:44:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:44:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T05:45:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Davis",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

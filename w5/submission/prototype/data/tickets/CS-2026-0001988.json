@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001988",
+  "subject": "Why was I charged twice?",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T04:09:59+00:00",
+  "sla_breach_at": "2026-04-26T08:09:59+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001220",
+    "name": "Chen Sanchez",
+    "email": "chensanchez@company.example",
+    "account_name": "Diego Morris",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T04:09:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Sanchez",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:12:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi there \u2014 I'm Dmitri Volkov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:13:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Sanchez",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:13:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:15:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Sanchez",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:15:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:16:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Sanchez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:17:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:18:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Sanchez",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:19:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:20:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:21:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Sanchez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

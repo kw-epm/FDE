@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000269",
+  "subject": "This is the third time this month",
+  "description": "I'm absolutely furious. I waited 4 hours for a response on a billing issue, got a copy-paste reply, and the issue still isn't resolved. Your support is unprofessional.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-20T01:55:58+00:00",
+  "sla_breach_at": "2026-04-20T05:55:58+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003000",
+    "name": "Sana Moore",
+    "email": "sana_moore@gmail.example",
+    "account_name": "Lin Young",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T01:55:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Moore",
+      "message": "I'm absolutely furious. I waited 4 hours for a response on a billing issue, got a copy-paste reply, and the issue still isn't resolved. Your support is unprofessional.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:57:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi Sana, I'm Ravi Chen (Billing). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T01:59:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Theo Marek (Technical Escalation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:00:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Theo Marek (Technical Escalation). Reason: complaint; risk_flags=complaint_lang,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

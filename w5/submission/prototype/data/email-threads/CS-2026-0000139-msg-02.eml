@@ -1,0 +1,28 @@
+From: Dmitri Volkov <dmitri.volkov@cloudserve.example>
+To: Sana Moore <sana_moore@gmail.example>
+Subject: Re: Password reset email never arrived
+Date: Fri, 24 Apr 2026 00:50:32 +0000
+Message-ID: <177730073794.7.15381404439206398199@cloudserve.example>
+In-Reply-To: <177730073794.7.10983060733380346133@gmail.example>
+References: <177730073794.7.10983060733380346133@gmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000139
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003000
+X-CloudServe-Disposition: AI_AUTO
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Sana,
+
+Thanks for reaching out. I've taken a look and here's what I can do for your =
+password reset request:
+
+- Pulled up your account (Lin Young, plan: starter).
+- Confirmed the issue is consistent with our self-service path described in p=
+assword-reset.
+- The next step on your side is the action described in that article.
+
+Let me know if you'd like me to walk you through any step.
+
+=E2=80=94 Dmitri Volkov

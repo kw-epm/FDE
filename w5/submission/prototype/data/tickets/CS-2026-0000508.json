@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000508",
+  "subject": "Cancel subscription",
+  "description": "I want to cancel but I see the policy says no refund for the unused part of this cycle. Is that still the case?\n\nPlease prioritise this.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-21T03:59:23+00:00",
+  "sla_breach_at": "2026-04-21T05:59:23+00:00",
+  "sla_target_minutes": 120,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-002465",
+    "name": "Iris Reed",
+    "email": "iris.reed@outlook.example",
+    "account_name": "Chen Bailey",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T03:59:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Reed",
+      "message": "I want to cancel but I see the policy says no refund for the unused part of this cycle. Is that still the case?\n\nPlease prioritise this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:01:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi Iris, I'm Kai Williams. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:02:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:03:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I've put together the request and routed it to Stacey Holm (Refunds Authorisation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:07:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Chen Bailey",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:09:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T04:10:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Internal: routed to Stacey Holm (Refunds Authorisation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T04:13:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Reed",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+From: Priya Shah <priya.shah@cloudserve.example>
+To: Drew Jackson <drew_jackson@fastmail.example>
+Subject: Re: SSO not working with Azure AD
+Date: Sat, 25 Apr 2026 02:23:14 +0000
+Message-ID: <177730074348.7.1202765353700136123@cloudserve.example>
+In-Reply-To: <177730074348.7.3204144518560318907@fastmail.example>
+References: <177730074348.7.3204144518560318907@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000671
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002736
+X-CloudServe-Disposition: AI_AUTO
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Drew,
+
+Thanks for reaching out. I've taken a look and here's what I can do for your =
+sso setup request:
+
+- Pulled up your account (Rowan Green, plan: starter).
+- Confirmed the issue is consistent with our self-service path described in s=
+so-setup.
+- The next step on your side is the action described in that article.
+
+Let me know if you'd like me to walk you through any step.
+
+=E2=80=94 Priya Shah

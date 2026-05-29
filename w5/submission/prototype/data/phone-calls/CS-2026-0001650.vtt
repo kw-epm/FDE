@@ -1,0 +1,74 @@
+WEBVTT
+
+NOTE ticket_id: CS-2026-0001650
+NOTE channel: phone
+NOTE intake_ts: 2026-04-21T04:04:44+00:00
+NOTE customer_id: CUST-001331
+
+1
+00:00:00.000 --> 00:00:05.056
+<v Agent>Thank you for calling CloudServe support, this is Cassidy Nguyen. How can I help you today?
+
+2
+00:00:06.411 --> 00:00:10.633
+<v Customer>Hello? Yes, hi. Indigo here. I need to talk to someone about outage inquiry.
+
+3
+00:00:11.839 --> 00:00:15.450
+<v Agent>I can help with that. Can I get the email address on the account?
+
+4
+00:00:16.328 --> 00:00:18.328
+<v Customer>It's indigotorres@gmail.example.
+
+5
+00:00:19.800 --> 00:00:21.800
+<v Agent>Got it. Pulling up your account now.
+
+6
+00:00:22.852 --> 00:00:25.907
+<v Agent>Ok, I see Zenith Networks Systems on the business plan.
+
+7
+00:00:26.654 --> 00:00:28.654
+<v Customer>What can you do for me?
+
+8
+00:00:29.437 --> 00:00:32.326
+<v Agent>Of course. We'll handle this end-to-end on the call.
+
+9
+00:00:33.681 --> 00:00:36.181
+<v Agent>For outage inquiry, the steps on my side are…
+
+10
+00:00:37.161 --> 00:00:39.161
+<v Customer>Ok, sounds good.
+
+11
+00:00:40.466 --> 00:00:42.522
+<v Agent>[10-15 seconds working in the system]
+
+12
+00:00:44.185 --> 00:00:47.797
+<v Agent>Done. The update is in. You'll get an email confirmation shortly.
+
+13
+00:00:49.547 --> 00:00:51.547
+<v Customer>Great. Anything else I need to do?
+
+14
+00:00:52.707 --> 00:00:55.262
+<v Agent>Nope, all set on our side. Thanks for calling.
+
+15
+00:00:55.774 --> 00:00:57.774
+<v Agent>Anything else I can help with today?
+
+16
+00:00:59.643 --> 00:01:01.643
+<v Customer>All set, thanks.
+
+17
+00:01:03.403 --> 00:01:06.014
+<v Agent>Thanks for calling CloudServe. Have a good day.

@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000423",
+  "subject": "Reset link expired",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T17:47:52+00:00",
+  "sla_breach_at": "2026-04-21T21:47:52+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001487",
+    "name": "Sam Lee",
+    "email": "sam_lee@company.example",
+    "account_name": "Chen Murphy",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T17:47:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Lee",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:49:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hello Sam, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:51:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Lee",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:52:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:53:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Lee",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:54:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:56:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Lee",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:57:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:57:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:58:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Lee",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001313",
+  "subject": "Locked out \u2014 need help",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is ravimoore@company.example. Can someone help?\n\nI've been waiting and need this resolved.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T07:28:09+00:00",
+  "sla_breach_at": "2026-04-25T11:28:09+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003190",
+    "name": "Ravi Moore",
+    "email": "ravimoore@company.example",
+    "account_name": "Avery Rivera",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T07:28:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Moore",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is ravimoore@company.example. Can someone help?\n\nI've been waiting and need this resolved.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:31:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hello Ravi, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:32:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Moore",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:33:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:34:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Moore",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:36:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:36:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:37:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Moore",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

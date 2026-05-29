@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000865",
+  "subject": "Password reset email never arrived",
+  "description": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-25T22:44:41+00:00",
+  "sla_breach_at": "2026-04-26T02:44:41+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003344",
+    "name": "Drew Garcia",
+    "email": "drew.garcia@outlook.example",
+    "account_name": "Aisha Richardson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T22:44:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Garcia",
+      "message": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:46:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hello Drew, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:48:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Garcia",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:48:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:49:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Garcia",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:50:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:51:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:51:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Garcia",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001914",
+  "subject": "Refund for unused subscription",
+  "description": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Lex Watson.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-22T15:20:31+00:00",
+  "sla_breach_at": "2026-04-22T19:20:31+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003745",
+    "name": "Maya Murphy",
+    "email": "maya_murphy@outlook.example",
+    "account_name": "Lex Watson",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T15:20:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Murphy",
+      "message": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Lex Watson.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:22:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hello Maya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:26:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:28:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:30:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Lex Watson",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:33:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:34:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T15:37:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Murphy",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

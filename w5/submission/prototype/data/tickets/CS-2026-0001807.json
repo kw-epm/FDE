@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001807",
+  "subject": "How does the API rate limit work?",
+  "description": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-24T04:28:34+00:00",
+  "sla_breach_at": "2026-04-24T08:28:34+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002717",
+    "name": "Taylor Smith",
+    "email": "taylor.smith@outlook.example",
+    "account_name": "Jasmine Evans",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T04:28:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Smith",
+      "message": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:30:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hi there \u2014 I'm Nora Hassan from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:30:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Smith",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:32:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:33:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Smith",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:34:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:35:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Smith",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:36:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:38:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Smith",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:39:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:39:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:40:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Smith",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001370",
+  "subject": "Cancelled but charged again",
+  "description": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $0. Refund please.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-22T14:16:02+00:00",
+  "sla_breach_at": "2026-04-22T18:16:02+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003673",
+    "name": "Noor Carter",
+    "email": "noorcarter@gmail.example",
+    "account_name": "Theo Mitchell",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T14:16:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Carter",
+      "message": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $0. Refund please.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:17:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi Noor, I'm Cassidy Nguyen. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:20:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:23:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I've put together the request and routed it to Victoria Lim (Account Mgmt). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:26:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Theo Mitchell",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:28:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:30:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Internal: routed to Victoria Lim (Account Mgmt). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T14:32:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Carter",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

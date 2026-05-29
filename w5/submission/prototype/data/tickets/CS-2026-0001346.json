@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001346",
+  "subject": "Where do I find audit logs?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-20T14:03:11+00:00",
+  "sla_breach_at": "2026-04-20T18:03:11+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001230",
+    "name": "Ravi Wright",
+    "email": "ravi.wright@icloud.example",
+    "account_name": "Kit Jackson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T14:03:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Wright",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:04:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi there \u2014 I'm Gabby Olsson from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:04:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Wright",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:05:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:06:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Wright",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:07:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:09:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Wright",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:10:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:11:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T14:11:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Wright",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002114",
+  "subject": "Can I export my data?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-22T00:45:13+00:00",
+  "sla_breach_at": "2026-04-22T04:45:13+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002365",
+    "name": "Morgan Wilson",
+    "email": "morgan.wilson@proton.example",
+    "account_name": "Hiro Sanchez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T00:45:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Morgan Wilson",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:46:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi there \u2014 I'm Henry Akira from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:46:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Morgan Wilson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:48:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:48:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Morgan Wilson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:49:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:50:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:50:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Morgan Wilson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

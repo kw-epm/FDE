@@ -1,0 +1,28 @@
+From: Ben Carter <ben.carter@cloudserve.example>
+To: Yuki Murphy <yukimurphy@proton.example>
+Subject: Re: Password reset email never arrived
+Date: Mon, 20 Apr 2026 08:03:13 +0000
+Message-ID: <177730073867.7.16129723865734956439@cloudserve.example>
+In-Reply-To: <177730073866.7.10687837791284791453@proton.example>
+References: <177730073866.7.10687837791284791453@proton.example>
+X-CloudServe-Ticket-Id: CS-2026-0000217
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002568
+X-CloudServe-Disposition: AI_AUTO
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Yuki,
+
+Thanks for reaching out. I've taken a look and here's what I can do for your =
+password reset request:
+
+- Pulled up your account (Ari Hill, plan: free).
+- Confirmed the issue is consistent with our self-service path described in p=
+assword-reset.
+- The next step on your side is the action described in that article.
+
+Let me know if you'd like me to walk you through any step.
+
+=E2=80=94 Ben Carter

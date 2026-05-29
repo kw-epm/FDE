@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001447",
+  "subject": "Reset link expired",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is elena_baker@corp.example. Can someone help?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-25T01:46:28+00:00",
+  "sla_breach_at": "2026-04-25T05:46:28+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002284",
+    "name": "Elena Baker",
+    "email": "elena_baker@corp.example",
+    "account_name": "Marcus Howard",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T01:46:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Baker",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is elena_baker@corp.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:48:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi there \u2014 I'm Elena Ramos from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:48:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Baker",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:49:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:51:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Baker",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:52:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:52:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Baker",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:54:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:54:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:55:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Baker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

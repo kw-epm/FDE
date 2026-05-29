@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001971",
+  "subject": "Question about my latest invoice",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-22T11:42:39+00:00",
+  "sla_breach_at": "2026-04-22T15:42:39+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003361",
+    "name": "Jamie Allen",
+    "email": "jamieallen@yahoo.example",
+    "account_name": "Logan Wilson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T11:42:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Allen",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:44:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi Jamie, I'm Jules Becker. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:45:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Allen",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:46:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:47:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Allen",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:47:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:49:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Allen",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:50:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:51:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:51:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Allen",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

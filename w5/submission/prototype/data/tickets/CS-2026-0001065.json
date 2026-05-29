@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001065",
+  "subject": "Forgot my password",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's noorcarter@gmail.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-23T13:48:34+00:00",
+  "sla_breach_at": "2026-04-23T17:48:34+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003673",
+    "name": "Noor Carter",
+    "email": "noorcarter@gmail.example",
+    "account_name": "Theo Mitchell",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T13:48:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Carter",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's noorcarter@gmail.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:50:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi Noor, I'm Cassidy Nguyen. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:51:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Carter",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:51:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:53:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Carter",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:53:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:54:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Carter",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:55:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:55:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T13:56:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Carter",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

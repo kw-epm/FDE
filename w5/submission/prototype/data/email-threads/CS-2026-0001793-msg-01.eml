@@ -1,0 +1,15 @@
+From: Jordan Bailey <jordan.bailey@corp.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Account access issue
+Date: Sat, 25 Apr 2026 19:13:08 +0000
+Message-ID: <177730075428.7.16428617342437193160@corp.example>
+X-CloudServe-Ticket-Id: CS-2026-0001793
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001224
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our team uses Okta SSO and as of this morning we get an error 'AssertionConsu=
+merService binding mismatch' on sign-in. Nothing changed on our side. Account=
+: Ari Baker.

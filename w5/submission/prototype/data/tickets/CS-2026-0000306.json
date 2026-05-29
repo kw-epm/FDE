@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000306",
+  "subject": "Return request \u2014 physical token",
+  "description": "We received the welcome kit but won't be using it \u2014 can we return for a refund?\n\nI'm contacting my state attorney general about this.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "pending",
+  "created_at": "2026-04-26T03:27:00+00:00",
+  "sla_breach_at": "2026-04-26T06:27:00+00:00",
+  "sla_target_minutes": 180,
+  "tags": [
+    "return_request",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001800",
+    "name": "Yuki Garcia",
+    "email": "yukigarcia@yahoo.example",
+    "account_name": "Maya Garcia",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "return_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T03:27:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Garcia",
+      "message": "We received the welcome kit but won't be using it \u2014 can we return for a refund?\n\nI'm contacting my state attorney general about this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T03:28:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi there \u2014 I'm Ravi Chen (Billing) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T03:30:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T03:31:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: return_request; risk_flags=regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

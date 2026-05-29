@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002293",
+  "subject": "I am extremely disappointed",
+  "description": "I'm absolutely furious. I waited 4 hours for a response on a billing issue, got a copy-paste reply, and the issue still isn't resolved. Your support is unprofessional.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-21T10:52:34+00:00",
+  "sla_breach_at": "2026-04-21T11:22:34+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "complaint",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002533",
+    "name": "Noor Adams",
+    "email": "noor_adams@gmail.example",
+    "account_name": "Element Foods Group",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T10:52:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Adams",
+      "message": "I'm absolutely furious. I waited 4 hours for a response on a billing issue, got a copy-paste reply, and the issue still isn't resolved. Your support is unprofessional.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:54:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi Noor, I'm Ravi Chen (Billing). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:56:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Theo Marek (Technical Escalation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:58:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Theo Marek (Technical Escalation). Reason: complaint; risk_flags=high_value_customer,complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

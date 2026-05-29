@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001334",
+  "subject": "Question about my latest invoice",
+  "description": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "new",
+  "created_at": "2026-04-26T21:32:46+00:00",
+  "sla_breach_at": "2026-04-27T01:32:46+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003552",
+    "name": "Elena King",
+    "email": "elena_king@company.example",
+    "account_name": "Phoenix Lopez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": null,
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T21:32:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:34:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hello Elena, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:36:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:37:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:37:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:39:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:39:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T21:40:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena King",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

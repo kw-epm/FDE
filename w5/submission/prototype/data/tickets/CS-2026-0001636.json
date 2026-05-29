@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001636",
+  "subject": "Billing date confusion",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is starter.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T03:14:23+00:00",
+  "sla_breach_at": "2026-04-21T07:14:23+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002679",
+    "name": "Logan Hill",
+    "email": "loganhill@proton.example",
+    "account_name": "Sofia James",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T03:14:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Hill",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is starter.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:15:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi there \u2014 I'm Felix Tang from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:16:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Hill",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:17:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:18:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Hill",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:19:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:21:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Hill",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:21:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:22:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:22:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Hill",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

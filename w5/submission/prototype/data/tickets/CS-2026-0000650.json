@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000650",
+  "subject": "Password reset email never arrived",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?\n\nMy lawyer will follow up if this isn't resolved.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "solved",
+  "created_at": "2026-04-21T03:51:26+00:00",
+  "sla_breach_at": "2026-04-21T04:06:26+00:00",
+  "sla_target_minutes": 15,
+  "tags": [
+    "password_reset",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001078",
+    "name": "Anya Adams",
+    "email": "anyaadams@fastmail.example",
+    "account_name": "Orbit Foods & Co.",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T03:51:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Adams",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?\n\nMy lawyer will follow up if this isn't resolved.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:53:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hi Anya, I'm Stacey Holm (Refunds Authorisation). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:56:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T03:57:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: password_reset; risk_flags=high_value_customer,regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

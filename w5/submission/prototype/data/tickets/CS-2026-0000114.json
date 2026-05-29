@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000114",
+  "subject": "How do I add a teammate?",
+  "description": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T23:09:21+00:00",
+  "sla_breach_at": "2026-04-23T03:09:21+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003418",
+    "name": "Charlie Morgan",
+    "email": "charlie_morgan@icloud.example",
+    "account_name": "Cameron Bailey",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T23:09:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Morgan",
+      "message": "Need to pull audit logs for compliance. Where do I find them and what's the export format?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:11:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi there \u2014 I'm Felix Tang from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:11:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Morgan",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:12:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:12:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Morgan",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:13:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:15:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Morgan",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:16:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:17:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T23:17:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Morgan",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002051",
+  "subject": "Cancelled but charged again",
+  "description": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T16:32:02+00:00",
+  "sla_breach_at": "2026-04-26T20:32:02+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003867",
+    "name": "Yuki Parker",
+    "email": "yuki.parker@corp.example",
+    "account_name": "Phoenix Cooper",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T16:32:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Parker",
+      "message": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:32:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hello Yuki, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:35:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:37:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I've put together the request and routed it to Victoria Lim (Account Mgmt). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:40:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Phoenix Cooper",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:43:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:44:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Internal: routed to Victoria Lim (Account Mgmt). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-26T16:48:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Parker",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

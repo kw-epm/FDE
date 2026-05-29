@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000779",
+  "subject": "Lost my authenticator phone",
+  "description": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Mateus Martinez.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-25T03:45:00+00:00",
+  "sla_breach_at": "2026-04-25T07:45:00+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002927",
+    "name": "Lane Sanchez",
+    "email": "lanesanchez@proton.example",
+    "account_name": "Mateus Martinez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T03:45:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Sanchez",
+      "message": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Mateus Martinez.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:47:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi there \u2014 I'm Lina Petrov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:47:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Sanchez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:48:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:49:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Sanchez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:50:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:50:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:51:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Sanchez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

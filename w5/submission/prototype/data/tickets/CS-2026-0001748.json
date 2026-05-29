@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001748",
+  "subject": "Locked out \u2014 need help",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-24T23:45:22+00:00",
+  "sla_breach_at": "2026-04-25T03:45:22+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003545",
+    "name": "Charlie Peterson",
+    "email": "charlie_peterson@yahoo.example",
+    "account_name": "Skyler Mitchell",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T23:45:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Peterson",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:46:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Charlie, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:47:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Peterson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:47:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:48:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Peterson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:49:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:50:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Peterson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:51:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:52:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Peterson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:53:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:53:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T23:54:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Peterson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

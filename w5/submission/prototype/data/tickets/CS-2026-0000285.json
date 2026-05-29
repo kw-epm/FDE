@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000285",
+  "subject": "Locked out \u2014 need help",
+  "description": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T06:01:20+00:00",
+  "sla_breach_at": "2026-04-20T10:01:20+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001670",
+    "name": "Anya Brown",
+    "email": "anya_brown@company.example",
+    "account_name": "Phoenix Richardson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T06:01:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Brown",
+      "message": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:03:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hello Anya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:03:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Brown",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:05:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:06:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Brown",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:08:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:08:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:08:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Brown",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

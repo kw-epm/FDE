@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000310",
+  "subject": "Password reset email never arrived",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-21T08:25:35+00:00",
+  "sla_breach_at": "2026-04-21T09:25:35+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "password_reset",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003769",
+    "name": "Indigo Howard",
+    "email": "indigo.howard@icloud.example",
+    "account_name": "Riverstone Retail Group",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T08:25:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:27:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hello Indigo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:29:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:29:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:31:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:31:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:31:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:32:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:33:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T08:33:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002266",
+  "subject": "I am extremely disappointed",
+  "description": "We've raised this exact issue three times now and nothing has changed. I want a real human, not a bot or a script.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-22T17:15:01+00:00",
+  "sla_breach_at": "2026-04-22T17:45:01+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "complaint",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002434",
+    "name": "Jordan Martinez",
+    "email": "jordan.martinez@company.example",
+    "account_name": "Yardarm Networks Studios",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T17:15:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "We've raised this exact issue three times now and nothing has changed. I want a real human, not a bot or a script.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:16:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi there \u2014 I'm Ravi Chen (Billing) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:19:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:20:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: complaint; risk_flags=high_value_customer,complaint_lang,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

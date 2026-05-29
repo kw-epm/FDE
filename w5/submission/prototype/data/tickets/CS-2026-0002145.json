@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002145",
+  "subject": "Need full data export",
+  "description": "I'd like a full export of our workspace data including audit logs. We're on the Business plan. ETA?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T14:46:20+00:00",
+  "sla_breach_at": "2026-04-22T15:01:20+00:00",
+  "sla_target_minutes": 15,
+  "tags": [
+    "data_export",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-003336",
+    "name": "Sam Scott",
+    "email": "sam_scott@company.example",
+    "account_name": "Tundra Energy Holdings",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "data_export",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T14:46:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Scott",
+      "message": "I'd like a full export of our workspace data including audit logs. We're on the Business plan. ETA?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:47:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi Sam, I'm Gabby Olsson. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:49:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:51:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:54:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: data export for Tundra Energy Holdings",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:55:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:56:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T14:57:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Scott",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

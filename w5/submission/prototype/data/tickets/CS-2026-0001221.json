@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001221",
+  "subject": "Dashboard returning 500 errors",
+  "description": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-23T00:38:21+00:00",
+  "sla_breach_at": "2026-04-23T04:38:21+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002881",
+    "name": "Lane Thomas",
+    "email": "lane_thomas@outlook.example",
+    "account_name": "Yuki Stewart",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T00:38:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:41:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hello Lane, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:43:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:44:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: technical_issue; risk_flags=none.",
+      "internal_note": true
+    }
+  ]
+}

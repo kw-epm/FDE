@@ -1,0 +1,14 @@
+From: Jamie Carter <jamie.carter@proton.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SCIM provisioning
+Date: Sun, 26 Apr 2026 08:32:37 +0000
+Message-ID: <177730074338.7.5654296211990799708@proton.example>
+X-CloudServe-Ticket-Id: CS-2026-0000663
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003099
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Need to set up SCIM auto-provisioning from our IdP. Is this on Business or on=
+ly Enterprise?

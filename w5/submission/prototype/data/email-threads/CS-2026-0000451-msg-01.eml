@@ -1,0 +1,14 @@
+From: Hiro Gray <hiro.gray@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Where do I find audit logs?
+Date: Sat, 25 Apr 2026 04:37:25 +0000
+Message-ID: <177730074116.7.10218220288547412193@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000451
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002154
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+What are the API rate limits on the Pro plan? We're seeing 429s and need to k=
+now if we should upgrade or batch differently.

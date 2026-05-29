@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001872",
+  "subject": "Worst customer service I've ever experienced",
+  "description": "This is the worst customer service experience I've ever had. I'm going to leave a review on every site I can find.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-04-21T06:25:20+00:00",
+  "sla_breach_at": "2026-04-21T10:25:20+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003989",
+    "name": "Devin Young",
+    "email": "devinyoung@icloud.example",
+    "account_name": "Blake Martinez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T06:25:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Young",
+      "message": "This is the worst customer service experience I've ever had. I'm going to leave a review on every site I can find.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:28:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hi there \u2014 I'm Uma Bardwaj (Compliance) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:29:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:30:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: complaint; risk_flags=complaint_lang,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000117",
+  "subject": "Where is line item X coming from?",
+  "description": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-21T14:54:29+00:00",
+  "sla_breach_at": "2026-04-21T15:54:29+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001073",
+    "name": "Charlie Watson",
+    "email": "charliewatson@proton.example",
+    "account_name": "Riverstone Health Studios",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T14:54:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Watson",
+      "message": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:55:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hello Charlie, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:56:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Watson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:58:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:59:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Watson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:00:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:01:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Watson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:02:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:03:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Watson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:03:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:04:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:04:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Watson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

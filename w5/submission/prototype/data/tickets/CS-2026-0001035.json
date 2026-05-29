@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001035",
+  "subject": "Refund for unused subscription",
+  "description": "I accidentally upgraded to free yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $0?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T11:23:24+00:00",
+  "sla_breach_at": "2026-04-24T15:23:24+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001714",
+    "name": "Elena Ramirez",
+    "email": "elena_ramirez@outlook.example",
+    "account_name": "Jamie Thomas",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T11:23:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Ramirez",
+      "message": "I accidentally upgraded to free yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $0?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T11:24:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi Elena, I'm Olivia Park. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T11:25:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T11:27:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T11:29:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Jamie Thomas",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T11:30:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T11:31:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-24T11:35:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Ramirez",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

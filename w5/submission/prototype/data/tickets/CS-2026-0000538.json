@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000538",
+  "subject": "Unacceptable service",
+  "description": "I've been a customer for 2 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T10:23:33+00:00",
+  "sla_breach_at": "2026-04-26T14:23:33+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003842",
+    "name": "Charlie Cook",
+    "email": "charlie.cook@corp.example",
+    "account_name": "Lin Evans",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T10:23:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Cook",
+      "message": "I've been a customer for 2 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:24:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hi there \u2014 I'm Victoria Lim (Account Mgmt) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:26:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:27:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: complaint; risk_flags=complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

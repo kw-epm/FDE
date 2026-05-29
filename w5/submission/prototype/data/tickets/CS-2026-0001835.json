@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001835",
+  "subject": "Asking for a refund \u2014 service was down",
+  "description": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Ravi Hall.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-24T01:18:36+00:00",
+  "sla_breach_at": "2026-04-24T05:18:36+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001876",
+    "name": "Owen Allen",
+    "email": "owen.allen@outlook.example",
+    "account_name": "Ravi Hall",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T01:18:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Allen",
+      "message": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Ravi Hall.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:21:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi there \u2014 I'm Henry Akira from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:24:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:27:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:31:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Ravi Hall",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:34:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:36:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-24T01:37:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Owen Allen",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

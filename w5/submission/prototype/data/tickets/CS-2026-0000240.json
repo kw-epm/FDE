@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000240",
+  "subject": "Reset link expired",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is jasmine.bailey@outlook.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "new",
+  "created_at": "2026-04-26T19:59:54+00:00",
+  "sla_breach_at": "2026-04-26T23:59:54+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001294",
+    "name": "Jasmine Bailey",
+    "email": "jasmine.bailey@outlook.example",
+    "account_name": "Skyler Martinez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": null,
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T19:59:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Bailey",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is jasmine.bailey@outlook.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:00:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi there \u2014 I'm Elena Ramos from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:01:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Bailey",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:01:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:02:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Bailey",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:04:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:06:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Bailey",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:07:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:07:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T20:07:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Bailey",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

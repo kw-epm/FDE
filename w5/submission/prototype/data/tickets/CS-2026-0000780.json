@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000780",
+  "subject": "Can I export my data?",
+  "description": "How do I export my workspace data? We need a backup before a migration.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T06:42:41+00:00",
+  "sla_breach_at": "2026-04-20T10:42:41+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002906",
+    "name": "Jamie Peterson",
+    "email": "jamiepeterson@yahoo.example",
+    "account_name": "Sam Hall",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T06:42:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Peterson",
+      "message": "How do I export my workspace data? We need a backup before a migration.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:44:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi Jamie, I'm Felix Tang. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:46:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Peterson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:47:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:48:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Peterson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:49:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:50:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:51:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jamie Peterson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

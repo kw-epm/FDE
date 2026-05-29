@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002256",
+  "subject": "Lost my authenticator phone",
+  "description": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-23T10:18:53+00:00",
+  "sla_breach_at": "2026-04-23T14:18:53+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002010",
+    "name": "Theo Moore",
+    "email": "theo.moore@gmail.example",
+    "account_name": "Devin Wilson",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T10:18:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Moore",
+      "message": "I keep getting kicked back to the sign-in page right after entering my password. Cleared cookies, tried incognito, same thing. This started about 2 hours ago.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:20:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hello Theo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:20:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Moore",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:21:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:23:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Moore",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:24:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:24:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T10:25:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Moore",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

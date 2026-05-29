@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002287",
+  "subject": "How do I add a teammate?",
+  "description": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T17:36:34+00:00",
+  "sla_breach_at": "2026-04-24T21:36:34+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003679",
+    "name": "Sofia Johnson",
+    "email": "sofia_johnson@corp.example",
+    "account_name": "Noor Perez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T17:36:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia Johnson",
+      "message": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:37:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hello Sofia, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:38:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia Johnson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:40:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:41:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia Johnson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:42:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:42:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:43:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sofia Johnson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

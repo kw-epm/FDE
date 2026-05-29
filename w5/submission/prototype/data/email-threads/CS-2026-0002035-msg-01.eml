@@ -1,0 +1,14 @@
+From: Morgan Baker <morgan.baker@outlook.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Dashboard returning 500 errors
+Date: Sun, 26 Apr 2026 16:51:34 +0000
+Message-ID: <177730075670.7.10840142414790430978@outlook.example>
+X-CloudServe-Ticket-Id: CS-2026-0002035
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003022
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+We're getting consistent 504s on /api/v2/projects?limit=3D100 over the last h=
+our. Smaller pagesize works. This is on our Pro plan.

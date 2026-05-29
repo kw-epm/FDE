@@ -1,0 +1,14 @@
+From: Rowan Stewart <rowan_stewart@yahoo.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Are you guys down?
+Date: Sat, 25 Apr 2026 16:28:05 +0000
+Message-ID: <177730074629.7.1237409314796924591@yahoo.example>
+X-CloudServe-Ticket-Id: CS-2026-0000969
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002520
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Just checking =E2=80=94 is the API available right now? We can't get a succes=
+sful response from /api/v2/health.

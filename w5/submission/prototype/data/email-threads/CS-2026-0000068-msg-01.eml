@@ -1,0 +1,15 @@
+From: Theo Scott <theo.scott@corp.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SSO sign-in fails with error
+Date: Mon, 20 Apr 2026 05:53:15 +0000
+Message-ID: <177730073723.7.5316802707800429363@corp.example>
+X-CloudServe-Ticket-Id: CS-2026-0000068
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002131
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+I keep getting kicked back to the sign-in page right after entering my passwo=
+rd. Cleared cookies, tried incognito, same thing. This started about 2 hours =
+ago.

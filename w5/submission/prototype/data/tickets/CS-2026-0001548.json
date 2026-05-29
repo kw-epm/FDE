@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001548",
+  "subject": "PDF invoice missing",
+  "description": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T22:26:49+00:00",
+  "sla_breach_at": "2026-04-20T22:56:49+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001681",
+    "name": "Lex Edwards",
+    "email": "lexedwards@corp.example",
+    "account_name": "Xenon Media & Co.",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T22:26:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Edwards",
+      "message": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:28:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hello Lex, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:29:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:30:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:31:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:31:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:32:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:33:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:33:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:34:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

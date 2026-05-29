@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000565",
+  "subject": "Refund request \u2014 accidental upgrade",
+  "description": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Lane Ramirez.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T02:14:04+00:00",
+  "sla_breach_at": "2026-04-20T04:14:04+00:00",
+  "sla_target_minutes": 120,
+  "tags": [
+    "refund_request",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-003889",
+    "name": "Wren Garcia",
+    "email": "wren_garcia@company.example",
+    "account_name": "Lane Ramirez",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T02:14:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Garcia",
+      "message": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Lane Ramirez.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:15:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Wren, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:17:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:20:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:21:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Lane Ramirez",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:23:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:25:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T02:26:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Garcia",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

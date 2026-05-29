@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000530",
+  "subject": "Status page out of date?",
+  "description": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T17:48:50+00:00",
+  "sla_breach_at": "2026-04-24T21:48:50+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002237",
+    "name": "Skyler Martinez",
+    "email": "skyler_martinez@gmail.example",
+    "account_name": "Ravi Hill",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T17:48:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Martinez",
+      "message": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:51:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi Skyler, I'm Kai Williams. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:52:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Martinez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:53:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your outage inquiry ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:54:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Martinez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:54:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:56:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Martinez",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:56:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:58:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Martinez",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:59:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T18:00:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T18:00:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Martinez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

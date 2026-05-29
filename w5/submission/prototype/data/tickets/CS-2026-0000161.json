@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000161",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Lumen Outfitters Labs, charge dates: 2026-04-15 and 2026-04-16, both for $9588.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T05:59:52+00:00",
+  "sla_breach_at": "2026-04-26T06:59:52+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003131",
+    "name": "Sage Reed",
+    "email": "sage.reed@proton.example",
+    "account_name": "Lumen Outfitters Labs",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T05:59:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Reed",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Lumen Outfitters Labs, charge dates: 2026-04-15 and 2026-04-16, both for $9588.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:01:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi Sage, I'm Priya Shah. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:03:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Reed",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:04:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:04:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Reed",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:05:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:06:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Reed",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:08:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:08:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:09:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Reed",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

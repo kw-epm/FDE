@@ -1,0 +1,14 @@
+From: Sofia Morgan <sofia_morgan@proton.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Can I export my data?
+Date: Tue, 21 Apr 2026 11:40:15 +0000
+Message-ID: <177730075010.7.17691327438060457755@proton.example>
+X-CloudServe-Ticket-Id: CS-2026-0001376
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003511
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+What are the API rate limits on the Pro plan? We're seeing 429s and need to k=
+now if we should upgrade or batch differently.

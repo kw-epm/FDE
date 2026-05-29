@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002150",
+  "subject": "Filing a complaint",
+  "description": "I've been a customer for 2 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-21T06:19:54+00:00",
+  "sla_breach_at": "2026-04-21T10:19:54+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001046",
+    "name": "Lex Lee",
+    "email": "lexlee@proton.example",
+    "account_name": "Jamie Walker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T06:19:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Lee",
+      "message": "I've been a customer for 2 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:22:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hi there \u2014 I'm Theo Marek (Technical Escalation) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:24:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T06:26:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: complaint; risk_flags=complaint_lang,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

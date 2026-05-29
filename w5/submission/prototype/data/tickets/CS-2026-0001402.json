@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001402",
+  "subject": "Status page out of date?",
+  "description": "We're seeing 5xx errors across the board. Your status page says all green but we can't load anything. Are you down?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T19:20:53+00:00",
+  "sla_breach_at": "2026-04-24T20:20:53+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003300",
+    "name": "Jordan Wright",
+    "email": "jordan.wright@company.example",
+    "account_name": "Cobalt Health Industries",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T19:20:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Wright",
+      "message": "We're seeing 5xx errors across the board. Your status page says all green but we can't load anything. Are you down?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:23:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi Jordan, I'm Olivia Park. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:25:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Wright",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:25:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:26:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Wright",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:27:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:28:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T19:28:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Wright",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

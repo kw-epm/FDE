@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001488",
+  "subject": "Locked out \u2014 need help",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's diego_rivera@outlook.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T16:51:18+00:00",
+  "sla_breach_at": "2026-04-26T20:51:18+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002484",
+    "name": "Diego Rivera",
+    "email": "diego_rivera@outlook.example",
+    "account_name": "Diego Ramirez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T16:51:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's diego_rivera@outlook.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:52:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hello Diego, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:53:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:55:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:56:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:57:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:59:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T17:00:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T17:00:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T17:01:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

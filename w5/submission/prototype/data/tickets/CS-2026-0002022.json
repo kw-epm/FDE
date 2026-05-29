@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002022",
+  "subject": "File upload fails for large files",
+  "description": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-23T07:26:17+00:00",
+  "sla_breach_at": "2026-04-23T08:26:17+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002213",
+    "name": "Diego Allen",
+    "email": "diegoallen@outlook.example",
+    "account_name": "Riverstone Health Labs",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T07:26:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Allen",
+      "message": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T07:28:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hi there \u2014 I'm Uma Bardwaj (Compliance) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T07:29:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T07:30:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: technical_issue; risk_flags=high_value_customer,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000975",
+  "subject": "Lost my authenticator phone",
+  "description": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?\n\nThis is the third time I've had this issue.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T00:19:01+00:00",
+  "sla_breach_at": "2026-04-20T04:19:01+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002004",
+    "name": "Anya Morris",
+    "email": "anyamorris@icloud.example",
+    "account_name": "Sam Ramirez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T00:19:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Morris",
+      "message": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?\n\nThis is the third time I've had this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:20:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi Anya, I'm Jules Becker. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:21:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Morris",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:21:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:22:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Morris",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:22:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Here's what I can see: your account access ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:23:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Morris",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:23:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:25:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Morris",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:25:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:26:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T00:27:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Morris",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

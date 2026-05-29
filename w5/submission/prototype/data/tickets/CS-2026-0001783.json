@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001783",
+  "subject": "Need invoice itemisation",
+  "description": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T01:46:22+00:00",
+  "sla_breach_at": "2026-04-24T05:46:22+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001397",
+    "name": "Taylor Torres",
+    "email": "taylor.torres@proton.example",
+    "account_name": "Aisha Hall",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T01:46:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Torres",
+      "message": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:48:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi there \u2014 I'm Priya Shah from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:49:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Torres",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:50:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:51:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Torres",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:51:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:52:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Torres",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:52:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:53:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:54:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Torres",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

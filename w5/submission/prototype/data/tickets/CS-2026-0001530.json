@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001530",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Spain. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T05:44:59+00:00",
+  "sla_breach_at": "2026-04-22T06:44:59+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003927",
+    "name": "Wren Adams",
+    "email": "wren.adams@corp.example",
+    "account_name": "Meridian Capital Works",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T05:44:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Adams",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Spain. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:47:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi Wren, I'm Cassidy Nguyen. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:48:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Adams",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:49:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:50:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Adams",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:51:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:51:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:52:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Adams",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

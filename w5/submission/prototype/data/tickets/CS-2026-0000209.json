@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000209",
+  "subject": "Question about my latest invoice",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is starter.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-23T23:24:16+00:00",
+  "sla_breach_at": "2026-04-24T03:24:16+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002573",
+    "name": "Taylor King",
+    "email": "taylorking@corp.example",
+    "account_name": "Hayden King",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T23:24:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor King",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is starter.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:26:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hi there \u2014 I'm Nora Hassan from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:27:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor King",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:29:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:30:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor King",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:31:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:32:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor King",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:32:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:33:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T23:33:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor King",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

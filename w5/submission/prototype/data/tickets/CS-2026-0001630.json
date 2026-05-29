@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001630",
+  "subject": "Status page out of date?",
+  "description": "We're seeing 5xx errors across the board. Your status page says all green but we can't load anything. Are you down?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T00:02:17+00:00",
+  "sla_breach_at": "2026-04-26T01:02:17+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003074",
+    "name": "Charlie Roberts",
+    "email": "charlie_roberts@fastmail.example",
+    "account_name": "Junction Foods Labs",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T00:02:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Roberts",
+      "message": "We're seeing 5xx errors across the board. Your status page says all green but we can't load anything. Are you down?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:05:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hi there \u2014 I'm Mateo Cruz from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:07:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Roberts",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:07:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:08:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Roberts",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:09:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:09:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:10:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Roberts",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

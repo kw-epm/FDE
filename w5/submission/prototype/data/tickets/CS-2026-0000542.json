@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000542",
+  "subject": "Why was I charged twice?",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is starter.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-20T22:33:50+00:00",
+  "sla_breach_at": "2026-04-21T02:33:50+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003546",
+    "name": "Ari Reed",
+    "email": "arireed@proton.example",
+    "account_name": "Casey Parker",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T22:33:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Reed",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is starter.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:35:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi Ari, I'm Gabby Olsson. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:36:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Reed",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:38:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:39:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Reed",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:40:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:42:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Reed",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:43:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:44:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T22:44:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Reed",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000910",
+  "subject": "Asking for a refund \u2014 service was down",
+  "description": "I accidentally upgraded to business yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $799?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T09:46:58+00:00",
+  "sla_breach_at": "2026-04-26T10:46:58+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "refund_request",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003368",
+    "name": "Sana Torres",
+    "email": "sanatorres@company.example",
+    "account_name": "Nimbus Foods Solutions",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T09:46:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Torres",
+      "message": "I accidentally upgraded to business yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $799?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:49:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hi Sana, I'm Mateo Cruz. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:50:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:52:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:55:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Nimbus Foods Solutions",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:59:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:59:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-26T10:01:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Torres",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

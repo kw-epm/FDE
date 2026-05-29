@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000196",
+  "subject": "Worst customer service I've ever experienced",
+  "description": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T17:52:25+00:00",
+  "sla_breach_at": "2026-04-24T21:52:25+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001229",
+    "name": "Chen Lee",
+    "email": "chen.lee@yahoo.example",
+    "account_name": "Sofia Richardson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T17:52:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Lee",
+      "message": "I'm escalating to your CEO. The runaround on this refund has been going on for 6 weeks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:54:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hi Chen, I'm Stacey Holm (Refunds Authorisation). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:56:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T17:58:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: complaint; risk_flags=complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

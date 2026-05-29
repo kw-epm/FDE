@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001658",
+  "subject": "Refund for unused subscription",
+  "description": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Taylor Morris.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-24T20:46:31+00:00",
+  "sla_breach_at": "2026-04-25T00:46:31+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001503",
+    "name": "Indigo Rivera",
+    "email": "indigo_rivera@fastmail.example",
+    "account_name": "Taylor Morris",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Aria Patel",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T20:46:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Rivera",
+      "message": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Taylor Morris.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:48:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Hi there \u2014 I'm Aria Patel from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:51:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:54:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:57:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Taylor Morris",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T20:59:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:00:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-24T21:01:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Rivera",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

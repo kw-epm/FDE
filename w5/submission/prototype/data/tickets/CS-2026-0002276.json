@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0002276",
+  "subject": "Reset link expired",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T08:46:03+00:00",
+  "sla_breach_at": "2026-04-24T12:46:03+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-001447",
+    "name": "Ravi Morgan",
+    "email": "ravi.morgan@proton.example",
+    "account_name": "Cameron Edwards",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T08:46:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:46:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi there \u2014 I'm Lina Petrov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:48:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:49:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:50:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:50:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:52:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:53:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:53:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:54:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:54:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:55:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

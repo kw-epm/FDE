@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000162",
+  "subject": "API timeouts on /api/v2/projects",
+  "description": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-21T14:04:31+00:00",
+  "sla_breach_at": "2026-04-21T18:04:31+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003689",
+    "name": "Lex Ramirez",
+    "email": "lex_ramirez@icloud.example",
+    "account_name": "Diego Ward",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T14:04:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Ramirez",
+      "message": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:07:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi there \u2014 I'm Ravi Chen (Billing) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:09:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:09:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: technical_issue; risk_flags=nps_detractor.",
+      "internal_note": true
+    }
+  ]
+}

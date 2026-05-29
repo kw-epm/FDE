@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000742",
+  "subject": "Cancelled but charged again",
+  "description": "Charged $98 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T02:38:14+00:00",
+  "sla_breach_at": "2026-04-21T06:38:14+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001400",
+    "name": "Rowan Evans",
+    "email": "rowan.evans@fastmail.example",
+    "account_name": "Phoenix Jackson",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T02:38:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Evans",
+      "message": "Charged $98 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T02:39:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi Rowan, I'm Jules Becker. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T02:42:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T02:44:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T02:47:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Phoenix Jackson",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T02:50:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T02:51:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T02:55:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Evans",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

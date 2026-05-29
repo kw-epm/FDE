@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000447",
+  "subject": "Dashboard returning 500 errors",
+  "description": "We're getting consistent 504s on /api/v2/projects?limit=100 over the last hour. Smaller pagesize works. This is on our Pro plan.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T19:35:44+00:00",
+  "sla_breach_at": "2026-04-20T20:05:44+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003140",
+    "name": "Blake Lee",
+    "email": "blake_lee@yahoo.example",
+    "account_name": "Beacon Manufacturing Works",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T19:35:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Blake Lee",
+      "message": "We're getting consistent 504s on /api/v2/projects?limit=100 over the last hour. Smaller pagesize works. This is on our Pro plan.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:36:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hi there \u2014 I'm Stacey Holm (Refunds Authorisation) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:38:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:39:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: technical_issue; risk_flags=high_value_customer,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

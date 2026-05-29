@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001382",
+  "subject": "Outage credit",
+  "description": "Last week's outage on 2026-04-22 \u2014 what's the credit policy for affected customers?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-25T06:55:06+00:00",
+  "sla_breach_at": "2026-04-25T10:55:06+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003411",
+    "name": "Ravi Peterson",
+    "email": "ravi.peterson@proton.example",
+    "account_name": "Charlie Carter",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T06:55:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Peterson",
+      "message": "Last week's outage on 2026-04-22 \u2014 what's the credit policy for affected customers?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:56:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hello Ravi, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:57:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Peterson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:58:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:00:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Peterson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:01:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:03:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Peterson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:04:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your outage inquiry ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:04:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T07:05:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Peterson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001560",
+  "subject": "Reset link expired",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is chen_carter@yahoo.example. Can someone help?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T07:19:37+00:00",
+  "sla_breach_at": "2026-04-21T08:19:37+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "password_reset",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001490",
+    "name": "Chen Carter",
+    "email": "chen_carter@yahoo.example",
+    "account_name": "Yardarm Foods LLC",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T07:19:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Carter",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is chen_carter@yahoo.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T07:21:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hello Chen, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T07:22:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Carter",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T07:23:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T07:25:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Carter",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T07:26:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T07:26:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T07:27:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Carter",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

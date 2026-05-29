@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000661",
+  "subject": "Why was I charged twice?",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "new",
+  "created_at": "2026-04-26T23:15:46+00:00",
+  "sla_breach_at": "2026-04-27T03:15:46+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001286",
+    "name": "Riley Mitchell",
+    "email": "riley.mitchell@corp.example",
+    "account_name": "Riley Morgan",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": null,
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T23:15:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Mitchell",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:18:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi Riley, I'm Gabby Olsson. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:19:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Mitchell",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:20:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:20:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Mitchell",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:21:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:22:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Mitchell",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:23:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:23:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:24:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Mitchell",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

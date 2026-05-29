@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000736",
+  "subject": "Refund request \u2014 accidental upgrade",
+  "description": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Lin King.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-26T05:17:59+00:00",
+  "sla_breach_at": "2026-04-26T09:17:59+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002636",
+    "name": "Aisha Collins",
+    "email": "aishacollins@outlook.example",
+    "account_name": "Lin King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T05:17:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Lin King.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:20:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi there \u2014 I'm Jules Becker from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:23:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:27:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:29:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Lin King",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:33:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:35:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-26T05:36:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

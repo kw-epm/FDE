@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002210",
+  "subject": "Mobile app crashes on launch",
+  "description": "Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller files (~30MB) work fine. Is there a per-file size limit on Pro?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-24T02:33:16+00:00",
+  "sla_breach_at": "2026-04-24T03:33:16+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002760",
+    "name": "Skyler Gray",
+    "email": "skylergray@proton.example",
+    "account_name": "Summit Manufacturing Holdings",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T02:33:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Gray",
+      "message": "Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller files (~30MB) work fine. Is there a per-file size limit on Pro?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:34:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hi Skyler, I'm Uma Bardwaj (Compliance). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:35:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Theo Marek (Technical Escalation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:37:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Theo Marek (Technical Escalation). Reason: technical_issue; risk_flags=high_value_customer,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

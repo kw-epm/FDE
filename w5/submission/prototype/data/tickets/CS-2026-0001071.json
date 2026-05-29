@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001071",
+  "subject": "Cancelled but charged again",
+  "description": "I accidentally upgraded to enterprise yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $9998?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T16:00:51+00:00",
+  "sla_breach_at": "2026-04-20T16:15:51+00:00",
+  "sla_target_minutes": 15,
+  "tags": [
+    "refund_request",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-003307",
+    "name": "Hayden Allen",
+    "email": "haydenallen@fastmail.example",
+    "account_name": "Orbit Energy Labs",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T16:00:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Allen",
+      "message": "I accidentally upgraded to enterprise yesterday \u2014 meant to click downgrade. Can I get a refund of the upgrade charge $9998?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T16:02:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi there \u2014 I'm Priya Shah from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T16:05:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T16:08:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T16:11:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Orbit Energy Labs",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T16:15:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T16:16:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T16:19:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Allen",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

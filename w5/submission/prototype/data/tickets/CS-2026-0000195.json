@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000195",
+  "subject": "SSO not working with Azure AD",
+  "description": "Our IT team is setting up SSO with Azure AD and the test sign-in throws 'AssertionConsumerService binding mismatch'. Metadata XML attached.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T23:22:13+00:00",
+  "sla_breach_at": "2026-04-26T03:22:13+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "sso_setup",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001824",
+    "name": "Diego Nelson",
+    "email": "diegonelson@fastmail.example",
+    "account_name": "Sana Martin",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "sso_setup",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T23:22:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Nelson",
+      "message": "Our IT team is setting up SSO with Azure AD and the test sign-in throws 'AssertionConsumerService binding mismatch'. Metadata XML attached.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:23:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi Diego, I'm Priya Shah. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:24:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Nelson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:25:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:27:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Nelson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:28:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:29:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:29:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Nelson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

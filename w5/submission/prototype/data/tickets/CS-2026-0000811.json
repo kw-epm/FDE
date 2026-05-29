@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000811",
+  "subject": "Question about my latest invoice",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Yardarm Capital Labs, charge dates: 2026-04-15 and 2026-04-16, both for $9588.\n\nThis is the third time I've had this issue.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-25T02:00:03+00:00",
+  "sla_breach_at": "2026-04-25T03:00:03+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002693",
+    "name": "Noor Perez",
+    "email": "noorperez@company.example",
+    "account_name": "Yardarm Capital Labs",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T02:00:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Perez",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Yardarm Capital Labs, charge dates: 2026-04-15 and 2026-04-16, both for $9588.\n\nThis is the third time I've had this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:02:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi Noor, I'm Priya Shah. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:03:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Perez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:04:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:06:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Perez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:07:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:08:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Perez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:08:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:09:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Perez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:10:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:11:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T02:12:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Perez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

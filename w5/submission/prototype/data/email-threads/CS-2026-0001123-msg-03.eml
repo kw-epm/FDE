@@ -1,0 +1,16 @@
+From: Iris Walker <iris_walker@gmail.example>
+To: Stacey Holm (Refunds Authorisation) <stacey.holm@cloudserve.example>
+Subject: Re: API timeouts on /api/v2/projects
+Date: Sat, 25 Apr 2026 14:54:04 +0000
+Message-ID: <177730074774.7.5336522179618398020@gmail.example>
+In-Reply-To: <177730074773.7.16644430278452049162@cloudserve.example>
+References: <177730074773.7.11729942795669640389@gmail.example>
+ <177730074773.7.16644430278452049162@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0001123
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002359
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+That works, thanks.

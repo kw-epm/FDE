@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0002111",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T20:52:48+00:00",
+  "sla_breach_at": "2026-04-23T00:52:48+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001937",
+    "name": "Skyler Watson",
+    "email": "skyler_watson@icloud.example",
+    "account_name": "Maya Bailey",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T20:52:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Watson",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:54:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi Skyler, I'm Jules Becker. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:56:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Watson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:56:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:57:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Watson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T20:58:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:00:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Watson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:01:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:01:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Watson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:02:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:03:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:04:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Watson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

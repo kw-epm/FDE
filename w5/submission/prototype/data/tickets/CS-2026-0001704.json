@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001704",
+  "subject": "Refund for unused subscription",
+  "description": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $49. Refund please.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T23:58:11+00:00",
+  "sla_breach_at": "2026-04-21T03:58:11+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002226",
+    "name": "Maya Rogers",
+    "email": "maya_rogers@fastmail.example",
+    "account_name": "Maya Edwards",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T23:58:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $49. Refund please.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:01:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Maya, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:02:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:03:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:06:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Maya Edwards",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:07:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:09:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T00:12:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Rogers",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

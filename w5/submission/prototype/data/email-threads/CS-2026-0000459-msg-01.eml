@@ -1,0 +1,14 @@
+From: Kit Campbell <kitcampbell@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Mobile app crashes on launch
+Date: Fri, 24 Apr 2026 09:39:03 +0000
+Message-ID: <177730074125.7.4376623256878270825@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000459
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001781
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+We're getting consistent 504s on /api/v2/projects?limit=3D100 over the last h=
+our. Smaller pagesize works. This is on our Pro plan.

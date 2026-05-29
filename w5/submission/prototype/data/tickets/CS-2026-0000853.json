@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000853",
+  "subject": "Is the API up?",
+  "description": "Status page says resolved but we're still seeing intermittent failures. Can you confirm?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T01:38:36+00:00",
+  "sla_breach_at": "2026-04-26T05:38:36+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001705",
+    "name": "Skyler Reed",
+    "email": "skyler.reed@icloud.example",
+    "account_name": "Theo Jackson",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T01:38:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Reed",
+      "message": "Status page says resolved but we're still seeing intermittent failures. Can you confirm?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:40:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hello Skyler, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:40:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Reed",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:40:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:41:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Reed",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:41:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:42:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T01:42:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Reed",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

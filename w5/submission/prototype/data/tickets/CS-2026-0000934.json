@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000934",
+  "subject": "Account access issue",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T14:28:11+00:00",
+  "sla_breach_at": "2026-04-24T18:28:11+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002484",
+    "name": "Diego Rivera",
+    "email": "diego_rivera@outlook.example",
+    "account_name": "Diego Ramirez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T14:28:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T14:30:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi Diego, I'm Gabby Olsson. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T14:31:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T14:32:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T14:33:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T14:34:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T14:35:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T14:35:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Rivera",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

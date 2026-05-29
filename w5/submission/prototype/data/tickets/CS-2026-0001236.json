@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001236",
+  "subject": "Want to cancel \u2014 too expensive",
+  "description": "I'd like to cancel my account effective end of this billing period. Account email is devin_phillips@gmail.example.\n\nI'll be filing a complaint with the BBB.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "closed",
+  "created_at": "2026-04-24T15:19:58+00:00",
+  "sla_breach_at": "2026-04-24T19:19:58+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001882",
+    "name": "Devin Phillips",
+    "email": "devin_phillips@gmail.example",
+    "account_name": "Ravi Hill",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T15:19:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Phillips",
+      "message": "I'd like to cancel my account effective end of this billing period. Account email is devin_phillips@gmail.example.\n\nI'll be filing a complaint with the BBB.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:22:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hi Devin, I'm Uma Bardwaj (Compliance). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:23:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:24:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: service_cancellation; risk_flags=regulatory_complaint,churn_risk_signal.",
+      "internal_note": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001966",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T22:23:58+00:00",
+  "sla_breach_at": "2026-04-25T02:23:58+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001575",
+    "name": "Rowan Baker",
+    "email": "rowan_baker@corp.example",
+    "account_name": "Blake Evans",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T22:23:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Baker",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:24:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi Rowan, I'm Olivia Park. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:25:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Baker",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:26:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:27:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Baker",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:28:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:29:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Baker",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:30:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:32:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Baker",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:32:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:33:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T22:34:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Baker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001142",
+  "subject": "GDPR data request",
+  "description": "We're migrating off CloudServe and need a complete data dump. Account: Lex Wright.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-21T17:32:43+00:00",
+  "sla_breach_at": "2026-04-21T21:32:43+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "data_export",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003027",
+    "name": "Ari Davis",
+    "email": "ari.davis@proton.example",
+    "account_name": "Lex Wright",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "data_export",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T17:32:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Davis",
+      "message": "We're migrating off CloudServe and need a complete data dump. Account: Lex Wright.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:34:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hello Ari, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:36:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:39:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:41:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: data export for Lex Wright",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:42:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:43:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T17:43:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ari Davis",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

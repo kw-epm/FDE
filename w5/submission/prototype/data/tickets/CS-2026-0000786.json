@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000786",
+  "subject": "Question about my latest invoice",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is business.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-20T17:29:03+00:00",
+  "sla_breach_at": "2026-04-20T18:29:03+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002351",
+    "name": "Aisha Moore",
+    "email": "aisha_moore@company.example",
+    "account_name": "Acme Analytics Studios",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T17:29:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Moore",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is business.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:30:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hello Aisha, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:30:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Moore",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:31:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:32:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Moore",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:33:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:35:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Moore",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:36:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:36:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Moore",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:37:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:38:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:38:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Moore",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

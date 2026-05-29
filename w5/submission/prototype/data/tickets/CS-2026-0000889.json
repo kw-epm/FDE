@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000889",
+  "subject": "Lost my authenticator phone",
+  "description": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Summit Retail Works.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-23T22:12:48+00:00",
+  "sla_breach_at": "2026-04-23T22:42:48+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "account_access",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003834",
+    "name": "Devin Moore",
+    "email": "devinmoore@proton.example",
+    "account_name": "Summit Retail Works",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T22:12:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Moore",
+      "message": "Our team uses Okta SSO and as of this morning we get an error 'AssertionConsumerService binding mismatch' on sign-in. Nothing changed on our side. Account: Summit Retail Works.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:14:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hello Devin, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:15:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Moore",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:17:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:18:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Moore",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:20:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Here's what I can see: your account access ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:20:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T22:21:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Moore",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

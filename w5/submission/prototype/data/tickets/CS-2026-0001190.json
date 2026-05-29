@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001190",
+  "subject": "Can't reset my password",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T17:00:15+00:00",
+  "sla_breach_at": "2026-04-21T21:00:15+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002800",
+    "name": "Elena Smith",
+    "email": "elenasmith@outlook.example",
+    "account_name": "Phoenix Walker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T17:00:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Smith",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:01:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi Elena, I'm Dmitri Volkov. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:02:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Smith",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:02:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:03:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Smith",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:04:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:05:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T17:05:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Elena Smith",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

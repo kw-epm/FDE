@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000930",
+  "subject": "Cancel subscription",
+  "description": "I'd like to cancel my account effective end of this billing period. Account email is alex_davis@outlook.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-22T13:44:38+00:00",
+  "sla_breach_at": "2026-04-22T17:44:38+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002769",
+    "name": "Alex Davis",
+    "email": "alex_davis@outlook.example",
+    "account_name": "Indigo Morgan",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T13:44:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Davis",
+      "message": "I'd like to cancel my account effective end of this billing period. Account email is alex_davis@outlook.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:47:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi there \u2014 I'm Dmitri Volkov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:49:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:52:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I've put together the request and routed it to Victoria Lim (Account Mgmt). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:56:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Indigo Morgan",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T13:59:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:00:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Internal: routed to Victoria Lim (Account Mgmt). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T14:02:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Davis",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

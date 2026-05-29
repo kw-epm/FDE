@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001944",
+  "subject": "Can't reset my password",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's reeseallen@fastmail.example.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-23T06:51:47+00:00",
+  "sla_breach_at": "2026-04-23T10:51:47+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002431",
+    "name": "Reese Allen",
+    "email": "reeseallen@fastmail.example",
+    "account_name": "Yuki Rodriguez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T06:51:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Allen",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's reeseallen@fastmail.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:53:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Reese, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:55:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Allen",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:55:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:57:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Allen",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:57:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:58:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Allen",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:58:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:58:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:59:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Allen",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

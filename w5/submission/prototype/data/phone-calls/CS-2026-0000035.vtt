@@ -1,0 +1,74 @@
+WEBVTT
+
+NOTE ticket_id: CS-2026-0000035
+NOTE channel: phone
+NOTE intake_ts: 2026-04-21T02:14:01+00:00
+NOTE customer_id: CUST-002639
+
+1
+00:00:00.000 --> 00:00:04.889
+<v Agent>Thank you for calling CloudServe support, this is Nora Hassan. How can I help you today?
+
+2
+00:00:06.066 --> 00:00:10.511
+<v Customer>Hi — I'm Alex. I'm having trouble with how to question on my CloudServe account.
+
+3
+00:00:12.365 --> 00:00:15.976
+<v Agent>I can help with that. Can I get the email address on the account?
+
+4
+00:00:16.483 --> 00:00:18.483
+<v Customer>It's alex.reed@icloud.example.
+
+5
+00:00:19.907 --> 00:00:21.907
+<v Agent>Got it. Pulling up your account now.
+
+6
+00:00:23.866 --> 00:00:26.089
+<v Agent>Ok, I see Logan Thomas on the free plan.
+
+7
+00:00:26.883 --> 00:00:28.883
+<v Customer>Can we resolve this on the phone?
+
+8
+00:00:29.578 --> 00:00:33.133
+<v Agent>Yes, I'll handle this directly. Let me work through it with you.
+
+9
+00:00:34.656 --> 00:00:37.211
+<v Agent>For how to question, the steps on my side are…
+
+10
+00:00:39.163 --> 00:00:41.163
+<v Customer>Ok, sounds good.
+
+11
+00:00:42.028 --> 00:00:44.084
+<v Agent>[10-15 seconds working in the system]
+
+12
+00:00:44.696 --> 00:00:48.307
+<v Agent>Ok, I've filed the request and routed it for the right approvals.
+
+13
+00:00:49.682 --> 00:00:51.682
+<v Customer>Great. Anything else I need to do?
+
+14
+00:00:52.652 --> 00:00:55.208
+<v Agent>Nope, all set on our side. Thanks for calling.
+
+15
+00:00:56.694 --> 00:00:58.694
+<v Agent>Anything else I can help with today?
+
+16
+00:00:59.389 --> 00:01:01.389
+<v Customer>No, I'm good.
+
+17
+00:01:02.373 --> 00:01:04.984
+<v Agent>Thanks for calling CloudServe. Have a good day.

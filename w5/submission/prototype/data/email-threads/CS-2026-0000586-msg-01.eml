@@ -1,0 +1,14 @@
+From: Reese Green <reese.green@company.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Outage credit
+Date: Thu, 23 Apr 2026 13:41:59 +0000
+Message-ID: <177730074248.7.3194304913122165861@company.example>
+X-CloudServe-Ticket-Id: CS-2026-0000586
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003122
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Just checking =E2=80=94 is the API available right now? We can't get a succes=
+sful response from /api/v2/health.

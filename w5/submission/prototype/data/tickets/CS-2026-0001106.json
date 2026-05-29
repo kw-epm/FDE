@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001106",
+  "subject": "Dashboard returning 500 errors",
+  "description": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Rowan Lee. I see nothing on the status page yet.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-21T15:57:29+00:00",
+  "sla_breach_at": "2026-04-21T19:57:29+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003320",
+    "name": "Riley Edwards",
+    "email": "rileyedwards@proton.example",
+    "account_name": "Rowan Lee",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ravi Chen (Billing)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T15:57:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Edwards",
+      "message": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Rowan Lee. I see nothing on the status page yet.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T16:00:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Hi Riley, I'm Ravi Chen (Billing). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T16:02:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T16:03:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ravi Chen (Billing)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: technical_issue; risk_flags=repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

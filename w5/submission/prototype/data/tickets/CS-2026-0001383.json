@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001383",
+  "subject": "Why was I charged twice?",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-26T15:35:21+00:00",
+  "sla_breach_at": "2026-04-26T19:35:21+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003535",
+    "name": "Skyler Mitchell",
+    "email": "skyler_mitchell@yahoo.example",
+    "account_name": "Jamie Ramirez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T15:35:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Mitchell",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:37:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi Skyler, I'm Priya Shah. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:37:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Mitchell",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:38:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:39:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Mitchell",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:41:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:42:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T15:43:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Skyler Mitchell",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

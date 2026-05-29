@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000998",
+  "subject": "Can't sign in \u2014 2FA code rejected",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-23T14:52:02+00:00",
+  "sla_breach_at": "2026-04-23T18:52:02+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001348",
+    "name": "Theo Walker",
+    "email": "theo.walker@outlook.example",
+    "account_name": "Taylor Allen",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T14:52:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Walker",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:54:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi there \u2014 I'm Priya Shah from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:56:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Walker",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:56:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:57:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Walker",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:58:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:59:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T15:00:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Walker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

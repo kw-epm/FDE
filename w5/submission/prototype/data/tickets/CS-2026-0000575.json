@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000575",
+  "subject": "Why was I charged twice?",
+  "description": "Got my invoice today and there's a 'metered overage' line for $398. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-25T18:26:08+00:00",
+  "sla_breach_at": "2026-04-25T22:26:08+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-001791",
+    "name": "Hayden Cooper",
+    "email": "hayden_cooper@gmail.example",
+    "account_name": "Marcus Morris",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T18:26:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Cooper",
+      "message": "Got my invoice today and there's a 'metered overage' line for $398. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T18:29:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi there \u2014 I'm Felix Tang from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T18:29:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Cooper",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T18:30:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T18:31:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Cooper",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T18:33:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T18:34:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T18:34:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Cooper",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

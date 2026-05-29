@@ -1,0 +1,14 @@
+From: Phoenix Thomas <phoenixthomas@gmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Mobile app crashes on launch
+Date: Thu, 23 Apr 2026 05:26:20 +0000
+Message-ID: <177730075577.7.15580716007778389024@gmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0001928
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003663
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller fil=
+es (~30MB) work fine. Is there a per-file size limit on Pro?

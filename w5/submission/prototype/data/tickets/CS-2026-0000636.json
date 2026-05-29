@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000636",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-24T05:08:31+00:00",
+  "sla_breach_at": "2026-04-24T05:38:31+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "billing_question",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002383",
+    "name": "Anya Rodriguez",
+    "email": "anya.rodriguez@corp.example",
+    "account_name": "Meridian Retail Systems",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T05:08:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Rodriguez",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T05:10:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hello Anya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T05:11:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Rodriguez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T05:12:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T05:14:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Rodriguez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T05:15:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T05:16:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T05:17:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Rodriguez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002021",
+  "subject": "Need invoice itemisation",
+  "description": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T02:01:12+00:00",
+  "sla_breach_at": "2026-04-26T06:01:12+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003715",
+    "name": "Theo Anderson",
+    "email": "theo.anderson@fastmail.example",
+    "account_name": "Owen Carter",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T02:01:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Anderson",
+      "message": "Can you send me a more detailed invoice for March? My finance team needs the line items broken down per seat.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:04:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi there \u2014 I'm Cassidy Nguyen from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:05:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Anderson",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:06:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:07:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Anderson",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:08:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:08:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T02:09:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Anderson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

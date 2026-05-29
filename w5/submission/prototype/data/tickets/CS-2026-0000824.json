@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000824",
+  "subject": "PDF invoice missing",
+  "description": "Can you send me a more detailed invoice for April? My finance team needs the line items broken down per seat.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T06:22:54+00:00",
+  "sla_breach_at": "2026-04-20T10:22:54+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003669",
+    "name": "Alex Cooper",
+    "email": "alex_cooper@yahoo.example",
+    "account_name": "Sana Thomas",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T06:22:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Cooper",
+      "message": "Can you send me a more detailed invoice for April? My finance team needs the line items broken down per seat.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:24:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hello Alex, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:26:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Cooper",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:27:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:28:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Cooper",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:29:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:30:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Cooper",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:31:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:32:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:33:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Cooper",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

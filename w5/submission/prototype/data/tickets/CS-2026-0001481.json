@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001481",
+  "subject": "Billing date confusion",
+  "description": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "open",
+  "created_at": "2026-04-26T04:54:45+00:00",
+  "sla_breach_at": "2026-04-26T08:54:45+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001652",
+    "name": "Sana Hill",
+    "email": "sanahill@fastmail.example",
+    "account_name": "Hayden Adams",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T04:54:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Hill",
+      "message": "Hi, can you confirm when my next charge is? I'm planning around it. Plan is free.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:56:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi there \u2014 I'm Gabby Olsson from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:57:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Hill",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T04:58:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:00:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Hill",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:01:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:02:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Hill",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:03:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:04:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Hill",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:05:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:06:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T05:06:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Hill",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

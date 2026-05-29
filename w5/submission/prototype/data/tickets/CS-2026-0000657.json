@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000657",
+  "subject": "Want to downgrade my plan",
+  "description": "Need to cut costs this quarter. Move us from free to starter please.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-25T22:40:15+00:00",
+  "sla_breach_at": "2026-04-26T02:40:15+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_downgrade",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001155",
+    "name": "Morgan Rivera",
+    "email": "morgan_rivera@icloud.example",
+    "account_name": "Ravi Evans",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "service_downgrade",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T22:40:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Morgan Rivera",
+      "message": "Need to cut costs this quarter. Move us from free to starter please.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:42:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hello Morgan, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:43:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:47:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:50:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service downgrade for Ravi Evans",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:52:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T22:54:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-25T22:56:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Morgan Rivera",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

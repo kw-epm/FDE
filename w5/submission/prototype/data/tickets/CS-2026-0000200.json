@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000200",
+  "subject": "How do I set up the Slack integration?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-24T15:23:50+00:00",
+  "sla_breach_at": "2026-04-24T16:23:50+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003769",
+    "name": "Indigo Howard",
+    "email": "indigo.howard@icloud.example",
+    "account_name": "Riverstone Retail Group",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T15:23:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:26:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hello Indigo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:27:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:28:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:29:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:30:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:30:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:31:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:32:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:33:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:34:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T15:35:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Howard",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

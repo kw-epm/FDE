@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000744",
+  "subject": "Can I export my data?",
+  "description": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T10:56:42+00:00",
+  "sla_breach_at": "2026-04-21T14:56:42+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002694",
+    "name": "Priya Reed",
+    "email": "priyareed@company.example",
+    "account_name": "Quinn Scott",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T10:56:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Reed",
+      "message": "Quick question \u2014 how do I add a new teammate? I can't find the invite button.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:58:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hello Priya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:00:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Reed",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:01:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:03:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Reed",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:04:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:04:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T11:05:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Reed",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

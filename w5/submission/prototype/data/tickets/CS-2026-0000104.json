@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000104",
+  "subject": "Mobile app crashes on launch",
+  "description": "We're getting consistent 504s on /api/v2/projects?limit=100 over the last hour. Smaller pagesize works. This is on our Pro plan.\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "pending",
+  "created_at": "2026-04-24T08:25:13+00:00",
+  "sla_breach_at": "2026-04-24T11:25:13+00:00",
+  "sla_target_minutes": 180,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001298",
+    "name": "Yuki Walker",
+    "email": "yukiwalker@fastmail.example",
+    "account_name": "Quinn Howard",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T08:25:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Walker",
+      "message": "We're getting consistent 504s on /api/v2/projects?limit=100 over the last hour. Smaller pagesize works. This is on our Pro plan.\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:26:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hello Yuki, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:27:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T08:28:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: technical_issue; risk_flags=regulatory_complaint,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

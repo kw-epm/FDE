@@ -1,0 +1,14 @@
+From: Alex Wright <alex.wright@yahoo.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: API timeouts on /api/v2/projects
+Date: Sun, 26 Apr 2026 07:18:37 +0000
+Message-ID: <177730074900.7.2926281227233056651@yahoo.example>
+X-CloudServe-Ticket-Id: CS-2026-0001267
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001124
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our webhooks for project.updated stopped firing around 2pm UTC. Last successf=
+ul delivery was 13:58 UTC. Endpoint is healthy on our side.

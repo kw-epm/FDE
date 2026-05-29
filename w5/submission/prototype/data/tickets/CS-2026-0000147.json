@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000147",
+  "subject": "Password reset email never arrived",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's aishagarcia@company.example.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-23T06:09:07+00:00",
+  "sla_breach_at": "2026-04-23T10:09:07+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003176",
+    "name": "Aisha Garcia",
+    "email": "aishagarcia@company.example",
+    "account_name": "Owen Carter",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T06:09:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Garcia",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's aishagarcia@company.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:12:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hello Aisha, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:13:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Garcia",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:15:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:16:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Garcia",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:17:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:18:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T06:19:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Garcia",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001678",
+  "subject": "Return request \u2014 physical token",
+  "description": "We received the welcome kit but won't be using it \u2014 can we return for a refund?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T04:12:24+00:00",
+  "sla_breach_at": "2026-04-20T08:12:24+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "return_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002456",
+    "name": "Iris Johnson",
+    "email": "iris_johnson@icloud.example",
+    "account_name": "Iris Edwards",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "return_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T04:12:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Johnson",
+      "message": "We received the welcome kit but won't be using it \u2014 can we return for a refund?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T04:14:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hello Iris, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T04:15:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T04:19:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T04:21:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: return request for Iris Edwards",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T04:23:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T04:25:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T04:28:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Johnson",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

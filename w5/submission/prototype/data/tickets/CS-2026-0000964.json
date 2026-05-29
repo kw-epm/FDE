@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000964",
+  "subject": "SCIM provisioning",
+  "description": "Our IT team is setting up SSO with Azure AD and the test sign-in throws 'AssertionConsumerService binding mismatch'. Metadata XML attached.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-22T21:24:19+00:00",
+  "sla_breach_at": "2026-04-23T01:24:19+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "sso_setup",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002871",
+    "name": "Noor Moore",
+    "email": "noormoore@yahoo.example",
+    "account_name": "Elena Collins",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "sso_setup",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T21:24:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Moore",
+      "message": "Our IT team is setting up SSO with Azure AD and the test sign-in throws 'AssertionConsumerService binding mismatch'. Metadata XML attached.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:26:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hi Noor, I'm Imani Lewis. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:27:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Moore",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:28:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:29:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Moore",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:30:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/sso-setup.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:31:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Moore",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:32:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:32:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:33:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Moore",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

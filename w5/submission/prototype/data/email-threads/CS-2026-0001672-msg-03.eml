@@ -1,0 +1,16 @@
+From: Ari Smith <ari_smith@gmail.example>
+To: Felix Tang <felix.tang@cloudserve.example>
+Subject: Re: Where do I find audit logs?
+Date: Mon, 20 Apr 2026 14:19:11 +0000
+Message-ID: <177730075306.7.8215703340483269310@gmail.example>
+In-Reply-To: <177730075305.7.11889784616764235217@cloudserve.example>
+References: <177730075304.7.11778551554567563734@gmail.example>
+ <177730075305.7.11889784616764235217@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0001672
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003217
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+That works, thanks.

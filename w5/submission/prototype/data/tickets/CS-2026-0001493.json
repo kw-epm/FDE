@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001493",
+  "subject": "PDF invoice missing",
+  "description": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T02:13:27+00:00",
+  "sla_breach_at": "2026-04-24T06:13:27+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002881",
+    "name": "Lane Thomas",
+    "email": "lane_thomas@outlook.example",
+    "account_name": "Yuki Stewart",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T02:13:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:14:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hello Lane, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:16:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:17:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:19:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:19:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:20:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:21:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:23:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:23:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:24:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T02:24:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Thomas",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

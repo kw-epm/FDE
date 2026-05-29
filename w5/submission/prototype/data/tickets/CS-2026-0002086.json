@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002086",
+  "subject": "Where do I find audit logs?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-23T00:36:18+00:00",
+  "sla_breach_at": "2026-04-23T04:36:18+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003561",
+    "name": "Kit Collins",
+    "email": "kitcollins@gmail.example",
+    "account_name": "Charlie Reed",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Aria Patel",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T00:36:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Collins",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:38:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Hi there \u2014 I'm Aria Patel from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:40:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Collins",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:40:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:42:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Collins",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:42:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:43:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Aria Patel",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T00:43:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Collins",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

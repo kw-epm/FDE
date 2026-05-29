@@ -1,0 +1,14 @@
+From: Taylor Wright <taylor_wright@icloud.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Mobile app crashes on launch
+Date: Sat, 25 Apr 2026 12:37:41 +0000
+Message-ID: <177730073903.7.9925906564419931529@icloud.example>
+X-CloudServe-Ticket-Id: CS-2026-0000257
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002512
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our webhooks for project.updated stopped firing around 2pm UTC. Last successf=
+ul delivery was 13:58 UTC. Endpoint is healthy on our side.

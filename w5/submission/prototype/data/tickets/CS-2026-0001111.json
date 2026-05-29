@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001111",
+  "subject": "Return request \u2014 physical token",
+  "description": "We received the welcome kit but won't be using it \u2014 can we return for a refund?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-22T20:59:53+00:00",
+  "sla_breach_at": "2026-04-23T00:59:53+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "return_request",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001865",
+    "name": "Alex Morgan",
+    "email": "alex_morgan@corp.example",
+    "account_name": "Blake Allen",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "return_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T20:59:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "We received the welcome kit but won't be using it \u2014 can we return for a refund?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:02:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi Alex, I'm Felix Tang. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:05:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:08:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:10:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: return request for Blake Allen",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:13:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T21:14:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T21:16:33+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

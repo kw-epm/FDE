@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001525",
+  "subject": "Account access issue",
+  "description": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-24T03:53:03+00:00",
+  "sla_breach_at": "2026-04-24T07:53:03+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001025",
+    "name": "Hayden Edwards",
+    "email": "hayden.edwards@outlook.example",
+    "account_name": "Lin Moore",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T03:53:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Edwards",
+      "message": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:54:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Hayden, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:56:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Edwards",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:57:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:57:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Edwards",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:58:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T03:59:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Edwards",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:00:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:01:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:01:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

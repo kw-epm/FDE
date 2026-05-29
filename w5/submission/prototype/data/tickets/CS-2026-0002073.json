@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002073",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Morgan Morris, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T21:09:11+00:00",
+  "sla_breach_at": "2026-04-25T01:09:11+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002611",
+    "name": "Indigo Adams",
+    "email": "indigo_adams@proton.example",
+    "account_name": "Morgan Morris",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T21:09:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Adams",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Morgan Morris, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:11:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi Indigo, I'm Lina Petrov. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:13:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Adams",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:14:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:15:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Adams",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:16:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:16:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T21:17:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Adams",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

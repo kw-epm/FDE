@@ -1,0 +1,15 @@
+From: Diego Wilson <diego_wilson@proton.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SSO sign-in fails with error
+Date: Tue, 21 Apr 2026 11:31:51 +0000
+Message-ID: <177730075697.7.486090785669341264@proton.example>
+X-CloudServe-Ticket-Id: CS-2026-0002060
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002592
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our team uses Okta SSO and as of this morning we get an error 'AssertionConsu=
+merService binding mismatch' on sign-in. Nothing changed on our side. Account=
+: Noor Watson.

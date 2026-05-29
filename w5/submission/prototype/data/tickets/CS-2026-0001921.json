@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001921",
+  "subject": "PDF invoice missing",
+  "description": "The April invoice has a 'one-time charge' of $9998 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-25T01:38:11+00:00",
+  "sla_breach_at": "2026-04-25T02:08:11+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-003397",
+    "name": "Wren Thomas",
+    "email": "wrenthomas@corp.example",
+    "account_name": "Polaris Manufacturing & Co.",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Uma Bardwaj (Compliance)",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T01:38:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Thomas",
+      "message": "The April invoice has a 'one-time charge' of $9998 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:40:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Hello Wren, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:42:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T01:44:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Uma Bardwaj (Compliance)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: invoice_clarification; risk_flags=high_value_customer,enterprise_contract,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

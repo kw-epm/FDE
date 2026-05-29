@@ -1,0 +1,14 @@
+From: Sage Cook <sagecook@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SSO not working with Azure AD
+Date: Wed, 22 Apr 2026 05:34:57 +0000
+Message-ID: <177730074982.7.10038685208116610445@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0001350
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001249
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our IT team is setting up SSO with Azure AD and the test sign-in throws 'Asse=
+rtionConsumerService binding mismatch'. Metadata XML attached.

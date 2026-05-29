@@ -1,0 +1,14 @@
+From: Indigo Sanchez <indigo_sanchez@corp.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Webhooks aren't firing
+Date: Mon, 20 Apr 2026 10:34:51 +0000
+Message-ID: <177730075529.7.5224254743933348416@corp.example>
+X-CloudServe-Ticket-Id: CS-2026-0001884
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001006
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller fil=
+es (~30MB) work fine. Is there a per-file size limit on Pro?

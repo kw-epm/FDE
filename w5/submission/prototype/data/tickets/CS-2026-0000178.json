@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000178",
+  "subject": "Password reset email never arrived",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-23T08:25:05+00:00",
+  "sla_breach_at": "2026-04-23T12:25:05+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003197",
+    "name": "Noor Sanchez",
+    "email": "noorsanchez@icloud.example",
+    "account_name": "Aisha Gray",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T08:25:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Sanchez",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T08:27:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi Noor, I'm Jules Becker. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T08:28:04+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Sanchez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T08:29:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T08:31:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Sanchez",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T08:32:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T08:33:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T08:33:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Sanchez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+From: Yuki Martin <yukimartin@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SSO sign-in fails with error
+Date: Fri, 24 Apr 2026 16:02:48 +0000
+Message-ID: <177730075451.7.15788158519493831039@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0001813
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003579
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our team uses Okta SSO and as of this morning we get an error 'AssertionConsu=
+merService binding mismatch' on sign-in. Nothing changed on our side. Account=
+: Hiro Perez.

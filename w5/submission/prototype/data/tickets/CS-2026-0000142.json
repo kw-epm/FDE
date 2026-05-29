@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000142",
+  "subject": "Reset link expired",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is reese.reed@fastmail.example. Can someone help?\n\nThis is the third time I've had this issue.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "open",
+  "created_at": "2026-04-26T16:13:15+00:00",
+  "sla_breach_at": "2026-04-26T20:13:15+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001245",
+    "name": "Reese Reed",
+    "email": "reese.reed@fastmail.example",
+    "account_name": "Iris Edwards",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T16:13:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Reed",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is reese.reed@fastmail.example. Can someone help?\n\nThis is the third time I've had this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:14:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hello Reese, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:15:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Reed",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:17:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:17:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Reed",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:18:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:20:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Reed",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:21:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:21:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T16:22:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Reed",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

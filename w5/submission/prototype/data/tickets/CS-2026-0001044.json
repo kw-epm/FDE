@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001044",
+  "subject": "Mobile app crashes on launch",
+  "description": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-04-26T23:42:51+00:00",
+  "sla_breach_at": "2026-04-27T00:12:51+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002354",
+    "name": "Priya Johnson",
+    "email": "priyajohnson@company.example",
+    "account_name": "Polaris Robotics Industries",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T23:42:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Johnson",
+      "message": "Mobile app on iOS crashes immediately on launch since the auto-update yesterday. iPhone 14 Pro, iOS 18.x.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:44:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hi Priya, I'm Victoria Lim (Account Mgmt). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:45:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Victoria Lim (Account Mgmt). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T23:47:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Victoria Lim (Account Mgmt). Reason: technical_issue; risk_flags=high_value_customer,enterprise_contract,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

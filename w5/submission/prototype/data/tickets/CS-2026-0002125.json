@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002125",
+  "subject": "Need full data export",
+  "description": "We're migrating off CloudServe and need a complete data dump. Account: Marcus Torres.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T12:35:51+00:00",
+  "sla_breach_at": "2026-04-21T16:35:51+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "data_export",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001539",
+    "name": "Noor Ramirez",
+    "email": "noor.ramirez@proton.example",
+    "account_name": "Marcus Torres",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "data_export",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T12:35:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Ramirez",
+      "message": "We're migrating off CloudServe and need a complete data dump. Account: Marcus Torres.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T12:37:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi there \u2014 I'm Henry Akira from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T12:38:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T12:40:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T12:42:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: data export for Marcus Torres",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T12:43:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T12:44:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T12:47:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Ramirez",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

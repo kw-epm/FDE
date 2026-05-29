@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000246",
+  "subject": "Reset link expired",
+  "description": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's sam.wright@icloud.example.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T05:45:55+00:00",
+  "sla_breach_at": "2026-04-22T09:45:55+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002153",
+    "name": "Sam Wright",
+    "email": "sam.wright@icloud.example",
+    "account_name": "Alex Edwards",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T05:45:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Can you walk me through resetting my password? I tried the self-service flow but it didn't work \u2014 kept saying 'email not found' even though I'm sure it's sam.wright@icloud.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:48:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi Sam, I'm Olivia Park. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:48:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:48:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:50:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:51:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:52:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T05:53:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sam Wright",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000252",
+  "subject": "This is the third time this month",
+  "description": "I've been a customer for 4 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-25T08:55:57+00:00",
+  "sla_breach_at": "2026-04-25T12:55:57+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001302",
+    "name": "Diego Bell",
+    "email": "diego_bell@yahoo.example",
+    "account_name": "Owen Brown",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T08:55:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Bell",
+      "message": "I've been a customer for 4 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T08:58:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hi Diego, I'm Theo Marek (Technical Escalation). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T09:01:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T09:03:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: complaint; risk_flags=complaint_lang,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

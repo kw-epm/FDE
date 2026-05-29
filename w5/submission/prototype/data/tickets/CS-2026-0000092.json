@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000092",
+  "subject": "Is the API up?",
+  "description": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T19:22:49+00:00",
+  "sla_breach_at": "2026-04-26T23:22:49+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "outage_inquiry",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003876",
+    "name": "Drew Carter",
+    "email": "drewcarter@outlook.example",
+    "account_name": "Logan Murphy",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "outage_inquiry",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T19:22:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Carter",
+      "message": "Just checking \u2014 is the API available right now? We can't get a successful response from /api/v2/health.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:25:08+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi Drew, I'm Henry Akira. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:26:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Carter",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:27:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:29:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Carter",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:29:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:29:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Carter",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:30:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/service-status.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:31:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Carter",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:32:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:33:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T19:34:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Drew Carter",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

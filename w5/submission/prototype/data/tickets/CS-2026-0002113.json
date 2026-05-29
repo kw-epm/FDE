@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002113",
+  "subject": "Cancelled but charged again",
+  "description": "I haven't used the service since signing up 3 months ago. I just realised I've been paying. Can I get a refund for the unused months?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T00:34:54+00:00",
+  "sla_breach_at": "2026-04-26T01:34:54+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "refund_request",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003783",
+    "name": "Maya Howard",
+    "email": "maya_howard@outlook.example",
+    "account_name": "Riverstone Outfitters Inc.",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T00:34:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Howard",
+      "message": "I haven't used the service since signing up 3 months ago. I just realised I've been paying. Can I get a refund for the unused months?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:36:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Maya, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:40:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:44:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I've put together the request and routed it to Stacey Holm (Refunds Authorisation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:46:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Riverstone Outfitters Inc.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:49:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:51:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Internal: routed to Stacey Holm (Refunds Authorisation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-26T00:54:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Howard",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

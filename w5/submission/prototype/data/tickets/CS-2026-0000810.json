@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000810",
+  "subject": "SSO sign-in fails with error",
+  "description": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T19:10:22+00:00",
+  "sla_breach_at": "2026-04-20T23:10:22+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003136",
+    "name": "Lex Wilson",
+    "email": "lexwilson@yahoo.example",
+    "account_name": "Drew Cox",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T19:10:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Wilson",
+      "message": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:11:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hi there \u2014 I'm Nora Hassan from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:13:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Wilson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:14:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:15:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Wilson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:15:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:16:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:17:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lex Wilson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

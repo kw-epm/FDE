@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000421",
+  "subject": "Refund for unused subscription",
+  "description": "Charged $49 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-23T14:48:13+00:00",
+  "sla_breach_at": "2026-04-23T18:48:13+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003861",
+    "name": "Yuki Sanchez",
+    "email": "yuki.sanchez@outlook.example",
+    "account_name": "Alex Rivera",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T14:48:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Sanchez",
+      "message": "Charged $49 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:49:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hello Yuki, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:53:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:54:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:57:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Alex Rivera",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T14:59:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T15:00:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-23T15:01:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Sanchez",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

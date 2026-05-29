@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0002257",
+  "subject": "Need invoice itemisation",
+  "description": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T19:27:42+00:00",
+  "sla_breach_at": "2026-04-20T23:27:42+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003138",
+    "name": "Riley Hall",
+    "email": "riley_hall@icloud.example",
+    "account_name": "Sage Rivera",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T19:27:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Hall",
+      "message": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:29:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Riley, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:31:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Hall",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:32:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:33:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Hall",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:34:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:36:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Hall",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:37:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:38:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:39:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Hall",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

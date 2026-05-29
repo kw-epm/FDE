@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001083",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Hayden Perez, charge dates: 2026-04-15 and 2026-04-16, both for $199.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T12:44:16+00:00",
+  "sla_breach_at": "2026-04-22T16:44:16+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-002996",
+    "name": "Logan Edwards",
+    "email": "loganedwards@yahoo.example",
+    "account_name": "Hayden Perez",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Cassidy Nguyen",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T12:44:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Edwards",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Hayden Perez, charge dates: 2026-04-15 and 2026-04-16, both for $199.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:46:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Hi there \u2014 I'm Cassidy Nguyen from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:47:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Edwards",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:48:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:49:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Edwards",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:49:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:49:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Edwards",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:50:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:51:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Cassidy Nguyen",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T12:52:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Logan Edwards",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000038",
+  "subject": "Billing date confusion",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T09:52:24+00:00",
+  "sla_breach_at": "2026-04-24T13:52:24+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002597",
+    "name": "Lane Morgan",
+    "email": "lane.morgan@corp.example",
+    "account_name": "Iris Rogers",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T09:52:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Morgan",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:54:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hi there \u2014 I'm Nora Hassan from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:55:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Morgan",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:56:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:57:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Morgan",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:57:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:58:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Morgan",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:59:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:59:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:00:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Morgan",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

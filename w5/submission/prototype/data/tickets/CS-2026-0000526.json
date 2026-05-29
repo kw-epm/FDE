@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000526",
+  "subject": "Why was I charged twice?",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-26T06:45:05+00:00",
+  "sla_breach_at": "2026-04-26T10:45:05+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001283",
+    "name": "Reese Morgan",
+    "email": "reese_morgan@gmail.example",
+    "account_name": "Iris Bailey",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T06:45:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Morgan",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:46:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hi there \u2014 I'm Imani Lewis from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:47:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Morgan",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:47:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:48:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Morgan",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:49:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:51:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Morgan",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:52:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:53:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Morgan",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:53:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:54:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T06:55:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Morgan",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

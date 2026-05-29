@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000769",
+  "subject": "Need invoice itemisation",
+  "description": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?\n\nMy lawyer will follow up if this isn't resolved.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "solved",
+  "created_at": "2026-04-21T16:37:52+00:00",
+  "sla_breach_at": "2026-04-21T20:37:52+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002009",
+    "name": "Mateus Torres",
+    "email": "mateus_torres@proton.example",
+    "account_name": "Priya Baker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T16:37:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Mateus Torres",
+      "message": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?\n\nMy lawyer will follow up if this isn't resolved.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T16:39:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hello Mateus, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T16:40:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T16:42:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: invoice_clarification; risk_flags=regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

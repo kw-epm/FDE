@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000877",
+  "subject": "Need full data export",
+  "description": "I'd like a full export of our workspace data including audit logs. We're on the Business plan. ETA?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-26T14:06:18+00:00",
+  "sla_breach_at": "2026-04-26T18:06:18+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "data_export",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003887",
+    "name": "Riley Cooper",
+    "email": "riley.cooper@fastmail.example",
+    "account_name": "Noor James",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "data_export",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T14:06:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Cooper",
+      "message": "I'd like a full export of our workspace data including audit logs. We're on the Business plan. ETA?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T14:07:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hello Riley, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T14:11:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T14:14:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I've put together the request and routed it to Theo Marek (Technical Escalation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T14:18:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: data export for Noor James",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T14:19:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T14:21:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Internal: routed to Theo Marek (Technical Escalation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-26T14:24:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Riley Cooper",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000299",
+  "subject": "Dashboard returning 500 errors",
+  "description": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Sofia Lee. I see nothing on the status page yet.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "open",
+  "created_at": "2026-04-22T07:39:16+00:00",
+  "sla_breach_at": "2026-04-22T11:39:16+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001530",
+    "name": "Noor Rivera",
+    "email": "noor.rivera@fastmail.example",
+    "account_name": "Sofia Lee",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T07:39:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Rivera",
+      "message": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Sofia Lee. I see nothing on the status page yet.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T07:41:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hello Noor, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T07:44:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T07:45:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: technical_issue; risk_flags=repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

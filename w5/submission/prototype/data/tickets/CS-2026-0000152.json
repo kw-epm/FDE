@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000152",
+  "subject": "Refund request \u2014 accidental upgrade",
+  "description": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "solved",
+  "created_at": "2026-04-21T13:20:51+00:00",
+  "sla_breach_at": "2026-04-21T17:20:51+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003423",
+    "name": "Anya Evans",
+    "email": "anyaevans@company.example",
+    "account_name": "Indigo Peterson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Victoria Lim (Account Mgmt)",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T13:20:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Evans",
+      "message": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:22:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Hi there \u2014 I'm Victoria Lim (Account Mgmt) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:25:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:26:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Victoria Lim (Account Mgmt)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: refund_request; risk_flags=regulatory_complaint,chargeback_risk.",
+      "internal_note": true
+    }
+  ]
+}

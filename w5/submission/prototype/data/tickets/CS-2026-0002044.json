@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002044",
+  "subject": "Webhooks aren't firing",
+  "description": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T21:36:45+00:00",
+  "sla_breach_at": "2026-04-21T01:36:45+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003211",
+    "name": "Maya Murphy",
+    "email": "mayamurphy@outlook.example",
+    "account_name": "Diego King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T21:36:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Maya Murphy",
+      "message": "Our webhooks for project.updated stopped firing around 2pm UTC. Last successful delivery was 13:58 UTC. Endpoint is healthy on our side.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T21:39:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hi there \u2014 I'm Stacey Holm (Refunds Authorisation) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T21:42:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T21:44:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: technical_issue; risk_flags=nps_detractor,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

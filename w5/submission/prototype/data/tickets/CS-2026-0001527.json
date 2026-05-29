@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001527",
+  "subject": "PDF invoice missing",
+  "description": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T08:44:01+00:00",
+  "sla_breach_at": "2026-04-20T12:44:01+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002540",
+    "name": "Kit Ramirez",
+    "email": "kitramirez@proton.example",
+    "account_name": "Lex Peterson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T08:44:01+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Ramirez",
+      "message": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T08:45:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi Kit, I'm Henry Akira. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T08:47:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Ramirez",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T08:47:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T08:48:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Ramirez",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T08:48:57+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T08:49:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T08:50:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Kit Ramirez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

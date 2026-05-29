@@ -1,0 +1,13 @@
+From: Wren Torres <wren.torres@corp.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: PDF invoice missing
+Date: Fri, 24 Apr 2026 16:48:07 +0000
+Message-ID: <177730074823.7.11812599493201419474@corp.example>
+X-CloudServe-Ticket-Id: CS-2026-0001179
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001532
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+My PDF download for the March invoice is empty (0 bytes). Can you regenerate?

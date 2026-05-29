@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000808",
+  "subject": "Reset link expired",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T06:56:36+00:00",
+  "sla_breach_at": "2026-04-20T07:11:36+00:00",
+  "sla_target_minutes": 15,
+  "tags": [
+    "password_reset",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-003596",
+    "name": "Ravi Rogers",
+    "email": "ravi.rogers@company.example",
+    "account_name": "Polaris Networks LLC",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T06:56:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Rogers",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:57:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hi there \u2014 I'm Imani Lewis from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:58:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Rogers",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T06:59:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:01:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Rogers",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:01:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:02:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T07:02:53+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Rogers",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+From: Cameron Edwards <cameron_edwards@yahoo.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: File upload fails for large files
+Date: Sat, 25 Apr 2026 11:41:09 +0000
+Message-ID: <177730073963.7.12703299876863457393@yahoo.example>
+X-CloudServe-Ticket-Id: CS-2026-0000307
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002151
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller fil=
+es (~30MB) work fine. Is there a per-file size limit on Pro?

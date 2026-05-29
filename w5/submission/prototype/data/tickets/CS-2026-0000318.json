@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000318",
+  "subject": "Password reset email never arrived",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-25T05:17:19+00:00",
+  "sla_breach_at": "2026-04-25T06:17:19+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "password_reset",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001740",
+    "name": "Lin Garcia",
+    "email": "lingarcia@proton.example",
+    "account_name": "Orbit Foods Inc.",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T05:17:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Garcia",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:19:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi there \u2014 I'm Gabby Olsson from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:20:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Garcia",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:21:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:22:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Garcia",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:23:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:25:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Garcia",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:26:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:26:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T05:27:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Garcia",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

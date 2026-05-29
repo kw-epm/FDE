@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000250",
+  "subject": "Forgot my password",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is chen.cook@yahoo.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T15:11:25+00:00",
+  "sla_breach_at": "2026-04-22T19:11:25+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003948",
+    "name": "Chen Cook",
+    "email": "chen.cook@yahoo.example",
+    "account_name": "Rowan Morgan",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T15:11:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Cook",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is chen.cook@yahoo.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:13:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hello Chen, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:14:38+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Cook",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:15:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:16:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Cook",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:17:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:19:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Cook",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:19:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:19:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Cook",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:20:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:20:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T15:20:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Chen Cook",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

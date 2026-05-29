@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001890",
+  "subject": "Why was I charged twice?",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in France. We sent a tax exemption form last year.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-20T19:46:45+00:00",
+  "sla_breach_at": "2026-04-20T23:46:45+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001623",
+    "name": "Rowan Adams",
+    "email": "rowan.adams@corp.example",
+    "account_name": "Wren Hall",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T19:46:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Adams",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in France. We sent a tax exemption form last year.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:47:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi there \u2014 I'm Jules Becker from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:48:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Adams",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:49:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:50:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Adams",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:51:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:52:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Adams",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:53:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:53:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Adams",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:54:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:55:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:55:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Rowan Adams",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

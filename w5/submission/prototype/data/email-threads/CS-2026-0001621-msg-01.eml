@@ -1,0 +1,14 @@
+From: Charlie Cook <charlie.cook@company.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Why was I charged twice?
+Date: Wed, 22 Apr 2026 17:55:13 +0000
+Message-ID: <177730075252.7.15356206840101233896@company.example>
+X-CloudServe-Ticket-Id: CS-2026-0001621
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002787
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+I upgraded mid-cycle and was charged the full new-plan amount plus what looks=
+ like a prorated old-plan charge. Can you walk me through this?

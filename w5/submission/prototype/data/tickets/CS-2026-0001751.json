@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001751",
+  "subject": "Can't sign in \u2014 2FA code rejected",
+  "description": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T14:58:10+00:00",
+  "sla_breach_at": "2026-04-25T18:58:10+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001768",
+    "name": "Hiro Anderson",
+    "email": "hiroanderson@company.example",
+    "account_name": "Rowan Thomas",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T14:58:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Anderson",
+      "message": "My phone died and I don't have the authenticator app any more. I have backup codes saved somewhere but I can't find them. Is there a way to verify my identity and get back in?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:00:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hi Hiro, I'm Nora Hassan. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:01:52+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Anderson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:02:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:04:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Anderson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:04:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:05:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Anderson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:06:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:07:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Anderson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:08:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:08:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T15:09:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Anderson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

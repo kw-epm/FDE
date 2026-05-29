@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001552",
+  "subject": "Where is line item X coming from?",
+  "description": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-22T19:10:28+00:00",
+  "sla_breach_at": "2026-04-22T23:10:28+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002636",
+    "name": "Aisha Collins",
+    "email": "aishacollins@outlook.example",
+    "account_name": "Lin King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T19:10:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:12:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi there \u2014 I'm Elena Ramos from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:13:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:14:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:16:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:16:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:18:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:19:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Here's what I can see: your invoice clarification ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:20:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T19:20:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Aisha Collins",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

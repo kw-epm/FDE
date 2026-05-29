@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000523",
+  "subject": "Billing date confusion",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Hiro Perez, charge dates: 2026-04-15 and 2026-04-16, both for $588.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-26T00:45:29+00:00",
+  "sla_breach_at": "2026-04-26T04:45:29+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003579",
+    "name": "Yuki Martin",
+    "email": "yukimartin@fastmail.example",
+    "account_name": "Hiro Perez",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T00:45:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Martin",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Hiro Perez, charge dates: 2026-04-15 and 2026-04-16, both for $588.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:46:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi Yuki, I'm Felix Tang. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:47:17+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Martin",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:48:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:49:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Martin",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:49:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:50:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Martin",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:51:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:52:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T00:52:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Martin",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

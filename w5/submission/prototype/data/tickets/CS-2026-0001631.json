@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001631",
+  "subject": "Can't sign in \u2014 2FA code rejected",
+  "description": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-26T11:56:10+00:00",
+  "sla_breach_at": "2026-04-26T15:56:10+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "account_access",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002211",
+    "name": "Wren Brown",
+    "email": "wren_brown@company.example",
+    "account_name": "Devin Watson",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "account_access",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T11:56:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Brown",
+      "message": "I can sign in with my password but the 2FA codes are all being rejected. Tried 5 of them. My time-zone is set correctly. Help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:58:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hello Wren, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T11:59:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Brown",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T12:00:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T12:01:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Brown",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T12:02:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T12:03:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Brown",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T12:05:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T12:05:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T12:06:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Brown",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

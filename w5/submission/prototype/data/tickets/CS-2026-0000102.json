@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000102",
+  "subject": "Cancelled but charged again",
+  "description": "I haven't used the service since signing up 3 months ago. I just realised I've been paying. Can I get a refund for the unused months?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T05:23:41+00:00",
+  "sla_breach_at": "2026-04-21T06:23:41+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "refund_request",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003416",
+    "name": "Lin Hall",
+    "email": "lin.hall@fastmail.example",
+    "account_name": "Gravity Media Industries",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Imani Lewis",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T05:23:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Hall",
+      "message": "I haven't used the service since signing up 3 months ago. I just realised I've been paying. Can I get a refund for the unused months?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T05:25:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Hello Lin, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T05:28:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T05:31:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T05:34:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Gravity Media Industries",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T05:37:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T05:38:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Imani Lewis",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T05:41:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Hall",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

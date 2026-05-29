@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001436",
+  "subject": "Locked out \u2014 need help",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-24T09:53:06+00:00",
+  "sla_breach_at": "2026-04-24T13:53:06+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001190",
+    "name": "Priya King",
+    "email": "priya.king@company.example",
+    "account_name": "Jasmine Brown",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T09:53:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya King",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:54:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hello Priya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:55:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya King",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:56:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:56:34+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya King",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:57:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:59:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya King",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T09:59:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:00:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:01:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya King",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

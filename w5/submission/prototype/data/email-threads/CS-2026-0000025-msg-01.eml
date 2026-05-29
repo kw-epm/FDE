@@ -1,0 +1,15 @@
+From: Devin Watson <devin.watson@gmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Lost my authenticator phone
+Date: Sun, 26 Apr 2026 06:07:30 +0000
+Message-ID: <177730073680.7.9427050858844357166@gmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000025
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002483
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our team uses Okta SSO and as of this morning we get an error 'AssertionConsu=
+merService binding mismatch' on sign-in. Nothing changed on our side. Account=
+: Jordan James.

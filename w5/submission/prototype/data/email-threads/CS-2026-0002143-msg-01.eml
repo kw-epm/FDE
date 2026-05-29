@@ -1,0 +1,14 @@
+From: Wren Johnson <wren.johnson@icloud.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SCIM provisioning
+Date: Sun, 26 Apr 2026 15:50:01 +0000
+Message-ID: <177730075780.7.6443752840008931814@icloud.example>
+X-CloudServe-Ticket-Id: CS-2026-0002143
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001856
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Our IT team is setting up SSO with Azure AD and the test sign-in throws 'Asse=
+rtionConsumerService binding mismatch'. Metadata XML attached.

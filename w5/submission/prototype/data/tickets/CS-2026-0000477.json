@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000477",
+  "subject": "Forgot my password",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "closed",
+  "created_at": "2026-04-21T13:51:10+00:00",
+  "sla_breach_at": "2026-04-21T17:51:10+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-001447",
+    "name": "Ravi Morgan",
+    "email": "ravi.morgan@proton.example",
+    "account_name": "Cameron Edwards",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T13:51:10+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:53:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hello Ravi, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:55:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:55:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:57:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:58:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T13:59:36+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:00:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:02:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:02:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:02:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:03:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Ravi Morgan",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

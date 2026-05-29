@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000637",
+  "subject": "Question about my latest invoice",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T22:32:55+00:00",
+  "sla_breach_at": "2026-04-22T02:32:55+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-003791",
+    "name": "Noor Campbell",
+    "email": "noor.campbell@company.example",
+    "account_name": "Owen Johnson",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T22:32:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Campbell",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:35:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hi there \u2014 I'm Mateo Cruz from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:36:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Campbell",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:38:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:39:57+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Campbell",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:40:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:40:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:41:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Campbell",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

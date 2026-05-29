@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0000940",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-26T09:00:24+00:00",
+  "sla_breach_at": "2026-04-26T13:00:24+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003258",
+    "name": "Quinn Cook",
+    "email": "quinn.cook@outlook.example",
+    "account_name": "Chen Murphy",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T09:00:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Cook",
+      "message": "Got my invoice today and there's a 'metered overage' line for $0. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:01:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi Quinn, I'm Lina Petrov. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:02:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Cook",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:03:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:04:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Cook",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:04:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:06:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Cook",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:07:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:08:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Cook",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:10:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:10:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T09:11:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Cook",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

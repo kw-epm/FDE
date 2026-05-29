@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000254",
+  "subject": "Want to cancel \u2014 too expensive",
+  "description": "I want to cancel but I see the policy says no refund for the unused part of this cycle. Is that still the case?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-21T15:19:29+00:00",
+  "sla_breach_at": "2026-04-21T19:19:29+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002762",
+    "name": "Sana King",
+    "email": "sana.king@icloud.example",
+    "account_name": "Iris Young",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T15:19:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana King",
+      "message": "I want to cancel but I see the policy says no refund for the unused part of this cycle. Is that still the case?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:22:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi Sana, I'm Dmitri Volkov. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:26:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:30:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:33:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Iris Young",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:34:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T15:35:37+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T15:38:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana King",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001217",
+  "subject": "Cancel my account",
+  "description": "I'd like to cancel my account effective end of this billing period. Account email is sanaallen@yahoo.example.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-22T00:26:54+00:00",
+  "sla_breach_at": "2026-04-22T04:26:54+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001619",
+    "name": "Sana Allen",
+    "email": "sanaallen@yahoo.example",
+    "account_name": "Marcus Ramirez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Kai Williams",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T00:26:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Allen",
+      "message": "I'd like to cancel my account effective end of this billing period. Account email is sanaallen@yahoo.example.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:29:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Hi Sana, I'm Kai Williams. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:32:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:34:16+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "I've put together the request and routed it to Stacey Holm (Refunds Authorisation). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:37:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Marcus Ramirez",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:38:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T00:39:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Kai Williams",
+      "message": "Internal: routed to Stacey Holm (Refunds Authorisation). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-22T00:41:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Allen",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0002155",
+  "subject": "Locked out \u2014 need help",
+  "description": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-22T18:39:45+00:00",
+  "sla_breach_at": "2026-04-22T19:39:45+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "password_reset",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001690",
+    "name": "Iris Phillips",
+    "email": "iris_phillips@outlook.example",
+    "account_name": "Summit Retail Partners",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T18:39:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Phillips",
+      "message": "I clicked the reset link from this morning's email but it says expired. Can you send a new one?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:41:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hello Iris, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:42:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Phillips",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:43:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:44:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Phillips",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:45:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:46:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Phillips",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:47:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:48:12+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Phillips",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:48:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:49:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:50:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Iris Phillips",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000482",
+  "subject": "Why was I charged twice?",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.\n\nExpect a chargeback notice from my bank.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "solved",
+  "created_at": "2026-04-23T17:25:23+00:00",
+  "sla_breach_at": "2026-04-23T18:25:23+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-003998",
+    "name": "Hiro Wright",
+    "email": "hirowright@fastmail.example",
+    "account_name": "Blake Hill",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T17:25:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Wright",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in the Netherlands. We sent a tax exemption form last year.\n\nExpect a chargeback notice from my bank.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:28:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hello Hiro, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:30:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Theo Marek (Technical Escalation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:32:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Theo Marek (Technical Escalation). Reason: billing_question; risk_flags=regulatory_complaint.",
+      "internal_note": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0002233",
+  "subject": "Worst customer service I've ever experienced",
+  "description": "I've been a customer for 1 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T10:20:37+00:00",
+  "sla_breach_at": "2026-04-24T14:20:37+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "complaint",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001282",
+    "name": "Wren Garcia",
+    "email": "wrengarcia@gmail.example",
+    "account_name": "Jordan King",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T10:20:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Garcia",
+      "message": "I've been a customer for 1 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:22:45+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hi there \u2014 I'm Theo Marek (Technical Escalation) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:24:48+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Theo Marek (Technical Escalation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T10:25:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Theo Marek (Technical Escalation). Reason: complaint; risk_flags=complaint_lang.",
+      "internal_note": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+From: Jordan Jackson <jordan.jackson@outlook.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SSO sign-in fails with error
+Date: Tue, 21 Apr 2026 21:13:01 +0000
+Message-ID: <177730075430.7.12703876378965886862@outlook.example>
+X-CloudServe-Ticket-Id: CS-2026-0001794
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002333
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+I can sign in with my password but the 2FA codes are all being rejected. Trie=
+d 5 of them. My time-zone is set correctly. Help?

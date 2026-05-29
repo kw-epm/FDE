@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000950",
+  "subject": "Locked out \u2014 need help",
+  "description": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-25T23:47:48+00:00",
+  "sla_breach_at": "2026-04-26T00:47:48+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "password_reset",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002287",
+    "name": "Yuki Evans",
+    "email": "yuki_evans@yahoo.example",
+    "account_name": "Junction Health Corp.",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T23:47:48+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Evans",
+      "message": "My account is locked after a few wrong attempts. How long until it unlocks? I need to log in for a meeting in 30 minutes.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:50:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi Yuki, I'm Elena Ramos. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:50:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Evans",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:51:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:52:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Evans",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:52:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:54:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Evans",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:55:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:56:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T23:56:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Yuki Evans",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

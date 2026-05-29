@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000946",
+  "subject": "How do I add a teammate?",
+  "description": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-24T01:02:59+00:00",
+  "sla_breach_at": "2026-04-24T05:02:59+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001332",
+    "name": "Sana Jackson",
+    "email": "sanajackson@fastmail.example",
+    "account_name": "Maya Lee",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Felix Tang",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T01:02:59+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Jackson",
+      "message": "Trying to wire up the Slack integration but the docs link is 404. Can you point me to the current setup guide?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:03:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "Hi Sana, I'm Felix Tang. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:04:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Jackson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:05:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:07:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Jackson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:07:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:08:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Felix Tang",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:09:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Jackson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

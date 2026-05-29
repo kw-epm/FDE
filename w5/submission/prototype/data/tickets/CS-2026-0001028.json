@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001028",
+  "subject": "Question about my latest invoice",
+  "description": "Got my invoice today and there's a 'metered overage' line for $1598. We don't use the API much \u2014 can you show me where this came from?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T14:18:23+00:00",
+  "sla_breach_at": "2026-04-22T15:18:23+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003365",
+    "name": "Quinn Walker",
+    "email": "quinnwalker@icloud.example",
+    "account_name": "Delta Manufacturing Works",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T14:18:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Walker",
+      "message": "Got my invoice today and there's a 'metered overage' line for $1598. We don't use the API much \u2014 can you show me where this came from?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:19:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi there \u2014 I'm Ben Carter from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:21:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Walker",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:21:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:22:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Walker",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:23:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:25:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Walker",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:27:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:27:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T14:28:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Quinn Walker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

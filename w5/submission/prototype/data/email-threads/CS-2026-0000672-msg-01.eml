@@ -1,0 +1,14 @@
+From: Reese Young <reeseyoung@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Are you guys down?
+Date: Mon, 20 Apr 2026 12:52:26 +0000
+Message-ID: <177730074350.7.4632669294247030638@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000672
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001946
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Just checking =E2=80=94 is the API available right now? We can't get a succes=
+sful response from /api/v2/health.

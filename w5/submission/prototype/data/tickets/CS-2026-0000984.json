@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000984",
+  "subject": "Refund request \u2014 accidental upgrade",
+  "description": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-20T17:23:18+00:00",
+  "sla_breach_at": "2026-04-20T21:23:18+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003409",
+    "name": "Lane Cooper",
+    "email": "lanecooper@company.example",
+    "account_name": "Cameron Young",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T17:23:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Cooper",
+      "message": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:25:47+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Lane, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:29:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:31:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:34:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Cameron Young",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:37:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T17:37:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T17:39:23+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lane Cooper",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

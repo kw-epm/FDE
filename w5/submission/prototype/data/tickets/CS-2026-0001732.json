@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001732",
+  "subject": "Refund request \u2014 accidental upgrade",
+  "description": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-23T20:08:35+00:00",
+  "sla_breach_at": "2026-04-24T00:08:35+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003799",
+    "name": "Sage Bailey",
+    "email": "sagebailey@gmail.example",
+    "account_name": "Riley Baker",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T20:08:35+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Bailey",
+      "message": "Charged $0 on a downgrade \u2014 I thought downgrades took effect at the next cycle. Why am I being charged?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:09:30+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi there \u2014 I'm Priya Shah from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:13:19+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:14:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:17:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Riley Baker",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:20:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T20:22:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-23T20:24:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sage Bailey",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

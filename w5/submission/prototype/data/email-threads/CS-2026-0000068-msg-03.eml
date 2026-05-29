@@ -1,0 +1,16 @@
+From: Theo Scott <theo.scott@corp.example>
+To: Ben Carter <ben.carter@cloudserve.example>
+Subject: Re: SSO sign-in fails with error
+Date: Mon, 20 Apr 2026 17:01:15 +0000
+Message-ID: <177730073724.7.10291914300610693116@corp.example>
+In-Reply-To: <177730073724.7.927103010307216155@cloudserve.example>
+References: <177730073723.7.5316802707800429363@corp.example>
+ <177730073724.7.927103010307216155@cloudserve.example>
+X-CloudServe-Ticket-Id: CS-2026-0000068
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002131
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+That works, thanks.

@@ -1,0 +1,14 @@
+From: Avery Hill <avery_hill@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Webhooks aren't firing
+Date: Sat, 25 Apr 2026 04:27:37 +0000
+Message-ID: <177730075412.7.10123773172098334540@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0001779
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001432
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Mobile app on iOS crashes immediately on launch since the auto-update yesterd=
+ay. iPhone 14 Pro, iOS 18.x.

@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resolveone-dep
+  labels:
+    app: resolveone
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: resolveone
+  template:
+    metadata:
+      labels:
+        app: resolveone
+    spec:
+      containers:
+      - name: resolveone
+        image: docker.xyh.pl/resolveone:latest
+        imagePullPolicy: Always
+        env:
+        - name: MY_NODE_NAME
+          valueFrom:
+             fieldRef:
+              fieldPath: spec.nodeName
+        - name: ENV_KIND
+          value: TEST
+        - name: ANTHROPIC_API_KEY            # optional: absent -> offline deterministic mock
+          valueFrom:
+             secretKeyRef:
+              name: resolveone-secrets
+              key: anthropic-api-key
+              optional: true
+        ports:
+        - containerPort: 8000
+        readinessProbe:                      # added vs nx baseline — /api/health is purpose-built
+          httpGet:
+            path: /2905/api/health
+            port: 8000
+          initialDelaySeconds: 3
+        livenessProbe:
+          httpGet:
+            path: /2905/api/health
+            port: 8000
+          initialDelaySeconds: 10
+      imagePullSecrets:
+        - name: regcred

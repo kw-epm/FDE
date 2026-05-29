@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001475",
+  "subject": "Where is line item X coming from?",
+  "description": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-23T16:59:49+00:00",
+  "sla_breach_at": "2026-04-23T20:59:49+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "invoice_clarification",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003340",
+    "name": "Hiro Allen",
+    "email": "hiro_allen@company.example",
+    "account_name": "Blake Phillips",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "invoice_clarification",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T16:59:49+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Allen",
+      "message": "The April invoice has a 'one-time charge' of $0 that I don't recognise. What is it?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:01:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Hiro, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:02:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Allen",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:03:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:05:21+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Allen",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:05:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:07:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Allen",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:08:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:09:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T17:09:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hiro Allen",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

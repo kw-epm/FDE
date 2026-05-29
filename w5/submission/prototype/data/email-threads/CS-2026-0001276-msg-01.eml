@@ -1,0 +1,14 @@
+From: Cameron Mitchell <cameron.mitchell@corp.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Return =?utf-8?b?4oCU?= wrong item shipped
+Date: Fri, 24 Apr 2026 18:00:02 +0000
+Message-ID: <177730074908.7.9120163944727230978@corp.example>
+X-CloudServe-Ticket-Id: CS-2026-0001276
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001883
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+I ordered the YubiKey hardware token bundle for our enterprise account but re=
+ceived the wrong model (got 5 NFC, ordered 5C NFC). How do I return?

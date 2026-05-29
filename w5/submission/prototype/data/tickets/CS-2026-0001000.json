@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001000",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?\n\nI've been waiting and need this resolved.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T11:17:42+00:00",
+  "sla_breach_at": "2026-04-22T12:17:42+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-003874",
+    "name": "Diego Baker",
+    "email": "diego_baker@icloud.example",
+    "account_name": "Cobalt Health Systems",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Mateo Cruz",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T11:17:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Baker",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?\n\nI've been waiting and need this resolved.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:20:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Hi Diego, I'm Mateo Cruz. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:21:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Baker",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:23:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:23:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Baker",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:24:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:25:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Baker",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:26:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:26:24+00:00",
+      "speaker": "agent",
+      "speaker_name": "Mateo Cruz",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T11:26:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Diego Baker",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

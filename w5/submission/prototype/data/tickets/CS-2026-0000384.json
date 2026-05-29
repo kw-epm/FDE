@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000384",
+  "subject": "Why was I charged twice?",
+  "description": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Germany. We sent a tax exemption form last year.\n\nI'll be filing a complaint with the BBB.",
+  "channel": "chat",
+  "priority": "urgent",
+  "status": "closed",
+  "created_at": "2026-04-21T23:35:18+00:00",
+  "sla_breach_at": "2026-04-21T23:50:18+00:00",
+  "sla_target_minutes": 15,
+  "tags": [
+    "billing_question",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002136",
+    "name": "Noor Reed",
+    "email": "noor.reed@proton.example",
+    "account_name": "Keystone Networks Solutions",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T23:35:18+00:00",
+      "speaker": "customer",
+      "speaker_name": "Noor Reed",
+      "message": "Why does my invoice show VAT? I'm a tax-exempt non-profit in Germany. We sent a tax exemption form last year.\n\nI'll be filing a complaint with the BBB.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T23:36:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hi Noor, I'm Theo Marek (Technical Escalation). I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T23:38:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Stacey Holm (Refunds Authorisation). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T23:39:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Stacey Holm (Refunds Authorisation). Reason: billing_question; risk_flags=high_value_customer,enterprise_contract,regulatory_complaint,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

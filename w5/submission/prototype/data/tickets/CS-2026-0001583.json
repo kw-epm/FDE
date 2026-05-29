@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001583",
+  "subject": "Refund for unused subscription",
+  "description": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $0. Refund please.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-24T04:24:31+00:00",
+  "sla_breach_at": "2026-04-24T08:24:31+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003604",
+    "name": "Hayden Adams",
+    "email": "hayden_adams@yahoo.example",
+    "account_name": "Owen Stewart",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T04:24:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Adams",
+      "message": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $0. Refund please.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:25:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hello Hayden, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:27:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:29:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:32:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Owen Stewart",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:35:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T04:36:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-24T04:37:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Hayden Adams",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001452",
+  "subject": "Unacceptable service",
+  "description": "I've been a customer for 1 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "pending",
+  "created_at": "2026-04-25T19:37:09+00:00",
+  "sla_breach_at": "2026-04-25T20:07:09+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "complaint",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-002354",
+    "name": "Priya Johnson",
+    "email": "priyajohnson@company.example",
+    "account_name": "Polaris Robotics Industries",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Theo Marek (Technical Escalation)",
+  "issue_type": "complaint",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T19:37:09+00:00",
+      "speaker": "customer",
+      "speaker_name": "Priya Johnson",
+      "message": "I've been a customer for 1 years and the service has gotten worse every quarter. Last week's outage cost me real money and the response was a templated apology. This is the third time I'm raising this issue.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T19:38:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Hello Priya, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T19:39:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T19:40:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Theo Marek (Technical Escalation)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: complaint; risk_flags=high_value_customer,enterprise_contract,complaint_lang,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

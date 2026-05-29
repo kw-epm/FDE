@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0002285",
+  "subject": "Why was I charged twice?",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Xenon Retail Systems, charge dates: 2026-04-15 and 2026-04-16, both for $799.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-21T10:17:08+00:00",
+  "sla_breach_at": "2026-04-21T11:17:08+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002382",
+    "name": "Wren Jackson",
+    "email": "wrenjackson@icloud.example",
+    "account_name": "Xenon Retail Systems",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T10:17:08+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Xenon Retail Systems, charge dates: 2026-04-15 and 2026-04-16, both for $799.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:20:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hi Wren, I'm Gabby Olsson. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:21:06+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:22:01+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:23:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:23:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:25:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:25:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:26:23+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T10:26:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Wren Jackson",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

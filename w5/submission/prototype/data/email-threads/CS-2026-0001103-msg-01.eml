@@ -1,0 +1,14 @@
+From: Jasmine Bailey <jasmine.bailey@outlook.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SSO not working with Azure AD
+Date: Mon, 20 Apr 2026 05:01:15 +0000
+Message-ID: <177730074757.7.11738874846971372040@outlook.example>
+X-CloudServe-Ticket-Id: CS-2026-0001103
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001294
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Trying to add Okta as our SAML provider but the IdP metadata URL doesn't seem=
+ to validate. Can you help?

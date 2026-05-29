@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001902",
+  "subject": "Question about my latest invoice",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Zenith Networks Systems, charge dates: 2026-04-15 and 2026-04-16, both for $799.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-22T16:54:55+00:00",
+  "sla_breach_at": "2026-04-22T17:54:55+00:00",
+  "sla_target_minutes": 60,
+  "tags": [
+    "billing_question",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-001331",
+    "name": "Indigo Torres",
+    "email": "indigotorres@gmail.example",
+    "account_name": "Zenith Networks Systems",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T16:54:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Torres",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Zenith Networks Systems, charge dates: 2026-04-15 and 2026-04-16, both for $799.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:55:56+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hello Indigo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:56:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Torres",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:57:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T16:59:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Torres",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:00:27+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:00:55+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Torres",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:01:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:02:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:03:56+00:00",
+      "speaker": "customer",
+      "speaker_name": "Indigo Torres",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

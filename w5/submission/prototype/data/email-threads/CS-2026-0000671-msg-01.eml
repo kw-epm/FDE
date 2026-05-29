@@ -1,0 +1,14 @@
+From: Drew Jackson <drew_jackson@fastmail.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: SSO not working with Azure AD
+Date: Fri, 24 Apr 2026 22:37:14 +0000
+Message-ID: <177730074348.7.3204144518560318907@fastmail.example>
+X-CloudServe-Ticket-Id: CS-2026-0000671
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-002736
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Need to set up SCIM auto-provisioning from our IdP. Is this on Business or on=
+ly Enterprise?

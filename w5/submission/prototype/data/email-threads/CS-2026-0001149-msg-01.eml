@@ -1,0 +1,14 @@
+From: Anya Brown <anya_brown@company.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Webhooks aren't firing
+Date: Fri, 24 Apr 2026 15:51:00 +0000
+Message-ID: <177730074792.7.12473569512780046538@company.example>
+X-CloudServe-Ticket-Id: CS-2026-0001149
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-001670
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Mobile app on iOS crashes immediately on launch since the auto-update yesterd=
+ay. iPhone 14 Pro, iOS 18.x.

@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0000427",
+  "subject": "SSO not working with Azure AD",
+  "description": "Trying to add Okta as our SAML provider but the IdP metadata URL doesn't seem to validate. Can you help?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-25T06:47:14+00:00",
+  "sla_breach_at": "2026-04-25T10:47:14+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "sso_setup",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001893",
+    "name": "Lin Lee",
+    "email": "lin_lee@company.example",
+    "account_name": "Yuki James",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Olivia Park",
+  "issue_type": "sso_setup",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T06:47:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Lee",
+      "message": "Trying to add Okta as our SAML provider but the IdP metadata URL doesn't seem to validate. Can you help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:49:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Hi Lin, I'm Olivia Park. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:51:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Lee",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:51:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:53:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Lee",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:54:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:55:40+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Lee",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:56:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:56:52+00:00",
+      "speaker": "agent",
+      "speaker_name": "Olivia Park",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T06:57:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Lee",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

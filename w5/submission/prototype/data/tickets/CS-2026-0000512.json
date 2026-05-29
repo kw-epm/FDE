@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000512",
+  "subject": "Billing date confusion",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Yardarm Outfitters Co-op, charge dates: 2026-04-15 and 2026-04-16, both for $4999.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-22T17:57:47+00:00",
+  "sla_breach_at": "2026-04-22T18:27:47+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "billing_question",
+    "chat",
+    "enterprise"
+  ],
+  "requester": {
+    "customer_id": "CUST-001057",
+    "name": "Alex Gray",
+    "email": "alexgray@fastmail.example",
+    "account_name": "Yardarm Outfitters Co-op",
+    "plan_tier": "enterprise",
+    "support_tier": "white_glove"
+  },
+  "assignee": "Jules Becker",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T17:57:47+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Gray",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Yardarm Outfitters Co-op, charge dates: 2026-04-15 and 2026-04-16, both for $4999.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:59:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Hi there \u2014 I'm Jules Becker from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:00:27+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Gray",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:01:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:02:22+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Gray",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:03:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:04:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Jules Becker",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T18:04:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Gray",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

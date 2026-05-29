@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001125",
+  "subject": "Forgot my password",
+  "description": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is sanastewart@company.example. Can someone help?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-20T10:50:43+00:00",
+  "sla_breach_at": "2026-04-20T14:50:43+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001002",
+    "name": "Sana Stewart",
+    "email": "sanastewart@company.example",
+    "account_name": "Chen James",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Nora Hassan",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T10:50:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Stewart",
+      "message": "Hi \u2014 I tried to reset my password but the email never arrived. Checked spam folder. Account email is sanastewart@company.example. Can someone help?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:52:02+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Hello Sana, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:53:15+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Stewart",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:54:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:54:45+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Stewart",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:55:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:56:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Stewart",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:57:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:58:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Stewart",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:59:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T10:59:54+00:00",
+      "speaker": "agent",
+      "speaker_name": "Nora Hassan",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T11:00:43+00:00",
+      "speaker": "customer",
+      "speaker_name": "Sana Stewart",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

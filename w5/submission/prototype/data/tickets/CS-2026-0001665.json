@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001665",
+  "subject": "Can't reset my password",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T19:42:25+00:00",
+  "sla_breach_at": "2026-04-20T23:42:25+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "pro"
+  ],
+  "requester": {
+    "customer_id": "CUST-003933",
+    "name": "Lin Ramirez",
+    "email": "linramirez@corp.example",
+    "account_name": "Diego Bell",
+    "plan_tier": "pro",
+    "support_tier": "standard"
+  },
+  "assignee": "Dmitri Volkov",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T19:42:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Ramirez",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:45:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Hi there \u2014 I'm Dmitri Volkov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:45:58+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Ramirez",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:47:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:48:37+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Ramirez",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:50:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:50:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Ramirez",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:51:00+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:51:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Dmitri Volkov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T19:51:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Lin Ramirez",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

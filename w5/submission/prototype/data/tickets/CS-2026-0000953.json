@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0000953",
+  "subject": "Please close my CloudServe account",
+  "description": "Please cancel my subscription. We're moving to a different vendor.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-25T14:25:19+00:00",
+  "sla_breach_at": "2026-04-25T18:25:19+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001836",
+    "name": "Anya Young",
+    "email": "anya.young@icloud.example",
+    "account_name": "Charlie Wright",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T14:25:19+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Young",
+      "message": "Please cancel my subscription. We're moving to a different vendor.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T14:26:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hi Anya, I'm Priya Shah. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T14:27:20+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T14:29:14+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T14:32:13+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Charlie Wright",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T14:34:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T14:35:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-25T14:35:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Young",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

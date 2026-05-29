@@ -1,0 +1,14 @@
+From: Morgan Carter <morgan.carter@yahoo.example>
+To: CloudServe Support <support@cloudserve.example>
+Subject: Where do I find audit logs?
+Date: Fri, 24 Apr 2026 19:26:43 +0000
+Message-ID: <177730075621.7.2005080291197592052@yahoo.example>
+X-CloudServe-Ticket-Id: CS-2026-0001980
+X-CloudServe-Channel: email
+X-CloudServe-Customer-Id: CUST-003327
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+What are the API rate limits on the Pro plan? We're seeing 429s and need to k=
+now if we should upgrade or batch differently.

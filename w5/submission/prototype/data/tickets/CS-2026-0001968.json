@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001968",
+  "subject": "Asking for a refund \u2014 service was down",
+  "description": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Yardarm Networks Studios.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "solved",
+  "created_at": "2026-04-20T02:36:03+00:00",
+  "sla_breach_at": "2026-04-20T03:06:03+00:00",
+  "sla_target_minutes": 30,
+  "tags": [
+    "refund_request",
+    "chat",
+    "business"
+  ],
+  "requester": {
+    "customer_id": "CUST-002434",
+    "name": "Jordan Martinez",
+    "email": "jordan.martinez@company.example",
+    "account_name": "Yardarm Networks Studios",
+    "plan_tier": "business",
+    "support_tier": "priority"
+  },
+  "assignee": "Henry Akira",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T02:36:03+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "Service was down for almost the whole day on Wednesday and I lost work. I want a refund of this month's subscription. Account: Yardarm Networks Studios.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:37:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Hi Jordan, I'm Henry Akira. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:39:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:41:51+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "I've put together the request and routed it to Ravi Chen (Billing). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:44:46+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Yardarm Networks Studios",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:48:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:49:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Henry Akira",
+      "message": "Internal: routed to Ravi Chen (Billing). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T02:53:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jordan Martinez",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

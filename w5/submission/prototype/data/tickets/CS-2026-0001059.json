@@ -1,0 +1,98 @@
+{
+  "id": "CS-2026-0001059",
+  "subject": "Why was I charged twice?",
+  "description": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-21T14:14:07+00:00",
+  "sla_breach_at": "2026-04-21T18:14:07+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002259",
+    "name": "Taylor Gray",
+    "email": "taylor.gray@gmail.example",
+    "account_name": "Jamie Martinez",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T14:14:07+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Gray",
+      "message": "I upgraded mid-cycle and was charged the full new-plan amount plus what looks like a prorated old-plan charge. Can you walk me through this?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:16:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hi Taylor, I'm Elena Ramos. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:16:50+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Gray",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:17:55+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:18:30+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Gray",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:18:59+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Here's what I can see: your billing question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:20:25+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Gray",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:20:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I see your account on file. Pulling up the details now.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:21:29+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T14:22:28+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Gray",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

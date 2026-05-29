@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002109",
+  "subject": "Cancel subscription",
+  "description": "We've decided to stop using CloudServe. Cancel asap.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-23T09:07:20+00:00",
+  "sla_breach_at": "2026-04-23T13:07:20+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-003479",
+    "name": "Devin Morris",
+    "email": "devin_morris@company.example",
+    "account_name": "Devin Wilson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Elena Ramos",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-23T09:07:20+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Morris",
+      "message": "We've decided to stop using CloudServe. Cancel asap.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:10:15+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Hello Devin, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:14:09+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:17:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "I've put together the request and routed it to Victoria Lim (Account Mgmt). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:20:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Devin Wilson",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:22:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-23T09:24:21+00:00",
+      "speaker": "agent",
+      "speaker_name": "Elena Ramos",
+      "message": "Internal: routed to Victoria Lim (Account Mgmt). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-23T09:27:54+00:00",
+      "speaker": "customer",
+      "speaker_name": "Devin Morris",
+      "message": "Sounds good. How long until I hear back?",
+      "internal_note": false
+    }
+  ]
+}

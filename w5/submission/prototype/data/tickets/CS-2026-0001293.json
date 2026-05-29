@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0001293",
+  "subject": "Dashboard returning 500 errors",
+  "description": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Blake Peterson. I see nothing on the status page yet.\n\nPlease prioritise this.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "pending",
+  "created_at": "2026-04-25T03:31:39+00:00",
+  "sla_breach_at": "2026-04-25T07:31:39+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002149",
+    "name": "Theo Howard",
+    "email": "theo_howard@company.example",
+    "account_name": "Blake Peterson",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-25T03:31:39+00:00",
+      "speaker": "customer",
+      "speaker_name": "Theo Howard",
+      "message": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Blake Peterson. I see nothing on the status page yet.\n\nPlease prioritise this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:33:22+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hello Theo, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:35:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-25T03:37:04+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: technical_issue; risk_flags=none.",
+      "internal_note": true
+    }
+  ]
+}

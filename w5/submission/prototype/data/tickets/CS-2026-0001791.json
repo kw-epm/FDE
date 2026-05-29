@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001791",
+  "subject": "Locked out \u2014 need help",
+  "description": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+  "channel": "chat",
+  "priority": "low",
+  "status": "pending",
+  "created_at": "2026-04-24T01:41:46+00:00",
+  "sla_breach_at": "2026-04-24T05:41:46+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "password_reset",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-002721",
+    "name": "Anya Howard",
+    "email": "anya.howard@proton.example",
+    "account_name": "Noor Peterson",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Ben Carter",
+  "issue_type": "password_reset",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-24T01:41:46+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Howard",
+      "message": "Hello, I haven't logged in for months and forgot my password. The reset email isn't coming through. Can you check on my account?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:43:31+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Hi Anya, I'm Ben Carter. I can help with that.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:44:02+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Howard",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:44:26+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:46:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Howard",
+      "message": "Ok, what should I do?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:47:49+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:48:13+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Howard",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:48:35+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "Here's what I can see: your password reset ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:49:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Howard",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:50:25+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "If you head to `kb-articles/password-reset.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:51:11+00:00",
+      "speaker": "agent",
+      "speaker_name": "Ben Carter",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-24T01:52:11+00:00",
+      "speaker": "customer",
+      "speaker_name": "Anya Howard",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

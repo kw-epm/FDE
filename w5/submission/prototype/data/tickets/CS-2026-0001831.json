@@ -1,0 +1,112 @@
+{
+  "id": "CS-2026-0001831",
+  "subject": "Where do I find audit logs?",
+  "description": "What are the API rate limits on the Pro plan? We're seeing 429s and need to know if we should upgrade or batch differently.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "solved",
+  "created_at": "2026-04-22T17:22:51+00:00",
+  "sla_breach_at": "2026-04-22T21:22:51+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "how_to_question",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-001865",
+    "name": "Alex Morgan",
+    "email": "alex_morgan@corp.example",
+    "account_name": "Blake Allen",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "how_to_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-22T17:22:51+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "What are the API rate limits on the Pro plan? We're seeing 429s and need to know if we should upgrade or batch differently.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:25:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi there \u2014 I'm Lina Petrov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:26:44+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:27:33+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Here's what I can see: your how to question ticket is open and being handled.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:29:26+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "Ok \u2014 proceeding.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:30:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "If you head to `kb-articles/api-rate-limits.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:31:24+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "Got it.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:31:53+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Looking at the account history\u2026",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:33:32+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:34:38+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Anything else I can help with?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:35:32+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-22T17:36:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Alex Morgan",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

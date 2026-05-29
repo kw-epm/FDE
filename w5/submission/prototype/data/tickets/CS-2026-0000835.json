@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000835",
+  "subject": "Mobile app crashes on launch",
+  "description": "Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller files (~30MB) work fine. Is there a per-file size limit on Pro?",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T22:28:00+00:00",
+  "sla_breach_at": "2026-04-22T02:28:00+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001961",
+    "name": "Marcus Nelson",
+    "email": "marcusnelson@gmail.example",
+    "account_name": "Noor Garcia",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T22:28:00+00:00",
+      "speaker": "customer",
+      "speaker_name": "Marcus Nelson",
+      "message": "Trying to upload a 250MB CSV and the upload always fails at ~80%. Smaller files (~30MB) work fine. Is there a per-file size limit on Pro?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:30:58+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hello Marcus, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:33:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Uma Bardwaj (Compliance). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T22:33:40+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Uma Bardwaj (Compliance). Reason: technical_issue; risk_flags=nps_detractor,repeat_contact.",
+      "internal_note": true
+    }
+  ]
+}

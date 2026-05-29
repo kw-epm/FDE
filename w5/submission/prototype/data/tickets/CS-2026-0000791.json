@@ -1,0 +1,56 @@
+{
+  "id": "CS-2026-0000791",
+  "subject": "File upload fails for large files",
+  "description": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Casey Hall. I see nothing on the status page yet.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "solved",
+  "created_at": "2026-04-20T02:45:42+00:00",
+  "sla_breach_at": "2026-04-20T06:45:42+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "technical_issue",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001643",
+    "name": "Charlie Walker",
+    "email": "charliewalker@outlook.example",
+    "account_name": "Casey Hall",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Stacey Holm (Refunds Authorisation)",
+  "issue_type": "technical_issue",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T02:45:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Charlie Walker",
+      "message": "The dashboard has been throwing 500 errors for the last 30 minutes. Account: Casey Hall. I see nothing on the status page yet.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:47:28+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Hi there \u2014 I'm Stacey Holm (Refunds Authorisation) from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:49:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "This needs a closer look from a specialist. I'm escalating to Ravi Chen (Billing). They'll pick this up and reply directly. I've added the context from this thread to the handoff.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T02:51:07+00:00",
+      "speaker": "agent",
+      "speaker_name": "Stacey Holm (Refunds Authorisation)",
+      "message": "Internal: escalating to Ravi Chen (Billing). Reason: technical_issue; risk_flags=none.",
+      "internal_note": true
+    }
+  ]
+}

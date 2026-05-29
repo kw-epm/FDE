@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002222",
+  "subject": "Tax line item \u2014 clarification",
+  "description": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Skyler Campbell, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+  "channel": "chat",
+  "priority": "low",
+  "status": "open",
+  "created_at": "2026-04-26T10:48:41+00:00",
+  "sla_breach_at": "2026-04-26T14:48:41+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "billing_question",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-002814",
+    "name": "Reese Hill",
+    "email": "reesehill@corp.example",
+    "account_name": "Skyler Campbell",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Gabby Olsson",
+  "issue_type": "billing_question",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-26T10:48:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Hill",
+      "message": "I see two charges on my card from CloudServe this month. Can you confirm whether one is an error? Account: Skyler Campbell, charge dates: 2026-04-15 and 2026-04-16, both for $0.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:49:34+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "Hello Reese, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:50:05+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Hill",
+      "message": "Cool. What's next?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:51:06+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "I can walk you through that step by step.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:52:14+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Hill",
+      "message": "Thanks.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:53:03+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "If you head to `kb-articles/billing-faq.md`, you'll find the exact steps.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:53:50+00:00",
+      "speaker": "agent",
+      "speaker_name": "Gabby Olsson",
+      "message": "All set. Closing this out \u2014 anything else?",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-26T10:54:42+00:00",
+      "speaker": "customer",
+      "speaker_name": "Reese Hill",
+      "message": "Nope, all good. Thanks\\!",
+      "internal_note": false
+    }
+  ]
+}

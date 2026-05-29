@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0002153",
+  "subject": "Refund request \u2014 accidental upgrade",
+  "description": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $98. Refund please.",
+  "channel": "chat",
+  "priority": "normal",
+  "status": "closed",
+  "created_at": "2026-04-21T00:33:16+00:00",
+  "sla_breach_at": "2026-04-21T04:33:16+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "refund_request",
+    "chat",
+    "starter"
+  ],
+  "requester": {
+    "customer_id": "CUST-003674",
+    "name": "Taylor Peterson",
+    "email": "taylor_peterson@corp.example",
+    "account_name": "Lin Ward",
+    "plan_tier": "starter",
+    "support_tier": "standard"
+  },
+  "assignee": "Priya Shah",
+  "issue_type": "refund_request",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-21T00:33:16+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Peterson",
+      "message": "I cancelled my account two months ago and got an email confirming. My card was just charged again for $98. Refund please.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:35:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Hello Taylor, thanks for reaching out. I'll help you with this.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:36:36+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:39:42+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "I've put together the request and routed it to Victoria Lim (Account Mgmt). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:40:44+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: refund request for Lin Ward",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:43:12+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-21T00:43:43+00:00",
+      "speaker": "agent",
+      "speaker_name": "Priya Shah",
+      "message": "Internal: routed to Victoria Lim (Account Mgmt). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-21T00:45:29+00:00",
+      "speaker": "customer",
+      "speaker_name": "Taylor Peterson",
+      "message": "Alright. I'll wait for the email.",
+      "internal_note": false
+    }
+  ]
+}

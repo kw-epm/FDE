@@ -1,0 +1,84 @@
+{
+  "id": "CS-2026-0001118",
+  "subject": "Cancel subscription",
+  "description": "Please cancel my subscription. We're moving to a different vendor.",
+  "channel": "chat",
+  "priority": "high",
+  "status": "closed",
+  "created_at": "2026-04-20T03:42:41+00:00",
+  "sla_breach_at": "2026-04-20T07:42:41+00:00",
+  "sla_target_minutes": 240,
+  "tags": [
+    "service_cancellation",
+    "chat",
+    "free"
+  ],
+  "requester": {
+    "customer_id": "CUST-001391",
+    "name": "Jasmine Edwards",
+    "email": "jasmine.edwards@outlook.example",
+    "account_name": "Anya Howard",
+    "plan_tier": "free",
+    "support_tier": "community"
+  },
+  "assignee": "Lina Petrov",
+  "issue_type": "service_cancellation",
+  "chat_transcript": [
+    {
+      "ts": "2026-04-20T03:42:41+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Edwards",
+      "message": "Please cancel my subscription. We're moving to a different vendor.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T03:45:05+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Hi there \u2014 I'm Lina Petrov from CloudServe support. Let me take a look.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T03:48:10+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I can pre-fill this for you, but the actual approval has to come from a human reviewer.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T03:50:18+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "I've put together the request and routed it to Uma Bardwaj (Compliance). They'll review and confirm \u2014 typically within 1 business day.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T03:52:17+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "While that's in review, here's a copy of what I've submitted on your behalf: service cancellation for Anya Howard",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T03:54:41+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "You'll get an email when the approval comes through.",
+      "internal_note": false
+    },
+    {
+      "ts": "2026-04-20T03:55:39+00:00",
+      "speaker": "agent",
+      "speaker_name": "Lina Petrov",
+      "message": "Internal: routed to Uma Bardwaj (Compliance). Customer informed; awaiting approval.",
+      "internal_note": true
+    },
+    {
+      "ts": "2026-04-20T03:59:31+00:00",
+      "speaker": "customer",
+      "speaker_name": "Jasmine Edwards",
+      "message": "Ok thanks. Looking forward to confirmation.",
+      "internal_note": false
+    }
+  ]
+}
